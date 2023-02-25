@@ -13,8 +13,18 @@ export default function Header({}: Props) {
     }
 
     return (
-        <header className='sticky top-0 p-1 flex flex-row justify-between bg-slate-500 items-center'>
-            <Image src="/logo.png" alt='logo' width={300} height={300}/>
+        <header className='sticky top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-500 to-slate-400 items-center z-50'>
+            <motion.div 
+            initial={{
+                opacity: 0
+            }}
+            whileInView={{
+                opacity: 1
+            }}
+            >
+                <Image src="/logo.png" alt='logo' width={300} height={300}/>
+            </motion.div>
+
             <motion.div 
                 animate={{
                     opacity: 0
@@ -25,7 +35,7 @@ export default function Header({}: Props) {
                 whileInView={{
                     opacity: 1
                 }}
-                className={menu ? "absolute right-[100px] top-[100px] flex flex-col z-20 justify-end items-end md:hidden" 
+                className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-semibold text-xl text-gray-300" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
             <Link href="#bio">
                 <button className={menu ? 'py-5': ''}>Biography</button>
@@ -42,10 +52,9 @@ export default function Header({}: Props) {
             </motion.div>
 
 
-            <motion.div className='absolute rounded-full bg-yellow-200 w-[50px] h-[50px] right-[23px] md:hidden'
+            <motion.div className='absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[23px] md:hidden'
                 animate={{
-                    // scale: menu ? 4.2 : 0.2,
-                    y: menu ? 250 : 0,
+                    y: menu ? 265 : 0,
                     x: menu ? 25 : 0,
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
@@ -58,17 +67,17 @@ export default function Header({}: Props) {
                 
                 <motion.div 
                 animate={{rotate: menu ? -45 : 0}}
-                className='h-[2px] w-[40px] bg-black m-2'></motion.div>
+                className='h-[2px] w-[40px] bg-gray-300 m-2'></motion.div>
                 <motion.div 
                 animate={{opacity: menu ? 0 : 1}}
                 transition={{ duration: 0.1 }}
-                className='h-[2px] w-[40px] bg-black m-2'></motion.div>
+                className='h-[2px] w-[40px] bg-gray-300 m-2'></motion.div>
                 <motion.div 
                 animate={{
                     rotate: menu ? 45 : 0,
                     y: menu ? -19.5 : 0,
                 }}
-                className='h-[2px] w-[40px] bg-black m-2'></motion.div>
+                className='h-[2px] w-[40px] bg-gray-300 m-2'></motion.div>
             </div>
         </header>
   )
