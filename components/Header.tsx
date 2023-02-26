@@ -40,7 +40,7 @@ export default function Header({}: Props) {
             <Link href="#bio">
                 <button className={menu ? 'py-5': ''}>Biography</button>
             </Link>
-            <Link href="#concerts">
+            <Link href="concerts">
                 <button className={menu ? 'py-5': ''}>Concerts</button>
             </Link>
             <Link href="#media">
@@ -52,10 +52,8 @@ export default function Header({}: Props) {
             </motion.div>
 
 
-            <motion.div className='absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[23px] md:hidden'
+            <motion.div className={menu ? 'absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[23px] md:hidden'}
                 animate={{
-                    y: menu ? 382 : 0,
-                    x: menu ? 25 : 0,
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
                     borderRadius: menu ? '0%' : "100%"
