@@ -37,7 +37,10 @@ export default function Header({}: Props) {
                 }}
                 className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-semibold text-xl text-gray-300" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
-            <Link href="#bio">
+            <Link href="/">
+                <button className={menu ? 'py-5': ''}>Home</button>
+            </Link>
+            <Link href="bio">
                 <button className={menu ? 'py-5': ''}>Biography</button>
             </Link>
             <Link href="concerts">

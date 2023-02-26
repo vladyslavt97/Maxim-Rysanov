@@ -17,11 +17,11 @@ export default function HomePage({}: Props) {
         </div>
         <motion.div
         initial={{
-            x: 220,
+            // x: 220,
             opacity: 0.2
         }}
         whileInView={{
-            x: 0,
+            // x: 0,
             opacity: 1
         }}
         transition={{
