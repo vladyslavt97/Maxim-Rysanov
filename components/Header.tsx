@@ -13,7 +13,7 @@ export default function Header({}: Props) {
     }
 
     return (
-        <header className='sticky top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-500 to-slate-400 items-center z-50'>
+        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-500 to-slate-400 items-center z-50'>
             <motion.div 
             initial={{
                 opacity: 0

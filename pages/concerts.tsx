@@ -1,19 +1,35 @@
 import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
-import concerts from "../concerts.json"
+import concerts from "../concerts2023.json"
 
 type Props = {}
 
 export default function Concerts({}: Props) {
+  let validConcerts = concerts.filter(el => {
+    const [day, date] = el.date.split(' ');//removing the day (THU) and working with the date (09/02)
+    const [dd, mm] = date.split('/');
+    const yyyy = new Date().getFullYear();
+    const fullDateString = `${yyyy}-${mm}-${dd}`;
+
+    //today
+    const today = new Date();
+    const yyyytoday = today.getFullYear();
+    const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
+    const ddtoday = today.getDate().toString().padStart(2, '0');
+    const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
+    
+    return fullDateString >= dateString;
+  })
   
+
   return (
     <div className=''>
       <Header/>
       <div className='flex justify-center items-center'>
-        <h1 className='font-bold text-xl'>2023</h1>
+        <h1 className='font-bold text-xl m-5'>2023</h1>
       </div>
       <div className='flex flex-col m-10 md:ml-40 justify-center items-start'>
-        {concerts.map((concert, index) => (
+        {validConcerts.map((concert, index) => (
           <div key={index} className="m-3">
             <h2 className=' font-semibold'>{concert.date}</h2>
             <h5>{concert.location}<br/>

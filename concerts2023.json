@@ -1,4 +1,41 @@
-[
+[   
+    { 
+    "year": "2023",
+    "date": "THU 09/02",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Vatroslav Lisinski Concert Hall, Zagreb",
+    "programme": [
+        "Franjo Lučić : Elegija",
+        "Gabriel Prokofiev : Concerto for Viola and Orchestra",
+        "Schubert : Symphony No. 1 in D major, D 82",
+        "Prokofiev : Suite: The Love of Three Oranges"
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2023",
+    "date": "THU 25/02",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Belgrade Ukrainian Benefit",
+    "programme": [
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2023",
+    "date": "THU 09/03",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Pierre-Mercure Hall of the Pierre-Péladeau Centre, Montreal",
+    "programme": [
+        "Mozart: Sinfonia Concertante for Violin and Viola",
+        "Arnold: Variations on a Ukrainian Folksong, Op. 9a (arr. Steptoe)",
+        "Mozart: Symphony No. 29"
+    ],
+    "link": "https://imusici.com/en/austria-maxim-rysanov-and-mozart/"
+  },
   { 
     "year": "2023",
     "date": "SUN 12/03",
