@@ -22,7 +22,7 @@ export default function HomePage({}: Props) {
         }}
         whileInView={{
             // x: 0,
-            opacity: 1
+            opacity: 2
         }}
         transition={{
             duration: 1
