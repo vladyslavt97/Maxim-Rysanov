@@ -38,19 +38,19 @@ export default function Header({}: Props) {
                 className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-semibold text-xl text-gray-300" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
             <Link href="/">
-                <button className={menu ? 'py-5': ''}>Home</button>
+                <button className={menu ? 'py-5': 'lg:px-10'}>Home</button>
             </Link>
             <Link href="bio">
-                <button className={menu ? 'py-5': ''}>Biography</button>
+                <button className={menu ? 'py-5': 'lg:px-10'}>Biography</button>
             </Link>
             <Link href="concerts">
-                <button className={menu ? 'py-5': ''}>Concerts</button>
+                <button className={menu ? 'py-5': 'lg:px-10'}>Concerts</button>
             </Link>
             <Link href="#media">
-                <button className={menu ? 'py-5': ''}>Media</button>
+                <button className={menu ? 'py-5': 'lg:px-10'}>Media</button>
             </Link>
             <Link href="#contacts">
-                <button className={menu ? 'py-5': ''}>Contacts</button>
+                <button className={menu ? 'py-5': 'lg:px-10'}>Contacts</button>
             </Link>
             </motion.div>
 

@@ -5,7 +5,7 @@ type Props = {}
 
 export default function HomePage({}: Props) {
   return (
-    <div className=' overflow-hidden'>
+    <div className=''>
         <div className='absolute w-[45%] sm:w-[50%] p-5 flex justify-center items-start h-[70vh] text-gray-800 flex-col text-sm md:text-md z-30'>
             <p className='italic'>
                 &quot;The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!&quot; 

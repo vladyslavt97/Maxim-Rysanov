@@ -7,12 +7,12 @@ type Props = {}
 export default function Concerts({}: Props) {
   
   return (
-    <div className='h-screen overflow-hidden'>
+    <div className=''>
       <Header/>
       <div className='flex justify-center items-center'>
         <h1 className='font-bold text-xl'>2023</h1>
       </div>
-      <div className='flex flex-col m-10 justify-center items-start '>
+      <div className='flex flex-col m-10 md:ml-40 justify-center items-start'>
         {concerts.map((concert, index) => (
           <div key={index} className="m-3">
             <h2 className=' font-semibold'>{concert.date}</h2>
