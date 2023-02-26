@@ -5,9 +5,9 @@ type Props = {}
 
 export default function bio({}: Props) {
   return (
-    <div className='h-screen'>
+    <div className='h-screen bg-white'>
         <Header />
-        <div className='flex justify-center items-center mx-10 lg:mr-[50%] my-10'>
+        <div className='flex justify-center items-center mx-10 lg:mr-[50%] my-10 text-black'>
             <p>Grammy nominated Ukrainian-British violist and conductor Maxim Rysanov has established himself as one of the worldʼs most vibrant and charismatic musicians. As a violist, he is principally known as a frequent guest of the crème of the international music scene, such as BBC Last Night of the Proms and the festivals of Edinburgh, Salzburg and Verbier.
             <br/>
             <br/>

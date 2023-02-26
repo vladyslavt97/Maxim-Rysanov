@@ -5,9 +5,11 @@ type Props = {}
 
 export default function Concerts({}: Props) {
   return (
-    <div>
+    <div className='h-screen'>
       <Header />
-      <div className='h-screen'>Concerts</div>
+      <div className='flex'>
+
+      </div>
     </div>
   )
 }
