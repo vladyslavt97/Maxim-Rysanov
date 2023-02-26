@@ -17,19 +17,17 @@ export default function HomePage({}: Props) {
         </div>
         <motion.div
         initial={{
-            // x: 220,
-            opacity: 0.2
+            opacity: 0
         }}
-        whileInView={{
-            // x: 0,
-            opacity: 2
+        animate={{
+            opacity: 1
         }}
         transition={{
             duration: 1
         }}
         className="p-2"
         >
-            <Image src='/home.png' alt="image" width={280} height={280} className='absolute right-0 object-fit w-[50%] top-[25%] sm:w-[100%]'/>
+            <Image src='/home.png' alt="image" width={280} height={280} className='absolute right-0 object-fit w-[300px] top-[15%]'/>
         </motion.div>
     </div>
   )
