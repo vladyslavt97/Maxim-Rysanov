@@ -54,7 +54,7 @@ export default function Header({}: Props) {
 
             <motion.div className='absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[23px] md:hidden'
                 animate={{
-                    y: menu ? 265 : 0,
+                    y: menu ? 382 : 0,
                     x: menu ? 25 : 0,
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
