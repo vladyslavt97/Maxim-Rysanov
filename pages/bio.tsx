@@ -7,7 +7,7 @@ export default function bio({}: Props) {
   return (
     <div className='h-full bg-gray-400'>
         <Header />
-        <div className='absolute top-[82px] flex flex-col justify-center items-center mx-4 p-5 lg:mr-[50%] lg:ml-[10%] pt-10 pb-20 text-black bg-gradient-to-tr from-neutral-100 to-sky-200 rounded'>
+        <div className='absolute top-[82px] flex flex-col justify-center items-center mx-2 p-5 pt-8 pb-20 text-black bg-gradient-to-tr from-neutral-100 to-sky-200 rounded'>
             <div className='flex justify-center items-center'>
               <h1 className='font-bold text-xl m-5 text-black'>Biography</h1>
             </div>

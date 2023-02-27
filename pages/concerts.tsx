@@ -25,7 +25,7 @@ export default function Concerts({}: Props) {
   return (
     <div className=''>
       <Header/>
-      <div className='bg-gradient-to-tr from-neutral-100 to-sky-200 w-[90vw] m-4 absolute top-[70px] rounded text-black'>
+      <div className='bg-gradient-to-tr from-neutral-100 to-sky-200 w-full border-[10px] border-blue-300 absolute top-[70px] rounded text-black'>
         <div className='flex justify-center items-center pt-5'>
           <h1 className='font-bold text-xl'>2023</h1>
         </div>
