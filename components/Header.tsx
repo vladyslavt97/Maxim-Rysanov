@@ -46,10 +46,10 @@ export default function Header({}: Props) {
             <Link href="concerts">
                 <button className={menu ? 'py-5': 'lg:px-10'}>Concerts</button>
             </Link>
-            <Link href="#media">
+            <Link href="media">
                 <button className={menu ? 'py-5': 'lg:px-10'}>Media</button>
             </Link>
-            <Link href="#contacts">
+            <Link href="contacts">
                 <button className={menu ? 'py-5': 'lg:px-10'}>Contacts</button>
             </Link>
             </motion.div>
