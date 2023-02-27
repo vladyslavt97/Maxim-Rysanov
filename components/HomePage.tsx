@@ -5,8 +5,8 @@ type Props = {}
 
 export default function HomePage({}: Props) {
   return (
-    <div className=''>
-        <div className='absolute w-[45%] top-[15%] sm:w-[50%] p-5 flex justify-center items-start h-[70vh] text-gray-800 flex-col text-sm md:text-md z-30'>
+    <div className='absolute top-[70px] bg-white w-[90vw] h-[90vh] m-[2.5vh]'>
+        <div className='absolute w-[45%] top-[15%] sm:w-[50%] p-5 flex justify-center items-start h-[70vh] text-gray-800 flex-col text-sm md:text-md z-30 md:text-2xl md:ml-[12%]'>
             <p className='italic'>
                 &quot;The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!&quot; 
                 <br/>
