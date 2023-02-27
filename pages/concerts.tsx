@@ -25,11 +25,11 @@ export default function Concerts({}: Props) {
   return (
     <div className=''>
       <Header/>
-      <div className='bg-white w-[90vw] m-4 absolute top-[70px]'>
+      <div className='bg-white w-[90vw] m-4 absolute top-[70px] rounded text-black'>
         <div className='flex justify-center items-center pt-5'>
-          <h1 className='font-bold text-xl text-black'>2023</h1>
+          <h1 className='font-bold text-xl'>2023</h1>
         </div>
-        <div className='flex flex-col mx-3 mt-3 md:ml-40 justify-center items-start text-black rounded'>
+        <div className='flex flex-col mx-3 mt-3 md:ml-40 justify-center items-start'>
           {validConcerts.map((concert, index) => (
             <div key={index} className="m-3">
               <h2 className=' font-semibold'>{concert.date}</h2>
