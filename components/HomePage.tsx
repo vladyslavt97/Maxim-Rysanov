@@ -6,7 +6,7 @@ type Props = {}
 export default function HomePage({}: Props) {
   return (
     <div className=''>
-        <div className='absolute w-[45%] sm:w-[50%] p-5 flex justify-center items-start h-[70vh] text-gray-800 flex-col text-sm md:text-md z-30'>
+        <div className='absolute w-[45%] top-[15%] sm:w-[50%] p-5 flex justify-center items-start h-[70vh] text-gray-800 flex-col text-sm md:text-md z-30'>
             <p className='italic'>
                 &quot;The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!&quot; 
                 <br/>
@@ -27,7 +27,7 @@ export default function HomePage({}: Props) {
         }}
         className="p-2"
         >
-            <Image src='/home.png' alt="image" width={280} height={280} className='absolute right-0 object-fit w-[300px] top-[15%]'/>
+            <Image src='/home.png' alt="image" width={180} height={180} className='absolute right-0 object-fit w-[200px] md:w-[300px] top-[15%]'/>
         </motion.div>
     </div>
   )

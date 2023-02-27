@@ -22,7 +22,7 @@ export default function Header({}: Props) {
                 opacity: 1
             }}
             >
-                <Image src="/logo.png" alt='logo' width={300} height={300}/>
+                <Image src="/logo.png" alt='logo' width={200} height={200}/>
             </motion.div>
 
             <motion.div 
