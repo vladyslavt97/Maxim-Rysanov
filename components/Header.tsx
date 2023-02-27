@@ -21,8 +21,11 @@ export default function Header({}: Props) {
             whileInView={{
                 opacity: 1
             }}
+            className="cursor-pointer"
             >
-                <Image src="/logo.png" alt='logo' width={200} height={200}/>
+                <Link href="/">
+                    <Image src="/logo.png" alt='logo' width={200} height={200}/>
+                </Link>
             </motion.div>
 
             <motion.div 

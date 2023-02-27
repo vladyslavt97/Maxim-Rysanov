@@ -5,9 +5,12 @@ type Props = {}
 
 export default function bio({}: Props) {
   return (
-    <div className='h-full bg-white'>
+    <div className='h-full bg-gray-400'>
         <Header />
-        <div className='flex justify-center items-center mx-10 lg:mr-[50%] lg:ml-[10%] pt-40 pb-40 text-black'>
+        <div className='absolute top-[82px] flex flex-col justify-center items-center mx-4 p-5 lg:mr-[50%] lg:ml-[10%] pt-10 pb-20 text-black bg-white rounded'>
+            <div className='flex justify-center items-center'>
+              <h1 className='font-bold text-xl m-5 text-black'>Biography</h1>
+            </div>
             <p>Grammy nominated Ukrainian-British violist and conductor Maxim Rysanov has established himself as one of the worldʼs most vibrant and charismatic musicians. As a violist, he is principally known as a frequent guest of the crème of the international music scene, such as BBC Last Night of the Proms and the festivals of Edinburgh, Salzburg and Verbier.
             <br/>
             <br/>
@@ -39,9 +42,7 @@ export default function bio({}: Props) {
             Maxim studied viola with Maria Sitkovskaya in Moscow and John Glickman at the Guildhall School of Music and Drama London. 
             <br/>
             <br/> 
-
             He is delighted to play a 1780 Giuseppe Guadagnini Viola known as &apos;II Soldato&apos;, on private loan that was kindly arranged by Premiere Performances of Hong Kong.
-
             </p>
         </div>
     </div>

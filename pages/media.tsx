@@ -17,7 +17,7 @@ export default function Media({}: Props) {
   return (
     <div className='h-screen'>
         <Header/>
-        <div className='flex justify-center items-center mt-[150px]'>
+        <div className='flex justify-center items-center mt-[90px]'>
             <h1 className='font-bold text-2xl'>Media</h1>
         </div>
         <motion.div 
@@ -30,7 +30,7 @@ export default function Media({}: Props) {
         transition={{
           duration: 2
         }}
-        className='flex flex-wrap items-center justify-center gap-3 mt-5'>
+        className='flex flex-wrap items-center justify-center gap-3 mt-5 pb-10'>
             <YouTube opts={opts} videoId="DUwntDEgi6Q"/>
             <YouTube opts={opts}  videoId="Iyg1wANkw7M" />
             <YouTube opts={opts}  videoId="wJQ750WlHkc" />

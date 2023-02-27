@@ -13,7 +13,7 @@ export default function HomePage({}: Props) {
                 &quot;We already know some very beautiful versions of this symphony by Vasks, including one by Kremerata Baltica on Teldec; but Rysanov and the Riga orchestra raise it to the top of the discography!&quot;
             </p>
             <br/>
-            <p className='text-gray-500 w-full p-5 text-xs'>Crescendo Magazine, Olivier Vrins, 18 May 2020</p>
+            <p className='text-gray-500 w-full px-5 pb-5 text-xs'>Crescendo Magazine, Olivier Vrins, 18 May 2020</p>
         </div>
         <motion.div
         initial={{
