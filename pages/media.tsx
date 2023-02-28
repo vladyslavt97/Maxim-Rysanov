@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header'
 import { motion } from 'framer-motion';
 import React from 'react'
@@ -30,12 +31,13 @@ export default function Media({}: Props) {
         transition={{
           duration: 2
         }}
-        className='flex flex-wrap items-center justify-center gap-3 mt-5 pb-10'>
+        className='flex flex-wrap items-center justify-center gap-3 mt-5 pb-40 md:pb-10'>
             <YouTube opts={opts} videoId="DUwntDEgi6Q"/>
             <YouTube opts={opts}  videoId="Iyg1wANkw7M" />
             <YouTube opts={opts}  videoId="wJQ750WlHkc" />
             <YouTube opts={opts} videoId="oImSUAT9AJ0" />
         </motion.div>
+        <Footer />
     </div>
   )
 }

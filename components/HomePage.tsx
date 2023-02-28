@@ -6,7 +6,7 @@ type Props = {}
 export default function HomePage({}: Props) {
   return (
     <div className='bg-gradient-to-tr from-neutral-100 to-sky-200 w-full border-[10px] border-blue-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[90%]'>
-        <div className='absolute top-[10%] flex justify-center items-start h-[70vh] text-gray-800 flex-col text-sm md:text-md z-30 md:text-2xl md:ml-[12%]'>
+        <div className='absolute top-[10%] flex justify-center items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md z-30 md:text-2xl md:ml-[12%]'>
             <p className='italic w-[45%] sm:w-[50%] p-5'>
                 &quot;The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!&quot; 
                 <br/>
@@ -27,7 +27,7 @@ export default function HomePage({}: Props) {
         }}
         className="p-2"
         >
-            <Image src='/home.png' alt="image" width={180} height={180} className='absolute right-0 object-fit w-[200px] md:w-[300px] top-[15%]'/>
+            <Image src='/home.png' alt="image" width={180} height={180} className='absolute right-0 object-fit w-[200px] md:w-[300px] top-[10%]'/>
         </motion.div>
     </div>
   )

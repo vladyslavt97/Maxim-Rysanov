@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React from 'react'
 
@@ -7,7 +8,7 @@ export default function bio({}: Props) {
   return (
     <div className='h-full bg-gray-400'>
         <Header />
-        <div className='absolute top-[82px] flex flex-col justify-center items-center mx-2 p-5 pt-8 pb-20 text-black bg-gradient-to-tr from-neutral-100 to-sky-200 rounded'>
+        <div className='absolute top-[82px] flex flex-col justify-center items-center mx-2 p-5 pt-8 pb-40 md:pb-10 text-black bg-gradient-to-tr from-neutral-100 to-sky-200 rounded'>
             <div className='flex justify-center items-center'>
               <h1 className='font-bold text-xl m-5 text-black'>Biography</h1>
             </div>
@@ -45,6 +46,7 @@ export default function bio({}: Props) {
             He is delighted to play a 1780 Giuseppe Guadagnini Viola known as &apos;II Soldato&apos;, on private loan that was kindly arranged by Premiere Performances of Hong Kong.
             </p>
         </div>
+        <Footer />
     </div>
   )
 }

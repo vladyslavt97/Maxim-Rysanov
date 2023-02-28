@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 import concerts from "../concerts2023.json"
@@ -20,7 +21,6 @@ export default function Concerts({}: Props) {
     
     return fullDateString >= dateString;
   })
-  
 
   return (
     <div className=''>
@@ -43,7 +43,13 @@ export default function Concerts({}: Props) {
             </div>
           ))}
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
+      <Footer />
     </div>
   )
 }
