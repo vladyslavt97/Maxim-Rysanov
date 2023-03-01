@@ -25,26 +25,6 @@
     },
     { 
     "year": "2023",
-    "date": "THU 27/02",
-    "viola": "VIOLA",
-    "conductor": "CONDUCTOR",
-    "location": "fake event 1",
-    "programme": [
-    ],
-    "link": ""
-    },
-    { 
-    "year": "2023",
-    "date": "THU 28/02",
-    "viola": "VIOLA",
-    "conductor": "CONDUCTOR",
-    "location": "fake event 2",
-    "programme": [
-    ],
-    "link": ""
-    },
-    { 
-    "year": "2023",
     "date": "THU 09/03",
     "viola": "VIOLA",
     "conductor": "CONDUCTOR",

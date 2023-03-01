@@ -39,6 +39,7 @@ export default function Concerts({}: Props) {
                   <p>♪ {prog}</p>
                 </div>
               ))}
+              {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
             </div>
           ))}
