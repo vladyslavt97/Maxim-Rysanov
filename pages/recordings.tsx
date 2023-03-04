@@ -9,13 +9,18 @@ import Image from 'next/image';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 type Props = {}
 
 export default function Recordings({}: Props) {
   return (
     <div className='h-[100vh]'>
         <Header/>
-        <div className='flex items-center justify-center h-full w-full'>
+        <motion.div 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 3}}
+        className='flex items-center justify-center h-full w-full'>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -95,7 +100,7 @@ export default function Recordings({}: Props) {
                 
             </Swiper>
             
-        </div>
+        </motion.div>
     </div>
   )
 }
