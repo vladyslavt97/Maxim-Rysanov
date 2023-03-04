@@ -51,19 +51,43 @@ export default function Recordings({}: Props) {
                     <Image src="/recordings/4_mozart.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/recordings/1_vasks.jpeg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/5_dobrinka.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/recordings/1_vasks.jpeg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/6_pavane.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/7_bruch.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/8_beethoven.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/9_brahms.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/10_bach.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/11_brahms.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/12_janine.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/13_kanchelli.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/recordings/14_chang.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
                 </SwiperSlide>
 
                 <div className='m-20'>
                     <div className='swiper-button-prev slider-arrow'>
-                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
                         {/* <BsFillArrowLeftCircleFill name="arrow-back-outline"/> */}
                     </div>
                     <div className='swiper-button-next slider-arrow'>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                        {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
                         {/* <BsFillArrowLeftCircleFill name="arrow-back-outline" size={24}/> */}
                     </div>
                     <div className='swiper-pagination'></div>
