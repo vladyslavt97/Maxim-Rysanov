@@ -6,7 +6,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import Image from 'next/image';
-
+import Footer from '@/components/Footer';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -20,7 +20,7 @@ export default function Recordings({}: Props) {
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 3}}
-        className='flex items-center justify-center h-full w-full'>
+        className='flex items-center justify-center h-[85vh] w-full border-[10px] border-blue-300 top-[74px] absolute'>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -101,6 +101,8 @@ export default function Recordings({}: Props) {
             </Swiper>
             
         </motion.div>
+
+        <Footer />
     </div>
   )
 }
