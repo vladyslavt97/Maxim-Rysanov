@@ -102,6 +102,9 @@ export default function Recordings({}: Props) {
             
         </motion.div>
 
+        <Image src="ONYX.png" alt="onyx" width={100} height={100}/>
+        <Image src="BIS.jpg" alt="bis" width={100} height={100}/>
+
         <Footer />
     </div>
   )
