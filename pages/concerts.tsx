@@ -5,6 +5,8 @@ import concerts from "../concerts2023.json"
 
 type Props = {}
 
+//the concerts for the current year should come from DB
+
 export default function Concerts({}: Props) {
   let validConcerts = concerts.filter(el => {
     const [day, date] = el.date.split(' ');//removing the day (THU) and working with the date (09/02)
