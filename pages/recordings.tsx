@@ -88,6 +88,7 @@ export default function Recordings({}: Props) {
 
                 <div className='m-20'>
                     <div className='swiper-button-prev slider-arrow'>
+                        {/* add new icons and beiggger pirctures*/}
                         {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
                         {/* <BsFillArrowLeftCircleFill name="arrow-back-outline"/> */}
                     </div>
