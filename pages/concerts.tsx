@@ -66,7 +66,9 @@ export default function Concerts({concerts}: InferGetServerSidePropsType<typeof 
         <div className='flex flex-col mx-3 mt-3 md:ml-40 justify-center items-start mb-40'>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="m-3">
-              <h2 className=' font-semibold'>{concert.date}</h2>
+              <div className='flex flex-row'>
+                    <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
+                </div>
               <h5>{concert.location}<br/>
               {concert.programme.map((prog, ind)=>(
                 <div key={ind}>
