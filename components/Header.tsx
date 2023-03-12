@@ -13,7 +13,7 @@ export default function Header({}: Props) {
     }
 
     return (
-        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-blue-400 to-blue-500 items-center z-50'>
+        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-blue-400 to-blue-500 items-center z-50 h-[100px]'>
             <motion.div 
             initial={{
                 opacity: 0
@@ -33,13 +33,13 @@ export default function Header({}: Props) {
                     opacity: 0
                 }}
                 transition={{
-                    delay: 0.5,
+                    delay: 0.7,
                     duration: 1
                 }}
                 whileInView={{
                     opacity: 1
                 }}
-                className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-semibold text-xl text-gray-300" 
+                className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-semibold text-xl text-black" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
             <Link href="bio">
                 <button className={menu ? 'py-5': 'lg:px-10'}>Biography</button>
@@ -59,7 +59,7 @@ export default function Header({}: Props) {
             </motion.div>
 
 
-            <motion.div className={menu ? 'absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
+            <motion.div className={menu ? 'absolute rounded-full bg-gradient-to-tr from-cyan-200 to-sky-300 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
                 animate={{
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
