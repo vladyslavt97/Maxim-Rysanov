@@ -16,6 +16,7 @@ export default function Recordings({}: Props) {
   return (
     <div className='h-[100vh]'>
         <Header/>
+        <h1 className='absolute top-[15%] left-1/2 transform -translate-x-1/2 font-bold text-xl'>Recordings</h1>
         <motion.div 
         initial={{opacity: 0}}
         animate={{opacity: 1}}
@@ -100,12 +101,12 @@ export default function Recordings({}: Props) {
                 </div>
                 
             </Swiper>
-            
         </motion.div>
-
-        <Image src="ONYX.png" alt="onyx" width={100} height={100}/>
-        <Image src="BIS.jpg" alt="bis" width={100} height={100}/>
-
+        
+        <div className='absolute bottom-[100px] flex flex-row items-center justify-evenly w-full'>
+            <Image src="/ONYX.png" alt="onyx" width={100} height={100}/>
+            <Image src="/BIS.jpg" alt="bis" width={100} height={100}/>
+        </div>
         <Footer />
     </div>
   )
