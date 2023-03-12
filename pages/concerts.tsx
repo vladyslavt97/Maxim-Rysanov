@@ -2,8 +2,9 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 // import concerts from "../concerts2023.json"
-import clientPromise from '../lib/mongodb'
-import { InferGetServerSidePropsType } from 'next'
+// import clientPromise from '../lib/mongodb'
+// import { InferGetServerSidePropsType } from 'next'
+import { motion } from 'framer-motion'
 
 interface ConcertType {
   year: number
@@ -16,29 +17,42 @@ interface ConcertType {
 }
 
 //getting concerts from mongo
-export async function getServerSideProps() {
+// export async function getServerSideProps() {
   
-    try {
-        const client = await clientPromise;
-        const db = client.db("Maxim_Rysanov");
+//     try {
+//         const client = await clientPromise;
+//         const db = client.db("Maxim_Rysanov");
 
-        const concerts = await db
-            .collection("concerts-2023")
-            .find({})
-            .sort({ metacritic: -1 })
-            .toArray();
-        return {
-            props: { concerts: JSON.parse(JSON.stringify(concerts)) },
-        };
-    } catch (e) {
-        console.error(e);
-    }
-}
+//         const concerts = await db
+//             .collection("concerts-2023")
+//             .find({})
+//             .sort({ metacritic: -1 })
+//             .toArray();
+//         return {
+//             props: { concerts: JSON.parse(JSON.stringify(concerts)) },
+//         };
+//     } catch (e) {
+//         console.error(e);
+//     }
+// }
 
 //the concerts for the current year should come from DB
+export default function Concerts() {
 
-export default function Concerts({concerts}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+// export default function Concerts({concerts}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   // console.log('concerts2023: concerts2023:', concerts2023);
+
+  const [concerts, setConcerts] = useState([]);
+  useEffect(() => {
+        fetch('/api/get-concerts')
+        .then(response => response.json())
+        .then(data => {
+            setConcerts(data)
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }, [setConcerts]);
   
   let validConcerts = concerts.filter((el:any) => {
     const [day, date] = el.date.split(' ');//removing the day (THU) and working with the date (09/02)
@@ -63,7 +77,11 @@ export default function Concerts({concerts}: InferGetServerSidePropsType<typeof 
         <div className='flex justify-center items-center pt-5'>
           <h1 className='font-bold text-xl'>2023</h1>
         </div>
-        <div className='flex flex-col mx-3 mt-3 md:ml-40 justify-center items-start mb-40'>
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:1}}
+        className='flex flex-col mx-3 mt-3 md:ml-40 justify-center items-start mb-40'>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="m-3">
               <div className='flex flex-row'>
@@ -79,7 +97,7 @@ export default function Concerts({concerts}: InferGetServerSidePropsType<typeof 
               </h5>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </div>
