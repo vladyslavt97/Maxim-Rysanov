@@ -16,7 +16,7 @@ export default function Recordings({}: Props) {
   return (
     <div className='h-[100vh]'>
         <Header/>
-        <h1 className='absolute top-[15%] left-1/2 transform -translate-x-1/2 font-bold text-xl'>Recordings</h1>
+        <h1 className='absolute top-[15%] left-1/2 transform -translate-x-1/2 font-bold text-xl  text-black'>Recordings</h1>
         <motion.div 
         initial={{opacity: 0}}
         animate={{opacity: 1}}

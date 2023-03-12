@@ -48,7 +48,7 @@ export default function Contacts({}: Props) {
                     </p>
                 </div>
                 <br/>
-                <div className='mb-40'>
+                <div className='pb-40'>
                     <h1 className='font-semibold'>Spain & America</h1>
                     <p>Gerardo Gómez de Valcárcel<br/>
                     Linked Artists<br/>
@@ -56,6 +56,7 @@ export default function Contacts({}: Props) {
                     www.linkedartists.com<br/>
                     </p>
                 </div>
+                
             </div>
         </div>
         <Footer />
