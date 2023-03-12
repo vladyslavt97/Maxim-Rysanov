@@ -16,11 +16,15 @@ export default function Header({}: Props) {
         <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-blue-400 to-blue-500 items-center z-50 h-[71px]'>
             <motion.div 
             initial={{
-                opacity: 0
+                opacity: 0,
+                x: -50
             }}
             whileInView={{
-                opacity: 1
+                opacity: 1,
+                x: 0
             }}
+            transition={{duration:1}}
+
             className="cursor-pointer"
             >
                 <Link href="/">
