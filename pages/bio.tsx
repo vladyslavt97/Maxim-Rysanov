@@ -5,7 +5,8 @@ import { useStore } from "../components/State";
 import LanguagesSwitch from '@/components/LanguagesSwitch'
 import EngBio from '@/components/EngBio';
 import UkrBio from '@/components/UkrBio';
-import RusBio from '@/components/rusBio';
+import RusBio from '@/components/RusBio';
+
 type Props = {}
 
 interface languagesState {

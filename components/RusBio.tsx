@@ -1,6 +1,6 @@
 type Props = {}
 
-export default function EngBio({}: Props) {
+export default function RusBio({}: Props) {
   return (
     <div>
         <p>
