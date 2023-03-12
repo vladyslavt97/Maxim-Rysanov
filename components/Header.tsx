@@ -33,6 +33,7 @@ export default function Header({}: Props) {
                     opacity: 0
                 }}
                 transition={{
+                    delay: 0.5,
                     duration: 1
                 }}
                 whileInView={{
@@ -58,13 +59,15 @@ export default function Header({}: Props) {
             </motion.div>
 
 
-            <motion.div className={menu ? 'absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[23px] md:hidden'}
+            <motion.div className={menu ? 'absolute rounded-full bg-gray-600 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
                 animate={{
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
-                    borderRadius: menu ? '0%' : "100%"
+                    borderRadius: menu ? '0%' : "100%",
+                    opacity: menu ? "1" : "0"
+                    // background: menu ? "gray" : "white"
                 }}
-                transition={{ duration: 0.3 }}>
+                transition={{ duration: 0.5 }}>
                 </motion.div>
                 
             <div onClick={e => toggleMenu()} className="z-10 md:hidden">
