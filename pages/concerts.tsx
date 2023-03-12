@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 // import clientPromise from '../lib/mongodb'
 // import { InferGetServerSidePropsType } from 'next'
 import { motion } from 'framer-motion'
+import { ColorRing } from  'react-loader-spinner'
 
 interface ConcertType {
   year: number
@@ -77,6 +78,19 @@ export default function Concerts() {
         <div className='flex justify-center items-center pt-5'>
           <h1 className='font-bold text-xl'>2023</h1>
         </div>
+        {concerts.length === 0 && 
+        <div className='flex items-center justify-center h-[60vh]'>
+          <ColorRing
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="blocks-loading"
+            wrapperStyle={{}}
+            wrapperClass="blocks-wrapper"
+            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+          />
+        </div>
+        }
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
