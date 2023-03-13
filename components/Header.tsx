@@ -77,17 +77,17 @@ export default function Header({}: Props) {
                 
                 <motion.div 
                 animate={{rotate: menu ? -45 : 0}}
-                className='h-[2px] w-[40px] bg-gray-300 m-2'></motion.div>
+                 className={menu ? 'h-[2px] w-[40px] bg-gray-900 m-2' : 'h-[2px] w-[40px] bg-gray-300 m-2'}></motion.div>
                 <motion.div 
                 animate={{opacity: menu ? 0 : 1}}
                 transition={{ duration: 0.1 }}
-                className='h-[2px] w-[40px] bg-gray-300 m-2'></motion.div>
+                className={menu ? 'h-[2px] w-[40px] bg-gray-900 m-2' : 'h-[2px] w-[40px] bg-gray-300 m-2'}></motion.div>
                 <motion.div 
                 animate={{
                     rotate: menu ? 45 : 0,
                     y: menu ? -19.5 : 0,
                 }}
-                className='h-[2px] w-[40px] bg-gray-300 m-2'></motion.div>
+                 className={menu ? 'h-[2px] w-[40px] bg-gray-900 m-2' : 'h-[2px] w-[40px] bg-gray-300 m-2'}></motion.div>
             </div>
         </header>
   )

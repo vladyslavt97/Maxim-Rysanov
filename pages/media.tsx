@@ -19,7 +19,7 @@ export default function Media({}: Props) {
   return (
     <div className='h-screen'>
         <Header/>
-        <div className='absolute top-[11%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-full'>
+        <div className='absolute top-[11%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[140%]'>
         <div className='flex justify-center items-center mt-5'>
             <h1 className='font-bold text-2xl'>Media</h1>
         </div>
