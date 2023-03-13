@@ -27,8 +27,8 @@ export default function HomePage({}: Props) {
         }}
         >
             <motion.div
-            animate={{ x: [0, 10, 0] }}
-            transition={{duration: 10, repeat: Infinity,}}
+            // animate={{ scale: [1, 1.1, 1] }}
+            // transition={{duration: 10, repeat: Infinity,}}
             >
             <Image src='/home.png' alt="image" width={180} height={180} className='absolute right-0 object-fit w-[200px] md:w-[300px] top-[5%]'/>
             </motion.div>
