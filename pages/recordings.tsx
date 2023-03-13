@@ -54,7 +54,7 @@ export default function Recordings({}: Props) {
                     <Image src="/recordings/3_martinu.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/recordings/4_mozart.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/4_mozart.jpg" alt="rec" width={200} height={200} layout="fill" objectFit="cover" className="rounded-lg"/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image src="/recordings/5_dobrinka.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
