@@ -109,3 +109,21 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#home{
+  animation: 20s infinite slidein;
+}
+
+@keyframes slidein {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.05;
+  }
+
+  100%{
+    scale: 1;
+  }
+}
