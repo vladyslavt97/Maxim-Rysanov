@@ -5,7 +5,7 @@ type Props = {}
 
 export default function Footer({}: Props) {
   return (
-    <div className='fixed bottom-0 w-full bg-blue-400 text-white flex justify-center items-center border-t-[10px] border-r-[10px] border-l-[10px] border-blue-300 h-[71px]'>
+    <div className='fixed bottom-0 w-full bg-gray-800 text-white flex justify-center items-center border-t-[10px] border-r-[10px] border-l-[10px] border-gray-300 h-[71px]'>
         <SocialIcon url="https://www.facebook.com/maximrysanov" bgColor='white' className='m-1 cursor-pointer'/>
         <SocialIcon url="https://www.youtube.com/@MaximRysanov" bgColor='white' className='m-1 cursor-pointer'/>
         <SocialIcon url="https://www.instagram.com/mrysanov_viola_conductor/"  bgColor='white' className='m-1 cursor-pointer'/>

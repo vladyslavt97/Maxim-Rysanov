@@ -21,7 +21,7 @@ export default function Recordings({}: Props) {
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 3}}
-        className='flex items-center justify-center h-[85vh] w-full border-[10px] border-blue-300 bg-gradient-to-tr from-neutral-100 to-sky-200 top-[74px] absolute'>
+        className='flex items-center justify-center h-[85vh] w-full border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 top-[74px] absolute'>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}

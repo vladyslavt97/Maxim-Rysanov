@@ -13,7 +13,7 @@ export default function Header({}: Props) {
     }
 
     return (
-        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-blue-400 to-blue-500 items-center z-50 h-[71px]'>
+        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 h-[71px]'>
             <motion.div 
             initial={{
                 opacity: 0,
@@ -63,7 +63,7 @@ export default function Header({}: Props) {
             </motion.div>
 
 
-            <motion.div className={menu ? 'absolute rounded-full bg-gradient-to-tr from-cyan-200 to-blue-300 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
+            <motion.div className={menu ? 'absolute rounded-full bg-gradient-to-tr from-gray-200 to-gray-300 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
                 animate={{
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
