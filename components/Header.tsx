@@ -83,7 +83,17 @@ export default function Header({}: Props) {
             </motion.div>
 
                 {/* sidebar with framer */}
-            <motion.div className={menu ? 'absolute rounded-full bg-gradient-to-tr from-gray-200 to-gray-300 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
+            <motion.div className={menu ? 'absolute bg-gradient-to-tr from-gray-200 to-gray-300 w-[50px] h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl' : 'absolute bg-gray-600/0 w-[50px] h-[100vh] right-[23px] md:hidden'}
+                animate={{
+                    width: menu ? '50%' : '0%',
+                    // height: menu ? '100vh' : '0px',
+                    opacity: menu ? "1" : "0"
+                }}
+                transition={{ duration: 0.5 }}>
+                </motion.div>
+
+                 {/* old sidebar */}
+            {/* <motion.div className={menu ? 'absolute rounded-full bg-gradient-to-tr from-gray-200 to-gray-300 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
                 animate={{
                     width: menu ? '50%' : '50px',
                     height: menu ? '100vh' : '50px',
@@ -91,7 +101,7 @@ export default function Header({}: Props) {
                     opacity: menu ? "1" : "0"
                 }}
                 transition={{ duration: 0.5 }}>
-                </motion.div>
+                </motion.div> */}
                 
 
                 {/* burger */}
