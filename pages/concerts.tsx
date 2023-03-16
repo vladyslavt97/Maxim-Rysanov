@@ -30,7 +30,7 @@ export default function Concerts() {
     }, [setConcerts]);
   
   let validConcerts = concerts.filter((el:any) => {
-    const [day, date] = el.date.split(' ');//removing the day (THU) and working with the date (09/02)
+    const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
     const [dd, mm] = date.split('/');
     const yyyy = new Date().getFullYear();
     const fullDateString = `${yyyy}-${mm}-${dd}`;
