@@ -2,8 +2,6 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 // import concerts from "../concerts2023.json"
-// import clientPromise from '../lib/mongodb'
-// import { InferGetServerSidePropsType } from 'next'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 
@@ -17,32 +15,8 @@ interface ConcertType {
   link: string
 }
 
-//getting concerts from mongo
-// export async function getServerSideProps() {
-  
-//     try {
-//         const client = await clientPromise;
-//         const db = client.db("Maxim_Rysanov");
 
-//         const concerts = await db
-//             .collection("concerts-2023")
-//             .find({})
-//             .sort({ metacritic: -1 })
-//             .toArray();
-//         return {
-//             props: { concerts: JSON.parse(JSON.stringify(concerts)) },
-//         };
-//     } catch (e) {
-//         console.error(e);
-//     }
-// }
-
-//the concerts for the current year should come from DB
 export default function Concerts() {
-
-// export default function Concerts({concerts}: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  // console.log('concerts2023: concerts2023:', concerts2023);
-
   const [concerts, setConcerts] = useState([]);
   useEffect(() => {
         fetch('/api/get-concerts')

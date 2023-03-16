@@ -6,30 +6,12 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Button from '@mui/material/Button';
 
 type Props = {}
-type Anchor = 'right';
 
 export default function Header({}: Props) {
     const [menu, setMenu] = useState(false);
-    const [state, setState] = useState({right: false});
-
     const toggleMenu = () => {
         setMenu(!menu)
     }
-
-    const toggleDrawer =
-    (anchor: Anchor, open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent) => {
-      if (
-        event &&
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
-      ) {
-        return;
-      }
-
-      setState({ ...state, [anchor]: open });
-    };
 
     return (
         <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 h-[71px]'>
@@ -122,18 +104,6 @@ export default function Header({}: Props) {
                  className={menu ? 'h-[2px] w-[40px] bg-gray-900 m-2' : 'h-[2px] w-[40px] bg-gray-300 m-2'}></motion.div>
             </div>
 
-
-                {/* new
-                <Button onClick={toggleDrawer('right', true)}>right</Button>
-            <SwipeableDrawer
-                anchor={"right"}
-                open={state["right"]}
-                onClose={toggleDrawer("right", false)}
-                onOpen={toggleDrawer("right", true)}
-                className="z-20 text-black absolute top-[50vh] right-0"
-                >
-                Right sdfsafdsafs
-            </SwipeableDrawer> */}
         </header>
   )
 }
