@@ -86,11 +86,11 @@ export default function Header({}: Props) {
             <motion.div className={menu ? 'absolute bg-gradient-to-tr from-gray-200 to-gray-300 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl' : 'absolute bg-gray-600/0 h-[100vh] right-[23px] md:hidden'}
                 animate={{
                     width: menu ? '50%' : '50%',
-                    x: menu ? "-100" : "0",
+                    x: menu ? 0 : 100,
                     // height: menu ? '100vh' : '0px',
-                    opacity: menu ? "1" : "0"
+                    opacity: menu ? 1 : 0
                 }}
-                transition={{ duration: 2.5 }}>
+                transition={{ duration: 0.3 }}>
                 </motion.div>
 
                  {/* old sidebar */}
