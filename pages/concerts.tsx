@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
-// import concerts from "../concerts2023.json"
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 
