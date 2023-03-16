@@ -83,13 +83,14 @@ export default function Header({}: Props) {
             </motion.div>
 
                 {/* sidebar with framer */}
-            <motion.div className={menu ? 'absolute bg-gradient-to-tr from-gray-200 to-gray-300 w-[50px] h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl' : 'absolute bg-gray-600/0 w-[50px] h-[100vh] right-[23px] md:hidden'}
+            <motion.div className={menu ? 'absolute bg-gradient-to-tr from-gray-200 to-gray-300 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl' : 'absolute bg-gray-600/0 h-[100vh] right-[23px] md:hidden'}
                 animate={{
-                    width: menu ? '50%' : '0%',
+                    width: menu ? '50%' : '50%',
+                    x: menu ? "-100" : "0",
                     // height: menu ? '100vh' : '0px',
                     opacity: menu ? "1" : "0"
                 }}
-                transition={{ duration: 0.5 }}>
+                transition={{ duration: 2.5 }}>
                 </motion.div>
 
                  {/* old sidebar */}
