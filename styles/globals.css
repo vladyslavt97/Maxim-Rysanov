@@ -110,7 +110,7 @@ a {
 @tailwind components;
 @tailwind utilities;
 
-#home{
+/* #home{
   animation: 20s infinite slidein;
 }
 
@@ -126,4 +126,4 @@ a {
   100%{
     scale: 1;
   }
-}
+} */
