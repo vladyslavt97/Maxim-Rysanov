@@ -2,8 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
 
 type Props = {}
 

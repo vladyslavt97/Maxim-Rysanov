@@ -17,7 +17,7 @@ interface ConcertType {
 
 
 export default function Concerts() {
-  const [concerts, setConcerts] = useState([]);
+  const [concerts, setConcerts] = useState<ConcertType[]>([]);
   useEffect(() => {
         fetch('/api/get-concerts')
         .then(response => response.json())
@@ -44,6 +44,23 @@ export default function Concerts() {
     
     return fullDateString >= dateString;
   })
+  .sort((a, b) => {
+      const [dayA, dateA] = a.date.split(' ')
+      const [ddA, mmA] = dateA.split('/')
+      const yyyyA = new Date().getFullYear()
+      const fullDateStringA = `${yyyyA}-${mmA}-${ddA}`
+      const dateObjectA = new Date(fullDateStringA)
+
+      const [dayB, dateB] = b.date.split(' ')
+      const [ddB, mmB] = dateB.split('/')
+      const yyyyB = new Date().getFullYear()
+      const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
+      const dateObjectB = new Date(fullDateStringB)
+
+      return dateObjectA.getTime() - dateObjectB.getTime()
+    })
+
+
 
   return (
     <div className=''>
