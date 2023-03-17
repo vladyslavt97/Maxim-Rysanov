@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 type Props = {}
 
+
 export default function HomePage({}: Props) {
   return (
     <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[90%]'>
