@@ -86,6 +86,7 @@ export default function Header({}: Props) {
                 
 
                 {/* burger */}
+            {menu && <div className='absolute top-0 left-0 w-full h-[100vh] -z-10' onClick={e => toggleMenu()}></div>}
             <div onClick={e => toggleMenu()} className="z-10 md:hidden">
                 <motion.div 
                 animate={{rotate: menu ? -45 : 0}}
