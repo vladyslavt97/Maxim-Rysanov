@@ -70,7 +70,7 @@ export default function Header({}: Props) {
                     // height: menu ? '100vh' : '0px',
                     opacity: menu ? 1 : 0
                 }}
-                transition={{ duration: 0.3 }}>
+                transition={{ duration: 0.4 }}>
                 </motion.div>
 
                  {/* old sidebar */}
