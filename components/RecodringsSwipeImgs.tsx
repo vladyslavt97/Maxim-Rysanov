@@ -14,14 +14,14 @@ type Props = {}
 
 export default function RecodringsSwipeImgs({}: Props) {
   return (
-     <div className='h-[100vh]'>
+     <div className='h-[100vh] overflow-hidden'>
         <Header/>
         <h1 className='absolute top-[15%] left-1/2 transform -translate-x-1/2 font-bold text-xl text-black z-10'>Recordings</h1>
         <motion.div 
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 3}}
-        className='flex items-center justify-center h-[85vh] w-full border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 top-[74px] absolute'>
+        className='flex items-center justify-center h-full w-full lg:p-52 xl:p-48 border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 top-[74px] absolute'>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
