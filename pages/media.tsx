@@ -17,51 +17,51 @@ export default function Media({}: Props) {
     },
   };
   return (
-    <div className='h-screen'>
+    <div>
         <Header/>
-        <div className='absolute top-[11%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[140%]'>
-        <div className='flex justify-center items-center mt-5'>
-            <h1 className='font-bold text-2xl'>Media</h1>
-        </div>
-        <motion.div 
-        initial={{
-          opacity: 1
-        }}
-        animate={{
-          opacity: 0
-        }}
-        transition={{
-          delay: 3
-        }}
-        className='absolute flex items-center justify-center h-[60vh] left-1/2 transform -translate-x-1/2'
-        >
-          <ColorRing
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="blocks-loading"
-            wrapperStyle={{}}
-            wrapperClass="blocks-wrapper"
-            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
-          />
-        </motion.div>
+        <div className='absolute top-[11%] sm:top-[5.5%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[140%] flex flex-col items-center gap-10'>
+          <div className='flex justify-center items-center mt-5'>
+              <h1 className='font-bold text-2xl'>Media</h1>
+          </div>
+          <motion.div 
+          initial={{
+            opacity: 1
+          }}
+          animate={{
+            opacity: 0
+          }}
+          transition={{
+            delay: 3
+          }}
+          className='absolute flex items-center justify-center h-[60vh] left-1/2 transform -translate-x-1/2'
+          >
+            <ColorRing
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="blocks-loading"
+              wrapperStyle={{}}
+              wrapperClass="blocks-wrapper"
+              colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+            />
+          </motion.div>
 
-        <motion.div 
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1
-        }}
-        transition={{
-          delay: 3, duration: 2
-        }}
-        className='flex flex-wrap items-center justify-center gap-3 mt-5 pb-64 md:pb-10 '>
-            <YouTube opts={opts} videoId="DUwntDEgi6Q"/>
-            <YouTube opts={opts}  videoId="Iyg1wANkw7M" />
-            <YouTube opts={opts}  videoId="wJQ750WlHkc" />
-            <YouTube opts={opts} videoId="oImSUAT9AJ0" />
-        </motion.div>
+          <motion.div 
+          initial={{
+            opacity: 0
+          }}
+          animate={{
+            opacity: 1
+          }}
+          transition={{
+            delay: 3, duration: 2
+          }}
+          className='md:grid md:grid-cols-2 md:gap-10 mt-5 pb-64 md:pb-10 sm:h-[80vh] flex flex-col gap-3'>
+              <YouTube opts={opts} videoId="DUwntDEgi6Q" />
+              <YouTube opts={opts}  videoId="Iyg1wANkw7M" />
+              <YouTube opts={opts}  videoId="wJQ750WlHkc" />
+              <YouTube opts={opts} videoId="oImSUAT9AJ0" />
+          </motion.div>
         </div>
         <Footer />
     </div>

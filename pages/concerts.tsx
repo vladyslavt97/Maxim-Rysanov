@@ -64,7 +64,7 @@ export default function Concerts() {
   return (
     <div className=''>
       <Header/>
-      <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full'>
+      <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
         <div className='flex justify-center items-center pt-5'>
           <h1 className='font-bold text-xl'>2023</h1>
         </div>
@@ -85,7 +85,7 @@ export default function Concerts() {
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{duration:1}}
-        className='flex flex-col mx-3 mt-3 md:ml-40 justify-center items-start mb-40'>
+        className='flex flex-col mx-3 mt-3 justify-center items-start mb-40'>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="m-3">
               <div className='flex flex-row'>
