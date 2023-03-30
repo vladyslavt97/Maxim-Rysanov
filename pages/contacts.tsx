@@ -8,7 +8,7 @@ export default function Contacts({}: Props) {
   return (
     <div className='h-full'>
         <Header />
-        <div className='absolute top-[74px] w-full border-[10px] h-full border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 text-black rounded md:pt-20'>
+        <div className='absolute top-[74px] w-full border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 text-black rounded md:pt-20'>
             <div className='flex items-center justify-center'>
                 <h1 className='font-bold text-2xl pt-5'>Contacts</h1>
             </div>
