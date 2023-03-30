@@ -47,7 +47,7 @@ export default function Concerts() {
       const [dayA, dateA] = a.date.split(' ')
       const [ddA, mmA] = dateA.split('/')
       const yyyyA = new Date().getFullYear()
-      const fullDateStringA = `${yyyyA}-${mmA}-${ddA}`
+      const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
       const dateObjectA = new Date(fullDateStringA)
 
       const [dayB, dateB] = b.date.split(' ')
@@ -85,7 +85,7 @@ export default function Concerts() {
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{duration:1}}
-        className='flex flex-col mx-3 mt-3 justify-center items-start mb-40'>
+        className='flex flex-col mx-3 mt-3 justify-center items-start mb-40 lg:text-xl'>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="m-3">
               <div className='flex flex-row'>
