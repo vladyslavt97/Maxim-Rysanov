@@ -1,234 +1,204 @@
-2021
 
-​
-
-FRI 21/01 CONDUCTOR & VIOLA
-
-Ulster Orchestra Belfast
-
-​
-
-♪  Missy Mazzoli Sinfonia 
-
-♪  Schubert Arpeggione Sonata, D. 821
-
-♪  Pjotr Iljitsch Tschaikowski Sinfonie Nr.4 
-
-​
-
-
-
-SUN 16/01 CONDUCTOR & VIOLA
-
-Beethoven Orchester Bonn
-
-​
-
-♪  Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25 
-
-♪  Gabriel Prokofieff: Konzert für Viola und Orchester
-
-♪  Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4 
-
-​
-
-FRI 14/01 CONDUCTOR & VIOLA
-
-Beethoven Orchester Bonn
-
-​
-
-♪  Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25 
-
-♪  Gabriel Prokofieff: Konzert für Viola und Orchester
-
-    (World Premiere)
-
-♪  Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4 
-
-​
-
-​
-
-TUE 21/12  CONDUCTOR & VIOLA
-
-Detmold Chamber Orchestra
-
-​
-
-♪  Dvořák : Notturno op. 40.
-
-♪  Vasks : Concert for Viola and String Orchestra
-
-♪  Dvořák : Biblical Songs Op. 99
-
-​
-
-THU 16/12 VIOLA
-
-Orquesta Sinfonica Tenerife
-
-​
-
-♪  Martinu Rhapsody-Concerto for Viola and Orchestra, H.337
-
-​
-
-THU 9/12 CONDUCTOR & VIOLA
-
-Yehudi Menuhin School
-
-​
-
-♪  Elgar Introduction and Allegro
-
-♪  Tabakova Cello Concerto
-
-♪  Schubert Arpeggione Sonata, D. 821
-
-♪  Akhunov Der Erlkonig for viola and strings
-
-
-
-TUE 30/11 VIOLA
-
-Philharmonie Berlin
-
-​
-
-♪  Brahms : Clarinet Quintet, op 115  (viola version)
-
-​
-
-SUN 28/11 VIOLA
-
-Theater St Gallen
-
-​
-
-♪  Schubert Arpeggione Sonata
-
-​
-
-MON 22/11 VIOLA
-
-Wimbledon Festival, London
-
-​
-
-♪  J. S. Bach Viola da Gamba Sonata no. 
-
-♪  Schubert Arpeggione Sonata
-
-♪  Prokofiev Romeo and Juliet Suite
-
-♪  Tabakova Suite in Jazz Style
-
-​
-
-​
-
-SUN 21/11 CONDUCTOR & VIOLA
-
-Phion, Orchestra of Gelderland & Overijssel - Zutphen
-
-​
-
-♪  Dvorak Nocturne op 40
-
-♪  Vasks Viola Concerto
-
-♪  Elgar Introduction and Allegro 
-
-♪  Bartok Divertimento for String Orchestra
-
-​
-
-​
-
-SAT 20/11 CONDUCTOR & VIOLA
-
-Phion, Orchestra of Gelderland & Overijssel - Ede
-
-​
-
-♪  Dvorak Nocturne op 40
-
-♪  Vasks Viola Concerto
-
-♪  Elgar Introduction and Allegro 
-
-♪  Bartok Divertimento for String Orchestra
-
-​
-
-​
-
-FRI 19/11 CONDUCTOR & VIOLA
-
-Phion, Orchestra of Gelderland & Overijssel - Arnhem
-
-​
-
-♪  Dvorak Nocturne op 40
-
-♪  Vasks Viola Concerto
-
-♪  Elgar Introduction and Allegro 
-
-♪  Bartok Divertimento for String Orchestra
-
-​
-
-​
-
-THU 18/11 CONDUCTOR & VIOLA
-
-Phion, Orchestra of Gelderland & Overijssel - Enschede
-
-​
-
-♪  Dvorak Nocturne op 40
-
-♪  Vasks Viola Concerto
-
-♪  Elgar Introduction and Allegro 
-
-♪  Bartok Divertimento for String Orchestra
-
-​
-
-​
-
-​SUN 07/11, VIOLA
-
-Liszt Academy Budapest
-
-​
-
-♪  Max Bruch: Double Concerto for Violin and Viola in E minor
-
-♪  Britten Double Concerto for Violin and Viola
-
-♪  Mozart Sinfonia Concertante for Violin and Viola
-with Kristóf Baráti and Gábor Káli 
-
-​
-
-​
-
-SAT 06/11, VIOLA
-
-Pannon Philharmonic, Kodály Center, Pecs
-
-​
-
-♪  Max Bruch: Double Concerto for Violin and Viola in E minor
-
-♪  Britten Double Concerto for Violin and Viola
-
-♪  Mozart Sinfonia Concertante for Violin and Viola
-with Kristóf Baráti and Gábor Káli 
+[
+    {
+        "year": "2021",
+        "date": "FRI 21/01",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Ulster Orchestra Belfast",
+        "programme": [
+            "Missy Mazzoli Sinfonia",
+            "Schubert Arpeggione Sonata, D. 821",
+            "Pjotr Iljitsch Tschaikowski Sinfonie Nr.4"
+        ],
+        "link": ""
+    },
+    {
+        "year": "2021",
+        "date": "SUN 16/01",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Beethoven Orchester Bonn",
+        "programme": [
+            "Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25",
+            "Gabriel Prokofieff: Konzert für Viola und Orchester",
+            "Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4"
+        ],
+        "link": ""
+    },
+    {
+        "year": "2021",
+        "date": "FRI 14/01",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Beethoven Orchester Bonn",
+        "programme": [
+            "Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25",
+            "Gabriel Prokofieff: Konzert für Viola und Orchester (World Premiere)",
+            "Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4"
+        ],
+        "link": ""
+    },
+    {
+        "year": "2021",
+        "date": "TUE 21/12",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Detmold Chamber Orchestra",
+        "programme": [
+            "Dvořák : Notturno op. 40.",
+            "Vasks : Concert for Viola and String Orchestra",
+            "Dvořák : Biblical Songs Op. 99"
+        ],
+        "link": ""
+    },
+    {
+        "year": "2021",
+        "date": "THU 16/12",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Orquesta Sinfonica Tenerife",
+        "programme": [
+            "Martinu Rhapsody-Concerto for Viola and Orchestra, H.337"
+        ],
+        "link": ""
+    },
+    {
+        "year": "2021",
+        "date": "THU 9/12",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Yehudi Menuhin School",
+        "programme": [
+            "Elgar Introduction and Allegro",
+            "Tabakova Cello Concerto",
+            "Schubert Arpeggione Sonata, D. 821",
+            "Akhunov Der Erlkonig for viola and strings"
+        ],
+        "link": ""
+    },
+    {
+        "year": "2021",
+        "date": "TUE 30/11",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Philharmonie Berlin",
+        "programme": [
+            "Brahms : Clarinet Quintet, op 115 (viola version)",
+        ],
+        "link": ""
+    },
+    { 
+    "year": "2021",
+    "date": "SUN 28/11",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Theater St Gallen",
+    "programme": [
+        "Schubert Arpeggione Sonata",
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2021",
+    "date": "MON 22/11",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Wimbledon Festival, London",
+    "programme": [
+        "J. S. Bach Viola da Gamba Sonata",
+        "Schubert Arpeggione Sonata",
+        "Prokofiev Romeo and Juliet Suite",
+        "Tabakova Suite in Jazz Style",
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2021",
+    "date": "SUN 21/11",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Phion, Orchestra of Gelderland & Overijssel - Zutphen",
+    "programme": [
+        "Dvorak Nocturne op 40",
+        "Vasks Viola Concerto",
+        "Elgar Introduction and Allegro",
+        "Bartok Divertimento for String Orchestra",
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2021",
+    "date": "SAT 20/11",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Phion, Orchestra of Gelderland & Overijssel - Ede",
+    "programme": [
+        "Dvorak Nocturne op 40",
+        "Vasks Viola Concerto",
+        "Elgar Introduction and Allegro",
+        "Bartok Divertimento for String Orchestra",
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2021",
+    "date": "FRI 19/11",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Phion, Orchestra of Gelderland & Overijssel - Arnhem",
+    "programme": [
+        "Dvorak Nocturne op 40",
+        "Vasks Viola Concerto",
+        "Elgar Introduction and Allegro",
+        "Bartok Divertimento for String Orchestra",
+    ],
+    "link": ""
+    },
+    { 
+    "year": "2021",
+    "date": "THU 18/11",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Phion, Orchestra of Gelderland & Overijssel - Enschede",
+    "programme": [
+        "Dvorak Nocturne op 40",
+        "Vasks Viola Concerto",
+        "Elgar Introduction and Allegro",
+        "Bartok Divertimento for String Orchestra",
+    ],
+    "link": ""
+    },
+
+
+
+// ​SUN 07/11, VIOLA
+
+// Liszt Academy Budapest
+
+// ♪  Max Bruch: Double Concerto for Violin and Viola in E minor
+
+// ♪  Britten Double Concerto for Violin and Viola
+
+// ♪  Mozart Sinfonia Concertante for Violin and Viola
+// with Kristóf Baráti and Gábor Káli 
+
+// ​
+
+// ​
+
+// SAT 06/11, VIOLA
+
+// Pannon Philharmonic, Kodály Center, Pecs
+
+// ​
+
+// ♪  Max Bruch: Double Concerto for Violin and Viola in E minor
+
+// ♪  Britten Double Concerto for Violin and Viola
+
+// ♪  Mozart Sinfonia Concertante for Violin and Viola
+// with Kristóf Baráti and Gábor Káli 
 
 ​
 
@@ -470,3 +440,4 @@ Zagreb, Croatia
 ​
 
 Enrico Dindo (conductor)
+]
