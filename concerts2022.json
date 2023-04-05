@@ -10,225 +10,195 @@
         "Beethoven : String Trio in G Major Op.9 No.1",
         "Ed Bennet : New Commission",
         "Mozart : Divertimento for String Trio in E flat major KV 563"
-    ],
-    "link": "https://www.musicnetwork.ie/whats-on/maxim-rysanov-nikita-boriso-glebsky-dora-kokas"
-  }
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "FRI 08/07",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Yehudi Menuhin School",
+    "programme": [
+
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 02/07",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "RNO Summer Festival",
+    "programme": [
+      "Wagner Siegfried Idyll",
+      "Schubert Arpeggione Sonata",
+      "Dvořák Biblical Songs"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "THU 23/06",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Cardiff",
+    "programme": [
+      "Prokofiev : Symphony No.1, Op.25 'Classical'",
+      "Gabriel Prokofiev : Concerto for Viola and Orchestra",
+      "Taneyev : Symphony no. 4 in C minor, op.12"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 28/05",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Kyiv Soloists",
+    "programme": [
+      "Tchaikovsky Variations on a Rococo Theme, Op.33",
+      "Shostakovich Symphony No. 14"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "THU 12/05",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Jersey festival",
+    "programme": [
+      "Franz Schubert - Piano Quintet in A major, D. 667, 'Trout'",
+      "Shostakovich Symphony No. 14"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SUN 29/03",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Oviedo Auditorium (Asturias)",
+    "programme": [
+      "Mozart String Duo No. 1 in G major, K. 423",
+      "Bartok Duos for 2 violins - a selection",
+      "Bach Selection of Bach Inventions",
+      "Bohuslav Martinu Three Madrigals, H. 313",
+      "Handel-Halvorsen Passacaglia"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 28/03",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "La Coruña Phiharmonic Society (Galicia)",
+    "programme": [
+      "Mozart String Duo No. 1 in G major, K. 423",
+      "Bartok Duos for 2 violins - a selection",
+      "Bach Selection of Bach Inventions",
+      "Bohuslav Martinu Three Madrigals, H. 313",
+      "Handel-Halvorsen Passacaglia"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "FRI 27/03",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Lugo Philharmonic Society (Galicia)",
+    "programme": [
+      "Mozart String Duo No. 1 in G major, K. 423",
+      "Bartok Duos for 2 violins - a selection",
+      "Bach Selection of Bach Inventions",
+      "Bohuslav Martinu Three Madrigals, H. 313",
+      "Handel-Halvorsen Passacaglia"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "FRI 11/03",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Zagreb, Croatia",
+    "programme": [
+      "Frano Parać : Music for Strings and Harpsichord",
+      "Tabakova : Suite in Old Style for viola",
+      "Scriabin : Symphony No. 3 in C minor, Op. 43"
+    ]
+  },
+  //
+  { 
+    "year": "2022",
+    "date": "THU 14/07",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Orchestra de Guimaraes, Portugal",
+    "programme": [
+      "Tchaikovsky : Romeo & Juliet Suite",
+      "Mussorgsky : Pictures at an Exhibition"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "THU 23/07",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Festival Academy Budapest",
+    "programme": [
+      "Malcolm Arnold - Variations On A Ukrainian Folk-Song"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "26-30/08",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Carl Nielsen Festival, Denmark",
+    "programme": [
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "THU 1/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Royal Philharmonic Orchestra, Cankarjev Dom, Cultural Centre, Slovenia",
+    "programme": [
+      "Mozart Sinfonia Concertante"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 10/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Westport Town Hall Theatre, Ireland",
+    "programme": [
+      "Ernest Fantasy Quartet for Oboe and Strings",
+      "Franck Sonata for violin and piano in A major"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SUN 11/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Westport Town Hall Theatre, Ireland",
+    "programme": [
+      "Schumann Piano Quartet, op.47"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SUN 11/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Westport Town Hall Theatre, Ireland",
+    "programme": [
+      "Schumann Piano Quartet, op.47",
+      "Brahms String Sextet No. 1, B-flat major, op. 18",
+      "Beethoven String Trio in G Major op.9 No.1"
+    ]
+  },
+
 ]
 
-2022
-
-​PAST CONCERTS 2022
-
-​
-
-FRI 08/07
-
-Yehudi Menuhin School
-
-​
-
-SAT 02/07 CONDUCTOR & VIOLA
-
-RNO Summer Festival
-
-​
-
-♪  Wagner Siegfried Idyll
-
-♪  Schubert Arpeggione Sonata
-
-♪  Dvořák Biblical Songs
-
-​
-
-THU 23/06 CONDUCTOR & VIOLA
-
-Cardiff
-
-​
-
-♪  Prokofiev : Symphony No.1, Op.25 'Classical' 
-
-♪  Gabriel Prokofiev : Concerto for Viola and Orchestra
-
-♪  Taneyev : Symphony no. 4 in C minor, op.12
-
-​
-
-SAT 28/05 CONDUCTOR & VIOLA
-
-Kiev Soloists
-
-​
-
-♪  Tchaikovsky Variations on a Rococo Theme, Op.33
-
-♪  Shostakovich Symphony No. 14
-
-​
-
-THU 12/05 VIOLA
-
-Jersey festival
-
-​
-
-♪  Franz Schubert - Piano Quintet in A major, D. 667, "Trout"
-
-Dora Kokas, Wu Qian, Alexander Sitkovetsky
-
-​
-
-SUN 29/03 CONDUCTOR & VIOLA
-Oviedo Auditorium (Asturias)
-
-​
-
-♪  Mozart String Duo No. 1 in G major, K. 423 
-♪  Bartok Duos for 2 violins - a selection 
-♪  Bach Selection of Bach Inventions 
-♪  Bohuslav Martinu Three Madrigals, H. 313 
-♪  Handel-Halvorsen Passacaglia
-
-​
-
-SAT 28/03 CONDUCTOR & VIOLA
-La Coruña Phiharmonic Society (Galicia)
-
-​
-
-♪  Mozart String Duo No. 1 in G major, K. 423 
-
-♪  Bartok Duos for 2 violins - a selection 
-♪  Bach Selection of Bach Inventions 
-♪  Bohuslav Martinu Three Madrigals, H. 313 
-♪  Handel-Halvorsen Passacaglia
-
-​
-
-FRI 27/03 CONDUCTOR & VIOLA
-Lugo Philharmonic Society (Galicia)
-
-​
-
-♪  Mozart String Duo No. 1 in G major, K. 423 
-♪  Bartok Duos for 2 violins - a selection 
-♪  Bach Selection of Bach Inventions 
-♪  Bohuslav Martinu Three Madrigals, H. 313 
-♪  Handel-Halvorsen Passacaglia
-
-​
-
-FRI 11/03 CONDUCTOR & VIOLA
-Zagreb, Croatia
-
-​
-
-♪  Frano Parać : Music for Strings and Harpsichord  
-
-♪  Tabakova : Suite in Old Style for viola
-
-♪  Scriabin : Symphony No. 3 in C minor, Op. 43
-
-​
-
-​
-
-​
-
-
-
-                                       
-////////////////////////////////////////
-
-THU 14/07 CONDUCTOR
-
-Orchestra de Guimaraes, Portugal
-
-♪  Tchaikovsky : Romeo & Juliet Suite 
-
-♪  Mussorgsky : Pictures at an Exhibition
-
-
-
-15/07 - 23/07 CONDUCTOR & VIOLA
-
-Festival Academy Budapest
-
-
-
-
-23/07 CONDUCTOR
-Festival Academy Budapest
-
-♪  Malcolm Arnold - Variations On A Ukrainian Folk-Song 
-
-
-
-26-30/08 VIOLA
-
-Carl Nielsen Festival, Denmark
-
-
-more details
-
-
-
-
-
-THU 1/09 VIOLA
-
-Cankarjev Dom, Cultural Centre, Slovenia
-
-​
-
-♪  Mozart Sinfonia Concertante
-Royal Philharmonic Orchestra, Vasily Petrenko, Lana Trotovsek
-more details
-
-​
-
-​
-
-SAT 10/09 VIOLA 
-
-Westport Town Hall Theatre, Ireland 
-
-​
-
-♪  Ernest Fantasy Quartet for Oboe and Strings 
-♪  Franck Sonata for violin and piano in A major
-
-more details
-
-​
-
-
-SUN 11/09 VIOLA 
-
-Westport Town Hall Theatre, Ireland 
-
-​
-
-♪  Schumann Piano Quartet, op.47 
-more details
-
-
-
-SUN 11/09 VIOLA 
-
-Westport Town Hall Theatre, Ireland 
-
-​
-
-♪  Beethoven String Trio in G Major op.9 No.1 
-
-♪  Brahms String Sextet No. 1, B-flat major, op. 18 
-
-more details
-
-
-​
 
 WED 14/09 VIOLA
 Manchester, UK
@@ -262,7 +232,6 @@ Concertgebouw, Netherlands
 ♪  Fauré Piano Quartet No. 1 in C minor, op. 15
 ♪ Brahms Piano Quartet No. 3 in C minor, op. 60
 
-more details
 
 ​
 
@@ -278,7 +247,6 @@ Eindhoven, Netherlands
 ♪  Fauré Piano Quartet No. 1 in C minor, op. 15
 ♪ Brahms Piano Quartet No. 3 in C minor, op. 60
 
-more details
 
 ​
 
@@ -293,7 +261,6 @@ Orchestra Sinfonica di Milano, Italy 
 
 ♪  G. Prokofiev Viola Concerto - Italian Premiere
 
-more details
 
 ​
 
