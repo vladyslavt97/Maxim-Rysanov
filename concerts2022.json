@@ -122,7 +122,6 @@
       "Scriabin : Symphony No. 3 in C minor, Op. 43"
     ]
   },
-  //
   { 
     "year": "2022",
     "date": "THU 14/07",
@@ -196,161 +195,172 @@
       "Beethoven String Trio in G Major op.9 No.1"
     ]
   },
-
+  { 
+    "year": "2022",
+    "date": "WED 14/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Manchester, UK",
+    "programme": [
+      "Recording Tabakova Viola Concerto"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "THU 15/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Menuhin School Masterclass",
+    "programme": [
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "MON 26/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Menuhin School Masterclass",
+    "programme": [
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "THU 29/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Concertgebouw, Netherlands",
+    "programme": [
+      "Mozart Pianokwartet in E flat major, KV 493",
+      "Fauré Piano Quartet No. 1 in C minor, op. 15",
+      "Brahms Piano Quartet No. 3 in C minor, op. 60"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "FRI 30/09",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Eindhoven, Netherlands",
+    "programme": [
+      "Mozart Pianokwartet in E flat major, KV 493",
+      "Fauré Piano Quartet No. 1 in C minor, op. 15",
+      "Brahms Piano Quartet No. 3 in C minor, op. 60"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 21/10",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Orchestra Sinfonica di Milano, Italy",
+    "programme": [
+      "Igor Stravinskij Petruška",
+      "G. Prokofiev Viola Concerto - Italian Premiere"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "FRI 4/11",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Phion Orchestra, Enschede MC, Enschede",
+    "programme": [
+      "Aram Chatsjatoerjan Suite 'Othello'",
+      "Sergej Prokofjev Suite 'Pique Dame', opus 70",
+      "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 5/11",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Phion Orchestra, Musis Parkzaal, Arnhem",
+    "programme": [
+      "Aram Chatsjatoerjan Suite 'Othello'",
+      "Sergej Prokofjev Suite 'Pique Dame', opus 70",
+      "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SUN 6/11",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Phion Orchestra, Deventer Schouwburg, Deventer",
+    "programme": [
+      "Aram Chatsjatoerjan Suite 'Othello'",
+      "Sergej Prokofjev Suite 'Pique Dame', opus 70",
+      "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "TUE 8/11",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Phion Orchestra, Odeon De Spiegel Theaters, Zwolle",
+    "programme": [
+      "Aram Chatsjatoerjan Suite 'Othello'",
+      "Sergej Prokofjev Suite 'Pique Dame', opus 70",
+      "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SUN 13/11",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Phion Orchestra, De Vereeniging, Nijmegen",
+    "programme": [
+      "Aram Chatsjatoerjan Suite 'Othello'",
+      "Sergej Prokofjev Suite 'Pique Dame', opus 70",
+      "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "WED 23/11",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Liszt Academy Budapest, Hungary",
+    "programme": [
+      "Frank Prélude, Aria et Final",
+      "Frank Sonata for Violin (Viola) and Piano",
+      "Frank Quintet"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "SAT 3/12",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Concerto Budapest, MUPA, Hungary",
+    "programme": [
+      "Shubert Marathon"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "MON 12/12",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Belgrade Chamber Orchestra, Serbia",
+    "programme": [
+      "Corelli Christmas Concerto",
+      "Britten Simple Symphony",
+      "Shubert Sonata Arpedgione"
+    ]
+  },
+  { 
+    "year": "2022",
+    "date": "WED 14/12",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Menuhin Hall, Cobham, UK",
+    "programme": [
+      "Franz Schubert - Piano Quintet in A major, D. 667, 'Trout'",
+      "Corelli Christmas Concerto"
+    ]
+  }
 ]
-
-
-WED 14/09 VIOLA
-Manchester, UK
-Recording Tabakova Viola Concerto
-with Hallé-Orchester
-
-
-​
-
-THU 15/09
-Menuhin School Masterclass
-
-​
-
-​
-
-26-27/09
-Menuhin School Masterclass
-
-​
-
-​
-
-THU 29/09 VIOLA
-
-Concertgebouw, Netherlands
-
-​
-
-♪  Mozart Pianokwartet in E flat major, KV 493
-♪  Fauré Piano Quartet No. 1 in C minor, op. 15
-♪ Brahms Piano Quartet No. 3 in C minor, op. 60
-
-
-​
-
-​
-
-FRI 30/09 VIOLA
-
-Eindhoven, Netherlands
-
-​
-
-♪  Mozart Pianokwartet in E flat major, KV 493
-♪  Fauré Piano Quartet No. 1 in C minor, op. 15
-♪ Brahms Piano Quartet No. 3 in C minor, op. 60
-
-
-​
-
-​
-
-20 - 21/10 CONDUCTOR & VIOLA
-Orchestra Sinfonica di Milano, Italy 
-
-​
-
-♪  Igor Stravinskij Petruška
-
-♪  G. Prokofiev Viola Concerto - Italian Premiere
-
-
-​
-
-​
-
-FRI 4/11 CONDUCTOR
-Phion Orchestra, Enschede MC, Enschede
-♪  Aram Chatsjatoerjan Suite 'Othello'
-♪  Sergej Prokofjev Suite 'Pique Dame', opus 70
-♪  Dmitri Sjostakovitsj The Gadfly Suite opus 97a
-
-​
-
-
-SAT 5/11 CONDUCTOR
-Phion Orchestra, Musis Parkzaal, Arnhem
-♪  Aram Chatsjatoerjan Suite 'Othello'
-♪  Sergej Prokofjev Suite 'Pique Dame', opus 70
-♪  Dmitri Sjostakovitsj The Gadfly Suite opus 97a
-
-​
-
-
-SUN 6/11 CONDUCTOR
-Phion Orchestra, Deventer Schouwburg, Deventer
-♪  Aram Chatsjatoerjan Suite 'Othello'
-♪  Sergej Prokofjev Suite 'Pique Dame', opus 70
-♪  Dmitri Sjostakovitsj The Gadfly Suite opus 97a
-
-​
-
-
-TUE 8/11 CONDUCTOR
-Phion Orchestra, Odeon De Spiegel Theaters, Zwolle
-♪  Aram Chatsjatoerjan Suite 'Othello'
-♪  Sergej Prokofjev Suite 'Pique Dame', opus 70
-♪  Dmitri Sjostakovitsj The Gadfly Suite opus 97a
-
-
-
-SUN 13/11 CONDUCTOR
-Phion Orchestra, De Vereeniging, Nijmegen
-♪  Aram Chatsjatoerjan Suite 'Othello'
-♪  Sergej Prokofjev Suite 'Pique Dame', opus 70
-♪  Dmitri Sjostakovitsj The Gadfly Suite opus 97a
-
-​
-
-
-WED 23/11 VIOLA
-Liszt Academy Budapest, Hungary
-Concert to Celebrate 200th anniversary of César Frank
-
-​
-
-♪  Frank Prélude, Aria et Final
-♪  Frank Sonata for Violin (Viola) and Piano
-♪  Frank Quintet
-
-Nikolai Lugansky, Marc Bouchkov, Júlia Pusker, Dora Kokas
-
-​
-
-​
-
-SAT 3/12 VIOLA
-
-Concerto Budapest, MUPA, Hungary
-Shubert Marathon
-
-
-
-MON 12/12 CONDUCTOR & VIOLA
-Belgrade Chamber Orchestra, Serbia
-♪  Corelli Christmas Concerto
-♪  Britten Simple Symphony
-
-♪  Shubert Sonata Arpedgione
-
-
-
-WED 14/12 VIOLA
-
-Menuhin Hall, Cobham, UK
-Menuhin School Orchestra
-
-​
-
-♪  Franz Schubert - Piano Quintet in A major, D. 667, "Trout"
-
-♪  Corelli Christmas Concerto
-
-​

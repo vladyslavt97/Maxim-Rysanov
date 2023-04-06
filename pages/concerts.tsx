@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
+import PastConcerts from '@/components/PastConcerts'
 
 interface ConcertType {
   year: number
@@ -65,6 +66,7 @@ export default function Concerts() {
     <div className=''>
       <Header/>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
+        <PastConcerts/>
         <div className='flex justify-center items-center pt-5'>
           <h1 className='font-bold text-xl'>2023</h1>
         </div>

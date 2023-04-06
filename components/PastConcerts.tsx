@@ -1,115 +1,22 @@
+//https://mui.com/material-ui/react-menu/
+//https://codesandbox.io/s/gziykt?file=/demo.tsx:0-3102
+import Link from 'next/link';
+import { useState } from 'react';
+import {MdKeyboardArrowDown} from 'react-icons/md';
 type Props = {}
 
 export default function PastConcerts({}: Props) {
-  return (
-    <div>PastConcerts</div>
-  )
-}
-
-import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import Menu, { MenuProps } from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import EditIcon from '@mui/icons-material/Edit';
-import Divider from '@mui/material/Divider';
-import ArchiveIcon from '@mui/icons-material/Archive';
-import FileCopyIcon from '@mui/icons-material/FileCopy';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
-const StyledMenu = styled((props: MenuProps) => (
-  <Menu
-    elevation={0}
-    anchorOrigin={{
-      vertical: 'bottom',
-      horizontal: 'right',
-    }}
-    transformOrigin={{
-      vertical: 'top',
-      horizontal: 'right',
-    }}
-    {...props}
-  />
-))(({ theme }) => ({
-  '& .MuiPaper-root': {
-    borderRadius: 6,
-    marginTop: theme.spacing(1),
-    minWidth: 180,
-    color:
-      theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
-    boxShadow:
-      'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-    '& .MuiMenu-list': {
-      padding: '4px 0',
-    },
-    '& .MuiMenuItem-root': {
-      '& .MuiSvgIcon-root': {
-        fontSize: 18,
-        color: theme.palette.text.secondary,
-        marginRight: theme.spacing(1.5),
-      },
-      '&:active': {
-        backgroundColor: alpha(
-          theme.palette.primary.main,
-          theme.palette.action.selectedOpacity,
-        ),
-      },
-    },
-  },
-}));
-
-export default function CustomizedMenus() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const [open, setOpen]=useState(false);
 
   return (
-    <div>
-      <Button
-        id="demo-customized-button"
-        aria-controls={open ? 'demo-customized-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        variant="contained"
-        disableElevation
-        onClick={handleClick}
-        endIcon={<KeyboardArrowDownIcon />}
-      >
-        Options
-      </Button>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{
-          'aria-labelledby': 'demo-customized-button',
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose} disableRipple>
-          <EditIcon />
-          Edit
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <FileCopyIcon />
-          Duplicate
-        </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
-        <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
-          Archive
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          More
-        </MenuItem>
-      </StyledMenu>
+    <div className='rounded--lg absolute left-0'>
+      <button className='py-2 pl-3 pr-1 bg-slate-500 rounded-lg flex flex-row text-center justify-center items-center text-white'>Past concerts<MdKeyboardArrowDown className='ml-1 text-white' onClick={e=>setOpen(!open)}/></button>
+      {open && <div className='flex flex-col bg-white text-black rounded-lg'>
+        <button className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300' onClick={e=>setOpen(!open)}><Link href="/concerts-2022">Concerts 2022</Link></button>
+        <button className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300' onClick={e=>setOpen(!open)}><Link href="/concerts-2021">Concerts 2021</Link></button>
+        <button className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300' onClick={e=>setOpen(!open)}><Link href="/concerts-2020">Concerts 2020</Link></button>
+      </div>}
     </div>
-  );
+    //past concerts with pages!
+  )
 }
