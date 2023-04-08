@@ -10,7 +10,9 @@ export default function PastConcerts({}: Props) {
   const router = useRouter();
   return (
     <div className='rounded--lg absolute right-0'>
-      <button className='py-2 pl-3 pr-1 bg-slate-500 rounded-lg flex flex-row text-center justify-center items-center text-white text-sm drop-shadow-lg' onClick={e=>setOpen(!open)}>Past concerts<MdKeyboardArrowDown className='ml-1 text-white'/></button>
+      <button className='py-2 pl-3 pr-1 bg-slate-500 hover:bg-slate-600
+      active:bg-slate-400
+      rounded-lg flex flex-row text-center justify-center items-center text-white text-sm drop-shadow-lg' onClick={e=>setOpen(!open)}>Past concerts<MdKeyboardArrowDown className='ml-1 text-white'/></button>
       {open && 
       <motion.div 
       initial={{height: 0, opacity: 0.7}}
