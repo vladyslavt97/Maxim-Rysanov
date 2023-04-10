@@ -10,7 +10,7 @@ export default function PastConcerts({}: Props) {
   const router = useRouter();
   return (
     <div className='rounded--lg absolute right-0'>
-      <button className='py-2 pl-3 pr-1 bg-slate-500 hover:bg-slate-600
+      <button className='py-2 pl-3 pr-1 bg-slate-600 hover:bg-slate-500
       active:bg-slate-400
       rounded-lg flex flex-row text-center justify-center items-center text-white text-sm drop-shadow-lg' onClick={e=>setOpen(!open)}>Past concerts<MdKeyboardArrowDown className='ml-1 text-white'/></button>
       {open && 
@@ -32,7 +32,7 @@ export default function PastConcerts({}: Props) {
         <motion.div
           initial={{opacity:0}}
           animate={{opacity:1}}
-          transition={{duration: 1, delay: 0.4}}
+          transition={{duration: 1, delay: 0.3}}
           className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center'
           ><Link href="/concerts-2023"><button onClick={e=>setOpen(!open)}>Concerts 2023</button></Link>
         </motion.div>}
