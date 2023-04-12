@@ -15,7 +15,7 @@ export default function HomePage({}: Props) {
             </p>
             <br/>
             <br/>
-            <br/>
+            {/* <br/> */}
             <p className='text-gray-500 w-full px-5 pb-5 text-xs'>Crescendo Magazine, Olivier Vrins, 18 May 2020</p>
         </div>
         <motion.div
@@ -31,7 +31,7 @@ export default function HomePage({}: Props) {
         id="home"
         >
             {/* <Image src='/homebg.png' alt="image" width={1000} height={1000} className='absolute right-0 object-fit w-full top-[5%]'/> */}
-            <Image src='/homemr.png' alt="image" width={1000} height={1000} className='absolute -right-2 object-fit w-full -top-5'/>
+            <Image src='/homemr.png' alt="image" width={1000} height={1000} className='absolute -right-2 object-fit w-[90%] top-0'/>
         </motion.div>
     </div>
   )
