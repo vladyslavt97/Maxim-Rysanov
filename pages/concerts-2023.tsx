@@ -57,7 +57,7 @@ export default function Concerts() {
       const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
       const dateObjectB = new Date(fullDateStringB)
 
-      return dateObjectA.getTime() - dateObjectB.getTime()
+      return dateObjectB.getTime() - dateObjectA.getTime();
     })
 
 
