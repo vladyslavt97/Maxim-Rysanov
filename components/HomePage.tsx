@@ -18,7 +18,7 @@ export default function HomePage({}: Props) {
                 &quot;We already know some very beautiful versions of this symphony by Vasks, including one by Kremerata Baltica on Teldec; but Rysanov and the Riga orchestra raise it to the top of the discography!&quot;
             </p>
             <br/>
-            {/* <br/> */}
+            <br/>
             <motion.p
             initial={{opacity:0}} 
             animate={{opacity:1}}
