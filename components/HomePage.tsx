@@ -7,7 +7,11 @@ type Props = {}
 export default function HomePage({}: Props) {
   return (
     <div className='bg-homebg bg-cover w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[90%]'>
-        <div className='absolute top-[10%] flex justify-center items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md z-30 md:text-2xl xl:text-3xl xl:font-light lg:leading-relaxed md:ml-[5%] lg:ml-[12%]'>
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration: 2}}
+        className='absolute top-[10%] flex justify-center items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md z-30 md:text-2xl xl:text-3xl xl:font-light lg:leading-relaxed md:ml-[5%] lg:ml-[12%]'>
             <p className='italic w-[45%] sm:w-[50%] p-5 font-extralight md:leading-loose'>
                 &quot;The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!&quot; 
                 <br/>
@@ -16,14 +20,18 @@ export default function HomePage({}: Props) {
             <br/>
             <br/>
             {/* <br/> */}
-            <p className='text-gray-500 w-full px-5 pb-5 text-xs'>Crescendo Magazine, Olivier Vrins, 18 May 2020</p>
-        </div>
+            <motion.p
+            initial={{opacity:0}} 
+            animate={{opacity:1}}
+            transition={{duration: 2, delay: 1.5}}
+            className='text-gray-500 w-full px-5 pb-5 text-xs'>Crescendo Magazine, Olivier Vrins, 18 May 2020</motion.p>
+        </motion.div>
         <motion.div
         initial={{
-            opacity: 0
+            opacity: 0,
         }}
         animate={{
-            opacity: 1
+            opacity: 1,
         }}
         transition={{
             duration: 2
