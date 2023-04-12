@@ -9,7 +9,7 @@ type Props = {}
 export default function Contacts({}: Props) {
   return (
     <div className='h-[100vh] flex justify-center items-center flex-col text-black'>
-        <h1 className='font-bold m-5'>Gallery</h1>
+        <h1 className='font-bold mb-5'>Gallery</h1>
         <div className='flex flex-row overflow-scroll gap-10 justify-start pl-10 pb-5'>
             <Image src="/gallery/mr1.jpg" alt="photo" width={250} height={250} className='rounded-lg'/>
             <Image src="/gallery/mr2.jpg" alt="photo" width={250} height={250} className='rounded-lg'/>
