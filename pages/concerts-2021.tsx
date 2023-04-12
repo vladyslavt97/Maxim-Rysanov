@@ -48,7 +48,6 @@ export default function Concerts2022({}: Props) {
                 </div>
             ))}
           </div>
-          <Footer />
     </div>
   )
 }

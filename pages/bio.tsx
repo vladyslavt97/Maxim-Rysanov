@@ -29,7 +29,6 @@ export default function Bio({}: Props) {
             {language === "ukr" && <UkrBio/>}
             {language === "rus" && <RusBio/>}
         </div>
-        <Footer />
     </div>
   )
 }

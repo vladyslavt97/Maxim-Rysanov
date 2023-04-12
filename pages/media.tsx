@@ -66,7 +66,6 @@ export default function Media({}: Props) {
               <YouTube opts={opts} videoId="0ft9xYR4OuY" />
           </motion.div>
         </div>
-        <Footer />
     </div>
   )
 }

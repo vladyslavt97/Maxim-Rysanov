@@ -12,7 +12,7 @@ export default function Header({}: Props) {
     }
 
     return (
-        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 h-[71px]'>
+        <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 h-[82px] border-gray-300 border-b-[10px]'>
             <motion.div 
             initial={{
                 opacity: 0,
@@ -45,22 +45,22 @@ export default function Header({}: Props) {
                 }}
                 className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-600" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
-            <Link href="bio" onClick={e => toggleMenu()}>
+            <Link href="bio" onClick={e => setMenu(false)}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Biography</button>
             </Link>
-            <Link href="concerts" onClick={e => toggleMenu()}>
+            <Link href="concerts" onClick={e => setMenu(false)}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Concerts</button>
             </Link>
-            <Link href="media" onClick={e => toggleMenu()}>
+            <Link href="media" onClick={e => setMenu(false)}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Media</button>
             </Link>
-            <Link href="gallery" onClick={e => toggleMenu()}>
+            <Link href="gallery" onClick={e => setMenu(false)}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Gallery</button>
             </Link>
-            <Link href="recordings" onClick={e => toggleMenu()}>
+            <Link href="recordings" onClick={e => setMenu(false)}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Recordings</button>
             </Link>
-            <Link href="contacts" onClick={e => toggleMenu()}>
+            <Link href="contacts" onClick={e => setMenu(false)}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Contacts</button>
             </Link>
             </motion.div>
@@ -70,23 +70,10 @@ export default function Header({}: Props) {
                 animate={{
                     width: menu ? '50%' : '50%',
                     x: menu ? 0 : 100,
-                    // height: menu ? '100vh' : '0px',
                     opacity: menu ? 1 : 0
                 }}
                 transition={{ duration: 0.4 }}>
                 </motion.div>
-
-                 {/* old sidebar */}
-            {/* <motion.div className={menu ? 'absolute rounded-full bg-gradient-to-tr from-gray-200 to-gray-300 w-[50px] h-[50px] right-[0px] top-0 md:hidden' : 'absolute rounded-full bg-gray-600/0 w-[50px] h-[50px] right-[23px] md:hidden'}
-                animate={{
-                    width: menu ? '50%' : '50px',
-                    height: menu ? '100vh' : '50px',
-                    borderRadius: menu ? '0%' : "100%",
-                    opacity: menu ? "1" : "0"
-                }}
-                transition={{ duration: 0.5 }}>
-                </motion.div> */}
-                
 
                 {/* burger */}
             {menu && <div className='absolute top-0 left-0 w-full h-[100vh] -z-10' onClick={e => toggleMenu()}></div>}
@@ -105,7 +92,6 @@ export default function Header({}: Props) {
                 }}
                  className={menu ? 'h-[2px] w-[40px] bg-gray-900 m-2' : 'h-[2px] w-[40px] bg-gray-300 m-2'}></motion.div>
             </div>
-
         </header>
   )
 }

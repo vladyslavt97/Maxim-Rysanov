@@ -10,7 +10,6 @@ export default function Home() {
     <div className='bg-gray-300 h-screen'>
       <Header />
       <HomePage />
-      <Footer />
     </div>
   )
 }

@@ -105,7 +105,6 @@ export default function Concerts() {
           ))}
         </motion.div>
       </div>
-      <Footer />
     </div>
   )
 }

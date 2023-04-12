@@ -101,7 +101,6 @@ export default function Contacts({}: Props) {
                 
             </div>
         </div>
-        <Footer />
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -36,7 +35,6 @@ export default function Contacts({}: Props) {
             <Image src={mr4} alt="photo" width={250} height={250} className='rounded-lg'/>
             <Image src={mr5} alt="photo" width={250} height={250} className='rounded-lg'/>
         </div>
-        <Footer />
     </div>
   )
 }
