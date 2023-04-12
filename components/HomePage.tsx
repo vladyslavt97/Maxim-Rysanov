@@ -6,7 +6,7 @@ type Props = {}
 
 export default function HomePage({}: Props) {
   return (
-    <div className='bg-homebg bg-cover w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[90%] '>
+    <div className='bg-homebg bg-cover w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[90%] overflow-hidden'>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -17,7 +17,6 @@ export default function HomePage({}: Props) {
                 <br/>
                 &quot;We already know some very beautiful versions of this symphony by Vasks, including one by Kremerata Baltica on Teldec; but Rysanov and the Riga orchestra raise it to the top of the discography!&quot;
             </p>
-            <br/>
             <br/>
             {/* <br/> */}
             <motion.p
