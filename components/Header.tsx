@@ -45,24 +45,24 @@ export default function Header({}: Props) {
                 }}
                 className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-600" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
-            <Link href="bio" onClick={e => setMenu(false)}>
-                <button className={menu ? 'py-5': 'lg:px-10'}>Biography</button>
-            </Link>
-            <Link href="concerts" onClick={e => setMenu(false)}>
-                <button className={menu ? 'py-5': 'lg:px-10'}>Concerts</button>
-            </Link>
-            <Link href="media" onClick={e => setMenu(false)}>
-                <button className={menu ? 'py-5': 'lg:px-10'}>Media</button>
-            </Link>
-            <Link href="gallery" onClick={e => setMenu(false)}>
-                <button className={menu ? 'py-5': 'lg:px-10'}>Gallery</button>
-            </Link>
-            <Link href="recordings" onClick={e => setMenu(false)}>
-                <button className={menu ? 'py-5': 'lg:px-10'}>Recordings</button>
-            </Link>
-            <Link href="contacts" onClick={e => setMenu(false)}>
-                <button className={menu ? 'py-5': 'lg:px-10'}>Contacts</button>
-            </Link>
+                <Link href="bio" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Biography</button>
+                </Link>
+                <Link href="concerts" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Concerts</button>
+                </Link>
+                <Link href="media" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Media</button>
+                </Link>
+                <Link href="gallery" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Gallery</button>
+                </Link>
+                <Link href="recordings" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Recordings</button>
+                </Link>
+                <Link href="contacts" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Contacts</button>
+                </Link>
             </motion.div>
 
                 {/* sidebar with framer */}
