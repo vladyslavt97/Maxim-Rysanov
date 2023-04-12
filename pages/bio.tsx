@@ -19,7 +19,6 @@ export default function Bio({}: Props) {
   
   return (
     <div className='h-full bg-gray-400'>
-        <Header />
         <div className='absolute top-[82px] flex flex-col justify-center items-center mx-2 p-5 pb-40 md:pb-40 text-black bg-gradient-to-tr from-neutral-100 to-gray-200 rounded md:p-10 lg:px-20'>
             {/* <LanguagesSwitch/> */}
             <div className='flex justify-center items-center'>

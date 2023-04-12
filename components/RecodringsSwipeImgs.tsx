@@ -15,7 +15,6 @@ type Props = {}
 export default function RecodringsSwipeImgs({}: Props) {
   return (
      <div className='h-[100vh] overflow-hidden'>
-        <Header/>
         <h1 className='absolute top-[15%] left-1/2 transform -translate-x-1/2 font-bold text-xl text-black z-10'>Recordings</h1>
         <motion.div 
         initial={{opacity: 0}}

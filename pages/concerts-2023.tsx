@@ -64,7 +64,6 @@ export default function Concerts() {
 
   return (
     <div className=''>
-      <Header/>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
         <PastConcerts/>
         <div className='flex justify-center items-center pt-5'>
