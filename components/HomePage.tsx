@@ -6,7 +6,7 @@ type Props = {}
 
 export default function HomePage({}: Props) {
   return (
-    <div className='bg-homebg bg-cover w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[90%] overflow-hidden'>
+    <div className='bg-homebg bg-cover w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black sm:h-[93%] h-[83%] overflow-hidden'>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
