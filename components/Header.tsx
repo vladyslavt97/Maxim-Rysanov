@@ -45,22 +45,22 @@ export default function Header({}: Props) {
                 }}
                 className={menu ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-600" 
                 : 'space-x-3 hidden md:flex font-semibold text-xl text-gray-300'}>
-            <Link href="bio">
+            <Link href="bio" onClick={e => toggleMenu()}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Biography</button>
             </Link>
-            <Link href="concerts">
+            <Link href="concerts" onClick={e => toggleMenu()}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Concerts</button>
             </Link>
-            <Link href="media">
+            <Link href="media" onClick={e => toggleMenu()}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Media</button>
             </Link>
-            <Link href="gallery">
+            <Link href="gallery" onClick={e => toggleMenu()}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Gallery</button>
             </Link>
-            <Link href="recordings">
+            <Link href="recordings" onClick={e => toggleMenu()}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Recordings</button>
             </Link>
-            <Link href="contacts">
+            <Link href="contacts" onClick={e => toggleMenu()}>
                 <button className={menu ? 'py-5': 'lg:px-10'}>Contacts</button>
             </Link>
             </motion.div>
