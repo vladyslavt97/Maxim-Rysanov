@@ -65,10 +65,14 @@ export default function Contacts({}: Props) {
                 <br/>
                 <div>
                     <h1 className='font-semibold'>Scandinavia</h1>
-                    <p><span className='italic'>Neel Teilmann</span><br/>
-                    Nordic Artists Management A/S<br/>
+                    <p>Nordic Artists Management A/S<br/>
+                    <span className='italic'>Neel Teilmann </span><span className='text-xs'>(viola engagements)</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>net@nordicartistsmanagement.com<br/>
+                    </div>
+                    <span className='italic'>Jacob Soelberg </span><span className='text-xs'>(conducting engagements)</span><br/>
+                    <div className='flex flex-row text-center justify-center items-center gap-2'>
+                        <FiMail/>jrs@nordicartistsmanagement.com<br/>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
                         <AiOutlinePhone/>+45 22 744 904<br/>

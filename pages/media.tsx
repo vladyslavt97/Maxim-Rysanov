@@ -19,7 +19,7 @@ export default function Media({}: Props) {
   return (
     <div>
         <Header/>
-        <div className='absolute top-[11%] sm:top-[5.5%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[140%] flex flex-col items-center gap-10'>
+        <div className='absolute top-[11%] sm:top-[5.5%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[220%] flex flex-col items-center gap-10'>
           <div className='flex justify-center items-center mt-5'>
               <h1 className='font-bold text-2xl'>Media</h1>
           </div>
@@ -33,7 +33,7 @@ export default function Media({}: Props) {
           transition={{
             delay: 3
           }}
-          className='absolute flex items-center justify-center h-[60vh] left-1/2 transform -translate-x-1/2'
+          className='absolute flex items-center justify-center h-[80vh] left-1/2 transform -translate-x-1/2'
           >
             <ColorRing
               visible={true}

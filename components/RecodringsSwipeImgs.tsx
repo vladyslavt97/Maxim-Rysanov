@@ -44,71 +44,71 @@ export default function RecodringsSwipeImgs({}: Props) {
                 >
                 <SwiperSlide>
                     <Link href="https://bis.se/performers/rysanov-maxim/pteris-vasks-viola-concerto-voices">
-                        <Image src="/recordings/1_vasks.jpeg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                        <Image src="/recordings/1_vasks.jpeg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://onyxclassics.com/release/in-schuberts-company/">
-                        <Image src="/recordings/2_shubert.png" alt="rec" width={200} height={200} className="rounded-lg"/>
+                        <Image src="/recordings/2_shubert.png" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://bis.se/label/bis/maxim-rysanov-plays-martin">
-                    <Image src="/recordings/3_martinu.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/3_martinu.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://warnerclassics.lnk.to/vildemozart">
-                    <Image src="/recordings/4_mozart.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/4_mozart.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://ecmrecords.com/product/dobrinka-tabakova-string-paths-maxim-rysanov-kristina-blaumane-lithuanian-chamber-orchestra/">
-                    <Image src="/recordings/5_dobrinka.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/5_dobrinka.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://bis.se/performers/rysanov-maxim/pavane">
-                    <Image src="/recordings/6_pavane.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/6_pavane.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://bis.se/performers/rysanov-maxim/maxim-rysanov-plays-schubert-tchaikovsky-bruch"></Link>
-                    <Image src="/recordings/7_bruch.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/7_bruch.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://onyxclassics.com/release/beethoven-sonatina-for-viola-and-cello-duo-for-viola-and-cello-et-al/">
-                    <Image src="/recordings/8_beethoven.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/8_beethoven.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://onyxclassics.com/release/brahms-quintet-two-songs-and-string-quintet/">
-                    <Image src="/recordings/9_brahms.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/9_brahms.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://bis.se/performers/rysanov-maxim/bach-suites-maxim-rysanov">
-                    <Image src="/recordings/10_bach.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/10_bach.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://onyxclassics.com/release/brahms-viola/">
-                    <Image src="/recordings/11_brahms.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/11_brahms.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://www.deccaclassics.com/en/catalogue/products/bach-partita-no-2-jansen-4506">
-                    <Image src="/recordings/12_janine.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/12_janine.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://onyxclassics.com/release/kancheli-styx-tavener-the-myrrh-bearer/">
-                    <Image src="/recordings/13_kanchelli.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/13_kanchelli.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://www.avie-records.com/releases/works-for-viola-and-piano/">
-                    <Image src="/recordings/14_chang.jpg" alt="rec" width={200} height={200} className="rounded-lg"/>
+                    <Image src="/recordings/14_chang.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64"/>
                     </Link>
                 </SwiperSlide>
 
