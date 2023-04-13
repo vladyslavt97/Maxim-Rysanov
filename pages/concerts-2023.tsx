@@ -11,7 +11,7 @@ interface ConcertType {
   location: string,
   programme: String[],
   link: string,
-  with: string
+  withwhom: string
 }
 
 
@@ -97,7 +97,7 @@ export default function Concerts() {
                   <p>♪ {prog}</p>
                 </div>
               ))}
-              {concert.with && <h4 className='italic text-orange-400'>{concert.with}</h4>}
+              {concert.withwhom && <h4 className='italic text-orange-400'>{concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
             </div>
