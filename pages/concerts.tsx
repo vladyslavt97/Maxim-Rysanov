@@ -99,7 +99,7 @@ export default function Concerts() {
                   <p>♪ {prog}</p>
                 </div>
               ))}
-              {concert.withwhom && <h4 className='italic text-orange-400'>{concert.withwhom}</h4>}
+              {concert.withwhom && <h4 className='italic text-orange-900'>{concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
             </div>
