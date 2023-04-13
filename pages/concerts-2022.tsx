@@ -29,10 +29,10 @@ export default function Concerts2022({}: Props) {
   return (
     <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
         <PastConcerts/>
-        <div className='flex justify-center items-center pt-5'>
+        <div className='absolute left-1 md:static md:flex md:justify-center md:items-center pt-5'>
           <h1 className='font-bold text-xl'>2022</h1>
         </div>
-        <div className="flex flex-col mx-3 mt-4 justify-center items-start mb-40 lg:text-xl">
+        <div className="flex flex-col mx-3 mt-16 justify-center items-start mb-40 lg:text-xl">
             {validConcerts2022.map((concert: ConcertType, index: number) => (
                 <div key={index} className="m-3">
                 <div className='flex flex-row'>

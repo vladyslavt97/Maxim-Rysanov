@@ -12,7 +12,8 @@ interface ConcertType {
   conductor: string,
   location: string,
   programme: String[],
-  link: string
+  link: string,
+  with: string
 }
 
 
@@ -66,7 +67,7 @@ export default function Concerts() {
     <div className=''>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
         <PastConcerts/>
-        <div className='flex justify-center items-center pt-5'>
+        <div className='absolute left-1 md:static md:flex md:justify-center md:items-center pt-5'>
           <h1 className='font-bold text-xl'>2023</h1>
         </div>
         {concerts.length === 0 && 
@@ -86,7 +87,7 @@ export default function Concerts() {
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{duration:1}}
-        className='flex flex-col mx-3 mt-3 justify-center items-start mb-40 lg:text-xl'>
+        className='flex flex-col mx-3 mt-16 justify-center items-start mb-40 lg:text-xl'>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="m-3">
               <div className='flex flex-row'>
@@ -98,6 +99,7 @@ export default function Concerts() {
                   <p>♪ {prog}</p>
                 </div>
               ))}
+              {concert.with && <h4 className='italic text-orange-400'>{concert.with}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
             </div>
