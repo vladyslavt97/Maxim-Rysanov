@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
@@ -12,7 +10,8 @@ interface ConcertType {
   conductor: string,
   location: string,
   programme: String[],
-  link: string
+  link: string,
+  with: string
 }
 
 
@@ -98,6 +97,7 @@ export default function Concerts() {
                   <p>♪ {prog}</p>
                 </div>
               ))}
+              {concert.with && <h4 className='italic text-orange-400'>{concert.with}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
             </div>
