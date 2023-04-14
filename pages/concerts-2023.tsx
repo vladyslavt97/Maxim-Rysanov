@@ -94,7 +94,7 @@ export default function Concerts() {
               <h5>{concert.location}<br/>
               {concert.programme.map((prog, ind)=>(
                 <div key={ind}>
-                  <p>♪ {prog}</p>
+                  <p>{prog}</p>
                 </div>
               ))}
               {concert.withwhom && <h4 className='italic text-orange-400'>{concert.withwhom}</h4>}
