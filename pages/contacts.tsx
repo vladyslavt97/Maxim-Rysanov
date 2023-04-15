@@ -46,7 +46,7 @@ export default function Contacts({}: Props) {
                 <br/>
                 <div>
                     <h1 className='font-semibold'>Italy & various projects</h1>
-                    <p><span className='italic'>Susanna Stefani</span><br/> 
+                    <p><span className='italic'>Susanna Stefani Caetani</span><br/> 
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>susanna@onylstage.co.uk<br/>
                     </div>
