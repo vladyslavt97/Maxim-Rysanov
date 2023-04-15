@@ -66,7 +66,7 @@ export default function Concerts() {
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
         <PastConcerts/>
 
-        {concerts.length === 0 && 
+        {concerts.length === 0 ? 
         <div className='flex items-center justify-center h-[60vh]'>
           <ColorRing
             visible={true}
@@ -78,7 +78,7 @@ export default function Concerts() {
             colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
           />
         </div>
-        }
+        :
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -103,7 +103,7 @@ export default function Concerts() {
               </h5>
             </div>
           ))}
-        </motion.div>
+        </motion.div>}
       </div>
     </div>
   )
