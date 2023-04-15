@@ -22,12 +22,16 @@ export default function HomePage({}: Props) {
                 &quot;We already know some very beautiful versions of this symphony by Vasks, including one by Kremerata Baltica on Teldec; but Rysanov and the Riga orchestra raise it to the top of the discography!&quot;
             </p>
             <br/>
-            <br/>
             <motion.p
             initial={{opacity:0, x: 15}} 
             animate={{opacity:1, x: 0}}
             transition={{duration: 2, delay: 2.5}}
-            className='text-gray-500 w-full px-5 pb-5 text-xs'>Crescendo Magazine, Olivier Vrins, 18 May 2020</motion.p>
+            className='text-gray-500 w-full px-5 pb-1 text-xs'>Crescendo Magazine</motion.p>
+            <motion.p
+            initial={{opacity:0, x: 25}} 
+            animate={{opacity:1, x: 0}}
+            transition={{duration: 2, delay: 3}}
+            className='text-gray-500 w-full px-5 pb-5 text-xs'>Olivier Vrins, 18 May 2020</motion.p>
         </motion.div>
         <motion.div
         initial={{
