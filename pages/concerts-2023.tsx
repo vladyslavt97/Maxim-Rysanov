@@ -11,7 +11,8 @@ interface ConcertType {
   location: string,
   programme: String[],
   link: string,
-  withwhom: string
+  withwhom: string,
+  pastconcert: boolean
 }
 
 
@@ -84,23 +85,25 @@ export default function Concerts() {
         animate={{opacity:1}}
         transition={{duration:1}}
         className='flex flex-col mx-3 justify-center items-start mb-40 lg:text-xl'>
-          <div className='md:static md:flex md:justify-center md:items-center pt-5 m-3'>
+          <div className='static flex justify-center items-center pt-5 mx-3'>
             <h1 className='font-bold text-xl'>Past 2023</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
-            <div key={index} className="m-3">
+            <div key={index} className="mx-3 my-[2px]">
+              {concert.pastconcert && <>
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
                 </div>
-              <h5>{concert.location}<br/>
+              <h5 className='mb-4'>{concert.location}<br/>
               {concert.programme.map((prog, ind)=>(
                 <div key={ind}>
                   <p>{prog}</p>
                 </div>
               ))}
               {concert.withwhom && <h4 className='italic text-orange-400'>{concert.withwhom}</h4>}
-              {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
+              {/* {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>} */}
               </h5>
+              </>}
             </div>
           ))}
         </motion.div>}

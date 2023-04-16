@@ -13,7 +13,8 @@ interface ConcertType {
   location: string,
   programme: String[],
   link: string,
-  withwhom: string
+  withwhom: string,
+  pastconcert: boolean
 }
 
 
@@ -30,21 +31,22 @@ export default function Concerts() {
         });
     }, [setConcerts]);
   
-  let validConcerts = concerts.filter((el:any) => {
-    const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
-    const [dd, mm] = date.split('/');
-    const yyyy = new Date().getFullYear();
-    const fullDateString = `${yyyy}-${mm}-${dd}`;
+  let validConcerts = concerts
+  // .filter((el:any) => {
+  //   const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
+  //   const [dd, mm] = date.split('/');
+  //   const yyyy = new Date().getFullYear();
+  //   const fullDateString = `${yyyy}-${mm}-${dd}`;
 
-    //today
-    const today = new Date();
-    const yyyytoday = today.getFullYear();
-    const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
-    const ddtoday = today.getDate().toString().padStart(2, '0');
-    const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
+  //   //today
+  //   const today = new Date();
+  //   const yyyytoday = today.getFullYear();
+  //   const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
+  //   const ddtoday = today.getDate().toString().padStart(2, '0');
+  //   const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
     
-    return fullDateString >= dateString;
-  })
+  //   return fullDateString >= dateString;
+  // })
   .sort((a, b) => {
       const [dayA, dateA] = a.date.split(' ')
       const [ddA, mmA] = dateA.split('/')
@@ -65,7 +67,7 @@ export default function Concerts() {
 
   return (
     <div className=''>
-      <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
+      <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden'>
         <PastConcerts/>
         {concerts.length === 0 ? 
         <div className='flex items-center justify-center h-[60vh]'>
@@ -84,16 +86,17 @@ export default function Concerts() {
         initial={{opacity:0}}
         animate={{opacity:1}}
         transition={{duration:1}}
-        className='flex flex-col -ml-10 justify-center items-start mb-40 lg:text-xl'>
-          <div className='md:static md:flex md:justify-center md:items-center pt-5 m-3'>
+        className='flex flex-col ml-2 justify-center items-start mb-32 lg:text-xl'>
+          <div className='flex justify-center items-center pt-5 m-3'>
             <h1 className='font-bold text-xl'>2023</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
-            <div key={index} className="m-3">
+            <div key={index} className="mx-3 my-1">
+              {!concert.pastconcert && <>
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
                 </div>
-              <h5>{concert.location}<br/>
+              <h5 className='mb-4'>{concert.location}<br/>
               {concert.programme.map((prog, ind)=>(
                 <div key={ind}>
                   <p>{prog}</p>
@@ -102,6 +105,7 @@ export default function Concerts() {
               {concert.withwhom && <h4 className='italic text-gray-900'>{concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
+              </>}
             </div>
           ))}
         </motion.div>}
