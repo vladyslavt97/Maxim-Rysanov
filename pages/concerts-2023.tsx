@@ -101,7 +101,6 @@ export default function Concerts() {
                 </div>
               ))}
               {concert.withwhom && <h4 className='italic text-orange-400'>{concert.withwhom}</h4>}
-              {/* {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>} */}
               </h5>
               </>}
             </div>

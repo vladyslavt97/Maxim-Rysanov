@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
@@ -37,7 +35,6 @@ export default function Concerts() {
   //   const [dd, mm] = date.split('/');
   //   const yyyy = new Date().getFullYear();
   //   const fullDateString = `${yyyy}-${mm}-${dd}`;
-
   //   //today
   //   const today = new Date();
   //   const yyyytoday = today.getFullYear();

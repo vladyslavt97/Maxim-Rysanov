@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer';
 import PastConcerts from '@/components/PastConcerts';
 import concerts2021 from '@/concerts2021.json'
 type Props = {}
