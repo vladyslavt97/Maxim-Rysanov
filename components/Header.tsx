@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-
+import logo from "../public/logo.png"
 type Props = {}
 
 export default function Header({}: Props) {
@@ -11,9 +11,10 @@ export default function Header({}: Props) {
         setMenu(!menu)
     }
 
+    
     return (
         <header className='fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 h-[82px] border-gray-300 border-b-[10px]'>
-            <motion.div 
+            {logo && <motion.div 
             initial={{
                 opacity: 0,
                 x: -50
@@ -29,7 +30,7 @@ export default function Header({}: Props) {
                 <Link href="/">
                     <Image src="/logo.png" alt='logo' width={200} height={200}/>
                 </Link>
-            </motion.div>
+            </motion.div>}
 
                 {/* Links */}
             <motion.div 
