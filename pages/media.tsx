@@ -18,9 +18,9 @@ export default function Media({}: Props) {
   };
   return (
     <div>
-        <div className='absolute top-[11%] sm:top-[5.5%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[220%] flex flex-col items-center gap-10'>
-          <div className='flex justify-center items-center mt-5'>
-              <h1 className='font-bold text-2xl text-black'>Media</h1>
+        <div className='absolute top-[11%] sm:top-[5.5%] border-[10px] border-gray-300 bg-gradient-to-tr from-neutral-100 to-gray-200 w-full h-[220%] md:h-[120%] flex flex-col items-center gap-10'>
+          <div className='flex justify-center items-center mt-10'>
+            <h1 className='font-bold text-xl text-black'>Media</h1>
           </div>
           <motion.div 
           initial={{
