@@ -1,9 +1,10 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+
 import Link from 'next/link'
 import React from 'react'
 import { AiOutlinePhone } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
+import { FiCopy } from 'react-icons/fi';
+import CopyToClipboard from 'react-copy-to-clipboard';
 type Props = {}
 
 export default function Contacts({}: Props) {
@@ -25,6 +26,9 @@ export default function Contacts({}: Props) {
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>lorna@musicinteralia.com<br/>
+                        <CopyToClipboard text="lorna@musicinteralia.com">
+                            <button><FiCopy color='gray' className='ml-2'/></button>
+                        </CopyToClipboard>
                     </div>
                     <Link href="http://www.musicinteralia.com" className='text-blue-900'>
                     musicinteralia.com<br/>
@@ -37,6 +41,9 @@ export default function Contacts({}: Props) {
                     <p><span className='italic'>Marjon Koenekoop</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>marjon@ivyartists.com<br/>
+                        <CopyToClipboard text="marjon@ivyartists.com">
+                            <button><FiCopy color='gray' className='ml-2'/></button>
+                        </CopyToClipboard>
                     </div>
                     <Link href="http://www.ivyartists.com" className='text-blue-900'>
                     ivyartists.com<br/>
@@ -49,6 +56,9 @@ export default function Contacts({}: Props) {
                     <p><span className='italic'>Susanna Stefani Caetani</span><br/> 
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>susanna@onylstage.co.uk<br/>
+                        <CopyToClipboard text="susanna@onylstage.co.uk">
+                            <button><FiCopy color='gray' className='ml-2'/></button>
+                        </CopyToClipboard>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
                     <AiOutlinePhone/> +44 7950 427967<br/>
@@ -68,10 +78,16 @@ export default function Contacts({}: Props) {
                     <span className='italic'>Neel Teilmann </span><span className='text-xs'>(viola engagements)</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>net@nordicartistsmanagement.com<br/>
+                        <CopyToClipboard text="net@nordicartistsmanagement.com">
+                            <button><FiCopy color='gray' className='ml-2'/></button>
+                        </CopyToClipboard>
                     </div>
                     <span className='italic'>Jacob Soelberg </span><span className='text-xs'>(conducting engagements)</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>jrs@nordicartistsmanagement.com<br/>
+                        <CopyToClipboard text="jrs@nordicartistsmanagement.com">
+                            <button><FiCopy color='gray' className='ml-2'/></button>
+                        </CopyToClipboard>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
                         <AiOutlinePhone/>+45 22 744 904<br/>
@@ -88,6 +104,9 @@ export default function Contacts({}: Props) {
                     Concertos Augusto S.L.<br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>gonzalo@conciertosaugusto.com<br/>
+                        <CopyToClipboard text="gonzalo@conciertosaugusto.com">
+                            <button><FiCopy color='gray' className='ml-2'/></button>
+                        </CopyToClipboard>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
                         <AiOutlinePhone/>+34 91 634 02 05<br/>
