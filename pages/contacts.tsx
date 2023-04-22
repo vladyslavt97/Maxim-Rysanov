@@ -27,7 +27,7 @@ export default function Contacts({}: Props) {
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>lorna@musicinteralia.com<br/>
                         <CopyToClipboard text="lorna@musicinteralia.com">
-                            <button><FiCopy color='gray' className='ml-2'/></button>
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
                         </CopyToClipboard>
                     </div>
                     <Link href="http://www.musicinteralia.com" className='text-blue-900'>
@@ -42,7 +42,7 @@ export default function Contacts({}: Props) {
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>marjon@ivyartists.com<br/>
                         <CopyToClipboard text="marjon@ivyartists.com">
-                            <button><FiCopy color='gray' className='ml-2'/></button>
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
                         </CopyToClipboard>
                     </div>
                     <Link href="http://www.ivyartists.com" className='text-blue-900'>
@@ -57,7 +57,7 @@ export default function Contacts({}: Props) {
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>susanna@onylstage.co.uk<br/>
                         <CopyToClipboard text="susanna@onylstage.co.uk">
-                            <button><FiCopy color='gray' className='ml-2'/></button>
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
                         </CopyToClipboard>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
@@ -79,14 +79,14 @@ export default function Contacts({}: Props) {
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>net@nordicartistsmanagement.com<br/>
                         <CopyToClipboard text="net@nordicartistsmanagement.com">
-                            <button><FiCopy color='gray' className='ml-2'/></button>
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
                         </CopyToClipboard>
                     </div>
                     <span className='italic'>Jacob Soelberg </span><span className='text-xs'>(conducting engagements)</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>jrs@nordicartistsmanagement.com<br/>
                         <CopyToClipboard text="jrs@nordicartistsmanagement.com">
-                            <button><FiCopy color='gray' className='ml-2'/></button>
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
                         </CopyToClipboard>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
@@ -105,7 +105,7 @@ export default function Contacts({}: Props) {
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
                         <FiMail/>gonzalo@conciertosaugusto.com<br/>
                         <CopyToClipboard text="gonzalo@conciertosaugusto.com">
-                            <button><FiCopy color='gray' className='ml-2'/></button>
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
                         </CopyToClipboard>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
