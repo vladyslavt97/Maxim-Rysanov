@@ -46,7 +46,7 @@ export default function HomePage({}: Props) {
         id="home"
         >
             {/* <Image src='/homebg.png' alt="image" width={1000} height={1000} className='absolute right-0 object-fit w-full top-[5%]'/> */}
-            <Image src='/homemr.png' alt="image" width={1000} height={1000} className='absolute -right-2 object-fit w-[90%] top-0 max-h-full object-contain lg:-right-52'/>
+            <Image src='/homemr.png' alt="image" width={1000} height={1000} className='absolute -right-2 object-fit w-[90%] top-0 max-h-full object-contain lg:-right-52' priority={true}/>
         </motion.div>
     </motion.div>
   )

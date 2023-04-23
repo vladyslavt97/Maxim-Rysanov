@@ -28,7 +28,7 @@ export default function Header({}: Props) {
             className="cursor-pointer"
             >
                 <Link href="/">
-                    <Image src="/logo.png" alt='logo' width={200} height={200}/>
+                    <Image src="/logo.png" alt='logo' width={200} height={200} priority={true}/>
                 </Link>
             </motion.div>}
 
