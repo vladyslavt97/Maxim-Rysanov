@@ -55,17 +55,17 @@ export default function RecodringsSwipeImgs({}: Props) {
                 >
                 <SwiperSlide>
                     <Link href="https://bis.se/performers/rysanov-maxim/pteris-vasks-viola-concerto-voices">
-                        <Image src="/recordings/1_vasks.jpeg" alt="rec" width={200} height={200} className="rounded-lg md:w-64" priority={true} />
+                        <Image src="/recordings/1_vasks.jpeg" alt="rec" width={200} height={200} className="rounded-lg md:w-64" priority={true} loading="eager"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://onyxclassics.com/release/in-schuberts-company/">
-                        <Image src="/recordings/2_shubert.png" alt="rec" width={200} height={200} className="rounded-lg md:w-64" priority={true} />
+                        <Image src="/recordings/2_shubert.png" alt="rec" width={200} height={200} className="rounded-lg md:w-64" priority={true} loading="eager"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Link href="https://bis.se/label/bis/maxim-rysanov-plays-martin">
-                    <Image src="/recordings/3_martinu.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64" priority={true} />
+                        <Image src="/recordings/3_martinu.jpg" alt="rec" width={200} height={200} className="rounded-lg md:w-64" priority={true} loading="eager"/>
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
