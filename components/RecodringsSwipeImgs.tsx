@@ -7,8 +7,6 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import Footer from './Footer';
-import Header from './Header';
 import { useState } from 'react';
 
 type Props = {}
