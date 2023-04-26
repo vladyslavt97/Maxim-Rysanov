@@ -82,7 +82,7 @@ export default function Concerts() {
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1}}
-        transition={{duration:1}}
+        transition={{duration:2}}
         className='flex flex-col ml-2 justify-center items-start mb-32 lg:text-xl'>
           <div className='flex justify-center items-center pt-5 m-3'>
             <h1 className='font-bold text-xl'>2023</h1>
