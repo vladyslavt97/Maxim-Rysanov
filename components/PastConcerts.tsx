@@ -10,7 +10,7 @@ export default function PastConcerts({}: Props) {
   const router = useRouter();
   return (
     <div className='rounded--lg fixed right-2'>
-      <button className='py-2 pl-3 pr-1 bg-slate-600 hover:bg-slate-500 m-1 md:hidden
+      <button className='py-2 pl-3 pr-1 bg-slate-600 hover:bg-slate-500 m-1
       active:bg-slate-400
       rounded-lg flex flex-row text-center justify-center items-center text-white text-sm drop-shadow-lg' onClick={e=>setOpen(!open)}>Past concerts<MdKeyboardArrowDown className='ml-1 text-white'/></button>
       {open && 
@@ -63,7 +63,7 @@ export default function PastConcerts({}: Props) {
 
 
        {/* md and bigger */}
-      <motion.div 
+      {/* <motion.div 
       initial={{height: 0, opacity: 0.7}}
       animate={{height: 150, opacity: 1}}
       transition={{duration: 1}}
@@ -107,8 +107,8 @@ export default function PastConcerts({}: Props) {
           className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center px-3'>
         <Link href="/concerts-2020" ><button onClick={e=>setOpen(!open)}>Concerts 2020</button></Link>
         </motion.div>
-       
-      </motion.div>
+        */}
+      {/* </motion.div> */}
     </div>
   )
 }
