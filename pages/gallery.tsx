@@ -29,11 +29,11 @@ export default function Contacts({}: Props) {
             <button className='border-2 rounded-2xl p-1 border-gray-300 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs m-1'>Download Photos</button>
         </Link>
         <div className='flex flex-row overflow-x-scroll gap-1 justify-start pl-1 pb-5 mx-20 overflow-y-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#303030]/80'>
-            <Image src={mr1} alt="photo" width={250} height={250} className='rounded-lg object-contain mx-4'/>
-            <Image src={mr2} alt="photo" width={250} height={250} className='rounded-lg object-contain mx-4'/>
-            <Image src={mr3} alt="photo" width={250} height={250} className='rounded-lg object-contain mx-4'/>
-            <Image src={mr4} alt="photo" width={250} height={250} className='rounded-lg object-contain mx-4'/>
-            <Image src={mr5} alt="photo" width={250} height={250} className='rounded-lg object-contain mx-4'/>
+            <Image src={mr1} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr2} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr3} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr4} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr5} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
         </div>
     </div>
   )
