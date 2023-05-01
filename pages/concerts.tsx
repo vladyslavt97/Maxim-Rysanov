@@ -29,22 +29,7 @@ export default function Concerts() {
         });
     }, [setConcerts]);
   
-  let validConcerts = concerts
-  // .filter((el:any) => {
-  //   const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
-  //   const [dd, mm] = date.split('/');
-  //   const yyyy = new Date().getFullYear();
-  //   const fullDateString = `${yyyy}-${mm}-${dd}`;
-  //   //today
-  //   const today = new Date();
-  //   const yyyytoday = today.getFullYear();
-  //   const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
-  //   const ddtoday = today.getDate().toString().padStart(2, '0');
-  //   const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
-    
-  //   return fullDateString >= dateString;
-  // })
-  .sort((a, b) => {
+  let validConcerts = concerts.sort((a, b) => {
       const [dayA, dateA] = a.date.split(' ')
       const [ddA, mmA] = dateA.split('/')
       const yyyyA = new Date().getFullYear()
@@ -110,3 +95,18 @@ export default function Concerts() {
     </div>
   )
 }
+
+// .filter((el:any) => {
+  //   const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
+  //   const [dd, mm] = date.split('/');
+  //   const yyyy = new Date().getFullYear();
+  //   const fullDateString = `${yyyy}-${mm}-${dd}`;
+  //   //today
+  //   const today = new Date();
+  //   const yyyytoday = today.getFullYear();
+  //   const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
+  //   const ddtoday = today.getDate().toString().padStart(2, '0');
+  //   const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
+    
+  //   return fullDateString >= dateString;
+  // })

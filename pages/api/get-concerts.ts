@@ -8,7 +8,7 @@ export default async function handler(
    try {
        const client = await clientPromise;
        const db = client.db("Maxim_Rysanov");
-       const concerts = await db.collection("concerts-2023").find({}).toArray();
+       const concerts = await db.collection("concerts-2023").find({}).sort({ date: 1 }).toArray();
         
        res.json(concerts);
    } catch (e) {
