@@ -28,7 +28,7 @@ export default function Contacts({}: Props) {
         <Link href="https://www.dropbox.com/sh/jcicv8jc17xq1cp/AABx6m5r-R38LxWhj69mtE-ra?dl=0" target="_blank" className='absolute right-0 top-0'>
             <button className='border-2 rounded-2xl p-1 border-gray-300 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs m-1'>Download Photos</button>
         </Link>
-        <div className='flex flex-row overflow-x-scroll gap-1 justify-start pl-10 pb-5 md:mx-56 md:my-40 overflow-y-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#303030]/80'>
+        <div className='flex flex-row overflow-x-scroll gap-1 justify-start pl-1 pb-5 mx-20 my-40 overflow-y-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#303030]/80'>
             <Image src={mr1} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr2} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr3} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
