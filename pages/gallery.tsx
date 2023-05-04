@@ -6,6 +6,10 @@ import mr2 from "../public/gallery/mr2.jpg"
 import mr3 from "../public/gallery/mr3.jpg"
 import mr4 from "../public/gallery/mr4.jpg"
 import mr5 from "../public/gallery/mr5.jpg"
+import mr6 from "../public/gallery/mr6.jpg"
+import mr7 from "../public/gallery/mr7.jpg"
+import mr8 from "../public/gallery/mr8.jpg"
+// import mr9 from "../public/gallery/mr9.jpg"
 import { Grid } from  'react-loader-spinner'
 type Props = {}
 const waiting = () =>{
@@ -32,8 +36,12 @@ export default function Contacts({}: Props) {
             <Image src={mr1} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr2} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr3} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr6} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr4} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr7} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr5} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            <Image src={mr8} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
+            {/* <Image src={mr9} alt="photo" width={250} height={250} className='rounded-lg object-contain'/> */}
         </div>
     </div>
   )
