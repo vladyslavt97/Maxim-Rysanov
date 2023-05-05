@@ -100,6 +100,25 @@ export default function Contacts({}: Props) {
                 </div>
                 <br/>
                 <div>
+                    <h1 className='font-semibold'>Spain</h1>
+                    <p><span className='italic'>Gonzalo Augusto</span><br/>
+                    Concertos Augusto S.L.<br/>
+                    <div className='flex flex-row text-center justify-center items-center gap-2'>
+                        <FiMail/>gonzalo@conciertosaugusto.com<br/>
+                        <CopyToClipboard text="gonzalo@conciertosaugusto.com">
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
+                        </CopyToClipboard>
+                    </div>
+                    <div className='flex flex-row text-center justify-center items-center gap-3'>
+                        <AiOutlinePhone/>+34 91 634 02 05<br/>
+                    </div>
+                    <Link href="http://www.conciertosaugusto.com/" className='text-blue-900'>
+                    conciertosaugusto.com<br/>
+                    </Link>
+                    </p>
+                </div>
+                <br/>
+                <div>
                     <h1 className='font-semibold'>Special Projects</h1>
                     <p>Larus Classical Music Agency<br/>
                     <span className='italic'>Alina Koyshibaeva</span><br/>
@@ -124,25 +143,6 @@ export default function Contacts({}: Props) {
                     </div>
                     <Link href="http://larusmusic.com" className='text-blue-900'>
                     larusmusic.com<br/>
-                    </Link>
-                    </p>
-                </div>
-                <br/>
-                <div>
-                    <h1 className='font-semibold'>Spain</h1>
-                    <p><span className='italic'>Gonzalo Augusto</span><br/>
-                    Concertos Augusto S.L.<br/>
-                    <div className='flex flex-row text-center justify-center items-center gap-2'>
-                        <FiMail/>gonzalo@conciertosaugusto.com<br/>
-                        <CopyToClipboard text="gonzalo@conciertosaugusto.com">
-                            <button><FiCopy className='ml-2 text-gray-400'/></button>
-                        </CopyToClipboard>
-                    </div>
-                    <div className='flex flex-row text-center justify-center items-center gap-3'>
-                        <AiOutlinePhone/>+34 91 634 02 05<br/>
-                    </div>
-                    <Link href="http://www.conciertosaugusto.com/" className='text-blue-900'>
-                    conciertosaugusto.com<br/>
                     </Link>
                     <br/>
                     <br/>
