@@ -122,8 +122,8 @@ export default function Contacts({}: Props) {
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
                         <IoLogoWhatsapp color='green'/>+79805409120<br/>
                     </div>
-                    <Link href="http://www.nordicartistsmanagement.com" className='text-blue-900'>
-                    nordicartistsmanagement.com<br/>
+                    <Link href="http://larusmusic.com" className='text-blue-900'>
+                    larusmusic.com<br/>
                     </Link>
                     </p>
                 </div>
