@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { AiOutlinePhone } from 'react-icons/ai';
+import { IoLogoWhatsapp } from 'react-icons/io';
 import { FiMail } from 'react-icons/fi';
 import { FiCopy } from 'react-icons/fi';
 import CopyToClipboard from 'react-copy-to-clipboard';
@@ -91,6 +92,35 @@ export default function Contacts({}: Props) {
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
                         <AiOutlinePhone/>+45 22 744 904<br/>
+                    </div>
+                    <Link href="http://www.nordicartistsmanagement.com" className='text-blue-900'>
+                    nordicartistsmanagement.com<br/>
+                    </Link>
+                    </p>
+                </div>
+                <br/>
+                <div>
+                    <h1 className='font-semibold'>Special Projects</h1>
+                    <p>Larus Classical Music Agency<br/>
+                    <span className='italic'>Alina Koyshibaeva</span><br/>
+                    <div className='flex flex-row text-center justify-center items-center gap-2'>
+                        <FiMail/>alina@larusmusic.com<br/>
+                        <CopyToClipboard text="alina@larusmusic.com">
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
+                        </CopyToClipboard>
+                    </div>
+                    <div className='flex flex-row text-center justify-center items-center gap-3'>
+                        <AiOutlinePhone/>+436609510020<br/>
+                    </div>
+                    <span className='italic'>Valeriia Rastogi</span><br/>
+                    <div className='flex flex-row text-center justify-center items-center gap-2'>
+                        <FiMail/>valeriia@larusmusic.com<br/>
+                        <CopyToClipboard text="valeriia@larusmusic.com">
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
+                        </CopyToClipboard>
+                    </div>
+                    <div className='flex flex-row text-center justify-center items-center gap-3'>
+                        <IoLogoWhatsapp color='green'/>+79805409120<br/>
                     </div>
                     <Link href="http://www.nordicartistsmanagement.com" className='text-blue-900'>
                     nordicartistsmanagement.com<br/>
