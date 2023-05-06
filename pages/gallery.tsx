@@ -9,21 +9,7 @@ import mr5 from "../public/gallery/mr5.jpg"
 import mr6 from "../public/gallery/mr6.jpg"
 import mr7 from "../public/gallery/mr7.jpg"
 import mr8 from "../public/gallery/mr8.jpg"
-// import mr9 from "../public/gallery/mr9.jpg"
-import { Grid } from  'react-loader-spinner'
 type Props = {}
-const waiting = () =>{
-  return ( <Grid
-  height="80"
-  width="80"
-  color="#4fa94d"
-  ariaLabel="grid-loading"
-  radius="12.5"
-  wrapperStyle={{}}
-  wrapperClass=""
-  visible={true}
-/>)
-}
 
 export default function Contacts({}: Props) {
   return (
@@ -41,7 +27,6 @@ export default function Contacts({}: Props) {
             <Image src={mr7} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr5} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
             <Image src={mr8} alt="photo" width={250} height={250} className='rounded-lg object-contain'/>
-            {/* <Image src={mr9} alt="photo" width={250} height={250} className='rounded-lg object-contain'/> */}
         </div>
     </div>
   )
