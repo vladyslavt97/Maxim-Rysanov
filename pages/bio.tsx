@@ -1,8 +1,4 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import React from 'react'
 import { useStore } from "../components/State";
-import LanguagesSwitch from '@/components/LanguagesSwitch'
 import EngBio from '@/components/EngBio';
 import UkrBio from '@/components/UkrBio';
 import RusBio from '@/components/RusBio';

@@ -1,7 +1,4 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header'
 import { motion } from 'framer-motion';
-import React from 'react'
 import YouTube, { YouTubeProps } from 'react-youtube';
 import { Bars } from  'react-loader-spinner'
 

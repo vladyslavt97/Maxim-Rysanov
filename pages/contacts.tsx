@@ -1,6 +1,5 @@
 
 import Link from 'next/link'
-import React from 'react'
 import { AiOutlinePhone } from 'react-icons/ai';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { FiMail } from 'react-icons/fi';

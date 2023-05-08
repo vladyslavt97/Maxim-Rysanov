@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import mr1 from "../public/gallery/mr1.jpg"
 import mr2 from "../public/gallery/mr2.jpg"
 import mr3 from "../public/gallery/mr3.jpg"
