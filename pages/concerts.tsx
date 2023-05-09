@@ -15,7 +15,6 @@ interface ConcertType {
   pastconcert: boolean
 }
 
-
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   useEffect(() => {
