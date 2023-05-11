@@ -7,22 +7,10 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import { useState } from 'react';
 
 type Props = {}
 
 export default function RecodringsSwipeImgs({}: Props) {
-    const [hasloadededMartinu,setHas3MartinuLoaded] = useState(false);
-    const [hasloadededMozart,setHas4MozartLoaded] = useState(false);
-    const [hasloadededDobrinka,setHas5DobrinkaLoaded] = useState(false);
-    const [hasloadededPavane,setHas6PavaneLoaded] = useState(false);
-    const [hasloadededBruch,setHas7BruchLoaded] = useState(false);
-    const [hasloadededBeethoven,setHas8BeethovenLoaded] = useState(false);
-    const [has9Brahmsloadeded,set9BrahmsHasLoaded] = useState(false);
-    const [hasloadededBach,setHas10BachLoaded] = useState(false);
-    const [hasloadededBrahms,setHas11BrahmsLoaded] = useState(false);
-    const [hasloadededJanine,setHas12JanineLoaded] = useState(false);
-    const [hasloadededKancheli,set13KanchelliHasLoaded] = useState(false);
   return (
      <div className='h-[100vh] overflow-hidden'>
         <h1 className='absolute top-[15%] left-1/2 transform -translate-x-1/2 font-bold text-xl text-black z-10'>Recordings</h1>

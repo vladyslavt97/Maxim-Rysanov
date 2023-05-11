@@ -60,55 +60,6 @@ export default function PastConcerts({}: Props) {
         </motion.div>
        
       </motion.div>}
-
-
-       {/* md and bigger */}
-      {/* <motion.div 
-      initial={{height: 0, opacity: 0.7}}
-      animate={{height: 150, opacity: 1}}
-      transition={{duration: 1}}
-      className='hidden md:flex flex-col bg-white text-black rounded-b-lg mx-3 px-3 drop-shadow-md'>
-        {router.pathname === "/concerts-2023" && 
-        <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{delay: 0.4,duration: 1}}
-          className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center px-3'
-          >
-          <Link href="/concerts"><button onClick={e=>setOpen(!open)}>Upcoming 2023</button></Link>
-        </motion.div>}
-        {router.pathname !== "/concerts-2023" && 
-        <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{duration: 1, delay: 0.3}}
-          className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center px-3'
-          ><Link href="/concerts-2023"><button onClick={e=>setOpen(!open)}>Concerts 2023</button></Link>
-        </motion.div>}
-        <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{duration: 1.2, delay: 0.4}}
-          className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center px-3'
-          >
-          <Link href="/concerts-2022" ><button onClick={e=>setOpen(!open)}>Concerts 2022</button></Link>
-        </motion.div>
-        <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{duration: 1.4, delay: 0.6}}
-          className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center px-3'>
-        <Link href="/concerts-2021"><button onClick={e=>setOpen(!open)}>Concerts 2021</button></Link>
-        </motion.div>
-         <motion.div
-          initial={{opacity:0}}
-          animate={{opacity:1}}
-          transition={{duration: 1.6, delay: 0.8}}
-          className='hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center px-3'>
-        <Link href="/concerts-2020" ><button onClick={e=>setOpen(!open)}>Concerts 2020</button></Link>
-        </motion.div>
-        */}
-      {/* </motion.div> */}
     </div>
   )
 }
