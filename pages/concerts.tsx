@@ -77,13 +77,13 @@ export default function Concerts() {
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
                 </div>
-              <h5 className='mb-6'>{concert.location}<br/>
+              <h5 className='mb-6'>{concert.location && concert.location}<br/>
               {concert.programme.map((prog, ind)=>(
                 <div key={ind}>
                   <p>{prog}</p>
                 </div>
               ))}
-              {concert.withwhom && <h4 className='text-gray-900'>{concert.withwhom}</h4>}
+              {concert.withwhom && <h4 className='text-gray-900'>with {concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </h5>
               </>}
@@ -94,18 +94,3 @@ export default function Concerts() {
     </div>
   )
 }
-
-// .filter((el:any) => {
-  //   const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
-  //   const [dd, mm] = date.split('/');
-  //   const yyyy = new Date().getFullYear();
-  //   const fullDateString = `${yyyy}-${mm}-${dd}`;
-  //   //today
-  //   const today = new Date();
-  //   const yyyytoday = today.getFullYear();
-  //   const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
-  //   const ddtoday = today.getDate().toString().padStart(2, '0');
-  //   const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
-    
-  //   return fullDateString >= dateString;
-  // })
