@@ -72,12 +72,12 @@ export default function Concerts() {
             <h1 className='font-bold text-xl'>2023</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
-            <div key={index} className="mx-3">
+            <div key={index} className="mx-3 mb-6">
               {!concert.pastconcert && <>
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
                 </div>
-              <h5 className='mb-6'>{concert.location && concert.location}<br/>
+              {concert.location &&<h5>{concert.location}</h5>}
               {concert.programme.map((prog, ind)=>(
                 <div key={ind}>
                   <p>{prog}</p>
@@ -85,7 +85,6 @@ export default function Concerts() {
               ))}
               {concert.withwhom && <h4 className='text-gray-900'>with {concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
-              </h5>
               </>}
             </div>
           ))}
