@@ -5,8 +5,6 @@ We are happy to share the structure of this build.
 
 ## change gallery
 
-## with, conditional for each line so it does not take a space
-
 ##snap to the closest date
 ##dates 3-5 15-17
 02-10/09
