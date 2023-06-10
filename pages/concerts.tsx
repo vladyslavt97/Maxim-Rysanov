@@ -91,28 +91,30 @@ export default function Concerts() {
   
   //scroll = not related to date logic
   const scrollToRef = useRef<HTMLDivElement | null>(null);
-
-  if(cheing &&  smN !== 0){
-    const scrollToElement = () => {
-      if (scrollToRef.current && smN >= 0) {
-        console.log('smallestNumberIndex', smN);
-        
-     scrollToRef.current.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-  }
-    };
-
-    scrollToElement();
-  }
-  // }, [concerts]);
+  useEffect(() => {
+    if(cheing &&  smN !== 0){
+      const scrollToElement = () => {
+        if (scrollToRef.current && smN >= 0) {
+          console.log('smallestNumberIndex', smN);
+          
+       scrollToRef.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+    }
+      };
+  
+      scrollToElement();
+    }
+  }, [concerts])
+  // ;
   
   return (
     <div className=''>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden'>
         <PastConcerts/>
-        {concerts.length === 0 
+        {concerts.length === 0 && 
+        smN !== 0
         ? 
         <div className='flex items-center justify-center h-[60vh]'>
           <ColorRing
