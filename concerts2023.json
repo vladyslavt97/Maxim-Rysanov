@@ -234,48 +234,228 @@
   "pastconcert": false
 },{
   "year": "2023",
-  "date": "Thu 01/06",
+  "date": "SAT 24/06",
   "viola": "VIOLA",
   "conductor": "",
-  "location": "Razumovsky Academy, London",
+  "location": "Hochschule für Musik Hanns Eisler Berlin",
   "programme": [
-    "“Remembering Anthony Lester”",
-    "\nSchubert String Quintet",
-    "with Anna Chumachenko and friends"
+    ""
   ],
-  "link": "https://razumovsky.co.uk/events/event/remembering-anthony-lester-franz-schubert-string-quintet-in-c-major-sergei-bresler-maxim-rysanov-kyril-zlotnikov-oleg-kogan",
   "withwhom": "",
-  "pastconcert": false
+  "link": ""
 },{
   "year": "2023",
-  "date": "Thu 01/06",
+  "date": "SUN 25/06",
   "viola": "VIOLA",
   "conductor": "",
-  "location": "Razumovsky Academy, London",
+  "location": "Hochschule für Musik Hanns Eisler Berlin",
   "programme": [
-    "“Remembering Anthony Lester”",
-    "\nSchubert String Quintet",
-    "with Anna Chumachenko and friends"
+    ""
   ],
-  "link": "https://razumovsky.co.uk/events/event/remembering-anthony-lester-franz-schubert-string-quintet-in-c-major-sergei-bresler-maxim-rysanov-kyril-zlotnikov-oleg-kogan",
   "withwhom": "",
-  "pastconcert": false
+  "link": ""
 },{
   "year": "2023",
-  "date": "Thu 01/06",
+  "date": "SAT 01/07",
+  "viola": "VIOLA",
+  "conductor": "CONDUCTOR",
+  "location": "The Menuhin Hall, Cobham, UK",
+  "programme": [
+    "Bach",
+    "Tobakova",
+    "Elgar",
+    "Britten "
+  ],
+  "withwhom": "Yehudi Menuhin School Orchestra",
+  "link": "https://themenuhinhall.co.uk/event/summer-festival-orchestral-picnic-around-the-world/63000"
+},{
+  "year": "2023",
+  "date": "SUN 9/07",
+  "viola": "VIOLA",
+  "conductor": "CONDUCTOR",
+  "location": "",
+  "programme": [
+    "Recording project"
+  ],
+  "withwhom": "Yehudi Menuhin School Orchestra",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "MON 10/07",
+  "viola": "VIOLA",
+  "conductor": "CONDUCTOR",
+  "location": "",
+  "programme": [
+    "Recording project"
+  ],
+  "withwhom": "Yehudi Menuhin School Orchestra",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "WED 12/07",
+  "viola": "VIOLA",
+  "conductor": "CONDUCTOR",
+  "location": "Lichfield, UK",
+  "programme": [
+    "Bach",
+    "Tabakova",
+    "Elgar",
+    "Britten",
+    "As part of its 60th anniversary celebrations"
+  ],
+  "withwhom": "Yehudi Menuhin School Orchestra",
+  "link": "https://lichfieldfestival.org/event/the-yehudi-menuhin-school-orchestra/"
+},{
+  "year": "2023",
+  "date": "MON 17/07",
+  "viola": "VIOLA ",
+  "conductor": "CONDUCTOR",
+  "location": "",
+  "programme": [
+    "Bach",
+    "Elgar",
+    "Skoryk",
+    "Britten",
+    "Górecki"
+  ],
+  "withwhom": "Yehudi Menuhin School Orchestra",
+  "link": "https://www.gstaadmenuhinfestival.ch/en/program-and-tickets/concerts-2023/17-07-2023-orchestral-concert"
+},{
+  "year": "2023",
+  "date": "FRI 21/07 ",
   "viola": "VIOLA",
   "conductor": "",
-  "location": "Razumovsky Academy, London",
+  "location": "Festival Academy Budapest, Liszt Academy Great Hall",
   "programme": [
-    "“Remembering Anthony Lester”",
-    "\nSchubert String Quintet",
-    "with Anna Chumachenko and friends"
+    "Antonín Dvořák - String Quintet"
   ],
-  "link": "https://razumovsky.co.uk/events/event/remembering-anthony-lester-franz-schubert-string-quintet-in-c-major-sergei-bresler-maxim-rysanov-kyril-zlotnikov-oleg-kogan",
+  "withwhom": "Frang, Kadesha, Kokas, Fejervari",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "SAT 22/07",
+  "viola": "VIOLA",
+  "conductor": "CONDUCTOR",
+  "location": "Festival Academy Budapest, Liszt Academy Great Hall",
+  "programme": [
+    "Bartok Viola Concerto",
+    "Bartok Piano Concerto no.3"
+  ],
+  "withwhom": "Sunwook Kim and Pannon Philharmonic",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "SUN 23/07",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "Festival Academy Budapest, Liszt Academy Great Hall",
+  "programme": [
+    "Brahms Piano Quartet no.1"
+  ],
+  "withwhom": "Mihaela Martin, Christian-Pierre La Marca, José Gallardo",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "THU 03/08",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "Chamber Music at Lundsgaard",
+  "programme": [
+    ""
+  ],
   "withwhom": "",
-  "pastconcert": false
-}
-
-
-
-]
+  "link": "https://www.kammermusikfestival.dk/program-en/#1154"
+},{
+  "year": "2023",
+  "date": "TUE 15/08",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "KaposFest, Hungary",
+  "programme": [
+    ""
+  ],
+  "withwhom": "",
+  "link": "https://www.kaposfest.com/hu/"
+},{
+  "year": "2023",
+  "date": "SAT 02/09",
+  "viola": "",
+  "conductor": "",
+  "location": "Jury Member at Bartok Copmetition",
+  "programme": [
+    ""
+  ],
+  "withwhom": "",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "THU 21/09",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "Rumbach, Budapest",
+  "programme": [
+    "Hindemith Der Schwanendreher"
+  ],
+  "withwhom": "Ivan Fischer & Budapest Festival Orchestra",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "THU 28/09",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "Menuhin Hall, Cobham, UK",
+  "programme": [
+    "Fantasiestücke op 73.",
+    "\nGeistervariationen WoO 24 solo piano",
+    "\nMärchenbilder op 113",
+    "\nAdagio and Allegro op 70",
+    "\nMärchenerzählungen Op. 132"
+  ],
+  "withwhom": "Daseul Kim & Julian Bliss",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "FRI 13/10",
+  "viola": "Viola",
+  "conductor": "",
+  "location": "The Bridgewater Hall, Manchester",
+  "programme": [
+    "Bartok Viola Concerto"
+  ],
+  "withwhom": "Anja Bihlmaier & Halle Orchestra",
+  "link": "https://www.bridgewater-hall.co.uk/whats-on/halle-111023-215pm/"
+},{
+  "year": "2023",
+  "date": "TUE 17/10",
+  "viola": "",
+  "conductor": "CONDUCTOR",
+  "location": "Cadogan Hall, London",
+  "programme": [
+    "Akhunov",
+    "Tabakova"
+  ],
+  "withwhom": "Ksenia Sidorova & London Chamber Orchestra",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "SUN 22/10",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "Poderone, Italy",
+  "programme": [
+    "Hindemith Der Schwanendreher"
+  ],
+  "withwhom": "Ivan Fisher and Budapest Festival Orchestra",
+  "link": ""
+},{
+  "year": "2023",
+  "date": "SAT 28/10",
+  "viola": "VIOLA",
+  "conductor": "",
+  "location": "Vicenza",
+  "programme": [
+    "Hindemith Der Schwanendreher"
+  ],
+  "withwhom": "Ivan Fisher and Budapest Festival Orchestra",
+  "link": ""
+}]

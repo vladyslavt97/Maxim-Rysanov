@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
@@ -17,6 +17,8 @@ interface ConcertType {
 
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
+  const [cheing, setChecing] = useState(false);
+
   useEffect(() => {
         fetch('/api/get-concerts')
         .then(response => response.json())
@@ -45,12 +47,76 @@ export default function Concerts() {
     })
 
 
+    //new new new new new new new new new
+  const today = () => {
+    var currentDate = new Date();
+    var day = currentDate.getDate();
+    var month = currentDate.getMonth() + 1;
+    var formattedDay = ("0" + day).slice(-2);
+    var formattedMonth = ("0" + month).slice(-2);
+    var formattedDate = formattedDay + "/" + formattedMonth;
+    return formattedDate;
+  }
+  let smallestNumberIndex = 0;
+  let allNums: number[]=[];
+  let newArr: String[] = [];
+  useEffect(()=>{
+    console.log('1');
+    if (concerts.length > 0){
+      console.log('2');
+      validConcerts.map(c => {
+        newArr.push(c.date.slice(4))
+      })
+      for (let i = 0; i < newArr.length; i++) {
+        console.log('3');
+        
+        var number1 = newArr[i];
+        var [day1, month1] = number1.split("/");
+        var [day2, month2] = today().split("/");
+        var date1 = new Date(new Date().getFullYear(), parseInt(month1) - 1, parseInt(day1));
+        var date2 = new Date(new Date().getFullYear(), parseInt(month2) - 1, parseInt(day2));
+        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+        var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+        allNums.push(daysDiff)
+      }
+    
+      const smallestNumber = Math.min(...allNums);
+      smallestNumberIndex = allNums.indexOf(smallestNumber);
+      console.log(smallestNumberIndex);
+      console.log('l', concerts.length);
+      
+    }
+    setChecing(true);
+  }, [concerts])
+  
+  
+  //scroll = not related to date logic
+  const scrollToRef = useRef<HTMLDivElement | null>(null);
 
+  // useEffect(() => {
+  if(cheing){
+    console.log('sdfsdfsdfd');
+    
+    const scrollToElement = () => {
+      if (scrollToRef.current && smallestNumberIndex >= 0) {
+    const element = scrollToRef.current.children[smallestNumberIndex];
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+    };
+
+    scrollToElement();
+  }
+  // }, [concerts]);
+  
   return (
     <div className=''>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden'>
         <PastConcerts/>
-        {concerts.length === 0 ? 
+        {concerts.length === 0 
+        ? 
         <div className='flex items-center justify-center h-[60vh]'>
           <ColorRing
             visible={true}
@@ -72,7 +138,9 @@ export default function Concerts() {
             <h1 className='font-bold text-xl'>2023</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
-            <div key={index} className="mx-3 mb-6">
+            <div key={index} className="mx-3 mb-6" 
+            ref={index === smallestNumberIndex ? scrollToRef : null}
+            >
               {!concert.pastconcert && <>
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
