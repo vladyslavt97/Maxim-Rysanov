@@ -93,13 +93,17 @@ export default function Concerts() {
     if(cheing &&  smN !== 0){
       const scrollToElement = () => {
         if (scrollToRef.current && smN >= 0) {
-          console.log('smallestNumberIndex', smN);
           
-       scrollToRef.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-    }
+       setTimeout(() => {
+      const element = scrollToRef.current;
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+        }
+      }, 500);
+        }
       };
   
       scrollToElement();
