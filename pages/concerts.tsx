@@ -102,7 +102,7 @@ export default function Concerts() {
           block: 'start',
         });
         }
-      }, 500);
+      }, 1000);
         }
       };
   
