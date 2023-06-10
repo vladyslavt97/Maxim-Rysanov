@@ -18,6 +18,7 @@ interface ConcertType {
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   const [cheing, setChecing] = useState(false);
+  const [smN, setSmn] = useState(0);
 
   useEffect(() => {
         fetch('/api/get-concerts')
@@ -61,15 +62,11 @@ export default function Concerts() {
   let allNums: number[]=[];
   let newArr: String[] = [];
   useEffect(()=>{
-    console.log('1');
     if (concerts.length > 0){
-      console.log('2');
       validConcerts.map(c => {
         newArr.push(c.date.slice(4))
       })
       for (let i = 0; i < newArr.length; i++) {
-        console.log('3');
-        
         var number1 = newArr[i];
         var [day1, month1] = number1.split("/");
         var [day2, month2] = today().split("/");
@@ -82,8 +79,11 @@ export default function Concerts() {
     
       const smallestNumber = Math.min(...allNums);
       smallestNumberIndex = allNums.indexOf(smallestNumber);
-      console.log(smallestNumberIndex);
-      console.log('l', concerts.length);
+      console.log('smallestNumberIndexsmallestNumberIndex,', smallestNumberIndex);
+      if(smallestNumberIndex > 0){
+        setSmn(smallestNumberIndex)
+      }
+
       
     }
     setChecing(true);
@@ -94,12 +94,16 @@ export default function Concerts() {
   const scrollToRef = useRef<HTMLDivElement | null>(null);
 
   // useEffect(() => {
-  if(cheing){
-    console.log('sdfsdfsdfd');
-    
+  console.log('smallestNumberIndex test', smallestNumberIndex);
+
+  if(cheing &&  smN !== 0){
     const scrollToElement = () => {
-      if (scrollToRef.current && smallestNumberIndex >= 0) {
+      if (scrollToRef.current && smN >= 0) {
+        console.log('smallestNumberIndex', smN);
+        
     const element = scrollToRef.current.children[smallestNumberIndex];
+     console.log('el, ', element);
+    
     element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
@@ -139,7 +143,7 @@ export default function Concerts() {
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="mx-3 mb-6" 
-            ref={index === smallestNumberIndex ? scrollToRef : null}
+            ref={index === smN -3 ? scrollToRef : null}
             >
               {!concert.pastconcert && <>
               <div className='flex flex-row'>
