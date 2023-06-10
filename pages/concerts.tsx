@@ -58,10 +58,9 @@ export default function Concerts() {
     var formattedDate = formattedDay + "/" + formattedMonth;
     return formattedDate;
   }
-  let smallestNumberIndex = 0;
-  let allNums: number[]=[];
-  let newArr: String[] = [];
   useEffect(()=>{
+    let allNums: number[]=[];
+    let newArr: String[] = [];
     if (concerts.length > 0){
       validConcerts.map(c => {
         newArr.push(c.date.slice(4))
@@ -78,15 +77,14 @@ export default function Concerts() {
       }
     
       const smallestNumber = Math.min(...allNums);
-      smallestNumberIndex = allNums.indexOf(smallestNumber);
-      if(smallestNumberIndex > 0){
-        setSmn(smallestNumberIndex)
+      if(allNums.indexOf(smallestNumber) > 0){
+        setSmn(allNums.indexOf(smallestNumber))
       }
 
       
     }
     setChecing(true);
-  }, [concerts])
+  }, [concerts, validConcerts])
   
   
   //scroll = not related to date logic
@@ -106,8 +104,7 @@ export default function Concerts() {
   
       scrollToElement();
     }
-  }, [concerts])
-  // ;
+  }, [cheing, concerts, smN])
   
   return (
     <div className=''>
