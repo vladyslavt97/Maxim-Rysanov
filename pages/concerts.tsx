@@ -79,7 +79,6 @@ export default function Concerts() {
     
       const smallestNumber = Math.min(...allNums);
       smallestNumberIndex = allNums.indexOf(smallestNumber);
-      console.log('smallestNumberIndexsmallestNumberIndex,', smallestNumberIndex);
       if(smallestNumberIndex > 0){
         setSmn(smallestNumberIndex)
       }
@@ -93,21 +92,15 @@ export default function Concerts() {
   //scroll = not related to date logic
   const scrollToRef = useRef<HTMLDivElement | null>(null);
 
-  // useEffect(() => {
-  console.log('smallestNumberIndex test', smallestNumberIndex);
-
   if(cheing &&  smN !== 0){
     const scrollToElement = () => {
       if (scrollToRef.current && smN >= 0) {
         console.log('smallestNumberIndex', smN);
         
-    const element = scrollToRef.current.children[smallestNumberIndex];
-     console.log('el, ', element);
-    
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+     scrollToRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
   }
     };
 
