@@ -114,8 +114,7 @@ export default function Concerts() {
     <div className=''>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden'>
         <PastConcerts/>
-        {concerts.length === 0 && 
-        smN !== 0
+        {concerts.length === 0
         ? 
         <div className='flex items-center justify-center h-[60vh]'>
           <ColorRing
