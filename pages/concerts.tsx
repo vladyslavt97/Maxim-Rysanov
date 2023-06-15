@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 
 interface ConcertType {
   year: number
@@ -19,7 +21,7 @@ export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   const [cheing, setChecing] = useState(false);
   const [smN, setSmn] = useState(0);
-
+const itemRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
         fetch('/api/get-concerts')
         .then(response => response.json())
@@ -88,27 +90,41 @@ export default function Concerts() {
   
   
   //scroll = not related to date logic
-  const scrollToRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    if(cheing &&  smN !== 0){
-      const scrollToElement = () => {
-        if (scrollToRef.current && smN >= 0) {
+  // const scrollToRef = useRef<HTMLDivElement | null>(null);
+  // useEffect(() => {
+  //   if(cheing &&  smN !== 0){
+  //     const scrollToElement = () => {
+  //       if (scrollToRef.current && smN >= 0) {
           
-       setTimeout(() => {
-      const element = scrollToRef.current;
-      if (element) {
-        element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-        }
-      }, 1000);
-        }
-      };
+  //      setTimeout(() => {
+  //     const element = scrollToRef.current;
+  //     if (element) {
+  //       element.scrollIntoView({
+  //         behavior: 'smooth',
+  //         block: 'start',
+  //       });
+  //       }
+  //     }, 1000);
+  //       }
+  //     };
   
-      scrollToElement();
+  //     scrollToElement();
+  //   }
+  // }, [cheing, concerts, smN])
+  
+  useEffect(() => {
+    // Scroll to the specific index once the component mounts
+    if (itemRef.current) {
+      const itemHeight = itemRef.current.offsetHeight;
+      console.log('Item height:', itemHeight);
+      
     }
-  }, [cheing, concerts, smN])
+
+    scroll.scrollTo(smN*130, {
+      duration: 3500,
+      smooth: 'easeInOutQuint',
+    });
+  }, [cheing, concerts, smN]);
   
   return (
     <div className=''>
@@ -137,9 +153,19 @@ export default function Concerts() {
             <h1 className='font-bold text-xl'>2023</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
-            <div key={index} className="mx-3 mb-6" 
-            ref={index === smN -3 ? scrollToRef : null}
+            <ScrollLink
+              key={index}
+              activeClass="active"
+              to={`${smN}`}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={2000}
+              >
+            <div key={index} className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"}`} 
+            
             >
+              {smN === index && <h1 className='text-gray-500 text-xs absolute right-7 italic'>Next Concert</h1>}
               {!concert.pastconcert && <>
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
@@ -154,6 +180,7 @@ export default function Concerts() {
               {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
               </>}
             </div>
+            </ScrollLink>
           ))}
         </motion.div>}
       </div>
