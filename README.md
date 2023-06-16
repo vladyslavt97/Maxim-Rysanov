@@ -8,6 +8,4 @@ We are happy to share the structure of this build.
 ## TODO - to improve
 
 ##snap to the closest date
-##Event not concert
-.
-.
+still pixels and has to know how many divs are there from the top
