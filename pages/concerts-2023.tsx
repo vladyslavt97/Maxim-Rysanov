@@ -29,36 +29,20 @@ export default function Concerts() {
         });
     }, [setConcerts]);
   
-  let validConcerts = concerts.filter((el:any) => {
-    const [day, date] = el.date.split(' ');///removing the day (THU) and working with the date (09/02)
-    const [dd, mm] = date.split('/');
-    const yyyy = new Date().getFullYear();
-    const fullDateString = `${yyyy}-${mm}-${dd}`;
+  let validConcerts = concerts.sort((a, b) => {
+  const getLastFiveCharacters = (dateString: any) => {
+    const lastIndex = dateString.length - 1;
+    return dateString.substr(lastIndex - 4);
+  };
 
-    //today
-    const today = new Date();
-    const yyyytoday = today.getFullYear();
-    const mmtoday = (today.getMonth() + 1).toString().padStart(2, '0');
-    const ddtoday = today.getDate().toString().padStart(2, '0');
-    const dateString = `${yyyytoday}-${mmtoday}-${ddtoday}`;
-    
-    return fullDateString <= dateString;
-  })
-  .sort((a, b) => {
-      const [dayA, dateA] = a.date.split(' ')
-      const [ddA, mmA] = dateA.split('/')
-      const yyyyA = new Date().getFullYear()
-      const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
-      const dateObjectA = new Date(fullDateStringA)
+  const lastFiveCharactersA = getLastFiveCharacters(a.date);
+  const lastFiveCharactersB = getLastFiveCharacters(b.date);
 
-      const [dayB, dateB] = b.date.split(' ')
-      const [ddB, mmB] = dateB.split('/')
-      const yyyyB = new Date().getFullYear()
-      const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
-      const dateObjectB = new Date(fullDateStringB)
+  const twoDimensionalArrayA = lastFiveCharactersA.split('/');
+  const twoDimensionalArrayB = lastFiveCharactersB.split('/');
 
-      return dateObjectB.getTime() - dateObjectA.getTime();
-    })
+  return twoDimensionalArrayB[1] - twoDimensionalArrayA[1] || twoDimensionalArrayB[0] - twoDimensionalArrayA[0];
+});
 
 
 
@@ -85,7 +69,7 @@ export default function Concerts() {
         animate={{opacity:1}}
         transition={{duration:1}}
         className='flex flex-col mx-3 justify-center items-start mb-40 lg:text-xl'>
-          <div className='static flex justify-center items-center pt-5 mx-3'>
+          <div className='flex justify-center items-center pt-5 mx-3'>
             <h1 className='font-bold text-xl'>Past 2023</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
