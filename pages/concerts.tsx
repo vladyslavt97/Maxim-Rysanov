@@ -34,21 +34,38 @@ const itemRef = useRef<HTMLDivElement>(null);
         });
     }, [setConcerts]);
   
-  let validConcerts = concerts.sort((a, b) => {
-      const [dayA, dateA] = a.date.split(' ')
-      const [ddA, mmA] = dateA.split('/')
-      const yyyyA = new Date().getFullYear()
-      const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
-      const dateObjectA = new Date(fullDateStringA)
+  // let validConcerts = concerts.sort((a, b) => {
+  //     const [dayA, dateA] = a.date.split(' ')
+  //     console.log('dateA', dateA);
+      
+  //     const [ddA, mmA] = dateA.split('/')
+  //     const yyyyA = new Date().getFullYear()
+  //     const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
+  //     const dateObjectA = new Date(fullDateStringA)
 
-      const [dayB, dateB] = b.date.split(' ')
-      const [ddB, mmB] = dateB.split('/')
-      const yyyyB = new Date().getFullYear()
-      const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
-      const dateObjectB = new Date(fullDateStringB)
+  //     const [dayB, dateB] = b.date.split(' ')
+  //     const [ddB, mmB] = dateB.split('/')
+  //     const yyyyB = new Date().getFullYear()
+  //     const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
+  //     const dateObjectB = new Date(fullDateStringB)
 
-      return dateObjectB.getTime() - dateObjectA.getTime();
-    })
+  //     return dateObjectB.getTime() - dateObjectA.getTime();
+  //   })
+let validConcerts = concerts.sort((a, b) => {
+  const getLastFiveCharacters = (dateString: any) => {
+    const lastIndex = dateString.length - 1;
+    return dateString.substr(lastIndex - 4);
+  };
+
+  const lastFiveCharactersA = getLastFiveCharacters(a.date);
+  const lastFiveCharactersB = getLastFiveCharacters(b.date);
+
+  const twoDimensionalArrayA = lastFiveCharactersA.split('/');
+  const twoDimensionalArrayB = lastFiveCharactersB.split('/');
+
+  return twoDimensionalArrayB[1] - twoDimensionalArrayA[1] || twoDimensionalArrayB[0] - twoDimensionalArrayA[0];
+});
+    
 
 
     //new new new new new new new new new
@@ -178,7 +195,7 @@ const itemRef = useRef<HTMLDivElement>(null);
                 </div>
               ))}
               {concert.withwhom && <h4 className='text-gray-900'>with {concert.withwhom}</h4>}
-              {concert.link && <Link href={concert.link}><h4 className='italic underline z-10' onClick={(e)=>e.stopPropagation()}>more details</h4></Link>}
+              {concert.link && <a href={concert.link}><span className='italic underline z-10' onClick={(e)=>e.stopPropagation()}>more details</span></a>}
               </>}
             </div>
             </ScrollLink>
