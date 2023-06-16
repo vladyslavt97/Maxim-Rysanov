@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import Link from 'next/link';
 
 
 interface ConcertType {
@@ -177,7 +178,7 @@ const itemRef = useRef<HTMLDivElement>(null);
                 </div>
               ))}
               {concert.withwhom && <h4 className='text-gray-900'>with {concert.withwhom}</h4>}
-              {concert.link && <a href={concert.link}><h4 className='italic underline'>more details</h4></a>}
+              {concert.link && <Link href={concert.link}><h4 className='italic underline z-10' onClick={(e)=>e.stopPropagation()}>more details</h4></Link>}
               </>}
             </div>
             </ScrollLink>
