@@ -164,14 +164,12 @@ let validConcerts = concerts.sort((a, b) => {
               offset={-70}
               duration={2000}
               >
-            <div key={index} className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"}`} 
-            
-            >
+            {!concert.pastconcert && 
+            <div key={index} className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"}`}>
               {smN === index && 
               <div className='relative'>
                 <h1 className='text-gray-500 absolute -right-3 -top-2 text-xs italic'>Next Event</h1>
               </div>}
-              {!concert.pastconcert && <>
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
                 </div>
@@ -183,8 +181,7 @@ let validConcerts = concerts.sort((a, b) => {
               ))}
               {concert.withwhom && <h4 className='text-gray-900'>with {concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><span className='italic underline z-10' onClick={(e)=>e.stopPropagation()}>more details</span></a>}
-              </>}
-            </div>
+            </div>}
             </ScrollLink>
           ))}
         </motion.div>}
