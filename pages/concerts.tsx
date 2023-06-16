@@ -34,23 +34,7 @@ const itemRef = useRef<HTMLDivElement>(null);
         });
     }, [setConcerts]);
   
-  // let validConcerts = concerts.sort((a, b) => {
-  //     const [dayA, dateA] = a.date.split(' ')
-  //     console.log('dateA', dateA);
-      
-  //     const [ddA, mmA] = dateA.split('/')
-  //     const yyyyA = new Date().getFullYear()
-  //     const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
-  //     const dateObjectA = new Date(fullDateStringA)
 
-  //     const [dayB, dateB] = b.date.split(' ')
-  //     const [ddB, mmB] = dateB.split('/')
-  //     const yyyyB = new Date().getFullYear()
-  //     const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
-  //     const dateObjectB = new Date(fullDateStringB)
-
-  //     return dateObjectB.getTime() - dateObjectA.getTime();
-  //   })
 let validConcerts = concerts.sort((a, b) => {
   const getLastFiveCharacters = (dateString: any) => {
     const lastIndex = dateString.length - 1;
@@ -83,7 +67,7 @@ let validConcerts = concerts.sort((a, b) => {
     let newArr: String[] = [];
     if (concerts.length > 0){
       validConcerts.map(c => {
-        newArr.push(c.date.slice(4))
+        newArr.push(c.date.slice(-5))
       })
       for (let i = 0; i < newArr.length; i++) {
         var number1 = newArr[i];
