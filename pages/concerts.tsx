@@ -95,16 +95,22 @@ let validConcerts = concerts.sort((a, b) => {
   }, [concerts, validConcerts])
   
 
+
+  //the magic useEffect
+  //it finds the height of the divs before the needed div
+  // I add tree, because its closest visually
   useEffect(() => {
+    //get the heights in the form of the array
     const heights = divRefs.current
       .slice(0, smN+3)
       .map((ref) => ref?.offsetHeight || 0);
 
+    //sums up all the array elements
     const totalHeight = heights
     .reduce((acc, height) => acc + height, 0);
 
 
-
+    //scroll magic
     scroll.scrollTo(totalHeight, {
       duration: 3500,
       smooth: 'easeInOutQuint',
