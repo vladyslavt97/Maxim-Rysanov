@@ -3,8 +3,6 @@ import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import Link from 'next/link';
-
 
 interface ConcertType {
   year: number
@@ -22,7 +20,10 @@ export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   const [cheing, setChecing] = useState(false);
   const [smN, setSmn] = useState(0);
-const itemRef = useRef<HTMLDivElement>(null);
+
+
+  const divRefs = useRef<Array<HTMLDivElement | null>>([]);
+
   useEffect(() => {
         fetch('/api/get-concerts')
         .then(response => response.json())
@@ -52,7 +53,7 @@ let validConcerts = concerts.sort((a, b) => {
     
 
 
-    //new new new new new new new new new
+  //Todays date generated in the following format 17/06
   const today = () => {
     var currentDate = new Date();
     var day = currentDate.getDate();
@@ -62,6 +63,9 @@ let validConcerts = concerts.sort((a, b) => {
     var formattedDate = formattedDay + "/" + formattedMonth;
     return formattedDate;
   }
+
+
+  //this useEffect takes the concerts and todays date and finds the most recent index: smallestNumber, and then updates smN state.
   useEffect(()=>{
     let allNums: number[]=[];
     let newArr: String[] = [];
@@ -90,39 +94,18 @@ let validConcerts = concerts.sort((a, b) => {
     setChecing(true);
   }, [concerts, validConcerts])
   
-  
-  //scroll = not related to date logic
-  // const scrollToRef = useRef<HTMLDivElement | null>(null);
-  // useEffect(() => {
-  //   if(cheing &&  smN !== 0){
-  //     const scrollToElement = () => {
-  //       if (scrollToRef.current && smN >= 0) {
-          
-  //      setTimeout(() => {
-  //     const element = scrollToRef.current;
-  //     if (element) {
-  //       element.scrollIntoView({
-  //         behavior: 'smooth',
-  //         block: 'start',
-  //       });
-  //       }
-  //     }, 1000);
-  //       }
-  //     };
-  
-  //     scrollToElement();
-  //   }
-  // }, [cheing, concerts, smN])
-  
-  useEffect(() => {
-    // Scroll to the specific index once the component mounts
-    if (itemRef.current) {
-      const itemHeight = itemRef.current.offsetHeight;
-      console.log('Item height:', itemHeight);
-      
-    }
 
-    scroll.scrollTo(smN*130, {
+  useEffect(() => {
+    const heights = divRefs.current
+      .slice(0, smN+3)
+      .map((ref) => ref?.offsetHeight || 0);
+
+    const totalHeight = heights
+    .reduce((acc, height) => acc + height, 0);
+
+
+
+    scroll.scrollTo(totalHeight, {
       duration: 3500,
       smooth: 'easeInOutQuint',
     });
@@ -156,16 +139,18 @@ let validConcerts = concerts.sort((a, b) => {
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <ScrollLink
-              key={index}
+              key={index} 
               activeClass="active"
               to={`${smN}`}
               spy={true}
               smooth={true}
-              offset={-70}
+              // offset={-70}
               duration={2000}
               >
             {!concert.pastconcert && 
-            <div key={index} className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"}`}>
+            <div key={index} 
+            ref={(el) => (divRefs.current[index] = el)}
+            className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"}`}>
               {smN === index && 
               <div className='relative'>
                 <h1 className='text-gray-500 absolute -right-3 -top-2 text-xs italic'>Next Event</h1>
