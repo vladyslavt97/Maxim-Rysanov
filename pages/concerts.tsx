@@ -159,7 +159,7 @@ let validConcerts = concerts.sort((a, b) => {
             className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"}`}>
               {smN === index && 
               <div className='relative'>
-                <h1 className='text-gray-500 absolute -right-3 -top-2 text-xs italic'>Next Event</h1>
+                <h1 className='text-white absolute -right-3 -top-2 text-xs italic'>Next Event</h1>
               </div>}
               <div className='flex flex-row'>
                     <h2 className=' font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
