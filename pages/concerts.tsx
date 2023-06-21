@@ -150,7 +150,6 @@ let validConcerts = concerts.sort((a, b) => {
               to={`${smN}`}
               spy={true}
               smooth={true}
-              // offset={-70}
               duration={2000}
               >
             {!concert.pastconcert && 
