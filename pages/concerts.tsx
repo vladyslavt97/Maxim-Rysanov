@@ -79,6 +79,11 @@ let validConcerts = concerts.sort((a, b) => {
         var [day2, month2] = today().split("/");
         var date1 = new Date(new Date().getFullYear(), parseInt(month1) - 1, parseInt(day1));
         var date2 = new Date(new Date().getFullYear(), parseInt(month2) - 1, parseInt(day2));
+
+        // only consider future dates
+        if (date1 < date2) {
+          continue; // Skip dates that are earlier than today
+        }
         var timeDiff = Math.abs(date2.getTime() - date1.getTime());
         var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
         allNums.push(daysDiff)
@@ -102,7 +107,7 @@ let validConcerts = concerts.sort((a, b) => {
   useEffect(() => {
     //get the heights in the form of the array
     const heights = divRefs.current
-      .slice(0, smN+3)
+      .slice(0, smN+1)
       .map((ref) => ref?.offsetHeight || 0);
 
     //sums up all the array elements
