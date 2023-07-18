@@ -19,9 +19,6 @@ export default function Contacts({}: Props) {
                     <h1 className='font-semibold'>General Management</h1>
                     <p><span className='italic'>Lorna Neill</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-3'>
-                        <AiOutlinePhone/>+44 (0) 20 8051 9476<br/>
-                    </div>
-                    <div className='flex flex-row text-center justify-center items-center gap-3'>
                         <AiOutlinePhone/>+44 (0) 7798 531 819<br/>
                     </div>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>
@@ -99,6 +96,25 @@ export default function Contacts({}: Props) {
                 </div>
                 <br/>
                 <div>
+                    <h1 className='font-semibold'>The Netherlands</h1>
+                    <p><span className='italic'>Marjon</span><br/>
+                    IVY ARTISTS<br/>
+                    <div className='flex flex-row text-center justify-center items-center gap-2'>
+                        <FiMail/>marjon@ivyartists.com<br/>
+                        <CopyToClipboard text="marjon@ivyartists.com">
+                            <button><FiCopy className='ml-2 text-gray-400'/></button>
+                        </CopyToClipboard>
+                    </div>
+                    <div className='flex flex-row text-center justify-center items-center gap-3'>
+                        <AiOutlinePhone/>+31 (0)70 39 25 271, +31 (0)6 28 48 98 53 <br/>
+                    </div>
+                    <Link href="www.ivyartists.com" className='text-blue-900'>
+                    ivyartists.com<br/>
+                    </Link>
+                    </p>
+                </div>
+                <br/>
+                <div>
                     <h1 className='font-semibold'>Spain</h1>
                     <p><span className='italic'>Gonzalo Augusto</span><br/>
                     Concertos Augusto S.L.<br/>
@@ -118,7 +134,7 @@ export default function Contacts({}: Props) {
                 </div>
                 <br/>
                 <div>
-                    <h1 className='font-semibold'>Special Projects</h1>
+                    <h1 className='font-semibold'>France & Austria</h1>
                     <p>Larus Classical Music Agency<br/>
                     <span className='italic'>Alina Koyshibaeva</span><br/>
                     <div className='flex flex-row text-center justify-center items-center gap-2'>

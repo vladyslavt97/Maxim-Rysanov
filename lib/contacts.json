@@ -1,0 +1,62 @@
+[
+    {
+        "title": "General Management",
+        "name": "Lorna Neill",
+        "phone": ["+44 (0) 7798 531 819"],
+        "email": "lorna@musicinteralia.com",
+        "website": "http://www.musicinteralia.com",
+        "display_website": "musicinteralia.com"
+    },
+    {
+        "title": "Benelux",
+        "name": "Marjon Koenekoop",
+        "phone": [],
+        "email": "marjon@ivyartists.com",
+        "website": "http://www.ivyartists.com",
+        "display_website": "ivyartists.com"
+    },
+    {
+        "title": "Italy & various projects",
+        "name": "Susanna Stefani Caetani",
+        "phone": ["+44 7950 427967"],
+        "email": "susanna@onylstage.co.uk",
+        "website": ["http://www.onlystage.co.uk/rysanov/", "http://www.onlystage.co.uk/rysanov-conductor/"],
+        "display_website": ["onlystage.co.uk/rysanov", "onlystage.co.uk/rysanov-conductor"]
+    },
+    {
+        "title": "Scandinavia",
+        "nameOfCompany": "Nordic Artists Management A/S",
+        "name": ["Neel Teilmann (viola engagements)", "Jacob Soelberg (conducting engagements)"],
+        "phone": ["+45 22 744 904"],
+        "email": ["net@nordicartistsmanagement.com", "jrs@nordicartistsmanagement.com"],
+        "website": ["http://www.nordicartistsmanagement.com"],
+        "display_website": ["nordicartistsmanagement.com"]
+    },
+    {
+        "title": "Spain",
+        "nameOfCompany": "Concertos Augusto S.L.",
+        "name": ["Gonzalo Augusto"],
+        "phone": ["+34 91 634 02 05"],
+        "email": ["gonzalo@conciertosaugusto.com"],
+        "website": ["http://www.conciertosaugusto.com/"],
+        "display_website": ["conciertosaugusto.com"]
+    },
+    {
+        "title": "France & Austria",
+        "nameOfCompany": "Larus Classical Music Agency",
+        "name": ["Alina Koyshibaeva", "Valeriia Rastogi"],
+        "phone": ["+436609510020", "+79805409120"],
+        "email": ["alina@larusmusic.com", "valeriia@larusmusic.com"],
+        "website": ["http://larusmusic.com"],
+        "display_website": ["larusmusic.com"]
+    },
+    {
+        "title": "The Netherlands",
+        "nameOfCompany": "Marjon",
+        "name": ["Marjon"],
+        "phone": ["+31 (0)70 39 25 271", "+31 (0)6 28 48 98 53"],
+        "email": ["marjon@ivyartists.com"],
+        "website": ["www.ivyartists.com"],
+        "display_website": ["ivyartists.com"]
+    }
+]
