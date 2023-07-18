@@ -169,7 +169,7 @@ export default function Contacts({}: Props) {
             </div>
             <div>
                 <h5 className='pb-16 text-center text-xs text-gray-500'>The website is made by 
-                    <Link href="https://www.facebook.com/vladyslav.tsurkanenko/" className='text-blue-900/80 italic'>Vladyslav Tsurkanenko</Link>
+                    <Link href="https://www.facebook.com/vladyslav.tsurkanenko/" className='text-blue-900/80 italic'> Vladyslav Tsurkanenko</Link>
                 </h5>
             </div>
         </div>
