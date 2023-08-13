@@ -161,7 +161,7 @@ let validConcerts = concerts.sort((a, b) => {
             {!concert.pastconcert && 
             <div key={index} 
             ref={(el) => (divRefs.current[index] = el)}
-            className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"} ${concert.canceled && "text-gray-500 bg-red-100/30 py-3 pl-1 pr-5 rounded shadow-lg"}`}>
+            className={`mx-3 mb-6 ${smN === index && "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"} ${concert.canceled && "text-gray-400 bg-red-100/10 py-3 pl-1 pr-5 rounded shadow-lg"}`}>
               {smN === index && 
               <div className={`${concert.canceled ? "hidden" : "relative mb-2"}`}>
                 <h1 className='text-gray-100 absolute -right-3 -top-2 text-xs italic'>Next Event</h1>
@@ -176,8 +176,8 @@ let validConcerts = concerts.sort((a, b) => {
                   <p>{prog}</p>
                 </div>
               ))}
-              {concert.withwhom && <h4 className={`${concert.canceled ? "text-gray-500" : "text-gray-900"}`}>with {concert.withwhom}</h4>}
-              {concert.link && <a href={concert.link}><span className={`italic underline z-10 font-serif ${concert.canceled && "text-gray-500"}`} onClick={(e)=>e.stopPropagation()}>more details</span></a>}
+              {concert.withwhom && <h4 className={`${concert.canceled ? "text-gray-400" : "text-gray-900"}`}>with {concert.withwhom}</h4>}
+              {concert.link && <a href={concert.link}><span className={`italic underline z-10 font-serif ${concert.canceled && "text-gray-400"}`} onClick={(e)=>e.stopPropagation()}>more details</span></a>}
             </div>}
             </ScrollLink>
           ))}
