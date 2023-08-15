@@ -176,7 +176,7 @@ let validConcerts = concerts.sort((a, b) => {
                   <p>{prog}</p>
                 </div>
               ))}
-              {concert.withwhom && <h4 className={`${concert.canceled ? "text-gray-400" : "text-gray-900"}`}>with {concert.withwhom}</h4>}
+              {concert.withwhom && <h4 className={`${concert.canceled ? "text-gray-400" : "text-gray-800"}`}>with {concert.withwhom}</h4>}
               {concert.link && <a href={concert.link}><span className={`italic underline z-10 font-serif ${concert.canceled && "text-gray-400"}`} onClick={(e)=>e.stopPropagation()}>more details</span></a>}
             </div>}
             </ScrollLink>
