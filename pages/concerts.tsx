@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import Link from 'next/link';
 
 interface ConcertType {
   year: number
@@ -123,6 +124,8 @@ let validConcerts = concerts.sort((a, b) => {
     });
   }, [cheing, concerts, smN]);
   
+  console.log(validConcerts.length);
+  
   return (
     <div className=''>
       <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden'>
@@ -177,7 +180,13 @@ let validConcerts = concerts.sort((a, b) => {
                 </div>
               ))}
               {concert.withwhom && <h4 className={`${concert.canceled ? "text-gray-400" : "text-gray-800"}`}>with {concert.withwhom}</h4>}
-              {concert.link && <a href={concert.link}><span className={`italic underline z-10 font-serif ${concert.canceled && "text-gray-400"}`} onClick={(e)=>e.stopPropagation()}>more details</span></a>}
+              {concert.link && 
+                <Link href={concert.link}>
+                  <span className={`italic underline z-10 font-serif ${concert.canceled && "text-gray-400"}`} onClick={(e)=>e.stopPropagation()}>
+                    more details
+                  </span>
+                </Link>
+              }
             </div>}
             </ScrollLink>
           ))}
