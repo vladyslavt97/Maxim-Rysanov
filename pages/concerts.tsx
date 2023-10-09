@@ -124,7 +124,6 @@ let validConcerts = concerts.sort((a, b) => {
     });
   }, [cheing, concerts, smN]);
   
-  console.log(validConcerts.length);
   
   return (
     <div className=''>
