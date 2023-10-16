@@ -4,6 +4,7 @@ import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Link from 'next/link';
+import { calculateTodaysDate, findClosestEventInTheFuture, sortingConcerts } from '@/date';
 
 interface ConcertType {
   year: number
@@ -21,83 +22,87 @@ interface ConcertType {
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   const [cheing, setChecing] = useState(false);
-  const [smN, setSmn] = useState(0);
+  const [smN, setSmn] = useState<any>();
 
 
   const divRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   useEffect(() => {
-        fetch('/api/get-concerts')
-        .then(response => response.json())
-        .then(data => {
-            setConcerts(data)
-        })
-        .catch(error => {
-            console.error(error);
-        });
-    }, [setConcerts]);
+    fetch('/api/get-concerts')
+    .then(response => response.json())
+    .then(data => {
+        setConcerts(data)
+    })
+    .catch(error => {
+        console.error(error);
+    });
+  }, [setConcerts]);
   
+ let validConcerts = sortingConcerts(concerts);
 
-let validConcerts = concerts.sort((a, b) => {
-  const getLastFiveCharacters = (dateString: any) => {
-    const lastIndex = dateString.length - 1;
-    return dateString.substr(lastIndex - 4);
-  };
+// let validConcerts = concerts.sort((a, b) => {
+//   const getLastFiveCharacters = (dateString: any) => {
+//     const lastIndex = dateString.length - 1;
+//     return dateString.substr(lastIndex - 4);
+//   };
 
-  const lastFiveCharactersA = getLastFiveCharacters(a.date);
-  const lastFiveCharactersB = getLastFiveCharacters(b.date);
+//   const lastFiveCharactersA = getLastFiveCharacters(a.date);
+//   const lastFiveCharactersB = getLastFiveCharacters(b.date);
 
-  const twoDimensionalArrayA = lastFiveCharactersA.split('/');
-  const twoDimensionalArrayB = lastFiveCharactersB.split('/');
+//   const twoDimensionalArrayA = lastFiveCharactersA.split('/');
+//   const twoDimensionalArrayB = lastFiveCharactersB.split('/');
 
-  return twoDimensionalArrayB[1] - twoDimensionalArrayA[1] || twoDimensionalArrayB[0] - twoDimensionalArrayA[0];
-});
+//   return twoDimensionalArrayB[1] - twoDimensionalArrayA[1] || twoDimensionalArrayB[0] - twoDimensionalArrayA[0];
+// });
     
 
 
   //Todays date generated in the following format 17/06
-  const today = () => {
-    var currentDate = new Date();
-    var day = currentDate.getDate();
-    var month = currentDate.getMonth() + 1;
-    var formattedDay = ("0" + day).slice(-2);
-    var formattedMonth = ("0" + month).slice(-2);
-    var formattedDate = formattedDay + "/" + formattedMonth;
-    return formattedDate;
-  }
+  const today = calculateTodaysDate();
+  // const today = () => {
+  //   var currentDate = new Date();
+  //   var day = currentDate.getDate();
+  //   var month = currentDate.getMonth() + 1;
+  //   var formattedDay = ("0" + day).slice(-2);
+  //   var formattedMonth = ("0" + month).slice(-2);
+  //   var formattedDate = formattedDay + "/" + formattedMonth;
+  //   return formattedDate;
+  // }
 
 
   //this useEffect takes the concerts and todays date and finds the most recent index: smallestNumber, and then updates smN state.
   useEffect(()=>{
-    let allNums: number[]=[];
-    let newArr: String[] = [];
-    if (concerts.length > 0){
-      validConcerts.map(c => {
-        newArr.push(c.date.slice(-5))
-      })
-      for (let i = 0; i < newArr.length; i++) {
-        var number1 = newArr[i];
-        var [day1, month1] = number1.split("/");
-        var [day2, month2] = today().split("/");
-        var date1 = new Date(new Date().getFullYear(), parseInt(month1) - 1, parseInt(day1));
-        var date2 = new Date(new Date().getFullYear(), parseInt(month2) - 1, parseInt(day2));
+    let closestDate = findClosestEventInTheFuture(concerts, validConcerts, today);
+    setSmn(closestDate)
+    // let allNums: number[]=[];
+    // let newArr: String[] = [];
+    // if (concerts.length > 0){
+    //   validConcerts.map((c: any) => {
+    //     newArr.push(c.date.slice(-5))
+    //   })
+    //   for (let i = 0; i < newArr.length; i++) {
+    //     var number1 = newArr[i];
+    //     var [day1, month1] = number1.split("/");
+    //     var [day2, month2] = today.split("/");
+    //     var date1 = new Date(new Date().getFullYear(), parseInt(month1) - 1, parseInt(day1));
+    //     var date2 = new Date(new Date().getFullYear(), parseInt(month2) - 1, parseInt(day2));
 
-        // only consider future dates
-        if (date1 < date2) {
-          continue; // Skip dates that are earlier than today
-        }
-        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-        var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
-        allNums.push(daysDiff)
-      }
+    //     // only consider future dates
+    //     if (date1 < date2) {
+    //       continue; // Skip dates that are earlier than today
+    //     }
+    //     var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+    //     var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    //     allNums.push(daysDiff)
+    //   }
     
-      const smallestNumber = Math.min(...allNums);
-      if(allNums.indexOf(smallestNumber) > 0){
-        setSmn(allNums.indexOf(smallestNumber))
-      }
+    //   const smallestNumber = Math.min(...allNums);
+    //   if(allNums.indexOf(smallestNumber) > 0){
+    //     setSmn(allNums.indexOf(smallestNumber))
+    //   }
 
       
-    }
+    // }
     setChecing(true);
   }, [concerts, validConcerts])
   
@@ -114,7 +119,7 @@ let validConcerts = concerts.sort((a, b) => {
 
     //sums up all the array elements
     const totalHeight = heights
-    .reduce((acc, height) => acc + height, 0);
+    .reduce((acc, height) => acc + height, 0) - 50;
 
 
     //scroll magic
