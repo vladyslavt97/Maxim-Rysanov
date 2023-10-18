@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
+import { sortingConcerts } from '@/date'
 
 interface ConcertType {
   year: number
@@ -14,7 +15,6 @@ interface ConcertType {
   withwhom: string,
   pastconcert: boolean
 }
-
 
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
@@ -29,22 +29,7 @@ export default function Concerts() {
         });
     }, [setConcerts]);
   
-  let validConcerts = concerts.sort((a, b) => {
-  const getLastFiveCharacters = (dateString: any) => {
-    const lastIndex = dateString.length - 1;
-    return dateString.substr(lastIndex - 4);
-  };
-
-  const lastFiveCharactersA = getLastFiveCharacters(a.date);
-  const lastFiveCharactersB = getLastFiveCharacters(b.date);
-
-  const twoDimensionalArrayA = lastFiveCharactersA.split('/');
-  const twoDimensionalArrayB = lastFiveCharactersB.split('/');
-
-  return twoDimensionalArrayB[1] - twoDimensionalArrayA[1] || twoDimensionalArrayB[0] - twoDimensionalArrayA[0];
-});
-
-
+  let validConcerts = sortingConcerts(concerts);
 
   return (
     <div className=''>

@@ -1,5 +1,6 @@
 import PastConcerts from '@/components/PastConcerts';
 import concerts2022 from '@/concerts2022.json'
+import { sortedConcerts } from '@/date';
 type Props = {}
 interface ConcertType {
   year: number | string;
@@ -10,21 +11,7 @@ interface ConcertType {
   programme: string[];
 }
 export default function Concerts2022({}: Props) {
-    const validConcerts2022 = concerts2022.sort((a: any, b: any) => {
-      const [dayA, dateA] = a.date.split(' ')
-      const [ddA, mmA] = dateA.split('/')
-      const yyyyA = new Date().getFullYear()
-      const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
-      const dateObjectA = new Date(fullDateStringA)
-
-      const [dayB, dateB] = b.date.split(' ')
-      const [ddB, mmB] = dateB.split('/')
-      const yyyyB = new Date().getFullYear()
-      const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
-      const dateObjectB = new Date(fullDateStringB)
-
-      return dateObjectA.getTime() - dateObjectB.getTime()
-    })
+  const validConcerts2022 = sortedConcerts(concerts2022);
   return (
     <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
         <PastConcerts/>

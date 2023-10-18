@@ -59,3 +59,21 @@ export const findClosestEventInTheFuture = (concerts: any, validConcerts: any, t
 
     }
 }
+
+export const sortedConcerts = (concerts: any) => {
+  return concerts.sort((a: any, b: any) => {
+    const [dayA, dateA] = a.date.split(' ')
+    const [ddA, mmA] = dateA.split('/')
+    const yyyyA = new Date().getFullYear()
+    const fullDateStringA:any = `${yyyyA}-${mmA}-${ddA}`
+    const dateObjectA = new Date(fullDateStringA)
+
+    const [dayB, dateB] = b.date.split(' ')
+    const [ddB, mmB] = dateB.split('/')
+    const yyyyB = new Date().getFullYear()
+    const fullDateStringB = `${yyyyB}-${mmB}-${ddB}`
+    const dateObjectB = new Date(fullDateStringB)
+
+    return dateObjectA.getTime() - dateObjectB.getTime()
+  })
+}
