@@ -2,14 +2,7 @@ import PastConcerts from '@/components/PastConcerts';
 import concerts2021 from '@/concerts2021.json'
 import { sortedConcerts } from '@/date';
 type Props = {}
-interface ConcertType {
-  year: number | string;
-  date: string;
-  viola: string;
-  conductor: string;
-  location: string;
-  programme: string[];
-}
+
 export default function Concerts2022({}: Props) {
   const validConcerts2021 = sortedConcerts(concerts2021);
   return (

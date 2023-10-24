@@ -6,19 +6,6 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Link from 'next/link';
 import { calculateTodaysDate, findClosestEventInTheFuture, sortingConcerts } from '@/date';
 
-interface ConcertType {
-  year: number
-  date: string
-  viola: string,
-  conductor: string,
-  location: string,
-  programme: String[],
-  link: string,
-  withwhom: string,
-  pastconcert: boolean,
-  canceled: boolean
-}
-
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   const [cheing, setChecing] = useState(false);

@@ -4,18 +4,6 @@ import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
 import { sortingConcerts } from '@/date'
 
-interface ConcertType {
-  year: number
-  date: string
-  viola: string,
-  conductor: string,
-  location: string,
-  programme: String[],
-  link: string,
-  withwhom: string,
-  pastconcert: boolean
-}
-
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   useEffect(() => {
