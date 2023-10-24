@@ -16,8 +16,6 @@ export const sortingConcerts = (concerts: any) => {
     return validConcerts;
 } 
 
-
-
 export const calculateTodaysDate = () => {
     var currentDate = new Date();
     var day = currentDate.getDate();
@@ -27,7 +25,6 @@ export const calculateTodaysDate = () => {
     var formattedDate = formattedDay + "/" + formattedMonth;
     return formattedDate;
 }
-
 
 export const findClosestEventInTheFuture = (concerts: any, validConcerts: any, today: any) => {
     let allNums: number[]=[];
