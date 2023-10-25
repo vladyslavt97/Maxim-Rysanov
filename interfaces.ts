@@ -1,4 +1,4 @@
-interface ConcertType {
+export interface ConcertType {
   year: number
   date: string
   viola: string,
