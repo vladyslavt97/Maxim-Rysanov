@@ -5,6 +5,8 @@ import PastConcerts from '@/components/PastConcerts'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Link from 'next/link';
 import { calculateTodaysDate, findClosestEventInTheFuture, sortingConcerts } from '@/date';
+import { ConcertType } from '@/interfaces';
+
 
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);

@@ -1,6 +1,8 @@
 import PastConcerts from '@/components/PastConcerts';
 import concerts2021 from '@/concerts2021.json'
 import { sortedConcerts } from '@/date';
+import { ConcertType } from '@/interfaces';
+
 type Props = {}
 
 export default function Concerts2022({}: Props) {

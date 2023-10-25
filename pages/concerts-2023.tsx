@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { ColorRing } from  'react-loader-spinner'
 import PastConcerts from '@/components/PastConcerts'
 import { sortingConcerts } from '@/date'
+import { ConcertType } from '@/interfaces';
+
 
 export default function Concerts() {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
