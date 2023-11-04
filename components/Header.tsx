@@ -55,6 +55,9 @@ export default function Header({}: Props) {
                 <Link href="media" onClick={e => setMenu(false)}>
                     <button className={menu ? 'py-5': 'xl:px-10'}>Media</button>
                 </Link>
+                <Link href="reviews" onClick={e => setMenu(false)}>
+                    <button className={menu ? 'py-5': 'xl:px-10'}>Reviews</button>
+                </Link>
                 <Link href="gallery" onClick={e => setMenu(false)}>
                     <button className={menu ? 'py-5': 'xl:px-10'}>Gallery</button>
                 </Link>
