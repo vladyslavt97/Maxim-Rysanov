@@ -16,10 +16,10 @@ export default function Reviews({}: Props) {
                     <h2 className="text-gray-600">{review?.publicationDate}{review?.author && ", " + review?.author}</h2>
                     {/* <h2 className="text-black font-serif w-full flex justify-end">{review.label}</h2> */}
                     {review.byWhom && <div className="flex justify-end ">
-                        <Image src={`/magazines/${review.byWhom}.png`} alt={review.byWhom} width={60} height={60} className="rounded-sm"/> 
+                        <img src={`/magazines/${review.byWhom}.png`} alt={review.byWhom} width={60} height={60} className="rounded-sm"/> 
                     </div>}
                     {review.label && <div className="flex justify-end">
-                        <Image src={`/labels/${review.label}.png`} alt={review.label} width={60} height={60} className="rounded-sm"/>
+                        <img src={`/labels/${review.label}.png`} alt={review.label} width={60} height={60} className="rounded-sm"/>
                     </div>}
                 </div>
             ))}
