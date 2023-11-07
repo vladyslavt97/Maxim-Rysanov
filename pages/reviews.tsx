@@ -22,7 +22,7 @@ export default function Reviews({}: Props) {
 
                     {/* label */}
                     {review.label && <div className="flex justify-end">
-                        <Image src={`/${review.label}.png`} alt={review.label} width={60} height={100} className="rounded-sm"/>
+                        <img src={`/${review.label}.png`} alt={review.label} width={60} height={100} className="rounded-sm"/>
                     </div>}
                 </div>
             ))}
