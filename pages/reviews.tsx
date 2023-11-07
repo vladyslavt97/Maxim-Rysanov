@@ -17,12 +17,12 @@ export default function Reviews({}: Props) {
 
                     {/* magazine */}
                     {review.byWhom && <div className="flex justify-end ">
-                        <Image unoptimized src={`/magazines/${review.byWhom}.png`} alt={review.byWhom} width={60} height={100} className="rounded-sm"/> 
+                        <img src={`/magazines/${review.byWhom}.png`} alt={review.byWhom} width={60} height={100} className="rounded-sm"/> 
                     </div>}
 
                     {/* label */}
                     {review.label && <div className="flex justify-end">
-                        <Image unoptimized src={`/labels/${review.label}.png`} alt={review.label} width={60} height={100} className="rounded-sm"/>
+                        <img src={`/labels/${review.label}.png`} alt={review.label} width={60} height={100} className="rounded-sm"/>
                     </div>}
                 </div>
             ))}
