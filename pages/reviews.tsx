@@ -14,12 +14,15 @@ export default function Reviews({}: Props) {
                     <h2 className="leading-8">&ldquo;{review?.quote}&ldquo;</h2>
                     <span className="text-gray-800">{review.link ? <a href={review.link}>{review.byWhom}</a> : <h2>{review.byWhom}</h2>}</span>
                     <h2 className="text-gray-600">{review?.publicationDate}{review?.author && ", " + review?.author}</h2>
-                    {/* <h2 className="text-black font-serif w-full flex justify-end">{review.label}</h2> */}
+
+                    {/* magazine */}
                     {review.byWhom && <div className="flex justify-end ">
                         <Image src={`/magazines/${review.byWhom}.png`} alt={review.byWhom} width={60} height={60} className="rounded-sm"/> 
                     </div>}
+
+                    {/* label */}
                     {review.label && <div className="flex justify-end">
-                        <Image src={`/${review.label}.png`} alt={review.label} width={60} height={60} className="rounded-sm"/>
+                        <Image src={`/labels/${review.label}.png`} alt={review.label} width={60} height={60} className="rounded-sm"/>
                     </div>}
                 </div>
             ))}
