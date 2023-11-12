@@ -16,13 +16,21 @@
     },
     {
         "note": "",
+        "quote": "The colours and contrasts Rysanov manages to extract from the orchestra are truly fabulous!",
+        "byWhom": "Crescendo",
+        "link": "https://www.crescendo-magazine.be/maxim-rysanov-la-voix-sacree-de-vasks/?fbclid=IwAR31ZnumQDRb-CvlvldFSm8z2UuC_j8Hjbe0WiITKHgXPapKNJtO1ANS_mA",
+        "publicationDate": "",
+        "author": ""
+    },
+    {
+        "note": "",
         "quote": "Bartók’s Viola Concerto was given an exemplary performance in the hands of the superb Maxim Rysanov.",
         "byWhom": "Bachtrack",
         "link": "https://bachtrack.com/review-bihlmaier-rysanov-halle-beethoven-halle-sheffield-october-2023",
         "publicationDate": "15 October 2023",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "IN SCHUBERT'S COMPANY",
         "label": "ONYX",
@@ -32,7 +40,7 @@
         "publicationDate": "June 2017",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "MARTINU",
         "label": "BIS",
@@ -42,7 +50,7 @@
         "publicationDate": "27 April 2015",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "MOZART SINFONIA CONCERTANTE",
         "label": "Warner Classics",
@@ -52,7 +60,7 @@
         "publicationDate": "February 2015",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "BACH SUITES 2, 3 & 6",
         "label": "BIS",
@@ -62,7 +70,7 @@
         "publicationDate": "March 2014",
         "author": ""
     },
-    {   
+    {
         "note": "GRAMMY nominated album",
         "CDTitle": "Dobrinka TABAKOVA - String Paths",
         "label": "ECM",
@@ -72,7 +80,7 @@
         "publicationDate": "May 2013",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "PAVANE",
         "label": "BIS",
@@ -82,7 +90,7 @@
         "publicationDate": "October 2012",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "SCHUBERT / TCHAIKOVSKY / BRUCH",
         "label": "BIS",
@@ -92,7 +100,7 @@
         "publicationDate": "July 2011",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "BEETHOVEN",
         "label": "ONYX",
@@ -102,7 +110,7 @@
         "publicationDate": "July 2012",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "BRAHMS VIOLA 2",
         "label": "ONYX",
@@ -112,7 +120,7 @@
         "publicationDate": "January 2011",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "BACH SUITES 1,4 & 5",
         "label": "BIS",
@@ -122,7 +130,7 @@
         "publicationDate": "July 2010",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "BRAHMS VIOLA 1",
         "label": "ONYX",
@@ -132,7 +140,7 @@
         "publicationDate": "July 2010",
         "author": ""
     },
-    {   
+    {
         "note": "",
         "CDTitle": "BACH: INVENTIONS AND PARTITA",
         "label": "DECCA",
@@ -142,7 +150,7 @@
         "publicationDate": "October 2007",
         "author": ""
     },
-    {   
+    {
         "note": "Gramophone Editor's Choice October 2007",
         "CDTitle": "KANCHELI - STYX",
         "label": "ONYX",
@@ -152,7 +160,7 @@
         "publicationDate": "August 2007",
         "author": ""
     },
-    {   
+    {
         "note": "Gramophone Editor's Choice October 2007",
         "CDTitle": "VIOLA RECITAL: MAXIM RYSANOV, AVIE",
         "label": "AVIE",
