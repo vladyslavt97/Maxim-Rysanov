@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import logo from "../public/logo.png";
 type Props = {};
 
@@ -39,74 +39,89 @@ export default function Header({}: Props) {
             )}
 
             {/* Links */}
-            <motion.div
-                animate={{
-                    opacity: 0,
-                }}
-                transition={{
-                    delay: 0.6,
-                    duration: 1,
-                }}
-                whileInView={{
-                    opacity: 1,
-                }}
-                className={
-                    menu
-                        ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-600"
-                        : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
-                }
-            >
-                <Link href="bio" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Biography
-                    </button>
-                </Link>
-                <Link href="concerts" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Concerts
-                    </button>
-                </Link>
-                <Link href="media" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Media
-                    </button>
-                </Link>
-                <Link href="reviews" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Reviews
-                    </button>
-                </Link>
-                <Link href="gallery" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Gallery
-                    </button>
-                </Link>
-                <Link href="recordings" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Recordings
-                    </button>
-                </Link>
-                <Link href="contacts" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Contacts
-                    </button>
-                </Link>
-            </motion.div>
-
+            <AnimatePresence>
+                {menu && (
+                    <motion.div
+                        key="modal"
+                        initial={{ opacity: 0 }}
+                        animate={{
+                            opacity: 1,
+                        }}
+                        transition={{
+                            delay: 0.3,
+                            duration: 1,
+                        }}
+                        // whileInView={{
+                        //     opacity: 1,
+                        // }}
+                        className={
+                            menu
+                                ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-600"
+                                : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
+                        }
+                    >
+                        <Link href="bio" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Biography
+                            </button>
+                        </Link>
+                        <Link href="concerts" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Concerts
+                            </button>
+                        </Link>
+                        <Link href="media" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Media
+                            </button>
+                        </Link>
+                        <Link href="reviews" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Reviews
+                            </button>
+                        </Link>
+                        <Link href="gallery" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Gallery
+                            </button>
+                        </Link>
+                        <Link href="recordings" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Recordings
+                            </button>
+                        </Link>
+                        <Link href="contacts" onClick={(e) => setMenu(false)}>
+                            <button className={menu ? "py-5" : "xl:px-10"}>
+                                Contacts
+                            </button>
+                        </Link>
+                    </motion.div>
+                )}
+            </AnimatePresence>
             {/* sidebar with framer */}
-            <motion.div
-                className={
-                    menu
-                        ? "absolute bg-gradient-to-tr from-gray-200 to-gray-300 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl"
-                        : "absolute bg-gray-600/0 md:hidden"
-                }
-                animate={{
-                    width: menu ? "50%" : "50%",
-                    x: menu ? 0 : 100,
-                    opacity: menu ? 1 : 0,
-                }}
-                transition={{ duration: 0.4 }}
-            ></motion.div>
+            <AnimatePresence>
+                {menu && (
+                    <motion.div
+                        key="modal"
+                        className={
+                            menu
+                                ? "absolute bg-gradient-to-tr from-gray-200 to-gray-300 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl"
+                                : "absolute bg-gray-600/0 md:hidden"
+                        }
+                        initial={{ x: 100, opacity: 0, width: "50%" }}
+                        animate={{
+                            width: menu && "50%",
+                            x: menu && [100, 20, 0],
+                            opacity: menu && 1,
+                        }}
+                        exit={{ x: 100, opacity: 0, width: "50%" }}
+                        transition={{
+                            duration: 0.5,
+                            ease: "easeInOut",
+                        }}
+                    ></motion.div>
+                )}
+            </AnimatePresence>
 
             {/* burger */}
             {menu && (
