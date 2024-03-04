@@ -5,7 +5,8 @@
   },
   {
     "href": "https://onyxclassics.com/release/in-schuberts-company/",
-    "imageSrc": "/recordings/2_shubert.png"
+    "imageSrc": "/recordings/2_shubert.png",
+    "applemusic": "https://music.apple.com/us/album/in-schuberts-company-for-viola-orchestra/1243753197?i=1243753709"
   },
   {
     "href": "https://bis.se/label/bis/maxim-rysanov-plays-martin",
@@ -17,7 +18,8 @@
   },
   {
     "href": "https://ecmrecords.com/product/dobrinka-tabakova-string-paths-maxim-rysanov-kristina-blaumane-lithuanian-chamber-orchestra/",
-    "imageSrc": "/recordings/5_dobrinka.jpg"
+    "imageSrc": "/recordings/5_dobrinka.jpg",
+    "applemusic": "https://music.apple.com/us/album/concerto-for-violoncello-and-strings-iii-radiant/1452389070?i=1452389410"
   },
   {
     "href": "https://bis.se/performers/rysanov-maxim/pavane",

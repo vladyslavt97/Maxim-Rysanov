@@ -45,6 +45,15 @@ export default function RecordingsList({}: Props) {
                                 height={100}
                                 className="pl-5 object-contain"
                             />
+                            {r.applemusic && (
+                                <Image
+                                    src="/applemusic.png"
+                                    alt="logo"
+                                    width={50}
+                                    height={50}
+                                    className="pl-5 object-contain"
+                                />
+                            )}
                         </span>
                     </Link>
                 </div>
