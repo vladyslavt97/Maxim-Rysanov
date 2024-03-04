@@ -54,6 +54,17 @@ export default function RecordingsList({}: Props) {
                                     className="pl-5 object-contain"
                                 />
                             )}
+                            {r.spotify && (
+                                <Link href={r.spotify}>
+                                    <Image
+                                        src="/spotify.png"
+                                        alt="logo"
+                                        width={50}
+                                        height={50}
+                                        className="pl-5 object-contain"
+                                    />
+                                </Link>
+                            )}
                         </span>
                     </Link>
                 </div>
