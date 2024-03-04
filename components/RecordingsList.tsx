@@ -46,13 +46,15 @@ export default function RecordingsList({}: Props) {
                                 className="pl-5 object-contain"
                             />
                             {r.applemusic && (
-                                <Image
-                                    src="/applemusic.png"
-                                    alt="logo"
-                                    width={50}
-                                    height={50}
-                                    className="pl-5 object-contain"
-                                />
+                                <Link href={r.applemusic}>
+                                    <Image
+                                        src="/applemusic.png"
+                                        alt="logo"
+                                        width={50}
+                                        height={50}
+                                        className="pl-5 object-contain"
+                                    />
+                                </Link>
                             )}
                             {r.spotify && (
                                 <Link href={r.spotify}>
