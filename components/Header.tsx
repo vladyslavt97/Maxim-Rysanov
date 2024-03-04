@@ -56,38 +56,71 @@ export default function Header({}: Props) {
                         : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
                 }
             >
-                <Link href="bio" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
+                <Link
+                    href="bio"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>
                         Biography
                     </button>
                 </Link>
-                <Link href="concerts" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
+                <Link
+                    href="concerts"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>
                         Concerts
                     </button>
                 </Link>
-                <Link href="media" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
-                        Media
-                    </button>
+                <Link
+                    href="media"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>Media</button>
                 </Link>
-                <Link href="reviews" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
+                <Link
+                    href="reviews"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>
                         Reviews
                     </button>
                 </Link>
-                <Link href="gallery" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
+                <Link
+                    href="shop"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>Shop</button>
+                </Link>
+                <Link
+                    href="gallery"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>
                         Gallery
                     </button>
                 </Link>
-                <Link href="recordings" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
+                <Link
+                    href="recordings"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>
                         Recordings
                     </button>
                 </Link>
-                <Link href="contacts" onClick={(e) => setMenu(false)}>
-                    <button className={menu ? "py-5" : "xl:px-10"}>
+                <Link
+                    href="contacts"
+                    onClick={(e) => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>
                         Contacts
                     </button>
                 </Link>
