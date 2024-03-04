@@ -1,8 +1,10 @@
-import RecodringsSwipeImgs from '@/components/RecodringsSwipeImgs';
-type Props = {}
+//import RecodringsSwipeImgs from '@/components/RecodringsSwipeImgs';
+import RecordingsList from "@/components/RecordingsList";
+type Props = {};
 
 export default function Recordings({}: Props) {
-  return (
-   <RecodringsSwipeImgs/>
-  )
+    return (
+        //  <RecodringsSwipeImgs/>
+        <RecordingsList />
+    );
 }
