@@ -23,7 +23,10 @@ export default function RecordingsList({}: Props) {
         }
     };
     return (
-        <div className="flex flex-row flex-wrap justify-center my-16">
+        <div className="flex flex-row flex-wrap justify-center my-24">
+            <h1 className="text-center font-bold text-2xl text-gray-500">
+                Recordings
+            </h1>
             {recordings.map((r) => (
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -31,16 +34,18 @@ export default function RecordingsList({}: Props) {
                     transition={{ duration: 2 }}
                     viewport={{ once: true }}
                     key={r.imageSrc}
-                    className="my-10 mx-10 hover:scale-105 transition-transform duration-2000"
+                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000"
                 >
-                    <Image
-                        src={r.imageSrc}
-                        alt={r.imageSrc}
-                        width={300}
-                        height={300}
-                        className="rounded-2xl"
-                        loading="eager"
-                    />
+                    <Link href={r.href}>
+                        <Image
+                            src={r.imageSrc}
+                            alt={r.imageSrc}
+                            width={300}
+                            height={300}
+                            className="rounded-2xl"
+                            loading="eager"
+                        />
+                    </Link>
                     <div className="flex flex-col italic hover:font-semibold hover:text-gray-500">
                         <Link href={r.href} className="flex flex-row mt-1">
                             <h1 className="text-sm">
