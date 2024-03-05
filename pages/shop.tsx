@@ -1,6 +1,8 @@
 import Image from "next/image";
 import shopItems from "../shop.json";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 type Props = {};
 
 export default function Shop({}: Props) {
@@ -10,7 +12,10 @@ export default function Shop({}: Props) {
                 Online Shop
             </h1>
             {shopItems.map((i) => (
-                <div
+                <motion.div
+                    initial={{ x: 10, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2, ease: "backOut" }}
                     key={i.image}
                     className="w-[300px] h-[300px] bg-white rounded-2xl p-2 shadow-lg mx-auto mt-10 hover:scale-105 transition-transform duration-2000"
                 >
@@ -36,7 +41,7 @@ export default function Shop({}: Props) {
                             Purchase here
                         </Link>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );
