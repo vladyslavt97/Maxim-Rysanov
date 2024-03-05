@@ -36,17 +36,22 @@ export default function RecordingsList({}: Props) {
                         className="rounded-2xl"
                         loading="eager"
                     />
-                    <Link href={r.href}>
-                        <span className="flex flex-row italic hover:font-semibold hover:text-gray-500">
-                            Listen to this CD online here:
+                    <div className="flex flex-col italic hover:font-semibold hover:text-gray-500">
+                        <Link href={r.href} className="flex flex-row mt-1">
+                            <h1 className="text-sm">
+                                Listen to this CD online here:
+                            </h1>
                             <Image
                                 src={`${figureOut(r.href)}`}
                                 alt="logo"
                                 width={100}
                                 height={100}
-                                className="pl-5 object-contain"
+                                className="pl-3 object-contain"
                                 loading="eager"
                             />
+                        </Link>
+
+                        <div>
                             {r.applemusic && (
                                 <Link href={r.applemusic}>
                                     <Image
@@ -71,8 +76,8 @@ export default function RecordingsList({}: Props) {
                                     />
                                 </Link>
                             )}
-                        </span>
-                    </Link>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>
