@@ -34,16 +34,18 @@ export default function RecordingsList({}: Props) {
                         width={300}
                         height={300}
                         className="rounded-2xl"
+                        loading="eager"
                     />
                     <Link href={r.href}>
                         <span className="flex flex-row italic hover:font-semibold hover:text-gray-500">
-                            Buy music here
+                            Listen to this CD online here:
                             <Image
                                 src={`${figureOut(r.href)}`}
                                 alt="logo"
                                 width={100}
                                 height={100}
                                 className="pl-5 object-contain"
+                                loading="eager"
                             />
                             {r.applemusic && (
                                 <Link href={r.applemusic}>
@@ -53,6 +55,7 @@ export default function RecordingsList({}: Props) {
                                         width={50}
                                         height={50}
                                         className="pl-5 object-contain"
+                                        loading="eager"
                                     />
                                 </Link>
                             )}
@@ -64,6 +67,7 @@ export default function RecordingsList({}: Props) {
                                         width={50}
                                         height={50}
                                         className="pl-5 object-contain"
+                                        loading="eager"
                                     />
                                 </Link>
                             )}

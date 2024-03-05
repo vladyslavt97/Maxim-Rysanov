@@ -20,6 +20,7 @@ export default function Shop({}: Props) {
                         width={300}
                         height={300}
                         className="rounded-lg"
+                        loading="eager"
                     />
                     <div className="flex items-start flex-col justify-around h-[100px]">
                         <h1 className="text-blue-500 font-bold italic">
