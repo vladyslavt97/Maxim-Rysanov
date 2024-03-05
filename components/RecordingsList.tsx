@@ -2,6 +2,7 @@ import React from "react";
 import recordings from "../recordings.json";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -24,7 +25,11 @@ export default function RecordingsList({}: Props) {
     return (
         <div className="flex flex-row flex-wrap justify-center my-16">
             {recordings.map((r) => (
-                <div
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 2 }}
+                    viewport={{ once: true }}
                     key={r.imageSrc}
                     className="my-10 mx-10 hover:scale-105 transition-transform duration-2000"
                 >
@@ -78,7 +83,7 @@ export default function RecordingsList({}: Props) {
                             )}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );

@@ -16,6 +16,7 @@ export default function Shop({}: Props) {
                     initial={{ x: 10, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2, ease: "backOut" }}
+                    viewport={{ once: true }}
                     key={i.image}
                     className="w-[300px] h-[300px] bg-white rounded-2xl p-2 shadow-lg mx-auto mt-10 hover:scale-105 transition-transform duration-2000"
                 >
