@@ -32,15 +32,22 @@ export default function Shop({}: Props) {
                         <h1 className="text-blue-500 font-bold italic">
                             {i.title}
                         </h1>
-                        <h2 className="text-green-700 font-bold">
-                            Price: {i.price} $
+                        <h2 className="text-green-700 text-right text-sm w-full">
+                            Price: {i.price} €
                         </h2>
-                        <Link
-                            href={i.buttonLink}
-                            className="bg-gradient-to-tr from-green-300 to-green-500 px-2 rounded-md hover:bg-green-200 hover:text-white hover:scale-105 transition-transform duration-2000"
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 2, delay: 1 }}
+                            viewport={{ once: true }}
                         >
-                            Purchase here
-                        </Link>
+                            <Link
+                                href={i.buttonLink}
+                                className="bg-gradient-to-tr from-green-300 to-green-500 px-2 rounded-md hover:bg-green-200 hover:text-white hover:scale-105 transition-transform duration-2000"
+                            >
+                                Purchase here
+                            </Link>
+                        </motion.div>
                     </div>
                 </motion.div>
             ))}
