@@ -34,7 +34,7 @@ export default function RecordingsList({}: Props) {
                     transition={{ duration: 2 }}
                     viewport={{ once: true }}
                     key={r.imageSrc}
-                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000"
+                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000 shadow-xl rounded-lg"
                 >
                     <Link href={r.href}>
                         <Image
@@ -48,7 +48,7 @@ export default function RecordingsList({}: Props) {
                     </Link>
                     <div className="flex flex-col italic hover:font-semibold hover:text-gray-500">
                         <Link href={r.href} className="flex flex-row mt-1">
-                            <h1 className="text-sm">
+                            <h1 className="text-sm px-1">
                                 Listen to this CD online here:
                             </h1>
                             <Image
