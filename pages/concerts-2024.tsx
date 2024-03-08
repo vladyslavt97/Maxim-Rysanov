@@ -45,7 +45,7 @@ export default function Concerts() {
         transition={{duration:1}}
         className='flex flex-col mx-3 justify-center items-start mb-40 lg:text-xl'>
           <div className='flex justify-center items-center pt-5 mx-3'>
-            <h1 className='font-bold text-xl'>Past 2023</h1>
+            <h1 className='font-bold text-xl'>Concerts 2024</h1>
           </div>
           {validConcerts.map((concert: ConcertType, index: number) => (
             <div key={index} className="mx-3 my-[2px]">
