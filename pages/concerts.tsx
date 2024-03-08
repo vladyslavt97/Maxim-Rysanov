@@ -145,9 +145,6 @@ export default function Concerts() {
                                                     {concert.date}
                                                 </h2>
                                                 <div className="flex flex-row">
-                                                    <h2 className=" font-semibold mr-5">
-                                                        {concert.date}
-                                                    </h2>
                                                     &nbsp;
                                                     {concert.viola && (
                                                         <h2>Viola</h2>
