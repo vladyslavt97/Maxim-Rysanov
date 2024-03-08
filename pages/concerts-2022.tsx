@@ -1,34 +1,48 @@
-import PastConcerts from '@/components/PastConcerts';
-import concerts2022 from '@/concerts2022.json'
-import { sortedConcerts } from '@/date';
-import { ConcertType } from '@/interfaces';
+import PastConcerts from "@/components/PastConcerts";
+import concerts2022 from "@/concerts2022.json";
+import { sortedConcerts } from "@/date";
+import { ConcertType } from "@/interfaces";
 
-type Props = {}
+type Props = {};
 
 export default function Concerts2022({}: Props) {
-  const validConcerts2022 = sortedConcerts(concerts2022);
-  return (
-    <div className='bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center'>
-        <PastConcerts/>
-        <div className='absolute left-6 md:static md:flex md:justify-center md:items-center pt-5'>
-          <h1 className='font-bold text-xl'>2022</h1>
+    const validConcerts2022 = sortedConcerts(concerts2022);
+    return (
+        <div className="bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center">
+            <PastConcerts />
+            <div className="absolute left-6 md:static md:flex md:justify-center md:items-center pt-5">
+                <h1 className="font-bold text-xl">2022</h1>
+            </div>
+            <div className="flex flex-col mx-3 mt-5 justify-center items-start mb-40 lg:text-xl">
+                {validConcerts2022.map(
+                    (concert: ConcertType, index: number) => (
+                        <div key={index} className="m-3">
+                            <div className="flex flex-row">
+                                <h2 className="font-semibold">
+                                    {concert.date}
+                                </h2>
+                                &nbsp;
+                                {concert.viola !== "" && (
+                                    <h2>{concert.viola}</h2>
+                                )}
+                                &nbsp;
+                                {concert.conductor !== "" && (
+                                    <h2>{concert.conductor}</h2>
+                                )}
+                            </div>
+                            <h5>
+                                {concert.location}
+                                <br />
+                                {concert.programme.map((prog, ind) => (
+                                    <div key={ind}>
+                                        <p>♪ {prog}</p>
+                                    </div>
+                                ))}
+                            </h5>
+                        </div>
+                    )
+                )}
+            </div>
         </div>
-        <div className="flex flex-col mx-3 mt-16 justify-center items-start mb-40 lg:text-xl">
-            {validConcerts2022.map((concert: ConcertType, index: number) => (
-                <div key={index} className="m-3">
-                <div className='flex flex-row'>
-                        <h2 className='font-semibold'>{concert.date}</h2>&nbsp;{concert.viola !== "" && <h2>{concert.viola}</h2>}&nbsp;{concert.conductor !== "" && <h2>{concert.conductor}</h2>}
-                    </div>
-                <h5>{concert.location}<br/>
-                {concert.programme.map((prog, ind)=>(
-                    <div key={ind}>
-                    <p>♪ {prog}</p>
-                    </div>
-                ))}
-                </h5>
-                </div>
-            ))}
-          </div>
-    </div>
-  )
+    );
 }

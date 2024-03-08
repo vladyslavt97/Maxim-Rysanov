@@ -70,6 +70,9 @@ export default function Concerts() {
         <div className="">
             <div className="bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden">
                 <PastConcerts />
+                <div className="absolute left-6 md:static md:flex md:justify-center md:items-center pt-5">
+                    <h1 className="font-bold text-xl">2024</h1>
+                </div>
                 {concerts.length === 0 ? (
                     <div className="flex items-center justify-center h-[60vh]">
                         <ColorRing
@@ -93,11 +96,8 @@ export default function Concerts() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2 }}
-                        className="flex flex-col ml-2 justify-center items-start mb-32 lg:text-xl"
+                        className="flex flex-col mt-5 ml-2 justify-center items-start mb-32 lg:text-xl"
                     >
-                        <div className="flex justify-center items-center pt-5 m-3">
-                            <h1 className="font-bold text-xl">2024</h1>
-                        </div>
                         {validConcerts.map(
                             (concert: ConcertType, index: number) => (
                                 <ScrollLink
