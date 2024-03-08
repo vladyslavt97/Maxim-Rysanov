@@ -27,7 +27,7 @@ export default function PastConcerts({}: Props) {
                     transition={{ duration: 1 }}
                     className="flex flex-col bg-white text-black rounded-lg drop-shadow-md"
                 >
-                    {router.pathname === "/concerts" && (
+                    {router.pathname !== "/concerts" && (
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
