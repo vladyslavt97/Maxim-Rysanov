@@ -96,7 +96,7 @@ export default function Concerts() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2 }}
-                        className="flex flex-col mt-5 ml-2 justify-center items-start mb-32 lg:text-xl"
+                        className="flex flex-col mt-16 md:mt-5 ml-2 justify-center items-start mb-32 lg:text-xl"
                     >
                         {validConcerts.map(
                             (concert: ConcertType, index: number) => (

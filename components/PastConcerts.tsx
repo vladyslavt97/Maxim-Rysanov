@@ -55,42 +55,48 @@ export default function PastConcerts({}: Props) {
                             </Link>
                         </motion.div>
                     )}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1.2, delay: 0.4 }}
-                        className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
-                    >
-                        <Link href="/concerts-2022">
-                            <button onClick={(e) => setOpen(!open)}>
-                                Concerts 2022
-                            </button>
-                        </Link>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1.4, delay: 0.6 }}
-                        className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
-                    >
-                        <Link href="/concerts-2021">
-                            <button onClick={(e) => setOpen(!open)}>
-                                Concerts 2021
-                            </button>
-                        </Link>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1.6, delay: 0.8 }}
-                        className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center rounded-b-lg"
-                    >
-                        <Link href="/concerts-2020">
-                            <button onClick={(e) => setOpen(!open)}>
-                                Concerts 2020
-                            </button>
-                        </Link>
-                    </motion.div>
+                    {router.pathname !== "/concerts-2022" && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1.2, delay: 0.4 }}
+                            className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
+                        >
+                            <Link href="/concerts-2022">
+                                <button onClick={(e) => setOpen(!open)}>
+                                    Concerts 2022
+                                </button>
+                            </Link>
+                        </motion.div>
+                    )}
+                    {router.pathname !== "/concerts-2021" && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1.4, delay: 0.6 }}
+                            className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
+                        >
+                            <Link href="/concerts-2021">
+                                <button onClick={(e) => setOpen(!open)}>
+                                    Concerts 2021
+                                </button>
+                            </Link>
+                        </motion.div>
+                    )}
+                    {router.pathname !== "/concerts-2020" && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1.6, delay: 0.8 }}
+                            className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center rounded-b-lg"
+                        >
+                            <Link href="/concerts-2020">
+                                <button onClick={(e) => setOpen(!open)}>
+                                    Concerts 2020
+                                </button>
+                            </Link>
+                        </motion.div>
+                    )}
                 </motion.div>
             )}
         </div>

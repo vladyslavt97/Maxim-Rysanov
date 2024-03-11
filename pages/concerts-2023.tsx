@@ -13,7 +13,7 @@ export default function Concerts2023({}: Props) {
             <div className="absolute left-6 md:static md:flex md:justify-center md:items-center pt-5">
                 <h1 className="font-bold text-xl">2023</h1>
             </div>
-            <div className="flex flex-col mx-3 justify-center items-start mb-40 lg:text-xl">
+            <div className="flex flex-col mt-16 md:mt-5 mx-3 justify-center items-start mb-40 lg:text-xl">
                 {validConcerts2023.map(
                     (concert: ConcertType, index: number) => (
                         <div key={index} className="m-3">
