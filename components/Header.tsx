@@ -90,13 +90,13 @@ export default function Header({}: Props) {
                         Reviews
                     </button>
                 </Link>
-                <Link
+                {/* <Link
                     href="shop"
                     onClick={(e) => setMenu(false)}
                     className="hover:text-gray-400"
                 >
                     <button className={menu ? "py-5" : "xl:px-5"}>Shop</button>
-                </Link>
+                </Link> */}
                 <Link
                     href="gallery"
                     onClick={(e) => setMenu(false)}
