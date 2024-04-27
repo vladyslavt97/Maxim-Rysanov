@@ -74,6 +74,18 @@ export default function RecordingsList({}: Props) {
                                     />
                                 </Link>
                             )}
+                            {r.hyperion && (
+                                <Link href={r.hyperion}>
+                                    <Image
+                                        src="/hyperion.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </motion.div>
