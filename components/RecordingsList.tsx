@@ -34,34 +34,22 @@ export default function RecordingsList({}: Props) {
                     transition={{ duration: 2 }}
                     viewport={{ once: true }}
                     key={r.imageSrc}
-                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000 shadow-xl rounded-lg"
+                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000 shadow-xl rounded-2xl"
                 >
-                    <Link href={r.href}>
-                        <Image
-                            src={r.imageSrc}
-                            alt={r.imageSrc}
-                            width={300}
-                            height={300}
-                            className="rounded-2xl"
-                            loading="eager"
-                        />
-                    </Link>
+                    <Image
+                        src={r.imageSrc}
+                        alt={r.imageSrc}
+                        width={300}
+                        height={300}
+                        className="rounded-2xl"
+                        loading="eager"
+                    />
                     <div className="flex flex-col italic hover:font-semibold hover:text-gray-500">
-                        <Link href={r.href} className="flex flex-row mt-1">
-                            <h1 className="text-sm px-1 text-black">
-                                Stream here:
-                            </h1>
-                            <Image
-                                src={`${figureOut(r.href)}`}
-                                alt="logo"
-                                width={100}
-                                height={100}
-                                className="pl-3 object-contain"
-                                loading="eager"
-                            />
-                        </Link>
-
-                        <div>
+                        <div className="flex flex-row items-center">
+                            {(r.applemusic || r.spotify) && 
+                                <h1 className="text-sm px-1 text-black">
+                                    Stream here:
+                                </h1>}
                             {r.applemusic && (
                                 <Link href={r.applemusic}>
                                     <Image
@@ -69,7 +57,7 @@ export default function RecordingsList({}: Props) {
                                         alt="logo"
                                         width={50}
                                         height={50}
-                                        className="pl-5 object-contain"
+                                        className="pl-5 object-contain py-2"
                                         loading="eager"
                                     />
                                 </Link>
@@ -81,7 +69,7 @@ export default function RecordingsList({}: Props) {
                                         alt="logo"
                                         width={50}
                                         height={50}
-                                        className="pl-5 object-contain"
+                                        className="pl-5 object-contain py-2"
                                         loading="eager"
                                     />
                                 </Link>
