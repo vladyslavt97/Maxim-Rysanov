@@ -28,8 +28,8 @@ export default function Gallery({}: Props) {
     };
     
     return (
-        <div className="w-full h-screen flex justify-center items-center">
-            <div className="flex flex-col gap-3 py-5 ">
+        <div className="w-full h-screen flex justify-center mt-5">
+            <div className="flex flex-col gap-3">
                 <div className="md:mx-[100px] flex flex-row justify-center items-center">
                     <div className="hover:scale-125" onClick={countDown}>
                         <FaChevronLeft size={30} color="white" />
