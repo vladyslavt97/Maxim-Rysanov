@@ -127,3 +127,32 @@ a {
     scale: 1;
   }
 } */
+
+
+
+.scrollbar {
+  /* Set the width and height of the scrollbar */
+  scrollbar-width: thin; /* "auto" can also be used */
+  scrollbar-color: #303030 #e0e0e0; /* thumb and track colors */
+
+  /* Make the scrollbar always visible */
+  overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+  /* Set the width and height of the scrollbar */
+  width: 12px; /* You can adjust this value as needed */
+  height: 12px; /* You can adjust this value as needed */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  /* Style the thumb */
+  background-color: #303030;
+  border-radius: 10px; /* You can adjust this value as needed */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  /* Style the track */
+  background-color: #e0e0e0;
+  border-radius: 10px; /* You can adjust this value as needed */
+}
