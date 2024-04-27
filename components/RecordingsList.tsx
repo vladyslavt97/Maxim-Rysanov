@@ -49,7 +49,7 @@ export default function RecordingsList({}: Props) {
                     <div className="flex flex-col italic hover:font-semibold hover:text-gray-500">
                         <Link href={r.href} className="flex flex-row mt-1">
                             <h1 className="text-sm px-1 text-black">
-                                Listen here:
+                                Stream here:
                             </h1>
                             <Image
                                 src={`${figureOut(r.href)}`}
