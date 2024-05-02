@@ -86,6 +86,30 @@ export default function RecordingsList({}: Props) {
                                     />
                                 </Link>
                             )}
+                            {r.bis && (
+                                <Link href={r.bis}>
+                                    <Image
+                                        src="/bis.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
+                            {r.onyx && (
+                                <Link href={r.onyx}>
+                                    <Image
+                                        src="/onyx.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </motion.div>

@@ -11,19 +11,19 @@
     "spotify": "https://open.spotify.com/album/082rsk9awBPeBsDBzMPvLw"
   },
   {
-    "href": "https://bis.se/performers/rysanov-maxim/pteris-vasks-viola-concerto-voices",
+    "bis": "https://bis.se/performers/rysanov-maxim/pteris-vasks-viola-concerto-voices",
     "imageSrc": "/recordings/1_vasks.jpeg",
     "spotify": "https://open.spotify.com/track/3Sb7yy26xgC5IOXip976ef",
     "applemusic": "https://music.apple.com/us/album/p%C4%93teris-vasks-viola-concerto-symphony-no-1-voices/1725550691"
   },
   {
-    "href": "https://onyxclassics.com/release/in-schuberts-company/",
+    "onyx": "https://onyxclassics.com/release/in-schuberts-company/",
     "imageSrc": "/recordings/2_shubert.png",
     "applemusic": "https://music.apple.com/us/album/in-schuberts-company/1243753197",
     "spotify": "https://open.spotify.com/album/1DQ6YiaMQxV734almX0khC"
   },
   {
-    "href": "https://bis.se/label/bis/maxim-rysanov-plays-martin",
+    "bis": "https://bis.se/label/bis/maxim-rysanov-plays-martin",
     "imageSrc": "/recordings/3_martinu.jpg",
     "spotify": "https://open.spotify.com/album/6lRiC8DlkIHwnhXLdbABiX",
     "applemusic": "https://music.apple.com/us/album/martin%C5%AF-rhapsody-concerto-viola-sonata-3-madrigals-duo-no-2/1727114230"
@@ -41,54 +41,54 @@
     "spotify": "https://open.spotify.com/album/4RMQ08JJ7DeuDA2ChfnMVF"
   },
   {
-    "href": "https://bis.se/performers/rysanov-maxim/pavane",
+    "bis": "https://bis.se/performers/rysanov-maxim/pavane",
     "imageSrc": "/recordings/6_pavane.jpg",
     "spotify": "https://open.spotify.com/album/3D59xSd9I9iZPrOt5WhM5G",
     "applemusic": "https://music.apple.com/us/album/pavane/1724253419"
   },
   {
-    "href": "https://bis.se/performers/rysanov-maxim/maxim-rysanov-plays-schubert-tchaikovsky-bruch",
+    "bis": "https://bis.se/performers/rysanov-maxim/maxim-rysanov-plays-schubert-tchaikovsky-bruch",
     "imageSrc": "/recordings/7_bruch.jpg",
     "spotify": "https://open.spotify.com/album/5aMr2FuXAwpZuaz477fayW",
     "applemusic": "https://music.apple.com/us/album/schubert-tchaikovsky-bruch/1727079151"
   },
   {
-    "href": "https://onyxclassics.com/release/beethoven-sonatina-for-viola-and-cello-duo-for-viola-and-cello-et-al/",
+    "onyx": "https://onyxclassics.com/release/beethoven-sonatina-for-viola-and-cello-duo-for-viola-and-cello-et-al/",
     "imageSrc": "/recordings/8_beethoven.jpg",
     "spotify": "https://open.spotify.com/album/2kZzmfl5h2qlUo7eOQwvKF",
     "applemusic": "https://music.apple.com/us/album/beethoven-sonatina-for-viola-and-cello-duo-for-viola/573718043"
   },
   {
-    "href": "https://onyxclassics.com/release/brahms-quintet-two-songs-and-string-quintet/",
+    "onyx": "https://onyxclassics.com/release/brahms-quintet-two-songs-and-string-quintet/",
     "imageSrc": "/recordings/9_brahms.jpg",
     "spotify": "https://open.spotify.com/album/1WwGsvvqyCvsldGp7IKvqo"
   },
   {
-    "href": "https://bis.se/performers/rysanov-maxim/bach-suites-maxim-rysanov",
+    "bis": "https://bis.se/performers/rysanov-maxim/bach-suites-maxim-rysanov",
     "imageSrc": "/recordings/10_bach.jpg",
     "spotify": "https://open.spotify.com/album/5XbKX0pDOy9FJfDfCxjrYz",
     "applemusic": "https://music.apple.com/us/album/bach-suites-nos-1-4-5/1727430106"
   },
   {
-    "href": "https://onyxclassics.com/release/brahms-viola/",
+    "onyx": "https://onyxclassics.com/release/brahms-viola/",
     "imageSrc": "/recordings/11_brahms.jpg",
     "spotify": "https://open.spotify.com/album/1qLHe5OA2OmFIKoD6BApOC",
     "applemusic": "https://music.apple.com/us/album/brahms-works-for-viola/292261643"
   },
   {
-    "href": "https://www.deccaclassics.com/en/catalogue/products/bach-partita-no-2-jansen-4506",
+    "decca": "https://www.deccaclassics.com/en/catalogue/products/bach-partita-no-2-jansen-4506",
     "imageSrc": "/recordings/12_janine.jpg",
     "spotify": "https://open.spotify.com/album/2607OCLeDNFKNOO01OVd9P",
     "applemusic": "https://music.apple.com/us/album/bach-inventions-partita/1452769804"
   },
   {
-    "href": "https://onyxclassics.com/release/kancheli-styx-tavener-the-myrrh-bearer/",
+    "onyx": "https://onyxclassics.com/release/kancheli-styx-tavener-the-myrrh-bearer/",
     "imageSrc": "/recordings/13_kanchelli.jpg",
     "spotify": "https://open.spotify.com/album/4SzYD8qqWzS46aRXXbN8BY",
     "applemusic": "https://music.apple.com/us/album/kancheli-styx-tavener-the-myrrh-bearer/262877197"
   },
   {
-    "href": "https://www.avie-records.com/releases/works-for-viola-and-piano/",
+    "avie": "https://www.avie-records.com/releases/works-for-viola-and-piano/",
     "imageSrc": "/recordings/14_chang.jpg",
     "spotify": "https://open.spotify.com/album/4SJ1pul9yzinwbaboqEg9z",
     "applemusic": "https://music.apple.com/us/album/brahms-bridge-enescu-franck-glinka-tabakova-works-for/1698432054"
