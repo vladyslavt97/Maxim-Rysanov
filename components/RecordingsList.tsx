@@ -101,7 +101,7 @@ export default function RecordingsList({}: Props) {
                             {r.onyx && (
                                 <Link href={r.onyx}>
                                     <Image
-                                        src="/onyx.png"
+                                        src="/ONYX.png"
                                         alt="logo"
                                         width={70}
                                         height={70}
@@ -113,7 +113,7 @@ export default function RecordingsList({}: Props) {
                             {r.avie && (
                                 <Link href={r.avie}>
                                     <Image
-                                        src="/avie.png"
+                                        src="/AVIE.png"
                                         alt="logo"
                                         width={70}
                                         height={70}
@@ -125,7 +125,7 @@ export default function RecordingsList({}: Props) {
                             {r.decca && (
                                 <Link href={r.decca}>
                                     <Image
-                                        src="/decca.png"
+                                        src="/DECCA.png"
                                         alt="logo"
                                         width={70}
                                         height={70}
@@ -149,7 +149,7 @@ export default function RecordingsList({}: Props) {
                             {r.warner && (
                                 <Link href={r.warner}>
                                     <Image
-                                        src="/Warner Classics.png"
+                                        src="/warner.png"
                                         alt="logo"
                                         width={70}
                                         height={70}
