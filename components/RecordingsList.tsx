@@ -137,7 +137,7 @@ export default function RecordingsList({}: Props) {
                             {r.ecm && (
                                 <Link href={r.ecm}>
                                     <Image
-                                        src="/ecm.png"
+                                        src="/ECM.png"
                                         alt="logo"
                                         width={70}
                                         height={70}
