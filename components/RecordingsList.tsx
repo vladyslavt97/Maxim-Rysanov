@@ -34,7 +34,7 @@ export default function RecordingsList({}: Props) {
                     transition={{ duration: 2 }}
                     viewport={{ once: true }}
                     key={r.imageSrc}
-                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000 shadow-xl rounded-2xl"
+                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000 shadow-xl rounded-2xl bg-gray-300"
                 >
                     <Image
                         src={r.imageSrc}
