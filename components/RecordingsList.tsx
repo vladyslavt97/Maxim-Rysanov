@@ -43,6 +43,7 @@ export default function RecordingsList({}: Props) {
                         height={300}
                         className="rounded-2xl"
                         loading="eager"
+                        priority={true}
                     />
                     <div className="flex flex-col italic hover:font-semibold hover:text-gray-500">
                         <div className="flex flex-row items-center">
