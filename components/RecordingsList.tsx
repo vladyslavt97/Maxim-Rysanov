@@ -28,13 +28,13 @@ export default function RecordingsList({}: Props) {
                 Recordings
             </h1>
             {recordings.map((r) => (
+                <div key={r.imageSrc} className="hover:scale-110 transition-transform duration-2000">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 2 }}
                     viewport={{ once: true }}
-                    key={r.imageSrc}
-                    className="mb-10 mt-5 mx-10 hover:scale-105 transition-transform duration-2000 shadow-xl rounded-2xl bg-gray-300"
+                    className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-300"
                 >
                     <Image
                         src={r.imageSrc}
@@ -173,6 +173,7 @@ export default function RecordingsList({}: Props) {
                         </div>
                     </div>
                 </motion.div>
+                </div>
             ))}
         </div>
     );
