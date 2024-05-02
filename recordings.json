@@ -6,7 +6,8 @@
   },
   {
     "applemusic": "https://music.apple.com/us/album/around-the-world-in-80-minutes/1731805341",
-    "imageSrc": "/recordings/1-minutes.jpg"
+    "imageSrc": "/recordings/1-minutes.jpg",
+    "spotify": "https://open.spotify.com/album/082rsk9awBPeBsDBzMPvLw"
   },
   {
     "href": "https://bis.se/performers/rysanov-maxim/pteris-vasks-viola-concerto-voices",
@@ -16,7 +17,8 @@
   {
     "href": "https://onyxclassics.com/release/in-schuberts-company/",
     "imageSrc": "/recordings/2_shubert.png",
-    "applemusic": "https://music.apple.com/us/album/in-schuberts-company-for-viola-orchestra/1243753197?i=1243753709"
+    "applemusic": "https://music.apple.com/us/album/in-schuberts-company-for-viola-orchestra/1243753197?i=1243753709",
+    "spotify": "https://open.spotify.com/album/1DQ6YiaMQxV734almX0khC"
   },
   {
     "href": "https://bis.se/label/bis/maxim-rysanov-plays-martin",
@@ -31,27 +33,33 @@
   {
     "href": "https://ecmrecords.com/product/dobrinka-tabakova-string-paths-maxim-rysanov-kristina-blaumane-lithuanian-chamber-orchestra/",
     "imageSrc": "/recordings/5_dobrinka.jpg",
-    "applemusic": "https://music.apple.com/us/album/concerto-for-violoncello-and-strings-iii-radiant/1452389070?i=1452389410"
+    "applemusic": "https://music.apple.com/us/album/concerto-for-violoncello-and-strings-iii-radiant/1452389070?i=1452389410",
+    "spotify": "https://open.spotify.com/album/4RMQ08JJ7DeuDA2ChfnMVF"
   },
   {
     "href": "https://bis.se/performers/rysanov-maxim/pavane",
-    "imageSrc": "/recordings/6_pavane.jpg"
+    "imageSrc": "/recordings/6_pavane.jpg",
+    "spotify": "https://open.spotify.com/album/3D59xSd9I9iZPrOt5WhM5G"
   },
   {
     "href": "https://bis.se/performers/rysanov-maxim/maxim-rysanov-plays-schubert-tchaikovsky-bruch",
-    "imageSrc": "/recordings/7_bruch.jpg"
+    "imageSrc": "/recordings/7_bruch.jpg",
+    "spotify": "https://open.spotify.com/album/5aMr2FuXAwpZuaz477fayW"
   },
   {
     "href": "https://onyxclassics.com/release/beethoven-sonatina-for-viola-and-cello-duo-for-viola-and-cello-et-al/",
-    "imageSrc": "/recordings/8_beethoven.jpg"
+    "imageSrc": "/recordings/8_beethoven.jpg",
+    "spotify": "https://open.spotify.com/album/2kZzmfl5h2qlUo7eOQwvKF"
   },
   {
     "href": "https://onyxclassics.com/release/brahms-quintet-two-songs-and-string-quintet/",
-    "imageSrc": "/recordings/9_brahms.jpg"
+    "imageSrc": "/recordings/9_brahms.jpg",
+    "spotify": "https://open.spotify.com/album/1WwGsvvqyCvsldGp7IKvqo"
   },
   {
     "href": "https://bis.se/performers/rysanov-maxim/bach-suites-maxim-rysanov",
-    "imageSrc": "/recordings/10_bach.jpg"
+    "imageSrc": "/recordings/10_bach.jpg",
+    "spotify": "https://open.spotify.com/album/5XbKX0pDOy9FJfDfCxjrYz"
   },
   {
     "href": "https://onyxclassics.com/release/brahms-viola/",
@@ -60,14 +68,17 @@
   },
   {
     "href": "https://www.deccaclassics.com/en/catalogue/products/bach-partita-no-2-jansen-4506",
-    "imageSrc": "/recordings/12_janine.jpg"
+    "imageSrc": "/recordings/12_janine.jpg",
+    "spotify": "https://open.spotify.com/album/2607OCLeDNFKNOO01OVd9P"
   },
   {
     "href": "https://onyxclassics.com/release/kancheli-styx-tavener-the-myrrh-bearer/",
-    "imageSrc": "/recordings/13_kanchelli.jpg"
+    "imageSrc": "/recordings/13_kanchelli.jpg",
+    "spotify": "https://open.spotify.com/album/4SzYD8qqWzS46aRXXbN8BY"
   },
   {
     "href": "https://www.avie-records.com/releases/works-for-viola-and-piano/",
-    "imageSrc": "/recordings/14_chang.jpg"
+    "imageSrc": "/recordings/14_chang.jpg",
+    "spotify": "https://open.spotify.com/album/4SJ1pul9yzinwbaboqEg9z"
   }
 ]
