@@ -39,6 +39,7 @@ export default function Gallery({}: Props) {
                         alt="images"
                         width={300}
                         height={300}
+                        priority={true}
                         loading="eager"
                         className=" object-cover h-[350px] w-[350px] object-top rounded shadow-black shadow-lg"
                         onClick={(e) => setOpenPreview(images[count])}
