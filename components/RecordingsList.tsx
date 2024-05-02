@@ -158,6 +158,18 @@ export default function RecordingsList({}: Props) {
                                     />
                                 </Link>
                             )}
+                            {r.orchid && (
+                                <Link href={r.orchid}>
+                                    <Image
+                                        src="/orchid.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </motion.div>
