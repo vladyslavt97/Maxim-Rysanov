@@ -89,7 +89,7 @@ export default function RecordingsList({}: Props) {
                             {r.bis && (
                                 <Link href={r.bis}>
                                     <Image
-                                        src="/bis.png"
+                                        src="/BIS.png"
                                         alt="logo"
                                         width={70}
                                         height={70}
