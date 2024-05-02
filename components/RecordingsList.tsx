@@ -51,7 +51,7 @@ export default function RecordingsList({}: Props) {
                                     Stream here:
                                 </h1>}
                             {r.applemusic && (
-                                <Link href={r.applemusic}>
+                                <Link href={r.applemusic} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/applemusic.png"
                                         alt="logo"
@@ -63,7 +63,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.spotify && (
-                                <Link href={r.spotify}>
+                                <Link href={r.spotify} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/spotify.png"
                                         alt="logo"
@@ -75,7 +75,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.hyperion && (
-                                <Link href={r.hyperion}>
+                                <Link href={r.hyperion} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/hyperion.png"
                                         alt="logo"
@@ -87,7 +87,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.bis && (
-                                <Link href={r.bis}>
+                                <Link href={r.bis} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/BIS.png"
                                         alt="logo"
@@ -99,7 +99,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.onyx && (
-                                <Link href={r.onyx}>
+                                <Link href={r.onyx} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/ONYX.png"
                                         alt="logo"
@@ -111,7 +111,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.avie && (
-                                <Link href={r.avie}>
+                                <Link href={r.avie} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/AVIE.png"
                                         alt="logo"
@@ -123,7 +123,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.decca && (
-                                <Link href={r.decca}>
+                                <Link href={r.decca} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/DECCA.png"
                                         alt="logo"
@@ -135,7 +135,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.ecm && (
-                                <Link href={r.ecm}>
+                                <Link href={r.ecm} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/ECM.png"
                                         alt="logo"
@@ -147,7 +147,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.warner && (
-                                <Link href={r.warner}>
+                                <Link href={r.warner} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/warner.png"
                                         alt="logo"
@@ -159,7 +159,7 @@ export default function RecordingsList({}: Props) {
                                 </Link>
                             )}
                             {r.orchid && (
-                                <Link href={r.orchid}>
+                                <Link href={r.orchid} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/orchid.png"
                                         alt="logo"
