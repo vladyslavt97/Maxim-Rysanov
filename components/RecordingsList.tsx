@@ -110,6 +110,54 @@ export default function RecordingsList({}: Props) {
                                     />
                                 </Link>
                             )}
+                            {r.avie && (
+                                <Link href={r.avie}>
+                                    <Image
+                                        src="/avie.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
+                            {r.decca && (
+                                <Link href={r.decca}>
+                                    <Image
+                                        src="/decca.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
+                            {r.ecm && (
+                                <Link href={r.ecm}>
+                                    <Image
+                                        src="/ecm.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
+                            {r.warner && (
+                                <Link href={r.warner}>
+                                    <Image
+                                        src="/Warner Classics.png"
+                                        alt="logo"
+                                        width={70}
+                                        height={70}
+                                        className="pl-5 object-contain py-2"
+                                        loading="eager"
+                                    />
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </motion.div>
