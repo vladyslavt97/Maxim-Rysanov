@@ -5,8 +5,6 @@ export const sortingConcerts = (concerts: any) => {
           // Use the match() method to find the date pattern in the string
           const match = dateString.match(regex);
           // If a match is found, return the matched date pattern, else return null
-          console.log("match: ", match);
-          
           return match ? match[0] : null;
         };
 
