@@ -197,6 +197,22 @@ export default function RecordingsList({}: Props) {
                     />
                   </Link>
                 )}
+                {r.hungaroton && (
+                  <Link
+                    href={r.hungaroton}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="/hungaroton.png"
+                      alt="logo"
+                      width={100}
+                      height={100}
+                      className="pl-5 object-contain py-2"
+                      loading="eager"
+                    />
+                  </Link>
+                )}
               </div>
             </div>
           </motion.div>
