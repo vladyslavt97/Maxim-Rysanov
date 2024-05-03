@@ -33,9 +33,13 @@ export const findClosestEventInTheFuture = (concerts: any, validConcerts: any, t
     let allNums: number[]=[];
     let newArr: String[] = [];
     if (concerts.length > 0){
-      validConcerts.map((c: any) => {
-        newArr.push(c.date.slice(-5))
-      })
+      validConcerts.forEach((c: any) => {
+        const regex = /\b\d{2}\/\d{2}\b/;
+        const match = c.date.match(regex);
+        if (match) {
+            newArr.push(match[0]);
+        }
+    });
       for (let i = 0; i < newArr.length; i++) {
         var number1 = newArr[i];
         var [day1, month1] = number1.split("/");
@@ -51,7 +55,7 @@ export const findClosestEventInTheFuture = (concerts: any, validConcerts: any, t
         var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
         allNums.push(daysDiff)
       }
-    
+      
       const smallestNumber = Math.min(...allNums);
       if(allNums.indexOf(smallestNumber) > 0){
         return allNums.indexOf(smallestNumber);
