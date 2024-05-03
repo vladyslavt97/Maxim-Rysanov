@@ -65,8 +65,14 @@
     "spotify": "https://open.spotify.com/album/1WwGsvvqyCvsldGp7IKvqo"
   },
   {
-    "bis": "https://bis.se/performers/rysanov-maxim/bach-suites-maxim-rysanov",
+    "bis": "https://bisrecords.lnk.to/2033",
     "imageSrc": "/recordings/10_bach.jpg",
+    "spotify": "https://open.spotify.com/album/5ncuN2N8FSQcI18ZIKR25X?go=1&nd=1&dlsi=c6a00dd2783344a9",
+    "applemusic": "https://music.apple.com/se/album/j-s-bach-suites-nos-2-3-6/1727124012"
+  },
+  {
+    "bis": "https://bis.se/performers/rysanov-maxim/bach-suites-maxim-rysanov",
+    "imageSrc": "/recordings/10_bach2.jpg",
     "spotify": "https://open.spotify.com/album/5XbKX0pDOy9FJfDfCxjrYz",
     "applemusic": "https://music.apple.com/us/album/bach-suites-nos-1-4-5/1727430106"
   },
