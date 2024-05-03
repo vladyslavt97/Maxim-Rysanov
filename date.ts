@@ -1,8 +1,13 @@
 export const sortingConcerts = (concerts: any) => {
     let validConcerts = concerts.sort((a: any, b: any) => {
         const getLastFiveCharacters = (dateString: any) => {
-            const lastIndex = dateString.length - 1;
-            return dateString.substr(lastIndex - 4);
+          const regex = /\b\d{2}\/\d{2}\b/;
+          // Use the match() method to find the date pattern in the string
+          const match = dateString.match(regex);
+          // If a match is found, return the matched date pattern, else return null
+          console.log("match: ", match);
+          
+          return match ? match[0] : null;
         };
 
         const lastFiveCharactersA = getLastFiveCharacters(a.date);
