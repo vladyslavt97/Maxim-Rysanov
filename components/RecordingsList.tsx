@@ -37,8 +37,13 @@ export default function RecordingsList({}: Props) {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
             viewport={{ once: true }}
-            className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-300"
+            className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-300 relative"
           >
+            {r.newrelease && (
+              <div className=" bg-blue-400 w-[100px] -skew-x-12 transform absolute -top-4 -left-4 text-white px-1 rounded">
+                New Release
+              </div>
+            )}
             <Image
               src={r.imageSrc}
               alt={r.imageSrc}
