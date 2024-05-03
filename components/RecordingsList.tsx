@@ -39,8 +39,8 @@ export default function RecordingsList({}: Props) {
                     <Image
                         src={r.imageSrc}
                         alt={r.imageSrc}
-                        width={300}
-                        height={300}
+                        width={1000}
+                        height={1000}
                         className="rounded-2xl"
                         loading="eager"
                         priority={true}
