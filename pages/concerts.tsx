@@ -106,7 +106,7 @@ export default function Concerts() {
                     ref={(el) => (divRefs.current[index] = el)}
                     className={`mx-3 mb-6 ${
                       smN === index &&
-                      "bg-gray-500/30 py-3 pl-1 pr-5 rounded shadow-lg"
+                      "bg-gray-500/30 py-1 pl-2 pr-5 rounded shadow-lg"
                     } ${
                       concert.canceled &&
                       "text-gray-400 bg-red-100/10 py-3 pl-1 pr-5 rounded shadow-lg"
@@ -117,7 +117,7 @@ export default function Concerts() {
                         className={`${
                           concert.canceled
                             ? "hidden"
-                            : "relative mb-2 -right-4 -top-2"
+                            : "relative mb-2 -right-3 top-0"
                         }`}
                       >
                         <h1 className="text-gray-100 absolute -right-3 -top-2 text-xs bg-slate-700 transform -skew-x-12 px-1 py-[1px] rounded tracking-wider shadow-lg">
