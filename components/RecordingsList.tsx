@@ -23,7 +23,7 @@ export default function RecordingsList({}: Props) {
     }
   };
   return (
-    <div className="flex flex-row flex-wrap justify-center my-24">
+    <div className="flex flex-row flex-wrap justify-center py-24 bg-gray-300">
       <h1 className="text-center font-bold text-2xl text-gray-500">
         Recordings
       </h1>
@@ -35,7 +35,7 @@ export default function RecordingsList({}: Props) {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-300 relative"
           >
