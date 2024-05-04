@@ -115,11 +115,15 @@ export default function Concerts() {
                     {smN === index && (
                       <div
                         className={`${
-                          concert.canceled ? "hidden" : "relative mb-2"
+                          concert.canceled
+                            ? "hidden"
+                            : "relative mb-2 -right-4 -top-2"
                         }`}
                       >
-                        <h1 className="text-gray-100 absolute -right-3 -top-2 text-xs italic">
-                          Next Event
+                        <h1 className="text-gray-100 absolute -right-3 -top-2 text-xs bg-slate-800 transform -skew-x-12 px-1 py-[1px] rounded tracking-wider shadow-lg">
+                          <span className="block transform skew-x-12">
+                            Next Event
+                          </span>
                         </h1>
                       </div>
                     )}
