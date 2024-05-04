@@ -120,7 +120,7 @@ export default function Concerts() {
                             : "relative mb-2 -right-4 -top-2"
                         }`}
                       >
-                        <h1 className="text-gray-100 absolute -right-3 -top-2 text-xs bg-slate-800 transform -skew-x-12 px-1 py-[1px] rounded tracking-wider shadow-lg">
+                        <h1 className="text-gray-100 absolute -right-3 -top-2 text-xs bg-slate-700 transform -skew-x-12 px-1 py-[1px] rounded tracking-wider shadow-lg">
                           <span className="block transform skew-x-12">
                             Next Event
                           </span>
