@@ -55,6 +55,7 @@ export default function Media({}: Props) {
                     }}
                     className="md:grid md:grid-cols-2 md:gap-10 mt-5 pb-64 md:pb-10 sm:h-[80vh] flex flex-col gap-3"
                 >
+                    <YouTube opts={opts} videoId="jNTYW55pPrU" />
                     <YouTube opts={opts} videoId="NpuoSSSgPE8" />
                     <YouTube opts={opts} videoId="DUwntDEgi6Q" />
                     <YouTube opts={opts} videoId="Iyg1wANkw7M" />
