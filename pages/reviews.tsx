@@ -14,15 +14,13 @@ export default function Reviews({}: Props) {
         {reviews.map((review, i) => (
           <div
             key={i}
-            className="relative rounded-lg border-2 border-gray-500/10 shadow-lg px-2 py-1 bg-white md:w-[350px] md:h-[270px] md:m-auto"
+            className="relative rounded-lg border-2 border-gray-500/10 shadow-lg px-2 py-1 bg-white md:w-[350px] md:h-[250px] md:m-auto"
           >
             <h1>{review.CDTitle}</h1>
             {review?.note && (
-              <h2 className="leading-8 text-gray-800 text-sm">
-                {review?.note}
-              </h2>
+              <h2 className=" text-gray-800 text-sm">{review?.note}</h2>
             )}
-            <h2 className="leading-8">&ldquo;{review?.quote}&ldquo;</h2>
+            <h2 className=" leading-7">&ldquo;{review?.quote}&ldquo;</h2>
             <span className="text-gray-800">
               {review.link ? (
                 <Link
@@ -50,7 +48,7 @@ export default function Reviews({}: Props) {
                   alt={review.byWhom}
                   width={80}
                   height={80}
-                  className="rounded-sm"
+                  className="rounded-sm md:block hidden"
                 />
               </div>
             )}
