@@ -12,5 +12,7 @@ export default function Shop({}: Props) {
     router.push("https://rysanovshop.com/");
   }, []);
 
-  return <div className="min-h-screen">Redirecting...</div>;
+  return (
+    <div className="h-screen w-screen bg-white absolute top-0 left-0 z-50"></div>
+  );
 }
