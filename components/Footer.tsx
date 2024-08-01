@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SocialIcon } from "react-social-icons";
 
 type Props = {};
 
