@@ -1,9 +1,15 @@
 [
   {
     "newrelease": "true",
-    "imageSrc": "/recordings/schumann.jpg",
+    "imageSrc": "/recordings/schumann.png",
     "applemusic": "https://music.apple.com/us/album/schumann-viola/1765163012",
     "spotify": "https://open.spotify.com/album/7tjOKLYT563q5Jp2hqLHsD"
+  },
+  {
+    "newrelease": "true",
+    "imageSrc": "/recordings/mozart.jpeg",
+    "applemusic": "https://music.apple.com/my/album/mozart-divertimento-in-e-flat-major-k-563/1770011436",
+    "spotify": "https://open.spotify.com/album/6fmRukCBljbo4xElsUGaDB"
   },
   {
     "imageSrc": "/recordings/1-tabakova.jpg",
