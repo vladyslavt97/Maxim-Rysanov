@@ -21,21 +21,28 @@ export default function HomePage({}: Props) {
                 className="absolute top-[10%] flex justify-center items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md z-30 md:text-2xl xl:text-3xl xl:font-light lg:leading-relaxed md:ml-[5%] lg:ml-[12%]"
             >
                 <div className="italic w-[45%] sm:w-[50%] p-5 font-extralight md:leading-loose">
-                    <TextGenerateEffect words={words} />
-                    {/* &quot;The colours and contrasts that Rysanov manages to
-                    extract from the orchestra are truly fabulous!&quot; */}
-                    <br />
+                    <div className="md:block hidden">
+                        <TextGenerateEffect words={words} />
+                    </div>
+                    <p className="block md:hidden">
+                    &quot;The colours and contrasts that Rysanov manages to
+                    extract from the orchestra are truly fabulous!&quot;
+                        <br />
+                    </p>
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 3, duration: 1 }}
+                        className="md:block hidden"
                     >
                         <TextGenerateEffect words={words2} />
                     </motion.div>
-                    {/* &quot;We already know some very beautiful versions of this
+                    <p className="block md:hidden">
+                    &quot;We already know some very beautiful versions of this
                     symphony by Vasks, including one by Kremerata Baltica on
                     Teldec; but Rysanov and the Riga orchestra raise it to the
-                    top of the discography!&quot; */}
+                    top of the discography!&quot;
+                    </p>
                 </div>
                 <br />
                 <motion.p
