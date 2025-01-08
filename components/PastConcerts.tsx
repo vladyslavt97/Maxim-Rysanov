@@ -23,7 +23,7 @@ export default function PastConcerts({}: Props) {
             {open && (
                 <motion.div
                     initial={{ height: 0, opacity: 0.7 }}
-                    animate={{ height: 150, opacity: 1 }}
+                    animate={{ height: 190, opacity: 1 }}
                     transition={{ duration: 1 }}
                     className="flex flex-col bg-white text-black rounded-lg drop-shadow-md"
                 >
@@ -35,6 +35,20 @@ export default function PastConcerts({}: Props) {
                             className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
                         >
                             <Link href="/concerts">
+                                <button onClick={(e) => setOpen(!open)}>
+                                    Concerts 2025
+                                </button>
+                            </Link>
+                        </motion.div>
+                    )}
+                    {router.pathname !== "/concerts-2024" && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.3 }}
+                            className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
+                        >
+                            <Link href="/concerts-2024">
                                 <button onClick={(e) => setOpen(!open)}>
                                     Concerts 2024
                                 </button>
