@@ -200,9 +200,22 @@ export default function Concerts({
                                                             : "text-gray-800"
                                                     }`}
                                                 >
-                                                    with {concert.withwhom}
+                                                    with{" "}
+                                                    {concert.withwhom
+                                                        .split(";")
+                                                        .map(
+                                                            (person, index) => (
+                                                                <span
+                                                                    key={index}
+                                                                >
+                                                                    {person.trim()}
+                                                                    <br />
+                                                                </span>
+                                                            )
+                                                        )}
                                                 </h4>
                                             )}
+
                                             {concert.link && (
                                                 <Link href={concert.link}>
                                                     <span
