@@ -60,7 +60,7 @@ export default function Media({}: Props) {
                     <YouTube opts={opts} videoId="DUwntDEgi6Q" />
                     <YouTube opts={opts} videoId="Iyg1wANkw7M" />
                     <YouTube opts={opts} videoId="wJQ750WlHkc" />
-                    <YouTube opts={opts} videoId="oImSUAT9AJ0" />
+                    {/* <YouTube opts={opts} videoId="oImSUAT9AJ0" /> */}
                     <YouTube opts={opts} videoId="CWIQcZHFVng" />
                     <YouTube opts={opts} videoId="0ft9xYR4OuY" />
                     <YouTube opts={opts} videoId="7ASF_h08wUo" />
