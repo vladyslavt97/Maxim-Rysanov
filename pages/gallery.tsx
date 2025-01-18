@@ -35,7 +35,7 @@ export default function Contacts({}: Props) {
                 target="_blank"
                 className="absolute right-0 top-0"
             >
-                <button className="border-2 rounded-2xl p-1 border-gray-300 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs m-1">
+                <button className="border-2 rounded-2xl p-1 border-yellow-400 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs m-1 hover:from-yellow-200 hover:via-yellow-300 hover:to-yellow-400 hover:border-yellow-600">
                     Download Photos
                 </button>
             </Link>
