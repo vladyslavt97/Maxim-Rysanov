@@ -46,6 +46,13 @@ export default function Header({}: Props) {
                 }
             >
                 <Link
+                    href="/"
+                    onClick={() => setMenu(false)}
+                    className="hover:text-gray-400"
+                >
+                    <button className={menu ? "py-5" : "xl:px-5"}>Home</button>
+                </Link>
+                <Link
                     href="bio"
                     onClick={() => setMenu(false)}
                     className="hover:text-gray-400"
@@ -63,13 +70,13 @@ export default function Header({}: Props) {
                         Concerts
                     </button>
                 </Link>
-                <Link
+                {/* <Link
                     href="media"
                     onClick={() => setMenu(false)}
                     className="hover:text-gray-400"
                 >
                     <button className={menu ? "py-5" : "xl:px-5"}>Media</button>
-                </Link>
+                </Link> */}
                 <Link
                     href="reviews"
                     onClick={() => setMenu(false)}
