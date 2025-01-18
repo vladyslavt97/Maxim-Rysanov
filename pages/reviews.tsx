@@ -1,72 +1,85 @@
+import React from "react";
 import Image from "next/image";
 import reviews from "../reveiws.json";
+import { motion } from "framer-motion";
+
 type Props = {};
 
 export default function Reviews({}: Props) {
     return (
-        <div className=" text-yellow-700 mb-24">
-            <h1 className="mt-24 text-center text-lg text-black font-bold m-5">
+        <div className="py-24 bg-gray-100">
+            <h1 className="text-center font-bold text-2xl text-gray-700 mb-12">
                 Reviews
             </h1>
 
-            <div className="flex flex-col md:flex-row md:flex-wrap gap-5 items-stretch mx-5 w-100">
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-8 items-center justify-center mx-5">
                 {reviews.map((review, i) => (
-                    <div
+                    <motion.div
                         key={i}
-                        className="rounded-lg border-2 border-gray-500/10 shadow-lg px-2 py-1 bg-white md:w-[350px] md:m-auto"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="rounded-lg border border-gray-300 shadow-lg p-5 bg-white w-full md:w-[350px] min-h-[300px] flex flex-col justify-between"
                     >
-                        <h1>{review.CDTitle}</h1>
-                        {review?.note && (
-                            <h2 className="leading-8 text-gray-800 text-sm">
-                                {review?.note}
+                        <div>
+                            <h2 className="font-bold text-gray-800 text-lg mb-2">
+                                {review.CDTitle}
                             </h2>
-                        )}
-                        <h2 className="leading-8">
-                            &ldquo;{review?.quote}&ldquo;
-                        </h2>
-                        <span className="text-gray-800">
-                            {review.link ? (
-                                <a
-                                    href={review.link}
-                                    className="italic underline"
-                                >
-                                    {review.byWhom}
-                                </a>
-                            ) : (
-                                <h2>{review.byWhom}</h2>
-                            )}
-                        </span>
-                        <h2 className="text-gray-600">
-                            {review?.publicationDate}
-                            {review?.author && ", " + review?.author}
-                        </h2>
 
-                        {/* magazine */}
-                        {review.byWhom && (
-                            <div className="flex justify-end ">
+                            {review.note && (
+                                <p className="text-gray-600 text-sm mb-4">
+                                    {review.note}
+                                </p>
+                            )}
+
+                            <blockquote className="text-gray-700 italic mb-4">
+                                &ldquo;{review.quote}&rdquo;
+                            </blockquote>
+
+                            <div className="text-sm text-gray-500 mb-2">
+                                {review.link ? (
+                                    <a
+                                        href={review.link}
+                                        className="italic underline text-blue-600"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {review.byWhom}
+                                    </a>
+                                ) : (
+                                    <span>{review.byWhom}</span>
+                                )}
+                            </div>
+
+                            <div className="text-sm text-gray-500">
+                                {review.publicationDate}
+                                {review.author && `, ${review.author}`}
+                            </div>
+                        </div>
+
+                        {/* Optional images */}
+                        <div className="mt-4 flex flex-row justify-between items-end">
+                            {review.byWhom && (
                                 <Image
                                     src={`/${review.byWhom}.png`}
                                     alt={review.byWhom}
-                                    width={60}
-                                    height={100}
-                                    className="rounded-sm"
+                                    width={50}
+                                    height={50}
+                                    className="rounded"
                                 />
-                            </div>
-                        )}
-
-                        {/* label */}
-                        {review.label && (
-                            <div className="flex justify-end">
+                            )}
+                            {review.label && (
                                 <Image
                                     src={`/${review.label}.png`}
                                     alt={review.label}
-                                    width={60}
-                                    height={100}
-                                    className="rounded-sm"
+                                    width={50}
+                                    height={50}
+                                    className="rounded"
                                 />
-                            </div>
-                        )}
-                    </div>
+                            )}
+                        </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
