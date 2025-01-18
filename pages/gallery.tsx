@@ -40,8 +40,8 @@ export default function Contacts({}: Props) {
                 </button>
             </Link>
             {/* <Gallery/> */}
-            {/* <HorizontalGallery /> */}
-            <AnimatedTestimonials testimonials={testimonials} />
+            <HorizontalGallery />
+            {/* <AnimatedTestimonials testimonials={testimonials} /> */}
         </div>
     );
 }
