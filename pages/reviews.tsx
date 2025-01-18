@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import reviews from "../reveiws.json";
+import reviews from "../reviews.json";
 import { motion } from "framer-motion";
 
 type Props = {};
