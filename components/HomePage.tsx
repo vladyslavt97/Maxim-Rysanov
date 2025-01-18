@@ -46,6 +46,8 @@ export default function HomePage({}: Props) {
                 >
                     Olivier Vrins, 18 May 2020
                 </motion.p>
+                <br />
+                <br />
                 <div className="italic w-[45%] sm:w-[50%] p-5 font-extralight md:leading-loose">
                     {/* <motion.div
                         initial={{ opacity: 0 }}
