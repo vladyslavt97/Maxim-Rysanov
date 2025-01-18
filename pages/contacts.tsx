@@ -220,7 +220,7 @@ export default function Contacts({}: Props) {
                         </p>
                     </div>
                     <br />
-                    <div>
+                    {/* <div>
                         <h1 className="font-semibold">France</h1>
                         <p>
                             Larus Classical Music Agency
@@ -270,7 +270,7 @@ export default function Contacts({}: Props) {
                             <br />
                             <br />
                         </p>
-                    </div>
+                    </div> */}
                 </div>
                 <div>
                     <h5 className="pb-16 text-center text-xs text-gray-500">
