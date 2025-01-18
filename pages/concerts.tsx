@@ -87,7 +87,7 @@ export default function Concerts({
             <div className="bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] rounded text-black min-h-full flex flex-col items-center overflow-hidden">
                 <PastConcerts />
                 <div className="absolute left-6 md:static md:flex md:justify-center md:items-center pt-5">
-                    <h1 className="font-bold text-xl text-violet-800">2025</h1>
+                    <h1 className="font-bold text-xl text-gray-800">2025</h1>
                 </div>
                 {concerts.length === 0 ? (
                     <div className="flex items-center justify-center h-[60vh]">
@@ -162,7 +162,7 @@ export default function Concerts({
                                                 <h2 className=" font-semibold">
                                                     {concert.date}
                                                 </h2>
-                                                <div className="flex flex-row items-center italic text-amber-700 text-xs">
+                                                <div className="flex flex-row items-center text-gray-700 text-xs">
                                                     &nbsp;
                                                     {concert.viola && (
                                                         <h2>Viola</h2>
