@@ -174,9 +174,15 @@ export default function Contacts({}: Props) {
                                     </button>
                                 </CopyToClipboard>
                             </div>
-                            <div className="flex flex-row text-center justify-center items-center gap-3">
-                                <AiOutlinePhone />
-                                +31 (0)70 39 25 271, +31 (0)6 28 48 98 53 <br />
+                            <div className="flex flex-col text-center justify-center items-center gap-1">
+                                <div className="flex justify-center items-center gap-2">
+                                    <AiOutlinePhone />
+                                    +31 (0)70 39 25 271
+                                </div>
+                                <div className="flex justify-center items-center gap-2">
+                                    <AiOutlinePhone />
+                                    31 (0)6 28 48 98 53
+                                </div>
                             </div>
                             <Link
                                 href="www.ivyartists.com"
