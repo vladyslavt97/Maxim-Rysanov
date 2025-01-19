@@ -13,7 +13,7 @@ export default function Footer({}: Props) {
 
     return (
         <div className="fixed bottom-0 w-full bg-gray-800 text-white flex justify-evenly items-center border-t-[10px] border-r-[10px] border-l-[10px] border-gray-300 h-[51px]">
-            <Link href="https://www.instagram.com/mrysanov_viola_conductor">
+            <Link href="https://www.instagram.com/maximrysanov/">
                 <Image
                     src="/social/instagram.png"
                     alt="logo"
