@@ -57,7 +57,7 @@ export default function Footer({}: Props) {
                 {showPopup && (
                     <div
                         ref={popupRef}
-                        className="absolute bottom-[40px] left-[-60px] bg-gray-300 text-black px-5 py-0 rounded-md shadow-md z-50 flex items-center gap-3"
+                        className="absolute bottom-[40px] left-[-60px] bg-gray-300 text-black px-5 py-0 rounded-md shadow-md z-[100] flex items-center gap-3"
                     >
                         <Link
                             href="https://www.youtube.com/watch?v=oK1XGDphjBg&list=PL_YslfPtQb_ZVYSBfjVVoGg3VJpyHyCb8"
