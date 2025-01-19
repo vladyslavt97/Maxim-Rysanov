@@ -1,11 +1,8 @@
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { TextGenerateEffect } from "./TextAnimation";
 import Link from "next/link";
 
 type Props = {};
-const words = `The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!`;
-const words2 = `We already know some very beautiful versions of this symphony by Vasks, including one by Kremerata Baltica on Teldec; but Rysanov and the Riga orchestra raise it to the top of the discography!`;
 
 export default function HomePage({}: Props) {
     return (
@@ -21,7 +18,7 @@ export default function HomePage({}: Props) {
                 transition={{ duration: 2, delay: 1.5 }}
                 className="absolute top-[10%] flex justify-center items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-light lg:leading-relaxed md:ml-[5%] lg:ml-[12%]"
             >
-                <div className="italic w-[45%] sm:w-[50%] p-5 font-extralight md:leading-loose">
+                <div className="italic w-[50%] sm:w-[50%] px-5 pb-1 font-extralight md:leading-loose">
                     {/* <div className="md:block hidden">
                         <TextGenerateEffect words={words} />
                     </div> */}
@@ -35,7 +32,7 @@ export default function HomePage({}: Props) {
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 2.5 }}
-                    className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-10 pb-1 text-xs md:text-lg"
                 >
                     Crescendo Magazine
                 </motion.p>
@@ -43,11 +40,10 @@ export default function HomePage({}: Props) {
                     initial={{ opacity: 0, x: 25 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 3 }}
-                    className="text-gray-500 w-full px-5 pb-5 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-10 pb-5 text-xs md:text-lg"
                 >
                     Olivier Vrins, 18 May 2020
                 </motion.p>
-                <br />
                 <br />
                 <Link href="/recordings" className="relative inline-block mx-5">
                     <div className="absolute -top-4 -left-3 bg-blue-400 -skew-x-12 transform text-white px-1 rounded text-xs">
@@ -55,14 +51,14 @@ export default function HomePage({}: Props) {
                     </div>
                     <Image
                         src="/recordings/schumann.png"
-                        width={150}
-                        height={100}
+                        width={90}
+                        height={90}
                         alt="schumann"
                         className="shadow-2xl rounded-sm"
                     />
                 </Link>
 
-                <div className="italic w-[45%] sm:w-[50%] px-5 py-2 font-extralight md:leading-loose">
+                <div className="italic w-[50%] sm:w-[50%] px-5 py-1 font-extralight md:leading-loose">
                     {/* <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -77,13 +73,12 @@ export default function HomePage({}: Props) {
                         over again.&quot;
                     </p>
                 </div>
-                <br />
 
                 <motion.p
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 2.5 }}
-                    className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-10 pb-1 text-xs md:text-lg"
                 >
                     BBC Music Magazine Chamber Choice
                 </motion.p>
@@ -91,7 +86,7 @@ export default function HomePage({}: Props) {
                     initial={{ opacity: 0, x: 25 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 3 }}
-                    className="text-gray-500 w-full px-5 pb-5 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-10 pb-5 text-xs md:text-lg"
                 >
                     Christmas Issue, December 2024
                 </motion.p>
