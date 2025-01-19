@@ -44,7 +44,7 @@ export default function Footer({}: Props) {
                     priority={true}
                 />
             </Link>
-            <div className="relative">
+            <div className="relative top-1">
                 <button onClick={togglePopup}>
                     <Image
                         src="/social/youtube.png"
