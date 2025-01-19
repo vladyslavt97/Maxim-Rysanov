@@ -49,8 +49,8 @@ export default function HomePage({}: Props) {
                 </motion.p>
                 <br />
                 <br />
-                <Link href="/recordings">
-                    <div className=" bg-blue-400 -skew-x-12 transform absolute -top-4 -left-4 text-white px-1 rounded">
+                <Link href="/recordings" className="relative inline-block mx-5">
+                    <div className="absolute -top-4 -left-3 bg-blue-400 -skew-x-12 transform text-white px-1 rounded text-xs">
                         New Release
                     </div>
                     <Image
@@ -58,9 +58,10 @@ export default function HomePage({}: Props) {
                         width={150}
                         height={100}
                         alt="schumann"
-                        className="mx-5 shadow-2xl rounded-md"
+                        className="shadow-2xl rounded-sm"
                     />
                 </Link>
+
                 <div className="italic w-[45%] sm:w-[50%] px-5 py-2 font-extralight md:leading-loose">
                     {/* <motion.div
                         initial={{ opacity: 0 }}
