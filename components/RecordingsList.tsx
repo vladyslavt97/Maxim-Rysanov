@@ -211,7 +211,7 @@ export default function RecordingsList({}: Props) {
                                         rel="noopener noreferrer"
                                     >
                                         <Image
-                                            src="/warner.png"
+                                            src="/Warner Classics.png"
                                             alt="logo"
                                             width={70}
                                             height={70}
