@@ -1,6 +1,7 @@
 import { delay, motion } from "framer-motion";
 import Image from "next/image";
 import { TextGenerateEffect } from "./TextAnimation";
+import Link from "next/link";
 
 type Props = {};
 const words = `The colours and contrasts that Rysanov manages to extract from the orchestra are truly fabulous!`;
@@ -48,7 +49,19 @@ export default function HomePage({}: Props) {
                 </motion.p>
                 <br />
                 <br />
-                <div className="italic w-[45%] sm:w-[50%] p-5 font-extralight md:leading-loose">
+                <Link href="/recordings">
+                    <div className=" bg-blue-400 -skew-x-12 transform absolute -top-4 -left-4 text-white px-1 rounded">
+                        New Release
+                    </div>
+                    <Image
+                        src="/recordings/schumann.png"
+                        width={150}
+                        height={100}
+                        alt="schumann"
+                        className="mx-5 shadow-2xl rounded-md"
+                    />
+                </Link>
+                <div className="italic w-[45%] sm:w-[50%] px-5 py-2 font-extralight md:leading-loose">
                     {/* <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -64,6 +77,7 @@ export default function HomePage({}: Props) {
                     </p>
                 </div>
                 <br />
+
                 <motion.p
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
