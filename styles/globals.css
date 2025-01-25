@@ -156,3 +156,13 @@ a {
   background-color: #e0e0e0;
   border-radius: 10px; /* You can adjust this value as needed */
 }
+
+
+@media (max-height: 750px) {
+  .text-small {
+    font-size: 0.85rem; /* Smaller font size */
+  }
+  .text-smaller {
+    font-size: 0.75rem; /* Smaller font size */
+  }
+}

@@ -19,7 +19,7 @@ export default function HomePage({}: Props) {
                 className="absolute top-[12%] flex justify-center items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%]"
             >
                 <div className="italic w-[50%] sm:w-[50%] px-5 pb-1 font-normal md:leading-loose">
-                    <p>
+                    <p className="text-small">
                         &quot;The colours and contrasts that Rysanov manages to
                         extract from the orchestra are truly fabulous!&quot;
                         <br />
@@ -40,11 +40,11 @@ export default function HomePage({}: Props) {
                     transition={{ duration: 2, delay: 2.5 }}
                     className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
                 >
-                    Crescendo Magazine
+                    <span className="text-smaller">Crescendo Magazine</span>
                 </motion.p>
                 <br />
                 <div className="italic w-[50%] sm:w-[50%] px-5 py-1 font-normal md:leading-loose">
-                    <p>
+                    <p className="text-small">
                         &quot;It’s wonderful to find a recording like this; one
                         that, as soon as it finishes, you want to start it all
                         over again.&quot;
@@ -63,17 +63,21 @@ export default function HomePage({}: Props) {
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 2.5 }}
-                    className="text-gray-500 w-full px-5 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-5 text-xs md:text-lg text-smaller"
                 >
-                    BBC Music Magazine Chamber Choice
+                    <span className="text-smaller">
+                        BBC Music Magazine Chamber Choice
+                    </span>
                 </motion.p>
                 <motion.p
                     initial={{ opacity: 0, x: 25 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 3 }}
-                    className="text-gray-500 w-full px-5 pb-5 text-[10px] md:text-lg"
+                    className="text-gray-500 w-full px-5 pb-5 text-[10px] md:text-lg text-smaller"
                 >
-                    Christmas Issue, December 2024
+                    <span className="text-smaller">
+                        Christmas Issue, December 2024
+                    </span>
                 </motion.p>
             </motion.div>
             <motion.div
