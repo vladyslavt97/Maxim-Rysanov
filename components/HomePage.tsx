@@ -31,14 +31,14 @@ export default function HomePage({}: Props) {
                         width={80}
                         height={90}
                         alt="schumann"
-                        className="shadow-2xl rounded-sm ml-10"
+                        className="shadow-2xl rounded-sm"
                     />
                 </Link>
                 <motion.p
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 2.5 }}
-                    className="text-gray-500 w-full px-10 pb-1 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
                 >
                     Crescendo Magazine
                 </motion.p>
@@ -64,14 +64,14 @@ export default function HomePage({}: Props) {
                         width={80}
                         height={90}
                         alt="schumann"
-                        className="shadow-2xl rounded-sm ml-10"
+                        className="shadow-2xl rounded-sm"
                     />
                 </Link>
                 <motion.p
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 2.5 }}
-                    className="text-gray-500 w-full px-10 pb-1 text-xs md:text-lg"
+                    className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
                 >
                     BBC Music Magazine Chamber Choice
                 </motion.p>
@@ -79,7 +79,7 @@ export default function HomePage({}: Props) {
                     initial={{ opacity: 0, x: 25 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 2, delay: 3 }}
-                    className="text-gray-500 w-full px-10 pb-5 text-[10px] md:text-lg"
+                    className="text-gray-500 w-full px-5 pb-5 text-[10px] md:text-lg"
                 >
                     Christmas Issue, December 2024
                 </motion.p>
