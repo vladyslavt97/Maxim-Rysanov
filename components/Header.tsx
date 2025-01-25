@@ -41,7 +41,7 @@ export default function Header({}: Props) {
                 whileInView={{ opacity: 1 }}
                 className={
                     menu
-                        ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-600"
+                        ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-200"
                         : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
                 }
             >
@@ -130,7 +130,7 @@ export default function Header({}: Props) {
                         animate={{ opacity: 1, x: "50%" }}
                         exit={{ opacity: 0, x: "100%" }}
                         transition={{ duration: 0.4 }}
-                        className="absolute bg-gradient-to-tr from-gray-200 to-gray-300 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl w-[100%]"
+                        className="absolute bg-gradient-to-r from-gray-700 to-gray-900 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl w-[100%]"
                     ></motion.div>
                 )}
             </AnimatePresence>
