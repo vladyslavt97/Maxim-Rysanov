@@ -5,7 +5,7 @@ import Image from "next/image";
 type Props = {};
 
 export default function Contacts({}: Props) {
-    const images = Array.from({ length: 15 }, (_, index) => index + 1);
+    const images = Array.from({ length: 19 }, (_, index) => index);
 
     const [imagePreview, setImagePreview] = useState("");
 
