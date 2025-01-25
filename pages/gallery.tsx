@@ -55,22 +55,34 @@ export default function Contacts({}: Props) {
                     className="fixed top-0 z-50 flex justify-center items-center h-screen w-screen left-0"
                     onClick={() => setImagePreview("")}
                 >
-                    <Image
-                        src={imagePreview}
-                        alt="imagesPreview"
-                        width={500}
-                        height={800}
-                        priority={true}
-                        loading="eager"
-                        className=" h-[600px] object-contain"
-                    />
+                    <>
+                        {/* Close Button in Top-Right Corner */}
+                        <button
+                            className="absolute top-20 right-4 bg-black/60 text-white rounded-full p-2 hover:bg-black/80"
+                            onClick={(e) => {
+                                e.stopPropagation(); // Prevent closing when clicking the button
+                                setImagePreview("");
+                            }}
+                        >
+                            <span className="text-xl font-bold">X</span>
+                        </button>
+
+                        <Image
+                            src={imagePreview}
+                            alt="imagesPreview"
+                            width={500}
+                            height={800}
+                            priority={true}
+                            loading="eager"
+                            className="h-[600px] object-contain p-10"
+                        />
+                    </>
                 </div>
             )}
-
             {/* Overlay */}
             {imagePreview !== "" && (
                 <div
-                    className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 pointer-events-auto"
+                    className="fixed top-0 left-0 w-full h-full bg-black/80 z-40 pointer-events-auto"
                     onClick={() => setImagePreview("")}
                 />
             )}
