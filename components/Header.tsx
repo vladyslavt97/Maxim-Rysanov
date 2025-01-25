@@ -36,8 +36,8 @@ export default function Header({}: Props) {
 
             {/* Links */}
             <motion.div
-                animate={{ opacity: 0 }}
-                transition={{ delay: 1, duration: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{ delay: 0.8, duration: 1 }}
                 whileInView={{ opacity: 1 }}
                 className={
                     menu
@@ -127,7 +127,7 @@ export default function Header({}: Props) {
                 {menu && (
                     <motion.div
                         initial={{ opacity: 0, x: "100%" }}
-                        animate={{ opacity: 1, x: "60%" }}
+                        animate={{ opacity: 1, x: "55%" }}
                         exit={{ opacity: 0, x: "100%" }}
                         transition={{ duration: 0.4 }}
                         className="absolute bg-gradient-to-r from-gray-700 to-gray-900 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl w-[100%]"
