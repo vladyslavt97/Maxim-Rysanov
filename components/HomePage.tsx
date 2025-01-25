@@ -43,8 +43,6 @@ export default function HomePage({}: Props) {
                     Crescendo Magazine
                 </motion.p>
                 <br />
-                <br />
-
                 <div className="italic w-[50%] sm:w-[50%] px-5 py-1 font-normal md:leading-loose">
                     <p>
                         &quot;It’s wonderful to find a recording like this; one
