@@ -36,9 +36,10 @@ export default function Header({}: Props) {
 
             {/* Links */}
             <motion.div
+                key={menu ? "open" : "close"}
                 initial={{ opacity: 0 }}
                 transition={{ delay: 0.8, duration: 1 }}
-                whileInView={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
                 className={
                     menu
                         ? "absolute right-[7%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-200"
