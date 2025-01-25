@@ -37,11 +37,11 @@ export default function Header({}: Props) {
             {/* Links */}
             <motion.div
                 animate={{ opacity: 0 }}
-                transition={{ delay: 0.6, duration: 1 }}
+                transition={{ delay: 1, duration: 1 }}
                 whileInView={{ opacity: 1 }}
                 className={
                     menu
-                        ? "absolute right-[10%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-200"
+                        ? "absolute right-[7%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-200"
                         : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
                 }
             >
@@ -127,7 +127,7 @@ export default function Header({}: Props) {
                 {menu && (
                     <motion.div
                         initial={{ opacity: 0, x: "100%" }}
-                        animate={{ opacity: 1, x: "50%" }}
+                        animate={{ opacity: 1, x: "60%" }}
                         exit={{ opacity: 0, x: "100%" }}
                         transition={{ duration: 0.4 }}
                         className="absolute bg-gradient-to-r from-gray-700 to-gray-900 h-[100vh] right-[0px] top-0 md:hidden drop-shadow-2xl w-[100%]"
