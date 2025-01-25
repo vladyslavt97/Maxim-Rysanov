@@ -1,17 +1,20 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 
-type Props = {}
+type Props = {};
 
 export default function HorizontalGallery({}: Props) {
-    const images = ["/gallery/mr1.jpg", "/gallery/mr2.jpg", "/gallery/mr3.jpg", "/gallery/mr4.jpg", "/gallery/mr5.jpg", "/gallery/mr6.jpg", "/gallery/mr7.jpg", "/gallery/mr8.jpg", "/gallery/mr9.jpg"];
-    
+    const images = Array.from({ length: 15 }, (_, index) => index);
+
     return (
-        <div className='flex flex-row overflow-x-scroll object-contain gap-3 justify-start pl-1 pb-5 overflow-y-hidden scrollbar scrollbar-track-gray-700 scrollbar-thumb-[#303030] mx-5 md:mx-52 h-[350px] absolute top-1/2 -translate-y-1/2 ' style={{ overflowY: 'hidden' }}>
-            {images.map((im: string, index: number) => (
-                <div key={index} className="flex-shrink-0" >
+        <div
+            className="flex flex-row overflow-x-scroll object-contain gap-3 justify-start pl-1 pb-5 overflow-y-hidden scrollbar scrollbar-track-gray-700 scrollbar-thumb-[#303030] mx-5 md:mx-24 h-[350px] absolute top-1/2 -translate-y-1/2 "
+            style={{ overflowY: "hidden" }}
+        >
+            {images.map((im: number) => (
+                <div key={im} className="flex-shrink-0">
                     <Image
-                        src={im}
+                        src={`/gallery/mr${im.toString()}.jpg`}
                         alt="images"
                         width={300}
                         height={300}
