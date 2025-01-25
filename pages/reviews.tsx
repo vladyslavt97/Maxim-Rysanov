@@ -20,7 +20,7 @@ export default function Reviews({}: Props) {
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="rounded-lg border border-gray-300 shadow-lg p-5 bg-white w-full md:w-[350px] min-h-[300px] flex flex-col justify-between"
+                        className="rounded-lg border border-gray-300 shadow-lg p-5 bg-white w-full md:w-[350px] h-[350px] flex flex-col justify-between"
                     >
                         <div>
                             <h2 className="font-bold text-gray-800 text-lg mb-2">
