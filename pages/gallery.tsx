@@ -23,15 +23,16 @@ export default function Contacts({}: Props) {
                     Download Photos
                 </button>
             </Link>
+
             <div
-                className="flex flex-row overflow-x-scroll object-contain gap-3 justify-start pl-1 pb-5 overflow-y-hidden scrollbar scrollbar-track-gray-700 scrollbar-thumb-[#303030] mx-5 md:mx-24 h-[350px] absolute top-1/2 -translate-y-1/2 "
+                className="flex flex-row overflow-x-scroll object-contain gap-3 justify-start pl-1 pb-5 overflow-y-hidden scrollbar scrollbar-track-gray-700 scrollbar-thumb-[#303030] mx-5 md:mx-24 h-[350px] absolute top-1/2 -translate-y-1/2"
                 style={{ overflowY: "hidden" }}
             >
                 {images.map((im: number) => (
                     <div
                         key={im}
                         className="flex-shrink-0 cursor-pointer"
-                        onClick={(e) =>
+                        onClick={() =>
                             setImagePreview(`/gallery/mr${im.toString()}.jpg`)
                         }
                     >
@@ -46,25 +47,31 @@ export default function Contacts({}: Props) {
                         />
                     </div>
                 ))}
-
-                {imagePreview !== "" && (
-                    <div className="absolute top-0 left-0 w-full h-full z-60">
-                        <Image
-                            src={imagePreview}
-                            alt="imagesPreview"
-                            width={500}
-                            height={1000}
-                            priority={true}
-                            loading="eager"
-                            className="z-60"
-                        />
-                    </div>
-                )}
             </div>
+
+            {/* Image Preview */}
             {imagePreview !== "" && (
                 <div
-                    className="fixed top-0 left-0 w-full h-full bg-black/30 z-10 pointer-events-auto"
-                    onClick={(e) => setImagePreview("")}
+                    className="fixed top-0 z-50 flex justify-center items-center h-screen w-screen left-0"
+                    onClick={() => setImagePreview("")}
+                >
+                    <Image
+                        src={imagePreview}
+                        alt="imagesPreview"
+                        width={500}
+                        height={800}
+                        priority={true}
+                        loading="eager"
+                        className=" h-[600px] object-contain"
+                    />
+                </div>
+            )}
+
+            {/* Overlay */}
+            {imagePreview !== "" && (
+                <div
+                    className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 pointer-events-auto"
+                    onClick={() => setImagePreview("")}
                 />
             )}
         </div>
