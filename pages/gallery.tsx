@@ -1,29 +1,13 @@
-import { AnimatedTestimonials } from "@/components/AnimatedTestimonials";
-import Gallery from "@/components/Gallery";
-import HorizontalGallery from "@/components/HorizontalGallery";
 import Link from "next/link";
+import React, { useState } from "react";
+import Image from "next/image";
 
 type Props = {};
 
 export default function Contacts({}: Props) {
-    const images = [
-        "/gallery/mr1.jpg",
-        "/gallery/mr2.jpg",
-        "/gallery/mr3.jpg",
-        "/gallery/mr4.jpg",
-        "/gallery/mr5.jpg",
-        "/gallery/mr6.jpg",
-        "/gallery/mr7.jpg",
-        "/gallery/mr8.jpg",
-        "/gallery/mr9.jpg",
-    ];
+    const images = Array.from({ length: 15 }, (_, index) => index + 1);
 
-    const testimonials = images.map((src, index) => ({
-        // quote: "I play with my heart",
-        // name: `Image ${index + 1}`,
-        // designation: "kamermusikverein",
-        src: src,
-    }));
+    const [imagePreview, setImagePreview] = useState("");
 
     return (
         <div className="h-[85vh] flex justify-start md:justify-evenly flex-col text-black bg-gradient-to-tr from-neutral-100 to-gray-200 w-full border-[10px] border-gray-300 absolute top-[70px] px-10 md:px-0">
@@ -39,9 +23,50 @@ export default function Contacts({}: Props) {
                     Download Photos
                 </button>
             </Link>
-            {/* <Gallery/> */}
-            <HorizontalGallery />
-            {/* <AnimatedTestimonials testimonials={testimonials} /> */}
+            <div
+                className="flex flex-row overflow-x-scroll object-contain gap-3 justify-start pl-1 pb-5 overflow-y-hidden scrollbar scrollbar-track-gray-700 scrollbar-thumb-[#303030] mx-5 md:mx-24 h-[350px] absolute top-1/2 -translate-y-1/2 "
+                style={{ overflowY: "hidden" }}
+            >
+                {images.map((im: number) => (
+                    <div
+                        key={im}
+                        className="flex-shrink-0 cursor-pointer"
+                        onClick={(e) =>
+                            setImagePreview(`/gallery/mr${im.toString()}.jpg`)
+                        }
+                    >
+                        <Image
+                            src={`/gallery/mr${im.toString()}.jpg`}
+                            alt="images"
+                            width={300}
+                            height={300}
+                            priority={true}
+                            loading="eager"
+                            className="rounded shadow-black shadow-lg h-[300px] w-[200px] object-cover object-top"
+                        />
+                    </div>
+                ))}
+
+                {imagePreview !== "" && (
+                    <div className="absolute top-0 left-0 w-full h-full z-60">
+                        <Image
+                            src={imagePreview}
+                            alt="imagesPreview"
+                            width={500}
+                            height={1000}
+                            priority={true}
+                            loading="eager"
+                            className="z-60"
+                        />
+                    </div>
+                )}
+            </div>
+            {imagePreview !== "" && (
+                <div
+                    className="fixed top-0 left-0 w-full h-full bg-black/30 z-10 pointer-events-auto"
+                    onClick={(e) => setImagePreview("")}
+                />
+            )}
         </div>
     );
 }
