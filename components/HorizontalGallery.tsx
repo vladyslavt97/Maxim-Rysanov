@@ -4,7 +4,7 @@ import Image from "next/image";
 type Props = {};
 
 export default function HorizontalGallery({}: Props) {
-    const images = Array.from({ length: 15 }, (_, index) => index);
+    const images = Array.from({ length: 15 }, (_, index) => index + 1);
 
     return (
         <div
