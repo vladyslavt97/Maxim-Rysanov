@@ -16,7 +16,7 @@ export default function HomePage({}: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1.5 }}
-                className="absolute top-[12%] flex justify-start items-start h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
+                className="absolute top-[3%] md:top-[12%] flex justify-start items-start h-[97%]  md:h-[60vh]  text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
             >
                 <div className="italic px-5 pb-1 font-normal md:leading-loose">
                     <p className="text-small">
@@ -106,6 +106,8 @@ export default function HomePage({}: Props) {
                         Christmas Issue, December 2024
                     </span>
                 </motion.p>
+                <div className="pointer-events-none absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-gray-50/20 to-transparent" />
+
             </motion.div>
             <motion.div
                 initial={{
