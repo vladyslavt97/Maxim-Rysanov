@@ -1,10 +1,38 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 type Props = {};
 
 export default function HomePage({}: Props) {
+    // Place this inside a useEffect if you're in React
+    useEffect(() => {
+        const container = document.querySelector(".your-scroll-container-class");
+        if (!container) return;
+      
+        const scrollSpeed = 1; // pixels
+        const interval = 40;   // ms between scroll steps
+        const delayBeforeStart = 2000; // 2000ms = 2 seconds
+      
+        let timer: NodeJS.Timer;
+      
+        const startScrolling = () => {
+          timer = setInterval(() => {
+            if (container.scrollTop + container.clientHeight < container.scrollHeight) {
+              container.scrollTop += scrollSpeed;
+            }
+          }, interval);
+        };
+      
+        const delayTimer = setTimeout(startScrolling, delayBeforeStart);
+      
+        return () => {
+          clearTimeout(delayTimer);
+          clearInterval(timer);
+        };
+      }, []);
+      
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -16,7 +44,7 @@ export default function HomePage({}: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1.5 }}
-                className="absolute top-[3%] md:top-[12%] flex justify-start items-start h-[97%]  md:h-[60vh]  text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
+                className="your-scroll-container-class absolute top-[3%] md:top-[12%] flex justify-start items-start h-[97%]  md:h-[60vh]  text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
             >
                 <div className="italic px-5 pb-1 font-normal md:leading-loose">
                     <p className="text-small">
