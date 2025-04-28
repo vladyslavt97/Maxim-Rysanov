@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../public/logo.png";
+import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 
 type Props = {};
 
@@ -12,7 +13,11 @@ export default function Header({}: Props) {
     const toggleMenu = () => {
         setMenu(!menu);
     };
+    const [showPopup, setShowPopup] = useState(false);
 
+    const togglePopup = (st: boolean) => {
+        setShowPopup(st);
+    };
     return (
         <header className="fixed w-full top-0 p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 h-[72px] shadow-2xl">
             {logo && (
@@ -33,8 +38,13 @@ export default function Header({}: Props) {
                     </Link>
                 </motion.div>
             )}
-
             {/* Links */}
+            {showPopup && (
+                <div
+                    className="fixed inset-0 bg-gray-500/10" 
+                    onClick={() => togglePopup(false)}
+                ></div>
+            )}
             <motion.div
                 key={menu ? "open" : "close"}
                 initial={{ opacity: 0 }}
@@ -42,10 +52,10 @@ export default function Header({}: Props) {
                 animate={{ opacity: 1 }}
                 className={
                     menu
-                        ? "absolute right-[7%] top-[100px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-200"
-                        : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
+                    ? "absolute right-[7%] top-[60px] flex flex-col z-20 justify-end items-end md:hidden font-small text-xl text-gray-200"
+                    : "space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
                 }
-            >
+                >
                 <Link
                     href="/"
                     onClick={() => setMenu(false)}
@@ -78,6 +88,80 @@ export default function Header({}: Props) {
                 >
                     <button className={menu ? "py-5" : "xl:px-5"}>Media</button>
                 </Link> */}
+                
+
+                <div className="relative w-full">
+                    <button
+                        onClick={() => togglePopup(!showPopup)}
+                        className={`${menu ? "py-5" : "xl:px-5"} ${showPopup && menu && "pb-1"} hover:text-gray-400 w-full text-right`}
+                    >
+                       <div className="flex justify-end items-center gap-1">
+                            Media
+                            {menu && (
+                                showPopup ? (
+                                <GoTriangleUp className="text-xs" />
+                                ) : (
+                                <GoTriangleDown className="text-xs" />
+                                )
+                            )}
+                        </div>
+                    </button>
+
+                    {/* Desktop Popup */}
+                    {!menu && showPopup && (
+                        <div className="absolute top-10 left-[-60px] bg-gray-300 text-black px-5 py-0 rounded-md shadow-md z-[100] flex flex-col items-center">
+                        <Link
+                            href="https://www.youtube.com/watch?v=oK1XGDphjBg&list=PL_YslfPtQb_ZVYSBfjVVoGg3VJpyHyCb8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline py-1"
+                            onClick={() => togglePopup(false)}
+                        >
+                            Conducting
+                        </Link>
+                        <div className="h-[1px] w-[100px] bg-gray-500"></div>
+                        <Link
+                            href="https://www.youtube.com/@MaximRysanov"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline py-1"
+                            onClick={() => togglePopup(false)}
+                        >
+                            Channel
+                        </Link>
+                        </div>
+                    )}
+
+                    {/* Mobile Expanded Submenu */}
+                    {menu && showPopup && (
+                        <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.4 }}
+                        className="flex flex-col items-end w-full text-gray-300 overflow-hidden"
+                        >
+                        <Link
+                            href="https://www.youtube.com/watch?v=oK1XGDphjBg&list=PL_YslfPtQb_ZVYSBfjVVoGg3VJpyHyCb8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline py-1 text-sm"
+                            onClick={() => togglePopup(false)}
+                        >
+                            Conducting
+                        </Link>
+                        <Link
+                            href="https://www.youtube.com/@MaximRysanov"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline py-1 text-sm"
+                            onClick={() => togglePopup(false)}
+                        >
+                            Channel
+                        </Link>
+                        </motion.div>
+                    )}
+                </div>
                 <Link
                     href="reviews"
                     onClick={() => setMenu(false)}
