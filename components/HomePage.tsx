@@ -18,7 +18,7 @@ export default function HomePage({}: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1.5 }}
-                className="z-10 absolute top-[3%] md:top-[12%] flex justify-start items-start h-[95%] md:h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
+                className="direction-rtl [direction:rtl] [&>*]:[direction:ltr] z-10 absolute top-[3%] md:top-[12%] flex justify-start items-start h-[95%] md:h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
                 >
                 <div className="italic px-5 pb-1 font-normal md:leading-loose">
                     <p className="text-small">
@@ -43,15 +43,17 @@ export default function HomePage({}: Props) {
                         over again.
                     </p>
                 </div>
-                <Link href="/recordings" className="relative inline-block mx-5">
-                    <Image
-                        src="/recordings/schumann.png"
-                        width={70}
-                        height={90}
-                        alt="schumann"
-                        className="shadow-2xl rounded-sm"
-                    />
-                </Link>
+                <div className="flex justify-start w-full">
+                    <Link href="/recordings" className="relative inline-block mx-5">
+                        <Image
+                            src="/recordings/schumann.png"
+                            width={70}
+                            height={90}
+                            alt="schumann"
+                            className="shadow-2xl rounded-sm"
+                        />
+                    </Link>
+                </div>
                 <motion.p
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -81,15 +83,17 @@ export default function HomePage({}: Props) {
                         <br />
                     </p>
                 </div>
-                <Link href="/recordings" className="relative inline-block mx-5">
-                    <Image
-                        src="/recordings/1_vasks.jpeg"
-                        width={70}
-                        height={90}
-                        alt="schumann"
-                        className="shadow-2xl rounded-sm"
-                    />
-                </Link>
+                <div className="flex justify-start w-full">
+                    <Link href="/recordings" className="relative inline-block mx-5">
+                        <Image
+                            src="/recordings/1_vasks.jpeg"
+                            width={70}
+                            height={90}
+                            alt="schumann"
+                            className="shadow-2xl rounded-sm"
+                        />
+                    </Link>
+                </div>
                 <motion.p
                     initial={{ opacity: 0, x: 15 }}
                     animate={{ opacity: 1, x: 0 }}
