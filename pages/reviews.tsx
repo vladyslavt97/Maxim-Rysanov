@@ -33,7 +33,7 @@ export default function Reviews({}: Props) {
                                 </p>
                             )}
 
-                            <blockquote className="text-gray-700 italic mb-4">
+                            <blockquote className={`text-gray-700 italic mb-4 ${review.textSize && review.textSize}`}>
                                 &ldquo;{review.quote}&rdquo;
                             </blockquote>
 
