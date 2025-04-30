@@ -18,7 +18,7 @@ export default function HomePage({}: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1.5 }}
-                className="direction-rtl [direction:rtl] [&>*]:[direction:ltr] z-10 absolute top-[3%] md:top-[12%] flex justify-start items-start h-[95%] md:h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%]"
+                className="direction-rtl [direction:rtl] [&>*]:[direction:ltr] z-10 absolute top-[3%] md:top-[12%] flex justify-start items-start h-[95%] md:h-[60vh] text-gray-800 flex-col text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed md:ml-[5%] lg:ml-[12%] overflow-y-scroll w-[50%] md:w-[30%]"
                 >
                 <div className="italic px-5 pb-1 font-normal md:leading-loose">
                     <p className="text-small">
@@ -32,7 +32,8 @@ export default function HomePage({}: Props) {
                     transition={{ duration: 2, delay: 2.5 }}
                     className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
                 >
-                    <span className="text-smaller">Bartok Radio Concert Review</span>
+                    <span className="text-smaller">Bartok Radio Concert Review</span><br/>
+                    <span className="text-smaller">Kristóf Csengery</span>
                 </motion.p>
                 <br /> 
 
