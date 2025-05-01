@@ -213,57 +213,40 @@ export default function Contacts({}: Props) {
           </p>
         </div>
         <br />
-        {/* <div>
-                        <h1 className="font-semibold">France</h1>
-                        <p>
-                            Larus Classical Music Agency
-                            <br />
-                            <span className="italic">Alina Koyshibaeva</span>
-                            <br />
-                            <div className="flex flex-row text-center justify-center items-center gap-2">
-                                <FiMail />
-                                alina@larusmusic.com
-                                <br />
-                                <CopyToClipboard text="alina@larusmusic.com">
-                                    <button>
-                                        <FiCopy className="ml-2 text-gray-400" />
-                                    </button>
-                                </CopyToClipboard>
-                            </div>
-                            <div className="flex flex-row text-center justify-center items-center gap-3">
-                                <AiOutlinePhone />
-                                +436609510020
-                                <br />
-                            </div>
-                            <span className="italic">Valeriia Rastogi</span>
-                            <br />
-                            <div className="flex flex-row text-center justify-center items-center gap-2">
-                                <FiMail />
-                                valeriia@larusmusic.com
-                                <br />
-                                <CopyToClipboard text="valeriia@larusmusic.com">
-                                    <button>
-                                        <FiCopy className="ml-2 text-gray-400" />
-                                    </button>
-                                </CopyToClipboard>
-                            </div>
-                            <div className="flex flex-row text-center justify-center items-center gap-3">
-                                <IoLogoWhatsapp color="green" />
-                                +79805409120
-                                <br />
-                            </div>
-                            <Link
-                                href="http://larusmusic.com"
-                                className="text-blue-900"
-                            >
-                                larusmusic.com
-                                <br />
-                            </Link>
-                            <br />
-                            <br />
-                            <br />
-                        </p>
-                    </div> */}
+        <div>
+          <h1 className="font-semibold">France and various projects</h1>
+          <p>
+            Productions Internationales Albert Sarfati
+            <br />
+            <span className="italic">VONY SARFATI</span>
+            <br />
+            <div className="flex flex-row text-center justify-center items-center gap-2">
+              <FiMail />
+              vsarfati@productions-sarfati.fr
+              <br />
+              <CopyToClipboard text="vsarfati@productions-sarfati.fr">
+                <button>
+                  <FiCopy className="ml-2 text-gray-400" />
+                </button>
+              </CopyToClipboard>
+            </div>
+            <div className="flex flex-row text-center justify-center items-center gap-3">
+              <AiOutlinePhone />
+              +33 (0)1 47 70 89 27
+              <br />
+            </div>
+            <Link
+              href="https://productions-sarfati.fr/artiste/maxim-rysanov/?lang=en"
+              className="text-blue-900"
+            >
+              productions-sarfati.fr
+              <br />
+            </Link>
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
       </div>
       <div>
         <h5 className="pb-16 text-center text-xs text-gray-500">
