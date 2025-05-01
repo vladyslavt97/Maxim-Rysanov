@@ -16,7 +16,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 1.5 }}
-        className="relative direction-rtl [direction:rtl] [&>*]:[direction:ltr] z-20 py-2 flex flex-col justify-start items-start text-gray-800 text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed w-1/2 md:w-1/3 overflow-y-auto h-full px-5"
+        className="relative direction-rtl [direction:rtl] [&>*]:[direction:ltr] z-20 py-2 flex flex-col justify-start items-start text-gray-800 text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed w-1/2 md:w-1/3 overflow-y-auto h-full px-1 md:px-3"
       >
         <div className="italic px-5 pb-1 font-normal md:leading-loose">
           <p className="text-small">

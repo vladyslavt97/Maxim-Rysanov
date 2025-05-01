@@ -27,7 +27,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
 
         {/* Scrollable main content, with padding to account for fixed header/footer */}
-        <main className="overflow-auto bg-gray-200 border-8 border-gray-300">
+        <main className="overflow-auto bg-[#F2F2F2] border-8 border-gray-300">
           {children}
         </main>
 
