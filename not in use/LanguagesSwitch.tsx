@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import ButtonGroup from "@mui/material/ButtonGroup";
-import { useStore } from "./State";
+import { useStore } from "../components/State";
 
 type Props = {}
 interface languagesState {
