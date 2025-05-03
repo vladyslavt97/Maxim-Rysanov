@@ -218,13 +218,25 @@ export default function Contacts({}: Props) {
           <p>
             Productions Internationales Albert Sarfati
             <br />
-            <span className="italic">VONY SARFATI</span>
+            <span className="italic">Vony Sarfati</span>
             <br />
             <div className="flex flex-row text-center justify-center items-center gap-2">
               <FiMail />
               vsarfati@productions-sarfati.fr
               <br />
               <CopyToClipboard text="vsarfati@productions-sarfati.fr">
+                <button>
+                  <FiCopy className="ml-2 text-gray-400" />
+                </button>
+              </CopyToClipboard>
+            </div>
+            <span className="italic">Marina Bower</span>
+            <br />
+            <div className="flex flex-row text-center justify-center items-center gap-2">
+              <FiMail />
+              mbower@productions-sarfati.fr
+              <br />
+              <CopyToClipboard text="mbower@productions-sarfati.fr">
                 <button>
                   <FiCopy className="ml-2 text-gray-400" />
                 </button>
