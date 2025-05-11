@@ -15,7 +15,7 @@ export default function Bio({}: Props) {
     <div className="relative flex flex-col justify-center items-center mx-2 p-5 pb-40 md:pb-40 text-black md:p-10 lg:px-20">
       {/* <LanguagesSwitch/> */}
       <a
-        href="/Rysanov_Biography_22-23.pdf"
+        href="/Rysanov_Biography_24-25.pdf"
         download
         className="absolute top-5 right-0 text-blue-900 flex flex-row  items-center text-center"
       >
