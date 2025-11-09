@@ -1,13 +1,44 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-type Props = {};
 
-export default function PastConcerts({}: Props) {
+type PastConcertsProps = {
+  archiveYears: string[];
+  upcomingLabel?: string;
+  upcomingHref?: string;
+};
+
+export default function PastConcerts({
+  archiveYears,
+  upcomingLabel = "",
+  upcomingHref = "/concerts",
+}: PastConcertsProps) {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+
+  const archiveLinks = useMemo(
+    () =>
+      archiveYears.map((year, index) => {
+        const href = `/concerts/archive/${year}`;
+        return {
+          href,
+          label: `Concerts ${year}`,
+          delay: 0.3 + index * 0.15,
+        };
+      }),
+    [archiveYears]
+  );
+
+  const isCurrentPath = (href: string) => {
+    if (!router) return false;
+    if (router.pathname.includes("[year]")) {
+      return router.asPath === href;
+    }
+    return router.pathname === href;
+  };
+
   return (
     <div className="rounded--lg absolute right-2">
       <button
@@ -15,7 +46,7 @@ export default function PastConcerts({}: Props) {
                 active:bg-slate-400
                 rounded-lg flex flex-row text-center justify-center items-center
                  text-white text-sm drop-shadow-lg"
-        onClick={(e) => setOpen(!open)}
+        onClick={() => setOpen(!open)}
       >
         Past concerts
         <MdKeyboardArrowDown className="ml-1 text-white" />
@@ -27,78 +58,41 @@ export default function PastConcerts({}: Props) {
           transition={{ duration: 1 }}
           className="flex flex-col bg-white text-black rounded-lg drop-shadow-md"
         >
-          {router.pathname !== "/concerts" && (
+          {upcomingLabel && !isCurrentPath(upcomingHref) && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 1 }}
               className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
             >
-              <Link href="/concerts">
-                <button onClick={(e) => setOpen(!open)}>Concerts 2025</button>
+              <Link href={upcomingHref}>
+                <button onClick={() => setOpen(false)}>{upcomingLabel}</button>
               </Link>
             </motion.div>
           )}
-          {router.pathname !== "/concerts-2024" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
-            >
-              <Link href="/concerts-2024">
-                <button onClick={(e) => setOpen(!open)}>Concerts 2024</button>
-              </Link>
-            </motion.div>
-          )}
-          {router.pathname !== "/concerts-2023" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
-            >
-              <Link href="/concerts-2023">
-                <button onClick={(e) => setOpen(!open)}>Concerts 2023</button>
-              </Link>
-            </motion.div>
-          )}
-          {router.pathname !== "/concerts-2022" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.2, delay: 0.4 }}
-              className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
-            >
-              <Link href="/concerts-2022">
-                <button onClick={(e) => setOpen(!open)}>Concerts 2022</button>
-              </Link>
-            </motion.div>
-          )}
-          {router.pathname !== "/concerts-2021" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.4, delay: 0.6 }}
-              className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center"
-            >
-              <Link href="/concerts-2021">
-                <button onClick={(e) => setOpen(!open)}>Concerts 2021</button>
-              </Link>
-            </motion.div>
-          )}
-          {router.pathname !== "/concerts-2020" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.6, delay: 0.8 }}
-              className="hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center rounded-b-lg"
-            >
-              <Link href="/concerts-2020">
-                <button onClick={(e) => setOpen(!open)}>Concerts 2020</button>
-              </Link>
-            </motion.div>
-          )}
+          {archiveLinks.map(({ href, label, delay }, idx) => {
+            if (isCurrentPath(href)) {
+              return null;
+            }
+            const isLastVisible =
+              idx === archiveLinks.length - 1 ||
+              archiveLinks.slice(idx + 1).every((link) => isCurrentPath(link.href));
+            return (
+              <motion.div
+                key={href}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay }}
+                className={`hover:bg-slate-300 py-2 hover:rounded-lg border-b-2 border-gray-300 text-sm text-center ${
+                  isLastVisible ? "rounded-b-lg" : ""
+                }`}
+              >
+                <Link href={href}>
+                  <button onClick={() => setOpen(false)}>{label}</button>
+                </Link>
+              </motion.div>
+            );
+          })}
         </motion.div>
       )}
     </div>

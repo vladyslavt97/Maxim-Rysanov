@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "concerts2023.json", "components/Link.tsxz"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Link.tsxz"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,338 @@
+[
+    {
+        "year": "2021",
+        "date": "FRI 21/01",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Ulster Orchestra Belfast",
+        "programme": [
+            "Missy Mazzoli Sinfonia",
+            "Schubert Arpeggione Sonata, D. 821",
+            "Pjotr Iljitsch Tschaikowski Sinfonie Nr.4"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SUN 16/01",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Beethoven Orchester Bonn",
+        "programme": [
+            "Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25",
+            "Gabriel Prokofieff: Konzert für Viola und Orchester",
+            "Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "FRI 14/01",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Beethoven Orchester Bonn",
+        "programme": [
+            "Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25",
+            "Gabriel Prokofieff: Konzert für Viola und Orchester (World Premiere)",
+            "Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "TUE 21/12",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Detmold Chamber Orchestra",
+        "programme": [
+            "Dvořák : Notturno op. 40.",
+            "Vasks : Concert for Viola and String Orchestra",
+            "Dvořák : Biblical Songs Op. 99"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "THU 16/12",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Orquesta Sinfonica Tenerife",
+        "programme": [
+            "Martinu Rhapsody-Concerto for Viola and Orchestra, H.337"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "THU 09/12",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Yehudi Menuhin School",
+        "programme": [
+            "Elgar Introduction and Allegro",
+            "Tabakova Cello Concerto",
+            "Schubert Arpeggione Sonata, D. 821",
+            "Akhunov Der Erlkonig for viola and strings"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "TUE 30/11",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Philharmonie Berlin",
+        "programme": ["Brahms : Clarinet Quintet, op 115 (viola version)"]
+    },
+    {
+        "year": "2021",
+        "date": "SUN 28/11",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Theater St Gallen",
+        "programme": ["Schubert Arpeggione Sonata"]
+    },
+    {
+        "year": "2021",
+        "date": "MON 22/11",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Wimbledon Festival, London",
+        "programme": [
+            "J. S. Bach Viola da Gamba Sonata",
+            "Schubert Arpeggione Sonata",
+            "Prokofiev Romeo and Juliet Suite",
+            "Tabakova Suite in Jazz Style"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SUN 21/11",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Phion, Orchestra of Gelderland & Overijssel - Zutphen",
+        "programme": [
+            "Dvorak Nocturne op 40",
+            "Vasks Viola Concerto",
+            "Elgar Introduction and Allegro",
+            "Bartok Divertimento for String Orchestra"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SAT 20/11",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Phion, Orchestra of Gelderland & Overijssel - Ede",
+        "programme": [
+            "Dvorak Nocturne op 40",
+            "Vasks Viola Concerto",
+            "Elgar Introduction and Allegro",
+            "Bartok Divertimento for String Orchestra"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "FRI 19/11",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Phion, Orchestra of Gelderland & Overijssel - Arnhem",
+        "programme": [
+            "Dvorak Nocturne op 40",
+            "Vasks Viola Concerto",
+            "Elgar Introduction and Allegro",
+            "Bartok Divertimento for String Orchestra"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "THU 18/11",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Phion, Orchestra of Gelderland & Overijssel - Enschede",
+        "programme": [
+            "Dvorak Nocturne op 40",
+            "Vasks Viola Concerto",
+            "Elgar Introduction and Allegro",
+            "Bartok Divertimento for String Orchestra"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SUN 07/11",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Liszt Academy Budapest",
+        "programme": [
+            "Max Bruch: Double Concerto for Violin and Viola in E minor",
+            "Britten Double Concerto for Violin and Viola",
+            "Mozart Sinfonia Concertante for Violin and Viola"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SAT 06/11",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Pannon Philharmonic, Kodály Center, Pecs",
+        "programme": [
+            "Max Bruch: Double Concerto for Violin and Viola in E minor",
+            "Britten Double Concerto for Violin and Viola",
+            "Mozart Sinfonia Concertante for Violin and Viola"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "TUE 26/10",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Danubia Orchestra",
+        "programme": [
+            "Tabakova : Suite in Old Style for viola",
+            "C.P.E. Bach : Symphony in e minor Wq 178",
+            "Missy Mazzoli : Sinfonia (for Orbiting Spheres)",
+            "Prokofiev : Suite from Romeo & Juliet Op. 64"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "FRI 30/04",
+        "viola": "",
+        "conductor": "CONDUCTOR",
+        "location": "Ulster Orchestra",
+        "programme": []
+    },
+    {
+        "year": "2021",
+        "date": "MON 19/04",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Zaryadye Concert Hall, Russia",
+        "programme": ["Bartok Viola Concerto", "Ichmouratov World Premier"]
+    },
+    {
+        "year": "2021",
+        "date": "FRI 16/04",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Rhein-Mosel-Halle Koblenz, Germany",
+        "programme": [
+            "Gabriel Prokofiev Concert for Viola and Orchestra",
+            "Tchaikovsky Symphony no. 2 in c minor op. 17"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SUN 11/04",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Universität Bonn Aula, Germany",
+        "programme": [
+            "Gabriel Prokofiev Concert for Viola and Orchestra",
+            "Tchaikovsky Symphony no. 2 in c minor op. 17"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SAT 20/03",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Arte Amanti Festival",
+        "programme": []
+    },
+    {
+        "year": "2021",
+        "date": "WED 17/03",
+        "viola": "",
+        "conductor": "CONDUCTOR",
+        "location": "Danubia Orchestra Óbuda, Hungary",
+        "programme": [
+            "Tabakova Suite in Old Style for viola",
+            "C.P.E. Bach Symphony in e minor Wq 178",
+            "Missy Mazzoli Sinfonia",
+            "Prokofiev Suite from Romeo & Juliet Op. 64"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "FRI 03/03",
+        "viola": "VIOLA",
+        "conductor": "CONDUCTOR",
+        "location": "Orchestra da Camera di Mantova, Italy",
+        "programme": [
+            "Mozart Sinfonia Concertante for Violin, Viola, and Orchestra"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "TUE 02/03",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Orchestra da Camera di Mantova, Italy",
+        "programme": [
+            "Mozart Sinfonia Concertante for Violin, Viola, and Orchestra"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SAT 06/02",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Concertgebouw, Recital Hall, Netherlands",
+        "programme": [
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
+            "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "THU 04/02",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Tchaikovsky Concert Hall, Russia",
+        "programme": [
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
+            "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "SAT 30/01",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Victoria Hall, Genève Conservatoire, Switzerland",
+        "programme": [
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
+            "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "FRI 29/01",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Auditorio Nacional de Música, Madrid, Spain",
+        "programme": [
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
+            "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "TUE 28/01",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Wiener Konzerthaus, Austria",
+        "programme": [
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
+            "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
+            "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
+        ]
+    },
+    {
+        "year": "2021",
+        "date": "THU 21/01",
+        "viola": "VIOLA",
+        "conductor": "",
+        "location": "Zagreb, Croatia",
+        "programme": ["Bartók Viola Concerto, Sz. 120, BB 128"]
+    }
+]

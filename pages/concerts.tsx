@@ -10,9 +10,18 @@ import {
   sortingConcerts,
 } from "@/date";
 import { ConcertType } from "@/interfaces";
+import { getArchiveYears } from "@/lib/pastConcerts";
 
 export async function getStaticProps() {
   let concerts = [];
+  let archiveYears: string[] = [];
+
+  try {
+    archiveYears = await getArchiveYears();
+  } catch (error) {
+    console.error("Error loading archive list:", error);
+  }
+
   try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/api/get-concerts`
@@ -25,6 +34,7 @@ export async function getStaticProps() {
   return {
     props: {
       initialConcerts: concerts,
+      archiveYears,
     },
     revalidate: 60,
   };
@@ -32,8 +42,10 @@ export async function getStaticProps() {
 
 export default function Concerts({
   initialConcerts,
+  archiveYears,
 }: {
   initialConcerts: ConcertType[];
+  archiveYears: string[];
 }) {
   const [concerts, setConcerts] = useState<ConcertType[]>([]);
   const [cheing, setChecing] = useState(false);
@@ -105,7 +117,15 @@ export default function Concerts({
       ref={scrollContainerRef}
       className="relative text-black flex flex-col items-center overflow-y-auto h-full "
     >
-      <PastConcerts />
+      <PastConcerts
+        archiveYears={archiveYears}
+        upcomingHref="/concerts"
+        upcomingLabel={`Concerts ${
+          concerts[0]?.year ??
+          initialConcerts[0]?.year ??
+          new Date().getFullYear()
+        }`}
+      />
       <div className="absolute left-6 md:static md:flex md:justify-center md:items-center pt-5">
         <h1 className="font-bold text-xl text-gray-800">2025</h1>
       </div>
