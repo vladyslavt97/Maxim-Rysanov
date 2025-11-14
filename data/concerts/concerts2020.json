@@ -9,7 +9,11 @@
             "Beethoven Clarinet Trio in B flat major, Op. 11",
             "Balogh TRIOverture for viola, cello, and piano",
             "Brahms Trio Op.114 arr. viola, cello, piano"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -17,7 +21,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Tchaikovsky Concert Hall, Moscow",
-        "programme": ["Bruch Concerto for Violin and Viola in E minor, Op. 88"]
+        "programme": ["Bruch Concerto for Violin and Viola in E minor, Op. 88"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -25,7 +33,11 @@
         "viola": "",
         "conductor": "CONDUCTOR",
         "location": "La Verdi Milan, Italy",
-        "programme": ["Shostakovich Symphony No.14"]
+        "programme": ["Shostakovich Symphony No.14"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -33,7 +45,11 @@
         "viola": "",
         "conductor": "CONDUCTOR",
         "location": "La Verdi Milan, Italy",
-        "programme": ["Shostakovich Symphony No.14"]
+        "programme": ["Shostakovich Symphony No.14"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -41,7 +57,11 @@
         "viola": "",
         "conductor": "CONDUCTOR",
         "location": "La Verdi Milan, Italy",
-        "programme": ["Shostakovich Symphony No.14"]
+        "programme": ["Shostakovich Symphony No.14"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -54,7 +74,11 @@
             "Beethoven Clarinet Trio in B flat major, Op. 11",
             "Balogh TRIOverture for viola, cello, and piano",
             "Brahms Trio Op.114 arr. viola, cello, piano"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -62,7 +86,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Sala Verdi Milan, Italy",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -72,7 +100,11 @@
         "location": "Laeiszhalle Hamburg, Germany",
         "programme": [
             "Mozart Sinfonia Concertante for Violin, Viola, and Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -80,7 +112,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Musica Mundi Course & Festival",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -88,7 +124,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "ClasClas Festival",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -99,7 +139,11 @@
         "programme": [
             "Beethoven String Quintet, Op. 29",
             "Brahms quintet op. 115 (viola version)"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -110,7 +154,11 @@
         "programme": [
             "J. Brahms Streichsextett Nr. 1 B-Dur op. 18",
             "J. Brahms Streichsextett Nr. 2 G-Dur op. 36"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -123,7 +171,11 @@
             "Chopin Piano Trio, Op.8",
             "Máté Balogh: TRIOverture",
             "Brahms Trio in A minor, Op. 114"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -134,7 +186,11 @@
         "programme": [
             "Giya Kancheli Mourned by the wind",
             "Max Bruch Concerto for Clarinet & Viola, Op. 88"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -147,7 +203,11 @@
             "Ibert Concerto for Flute & Orchestra",
             "Poulenc Sinfonietta, FP 141",
             "Malcom Arnold Variations on a Ukrainian folk song for string orchestra (arr. Roger Steptoe)"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -159,7 +219,11 @@
             "Tchaikovsky Serenade for Strings in C major, Op. 48",
             "Zago Tropfen II",
             "Tchaikovsky Symphony No. 6 in B minor, Op. 74"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -171,7 +235,11 @@
             "Tchaikovsky Serenade for Strings in C major, Op. 48",
             "Zago Tropfen II",
             "Tchaikovsky Symphony No. 6 in B minor, Op. 74"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -183,7 +251,11 @@
             "Tchaikovsky Serenade for Strings in C major, Op. 48",
             "Zago Tropfen II",
             "Tchaikovsky Symphony No. 6 in B minor, Op. 74"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -191,7 +263,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Avenida Príncipe de Asturias, Las Palmas de Gran Canaria",
-        "programme": ["Tchaikovsky Variations on a Rococo Theme, Op. 33"]
+        "programme": ["Tchaikovsky Variations on a Rococo Theme, Op. 33"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2020",
@@ -203,6 +279,10 @@
             "Bach Cello Suite No 1 (arr for viola)",
             "Two-Part Inventions for violin and viola",
             "Sonata for viola da gamba in G major"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     }
 ]

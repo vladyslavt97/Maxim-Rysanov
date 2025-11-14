@@ -1,254 +1,236 @@
-[{
-  "_id": {
-    "$oid": "65eb068a2048b8de77f97bb6"
+[
+  {
+    "year": "2024",
+    "date": "SUN 11/02",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Budapest, Hungary",
+    "programme": [
+      "Recording"
+    ],
+    "withwhom": "",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "SUN 11/02",
-  "viola": true,
-  "conductor": false,
-  "location": "Budapest, Hungary",
-  "programme": [
-    "Recording🎻🎧"
-  ],
-  "withwhom": "",
-  "link": "",
-  "pastconcert": false
-},
-{
-  "_id": {
-    "$oid": "65eb070f2048b8de77f97bb7"
+  {
+    "year": "2024",
+    "date": "16/02",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "İzmir, Turkey",
+    "programme": [
+      "Schubert : Arpeggione Sonata D. 821 (arr for viola and strings by D. Tabakova)",
+      "Bruckner : Symphony no. 4 in E-flat major WAB 104 "
+    ],
+    "withwhom": "",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "16/02",
-  "viola": "Viola",
-  "conductor": false,
-  "location": "İzmir, Turkey",
-  "programme": [
-    "Schubert : Arpeggione Sonata D. 821 (arr for viola and strings by D. Tabakova)",
-    "\nBruckner : Symphony no. 4 in E-flat major WAB 104 "
-  ],
-  "withwhom": "",
-  "link": "",
-  "pastconcert": false
-},
-{
-  "_id": {
-    "$oid": "65eb07c82048b8de77f97bb8"
+  {
+    "year": "2024",
+    "date": "SAT 06/04",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Wroclaw, Poland",
+    "programme": [
+      "Vasks : Concerto for Viola and String Orchestra",
+      "Tabakova : Fantasy Homage to Schubert",
+      "Mozart : Symphony no. 33 in B flat major K. 319 "
+    ],
+    "withwhom": "Leopoldium Orchestra",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "SAT 06/04",
-  "viola": "Viola",
-  "conductor": "Conductor",
-  "location": "Wroclaw, Poland",
-  "programme": [
-    "Vasks : Concerto for Viola and String Orchestra",
-    "\nTabakova : Fantasy Homage to Schubert",
-    "\nMozart : Symphony no. 33 in B flat major K. 319 "
-  ],
-  "withwhom": "Leopoldium Orchestra",
-  "link": "",
-  "pastconcert": false
-},
-{
-  "_id": {
-    "$oid": "6634cd829cfa518da3aa96b3"
+  {
+    "year": "2024",
+    "date": "Tue 14/05",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Jersey Museum, Jersey",
+    "programme": [
+      "Mozart Piano Quartet No.2 in E flat major K.493",
+      "Beethoven Piano Quartet No.3 in C Major",
+      "Fauré Piano Quartet in C minor No. 1 Op. 15 "
+    ],
+    "withwhom": "So-ock Kim, Wu Qian, Dora Kokas",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Tue 14/05",
-  "viola": true,
-  "conductor": false,
-  "location": "Jersey Museum, Jersey",
-  "programme": [
-    "Mozart Piano Quartet No.2 in E flat major K.493",
-    "\nBeethoven Piano Quartet No.3 in C Major",
-    "\nFauré Piano Quartet in C minor No. 1 Op. 15 "
-  ],
-  "withwhom": "So-ock Kim, Wu Qian, Dora Kokas",
-  "link": "https://www.jersey.com/fr/a-voir-a-faire/agenda/listes/liberation-chamber-gala/"
-},
-{
-  "_id": {
-    "$oid": "6634d0e19cfa518da3aa96b4"
+  {
+    "year": "2024",
+    "date": "Fri 24/05",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Great Guild Hall, Riga, Latvia",
+    "programme": [
+      "Tabakova Viola Concerto"
+    ],
+    "withwhom": "Sinfonietta Riga, Normunds Šne ",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Fri 24/05",
-  "viola": true,
-  "conductor": false,
-  "location": "Great Guild Hall, Riga, Latvia",
-  "programme": [
-    "Tabakova Viola Concerto"
-  ],
-  "withwhom": "Sinfonietta Riga, Normunds Šne ",
-  "link": "https://www.latvijaskoncerti.lv/lv/aktualitates/pasakums/sinfonietta-riga-18-sezonas-nosleguma-koncerts/3565/"
-},
-{
-  "_id": {
-    "$oid": "6634d61f43e607ad6ca5fb6f"
+  {
+    "year": "2024",
+    "date": "Fri 10/05 2pm",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Royal College of Music, London, UK",
+    "programme": [
+      "Viola Masterclass"
+    ],
+    "withwhom": "",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Fri 10/05 2pm",
-  "viola": true,
-  "conductor": false,
-  "location": "Royal College of Music, London, UK",
-  "programme": [
-    "Viola Masterclass"
-  ],
-  "withwhom": "",
-  "link": "https://www.rcm.ac.uk/events/details/?id=2586592"
-},
-{
-  "_id": {
-    "$oid": "6634d91d43e607ad6ca5fb70"
+  {
+    "year": "2024",
+    "date": "Fri 21/06 19:00",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Bulgaria Hall, Sofia ",
+    "programme": [
+      "Tabakova Viola Concerto"
+    ],
+    "withwhom": "Bulgarian Radio Symphony Orchestra, Delyana Lazarova ",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Fri 21/06 19:00",
-  "viola": true,
-  "conductor": false,
-  "location": "Bulgaria Hall, Sofia ",
-  "programme": [
-    "Tabakova Viola Concerto"
-  ],
-  "withwhom": "Bulgarian Radio Symphony Orchestra, Delyana Lazarova ",
-  "link": ""
-},
-{
-  "_id": {
-    "$oid": "6634da9443e607ad6ca5fb71"
+  {
+    "year": "2024",
+    "date": "Sat 03/08 8pm",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Schloss Moritzburg",
+    "programme": [
+      "L. v. Beethoven: Duo E flat major for Viola and Cello „Eyeglass Duo“",
+      "A. Dvořák: Piano Quartet No. 2 E flat major Op. 87"
+    ],
+    "withwhom": "",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Sat 03/08 8pm",
-  "viola": true,
-  "conductor": false,
-  "location": "Schloss Moritzburg",
-  "programme": [
-    "L. v. Beethoven: Duo E flat major for Viola and Cello „Eyeglass Duo“",
-    "\nA. Dvořák: Piano Quartet No. 2 E flat major Op. 87"
-  ],
-  "withwhom": "",
-  "link": ""
-},
-{
-  "_id": {
-    "$oid": "6634db1643e607ad6ca5fb72"
+  {
+    "year": "2024",
+    "date": "Sun 04/08 8pm",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Schloss Moritzburg",
+    "programme": [
+      "A. Bruckner: String Quintet in F major"
+    ],
+    "withwhom": "",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Sun 04/08 8pm",
-  "viola": true,
-  "conductor": false,
-  "location": "Schloss Moritzburg",
-  "programme": [
-    "A. Bruckner: String Quintet in F major"
-  ],
-  "withwhom": "",
-  "link": ""
-},
-{
-  "_id": {
-    "$oid": "6634dbb843e607ad6ca5fb73"
+  {
+    "year": "2024",
+    "date": "Tue 06/08 8pm",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Schloss Moritzburg",
+    "programme": [
+      "F. Mendelssohn Bartholdy: String Quintet B flat major Op. 87"
+    ],
+    "withwhom": "",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Tue 06/08 8pm",
-  "viola": true,
-  "conductor": false,
-  "location": "Schloss Moritzburg",
-  "programme": [
-    "F. Mendelssohn Bartholdy: String Quintet B flat major Op. 87"
-  ],
-  "withwhom": "",
-  "link": ""
-},
-{
-  "_id": {
-    "$oid": "6634dd4643e607ad6ca5fb74"
+  {
+    "year": "2024",
+    "date": "Sat 24/08 19:00",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Baltic Sea Festival, Berwald Hall, Stockholm ",
+    "programme": [
+      "Golijov Tenebrae",
+      "Woolwich Ulysses awakes for viola and string",
+      "Mozart Adagio and Fuge in C minor K. 546",
+      "Leonid Desyatnikov Reflection on a Ukrainian Falk Song (WORLD PREMIERE)",
+      "Silvestrov Silent Music",
+      "Silvestrov the Messenger",
+      "Bacewicz Concerto for String Orchestra",
+      "Skoryk Melody"
+    ],
+    "withwhom": "Swedish Radio Symphony Orchestra",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Sat 24/08 19:00",
-  "viola": true,
-  "conductor": true,
-  "location": "Baltic Sea Festival, Berwald Hall, Stockholm ",
-  "programme": [
-    "Golijov Tenebrae",
-    "\nWoolwich Ulysses awakes for viola and string",
-    "\nMozart  Adagio and Fuge in C minor K. 546",
-    "\nLeonid Desyatnikov Reflection on a Ukrainian Falk Song (WORLD PREMIERE)",
-    "\nSilvestrov Silent Music",
-    "\nSilvestrov the Messenger",
-    "\nBacewicz Concerto for String Orchestra",
-    "Skoryk Melody",
-    "\n"
-  ],
-  "withwhom": "Swedish Radio Symphony Orchestra",
-  "link": "https://www.berwaldhallen.se/en/concert/focus-on-ukraine/"
-},
-{
-  "_id": {
-    "$oid": "6634de9f43e607ad6ca5fb75"
+  {
+    "year": "2024",
+    "date": "Thu 26/09 19:30",
+    "viola": "VIOLA",
+    "conductor": "CONDUCTOR",
+    "location": "Pierre-Mercure Hall, Montreal",
+    "programme": [
+      "Golijov Tenebrae",
+      "John Woolrich Ulysses Awakes",
+      "Mozart Adagio and Fuge in C minor K. 546",
+      "Desyatnikov Reflections on a Ukrainian Folk Song",
+      "Mozart Symphony No. 25 in G minor K. 183"
+    ],
+    "withwhom": "IMusici de Montreal ",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Thu 26/09 19:30",
-  "viola": true,
-  "conductor": true,
-  "location": "Pierre-Mercure Hall, Montreal",
-  "programme": [
-    "Golijov Tenebrae",
-    "\nJohn Woolrich Ulysses Awakes",
-    "\nMozart  Adagio and Fuge in C minor K. 546",
-    "\nDesyatnikov Reflections on a Ukrainian Folk Song",
-    "\nMozart  Symphony No. 25 in G minor K. 183"
-  ],
-  "withwhom": "IMusici de Montreal ",
-  "link": ""
-},
-{
-  "_id": {
-    "$oid": "6634e23434913ef4284ac379"
+  {
+    "year": "2024",
+    "date": "Mon 14/10 13:00",
+    "viola": "VIOLA",
+    "conductor": "",
+    "location": "Wigmore Hall, London",
+    "programme": [
+      "Schumann : Märchenbilder Op.113",
+      "Brahms : Sonata No. 2 Op. 120",
+      "Schumann : Three Fantasy Pieces op. 73 "
+    ],
+    "withwhom": "Dasol Kim",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Mon 14/10 13:00",
-  "viola": true,
-  "conductor": false,
-  "location": "Wigmore Hall, London",
-  "programme": [
-    "Schumann : Märchenbilder Op.113",
-    "\nBrahms : Sonata No. 2 Op. 120",
-    "\nSchumann : Three Fantasy Pieces op. 73 "
-  ],
-  "withwhom": "Dasol Kim",
-  "link": "https://www.wigmore-hall.org.uk/artists/maxim-rysanov"
-},
-{
-  "_id": {
-    "$oid": "6634e45d6d32f22e6e4c39a3"
+  {
+    "year": "2024",
+    "date": "Fri 25/10 19:30",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Great Hall of Liszt Academy, Budapest",
+    "programme": [
+      "Vivaldi e-moll hegedűverseny RV 278",
+      "Kaija Saariaho Nymphea reflection",
+      "Rachmaninov Symphony no.2 in E minor Op. 27 "
+    ],
+    "withwhom": "Danubia Orchestra, Julia Pusker",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
   },
-  "year": "2024",
-  "date": "Fri 25/10 19:30",
-  "viola": false,
-  "conductor": true,
-  "location": "Great Hall of Liszt Academy, Budapest",
-  "programme": [
-    "Vivaldi e-moll hegedűverseny RV 278",
-    "\nKaija Saariaho Nymphea reflection",
-    "\nRachmaninov Symphony no.2 in E minor Op. 27 "
-  ],
-  "withwhom": "Danubia Orchestra, Julia Pusker",
-  "link": "https://utazenehez.hu/koncertek/vivaldi-saariaho-rachmaninov-2024-10-25-193000"
-},
-{
-  "_id": {
-    "$oid": "6634e5486d32f22e6e4c39a4"
-  },
-  "year": "2024",
-  "date": "Thu 28/11 19:30",
-  "viola": false,
-  "conductor": true,
-  "location": "Pierre-Mercure Hall",
-  "programme": [
-    "\nMozart Piano Concerto No. 18 in B Flat major K 456",
-    "\n \nSilvestrov  Silent Music",
-    "\nSilvestrov Messenger",
-    "\nMozart Symphony no. 33 in B flat major K. 319 "
-  ],
-  "withwhom": "IMusici de Montreal, Denis Kozhuhin",
-  "link": "",
-  "pastconcert": false
-}]
+  {
+    "year": "2024",
+    "date": "Thu 28/11 19:30",
+    "viola": "",
+    "conductor": "CONDUCTOR",
+    "location": "Pierre-Mercure Hall",
+    "programme": [
+      "Mozart Piano Concerto No. 18 in B Flat major K 456",
+      "Silvestrov Silent Music",
+      "Silvestrov Messenger",
+      "Mozart Symphony no. 33 in B flat major K. 319 "
+    ],
+    "withwhom": "IMusici de Montreal, Denis Kozhuhin",
+    "link": "",
+    "pastconcert": false,
+    "canceled": false
+  }
+]

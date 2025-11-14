@@ -9,7 +9,11 @@
             "Missy Mazzoli Sinfonia",
             "Schubert Arpeggione Sonata, D. 821",
             "Pjotr Iljitsch Tschaikowski Sinfonie Nr.4"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -21,7 +25,11 @@
             "Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25",
             "Gabriel Prokofieff: Konzert für Viola und Orchester",
             "Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -33,7 +41,11 @@
             "Sergej Prokofieff: Sinfonie Nr. 1 D-Dur op. 25",
             "Gabriel Prokofieff: Konzert für Viola und Orchester (World Premiere)",
             "Pjotr Iljitsch Tschaikowski: Sinfonie Nr.4"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -45,7 +57,11 @@
             "Dvořák : Notturno op. 40.",
             "Vasks : Concert for Viola and String Orchestra",
             "Dvořák : Biblical Songs Op. 99"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -55,7 +71,11 @@
         "location": "Orquesta Sinfonica Tenerife",
         "programme": [
             "Martinu Rhapsody-Concerto for Viola and Orchestra, H.337"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -68,7 +88,11 @@
             "Tabakova Cello Concerto",
             "Schubert Arpeggione Sonata, D. 821",
             "Akhunov Der Erlkonig for viola and strings"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -76,7 +100,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Philharmonie Berlin",
-        "programme": ["Brahms : Clarinet Quintet, op 115 (viola version)"]
+        "programme": ["Brahms : Clarinet Quintet, op 115 (viola version)"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -84,7 +112,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Theater St Gallen",
-        "programme": ["Schubert Arpeggione Sonata"]
+        "programme": ["Schubert Arpeggione Sonata"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -97,7 +129,11 @@
             "Schubert Arpeggione Sonata",
             "Prokofiev Romeo and Juliet Suite",
             "Tabakova Suite in Jazz Style"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -110,7 +146,11 @@
             "Vasks Viola Concerto",
             "Elgar Introduction and Allegro",
             "Bartok Divertimento for String Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -123,7 +163,11 @@
             "Vasks Viola Concerto",
             "Elgar Introduction and Allegro",
             "Bartok Divertimento for String Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -136,7 +180,11 @@
             "Vasks Viola Concerto",
             "Elgar Introduction and Allegro",
             "Bartok Divertimento for String Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -149,7 +197,11 @@
             "Vasks Viola Concerto",
             "Elgar Introduction and Allegro",
             "Bartok Divertimento for String Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -161,7 +213,11 @@
             "Max Bruch: Double Concerto for Violin and Viola in E minor",
             "Britten Double Concerto for Violin and Viola",
             "Mozart Sinfonia Concertante for Violin and Viola"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -173,7 +229,11 @@
             "Max Bruch: Double Concerto for Violin and Viola in E minor",
             "Britten Double Concerto for Violin and Viola",
             "Mozart Sinfonia Concertante for Violin and Viola"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -186,7 +246,11 @@
             "C.P.E. Bach : Symphony in e minor Wq 178",
             "Missy Mazzoli : Sinfonia (for Orbiting Spheres)",
             "Prokofiev : Suite from Romeo & Juliet Op. 64"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -194,7 +258,11 @@
         "viola": "",
         "conductor": "CONDUCTOR",
         "location": "Ulster Orchestra",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -202,7 +270,11 @@
         "viola": "VIOLA",
         "conductor": "CONDUCTOR",
         "location": "Zaryadye Concert Hall, Russia",
-        "programme": ["Bartok Viola Concerto", "Ichmouratov World Premier"]
+        "programme": ["Bartok Viola Concerto", "Ichmouratov World Premier"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -213,7 +285,11 @@
         "programme": [
             "Gabriel Prokofiev Concert for Viola and Orchestra",
             "Tchaikovsky Symphony no. 2 in c minor op. 17"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -224,7 +300,11 @@
         "programme": [
             "Gabriel Prokofiev Concert for Viola and Orchestra",
             "Tchaikovsky Symphony no. 2 in c minor op. 17"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -232,7 +312,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Arte Amanti Festival",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -245,7 +329,11 @@
             "C.P.E. Bach Symphony in e minor Wq 178",
             "Missy Mazzoli Sinfonia",
             "Prokofiev Suite from Romeo & Juliet Op. 64"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -255,7 +343,11 @@
         "location": "Orchestra da Camera di Mantova, Italy",
         "programme": [
             "Mozart Sinfonia Concertante for Violin, Viola, and Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -265,7 +357,11 @@
         "location": "Orchestra da Camera di Mantova, Italy",
         "programme": [
             "Mozart Sinfonia Concertante for Violin, Viola, and Orchestra"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -277,7 +373,11 @@
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
             "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -289,7 +389,11 @@
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
             "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -301,7 +405,11 @@
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
             "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -313,7 +421,11 @@
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
             "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -325,7 +437,11 @@
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15",
             "Johannes Brahms Klavierquartett Nr. 3 c-moll op. 60",
             "Gabriel Fauré Klavierquartett Nr. 1 c-moll op. 15"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2021",
@@ -333,6 +449,10 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Zagreb, Croatia",
-        "programme": ["Bartók Viola Concerto, Sz. 120, BB 128"]
+        "programme": ["Bartók Viola Concerto, Sz. 120, BB 128"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     }
 ]

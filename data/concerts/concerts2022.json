@@ -10,7 +10,11 @@
             "Beethoven : String Trio in G Major Op.9 No.1",
             "Ed Bennet : New Commission",
             "Mozart : Divertimento for String Trio in E flat major KV 563"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -18,7 +22,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Yehudi Menuhin School",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -30,7 +38,11 @@
             "Wagner Siegfried Idyll",
             "Schubert Arpeggione Sonata",
             "Dvořák Biblical Songs"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -42,7 +54,11 @@
             "Prokofiev : Symphony No.1, Op.25 'Classical'",
             "Gabriel Prokofiev : Concerto for Viola and Orchestra",
             "Taneyev : Symphony no. 4 in C minor, op.12"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -53,7 +69,11 @@
         "programme": [
             "Tchaikovsky Variations on a Rococo Theme, Op.33",
             "Shostakovich Symphony No. 14"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -64,7 +84,11 @@
         "programme": [
             "Franz Schubert - Piano Quintet in A major, D. 667, 'Trout'",
             "Shostakovich Symphony No. 14"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -78,7 +102,11 @@
             "Bach Selection of Bach Inventions",
             "Bohuslav Martinu Three Madrigals, H. 313",
             "Handel-Halvorsen Passacaglia"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -92,7 +120,11 @@
             "Bach Selection of Bach Inventions",
             "Bohuslav Martinu Three Madrigals, H. 313",
             "Handel-Halvorsen Passacaglia"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -106,7 +138,11 @@
             "Bach Selection of Bach Inventions",
             "Bohuslav Martinu Three Madrigals, H. 313",
             "Handel-Halvorsen Passacaglia"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -118,7 +154,11 @@
             "Frano Parać : Music for Strings and Harpsichord",
             "Tabakova : Suite in Old Style for viola",
             "Scriabin : Symphony No. 3 in C minor, Op. 43"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -129,7 +169,11 @@
         "programme": [
             "Tchaikovsky : Romeo & Juliet Suite",
             "Mussorgsky : Pictures at an Exhibition"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -137,7 +181,11 @@
         "viola": "",
         "conductor": "CONDUCTOR",
         "location": "Festival Academy Budapest",
-        "programme": ["Malcolm Arnold - Variations On A Ukrainian Folk-Song"]
+        "programme": ["Malcolm Arnold - Variations On A Ukrainian Folk-Song"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -145,7 +193,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Carl Nielsen Festival, Denmark",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -153,7 +205,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Royal Philharmonic Orchestra, Cankarjev Dom, Cultural Centre, Slovenia",
-        "programme": ["Mozart Sinfonia Concertante"]
+        "programme": ["Mozart Sinfonia Concertante"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -164,7 +220,11 @@
         "programme": [
             "Ernest Fantasy Quartet for Oboe and Strings",
             "Franck Sonata for violin and piano in A major"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -172,7 +232,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Westport Town Hall Theatre, Ireland",
-        "programme": ["Schumann Piano Quartet, op.47"]
+        "programme": ["Schumann Piano Quartet, op.47"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -184,7 +248,11 @@
             "Schumann Piano Quartet, op.47",
             "Brahms String Sextet No. 1, B-flat major, op. 18",
             "Beethoven String Trio in G Major op.9 No.1"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -192,7 +260,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Manchester, UK",
-        "programme": ["Recording Tabakova Viola Concerto"]
+        "programme": ["Recording Tabakova Viola Concerto"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -200,7 +272,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Menuhin School Masterclass",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -208,7 +284,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Menuhin School Masterclass",
-        "programme": []
+        "programme": [],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -220,7 +300,11 @@
             "Mozart Pianokwartet in E flat major, KV 493",
             "Fauré Piano Quartet No. 1 in C minor, op. 15",
             "Brahms Piano Quartet No. 3 in C minor, op. 60"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -232,7 +316,11 @@
             "Mozart Pianokwartet in E flat major, KV 493",
             "Fauré Piano Quartet No. 1 in C minor, op. 15",
             "Brahms Piano Quartet No. 3 in C minor, op. 60"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -243,7 +331,11 @@
         "programme": [
             "Igor Stravinskij Petruška",
             "G. Prokofiev Viola Concerto - Italian Premiere"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -255,7 +347,11 @@
             "Aram Chatsjatoerjan Suite 'Othello'",
             "Sergej Prokofjev Suite 'Pique Dame', opus 70",
             "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -267,7 +363,11 @@
             "Aram Chatsjatoerjan Suite 'Othello'",
             "Sergej Prokofjev Suite 'Pique Dame', opus 70",
             "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -279,7 +379,11 @@
             "Aram Chatsjatoerjan Suite 'Othello'",
             "Sergej Prokofjev Suite 'Pique Dame', opus 70",
             "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -291,7 +395,11 @@
             "Aram Chatsjatoerjan Suite 'Othello'",
             "Sergej Prokofjev Suite 'Pique Dame', opus 70",
             "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -303,7 +411,11 @@
             "Aram Chatsjatoerjan Suite 'Othello'",
             "Sergej Prokofjev Suite 'Pique Dame', opus 70",
             "Dmitri Sjostakovitsj The Gadfly Suite opus 97a"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -315,7 +427,11 @@
             "Frank Prélude, Aria et Final",
             "Frank Sonata for Violin (Viola) and Piano",
             "Frank Quintet"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -323,7 +439,11 @@
         "viola": "VIOLA",
         "conductor": "",
         "location": "Concerto Budapest, MUPA, Hungary",
-        "programme": ["Shubert Marathon"]
+        "programme": ["Shubert Marathon"],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -335,7 +455,11 @@
             "Corelli Christmas Concerto",
             "Britten Simple Symphony",
             "Shubert Sonata Arpedgione"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     },
     {
         "year": "2022",
@@ -346,6 +470,10 @@
         "programme": [
             "Franz Schubert - Piano Quintet in A major, D. 667, 'Trout'",
             "Corelli Christmas Concerto"
-        ]
+        ],
+        "pastconcert": true,
+        "canceled": false,
+        "link": "",
+        "withwhom": ""
     }
 ]
