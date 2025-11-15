@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../public/logo.png";
-import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
+import { GoTriangleDown } from "react-icons/go";
 
 type Props = {};
 
@@ -29,7 +29,7 @@ export default function Header({}: Props) {
         closePopup();
     };
     return (
-    <header className="relative p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 shadow-2xl h-full overflow-visible">
+        <header className="relative p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 shadow-2xl h-full overflow-visible">
             {logo && (
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -97,43 +97,67 @@ export default function Header({}: Props) {
                         onClick={togglePopup}
                         className={`${menu ? "py-5" : "xl:px-5"} ${
                             showPopup && menu && "pb-1"
-                        } hover:text-gray-400 w-full text-right`}
+                        } hover:text-gray-400 w-full text-right md:text-left`}
                     >
-                        <div className="flex justify-end items-center gap-1">
-                            Media
-                            {menu &&
-                                (showPopup ? (
-                                    <GoTriangleUp className="text-xs" />
-                                ) : (
-                                    <GoTriangleDown className="text-xs" />
-                                ))}
+                        <div
+                            className={`flex items-center gap-2 ${
+                                menu
+                                    ? "justify-end"
+                                    : "justify-center md:justify-start"
+                            }`}
+                        >
+                            <span className="tracking-wide">Media</span>
+                            <motion.span
+                                aria-hidden="true"
+                                className="text-xs text-gray-300 md:text-sm"
+                                animate={{ rotate: showPopup ? 180 : 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                <GoTriangleDown />
+                            </motion.span>
                         </div>
                     </button>
 
                     {/* Desktop Popup */}
-                    {!menu && showPopup && (
-                        <div className="absolute top-10 left-[-60px] bg-gray-300 text-black px-5 py-0 rounded-md shadow-md z-[100] flex flex-col items-center">
-                            <Link
-                                href="https://www.youtube.com/watch?v=oK1XGDphjBg&list=PL_YslfPtQb_ZVYSBfjVVoGg3VJpyHyCb8"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:underline py-1"
-                                onClick={closePopup}
+                    <AnimatePresence>
+                        {!menu && showPopup && (
+                            <motion.div
+                                initial={{ opacity: 0, y: -8, scale: 0.95 }}
+                                animate={{ opacity: 1, y: 0, scale: 1 }}
+                                exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                                transition={{ duration: 0.2 }}
+                                className="absolute top-12 z-[100] w-60 -left-6 -translate-x-1/2 rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 px-5 py-4 text-gray-100 shadow-2xl backdrop-blur-xl"
                             >
-                                Conducting
-                            </Link>
-                            <div className="h-[1px] w-[100px] bg-gray-500"></div>
-                            <Link
-                                href="https://www.youtube.com/@MaximRysanov"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:underline py-1"
-                                onClick={closePopup}
-                            >
-                                Channel
-                            </Link>
-                        </div>
-                    )}
+                                {/* <span className="pointer-events-none absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-t border-l border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800"></span> */}
+                                <div className="flex flex-col gap-2">
+                                    <Link
+                                        href="https://www.youtube.com/watch?v=oK1XGDphjBg&list=PL_YslfPtQb_ZVYSBfjVVoGg3VJpyHyCb8"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group flex w-full items-center justify-between rounded-xl border border-white/5 px-4 py-2 text-sm font-medium text-gray-100 transition hover:border-amber-400/60 hover:bg-white/5"
+                                        onClick={closePopup}
+                                    >
+                                        <span>Conducting</span>
+                                        <span className="text-[10px] uppercase tracking-[0.3em] text-amber-200/70 transition group-hover:text-amber-200">
+                                            Watch
+                                        </span>
+                                    </Link>
+                                    <Link
+                                        href="https://www.youtube.com/@MaximRysanov"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group flex w-full items-center justify-between rounded-xl border border-white/5 px-4 py-2 text-sm font-medium text-gray-100 transition hover:border-amber-400/60 hover:bg-white/5"
+                                        onClick={closePopup}
+                                    >
+                                        <span>Channel</span>
+                                        <span className="text-[10px] uppercase tracking-[0.3em] text-amber-200/70 transition group-hover:text-amber-200">
+                                            Watch
+                                        </span>
+                                    </Link>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
 
                     {/* Mobile Expanded Submenu */}
                     {menu && showPopup && (
