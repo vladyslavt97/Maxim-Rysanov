@@ -62,7 +62,7 @@ export default function Header({}: Props) {
                 animate={{ opacity: 1 }}
                 className={
                     menu
-                        ? "absolute right-[7%] top-[60px] flex flex-col z-30 items-end md:hidden md:text-xl text-gray-200 overflow-y-auto h-[80%] pr-5"
+                        ? "absolute right-[7%] top-[60px] flex flex-col z-30 items-end md:hidden md:text-xl text-gray-200 overflow-y-auto pr-5"
                         : "relative z-30 space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
                 }
             >
