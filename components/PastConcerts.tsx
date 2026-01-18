@@ -54,9 +54,9 @@ export default function PastConcerts({
       {open && (
         <motion.div
           initial={{ height: 0, opacity: 0.7 }}
-          animate={{ height: 190, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="flex flex-col bg-white text-black rounded-lg drop-shadow-md"
+          animate={{ height: "auto", opacity: 1 }}
+          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col bg-white text-black rounded-lg drop-shadow-md overflow-hidden"
         >
           {upcomingLabel && !isCurrentPath(upcomingHref) && (
             <motion.div
