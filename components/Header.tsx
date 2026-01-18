@@ -28,80 +28,81 @@ export default function Header({}: Props) {
         setMenu(false);
         closePopup();
     };
-    return (
-        <header className="relative p-1 pr-5 flex flex-row justify-between bg-gradient-to-r from-gray-700 to-gray-900 items-center z-50 shadow-2xl h-full overflow-visible">
-            {logo && (
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                    className="cursor-pointer"
-                >
-                    <Link href="/">
-                        <Image
-                            src="/logo.png"
-                            alt="logo"
-                            width={200}
-                            height={200}
-                            priority={true}
-                        />
-                    </Link>
-                </motion.div>
-            )}
-            {/* Links */}
-            {showPopup && (
-                <div
-                    className="fixed inset-0 bg-gray-500/10 z-10"
-                    onClick={closePopup}
-                ></div>
-            )}
-            <motion.div
-                key={menu ? "open" : "close"}
-                initial={{ opacity: 0 }}
-                transition={{ delay: 0.8, duration: 1 }}
-                animate={{ opacity: 1 }}
-                className={
-                    menu
-                        ? "absolute right-[7%] top-[60px] flex flex-col z-30 items-end md:hidden md:text-xl text-gray-200 overflow-y-auto pr-5"
-                        : "relative z-30 space-x-3 hidden md:flex font-semibold text-xl text-gray-300"
-                }
-            >
+
+    const renderNavLinks = (isMobile: boolean) => {
+        const linkClassName = isMobile ? "block w-full" : "hover:text-gray-400";
+        const desktopButtonClassName = "xl:px-5";
+        const mobileButtonClassName =
+            "w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-right text-[15px] font-medium tracking-wide text-gray-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition hover:border-amber-200/40 hover:bg-white/10 hover:text-white";
+        const mediaButtonClassName = isMobile
+            ? `${mobileButtonClassName} ${
+                  showPopup ? "border-amber-200/60 bg-white/10" : ""
+              }`
+            : `${desktopButtonClassName} hover:text-gray-400`;
+        const mediaContainerClassName = isMobile ? "w-full" : "relative";
+        const mobileSubmenuClassName = isMobile
+            ? "mt-2 ml-4 flex flex-col items-start gap-1 overflow-hidden rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-gray-300"
+            : "flex flex-col items-start w-full text-gray-300 overflow-hidden";
+        const mobileSubLinkClassName = isMobile
+            ? "w-full rounded-lg py-1.5 pl-2 text-sm text-gray-300 transition hover:text-white hover:bg-white/5"
+            : "hover:underline py-1 pl-3 text-left text-sm";
+
+        return (
+            <>
                 <Link
                     href="/"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>Home</button>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
+                        Home
+                    </button>
                 </Link>
                 <Link
                     href="bio"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
                         Biography
                     </button>
                 </Link>
                 <Link
                     href="concerts"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
                         Concerts
                     </button>
                 </Link>
 
-                <div className="relative">
+                <div className={mediaContainerClassName}>
                     <button
                         onClick={togglePopup}
-                        className={`${menu ? "py-5" : "xl:px-5"} ${
-                            showPopup && menu && "pb-1"
-                        } hover:text-gray-400 w-full text-right md:text-left`}
+                        className={`${mediaButtonClassName} w-full text-right md:text-left`}
                     >
                         <div
                             className={`flex items-center gap-2 ${
-                                menu
+                                isMobile
                                     ? "justify-end"
                                     : "justify-center md:justify-start"
                             }`}
@@ -120,13 +121,21 @@ export default function Header({}: Props) {
 
                     {/* Desktop Popup */}
                     <AnimatePresence>
-                        {!menu && showPopup && (
+                        {!isMobile && showPopup && (
                             <motion.div
-                                initial={{ opacity: 0, y: -8, scale: 0.95 }}
-                                animate={{ opacity: 1, y: 0, scale: 1 }}
-                                exit={{ opacity: 0, y: -8, scale: 0.95 }}
-                                transition={{ duration: 0.2 }}
-                                className="absolute top-12 z-[100] w-60 -left-6 -translate-x-1/2 rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 px-5 py-4 text-gray-100 shadow-2xl backdrop-blur-xl"
+                                initial={{ opacity: 0, y: 22, scale: 0.9 }}
+                                animate={{
+                                    opacity: 1,
+                                    y: [22, -10, 6, 0],
+                                    scale: [0.9, 1.06, 0.98, 1],
+                                }}
+                                exit={{ opacity: 0, y: -10, scale: 0.96 }}
+                                transition={{
+                                    duration: 0.48,
+                                    ease: [0.16, 1, 0.3, 1],
+                                    times: [0, 0.55, 0.75, 1],
+                                }}
+                                className="absolute top-12 z-[100] w-60 -left-6 -translate-x-1/2 rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 px-5 py-4 text-gray-100 shadow-2xl backdrop-blur-xl will-change-transform will-change-opacity"
                             >
                                 {/* <span className="pointer-events-none absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-t border-l border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800"></span> */}
                                 <div className="flex flex-col gap-2">
@@ -160,19 +169,23 @@ export default function Header({}: Props) {
                     </AnimatePresence>
 
                     {/* Mobile Expanded Submenu */}
-                    {menu && showPopup && (
+                    {isMobile && showPopup && (
                         <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.4 }}
-                            className="flex flex-col items-end w-full text-gray-300 overflow-hidden"
+                            initial={{ opacity: 0, scaleY: 0.9, y: -4 }}
+                            animate={{ opacity: 1, scaleY: 1, y: 0 }}
+                            exit={{ opacity: 0, scaleY: 0.9, y: -4 }}
+                            transition={{
+                                duration: 0.18,
+                                ease: [0.25, 0.96, 0.4, 1],
+                            }}
+                            style={{ originY: 0 }}
+                            className={`${mobileSubmenuClassName} will-change-transform`}
                         >
                             <Link
                                 href="https://www.youtube.com/watch?v=oK1XGDphjBg&list=PL_YslfPtQb_ZVYSBfjVVoGg3VJpyHyCb8"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:underline py-1 text-sm"
+                                className={mobileSubLinkClassName}
                                 onClick={closePopup}
                             >
                                 Conducting
@@ -181,7 +194,7 @@ export default function Header({}: Props) {
                                 href="https://www.youtube.com/@MaximRysanov"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:underline py-1 text-sm"
+                                className={mobileSubLinkClassName}
                                 onClick={closePopup}
                             >
                                 Channel
@@ -192,9 +205,15 @@ export default function Header({}: Props) {
                 <Link
                     href="reviews"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
                         Reviews
                     </button>
                 </Link>
@@ -208,53 +227,130 @@ export default function Header({}: Props) {
                 <Link
                     href="gallery"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
                         Gallery
                     </button>
                 </Link>
                 <Link
                     href="recordings"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
                         Recordings
                     </button>
                 </Link>
                 <Link
                     href="contacts"
                     onClick={handleNavItemClick}
-                    className="hover:text-gray-400"
+                    className={linkClassName}
                 >
-                    <button className={menu ? "py-5" : "xl:px-5"}>
+                    <button
+                        className={
+                            isMobile
+                                ? mobileButtonClassName
+                                : desktopButtonClassName
+                        }
+                    >
                         Contacts
                     </button>
                 </Link>
+            </>
+        );
+    };
+    return (
+        <header className="relative p-1 pr-5 flex flex-row justify-between bg-gradient-to-tr from-gray-900 to-gray-700 items-center z-50 shadow-2xl h-full overflow-visible">
+            {logo && (
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1 }}
+                    className="cursor-pointer"
+                >
+                    <Link href="/">
+                        <Image
+                            src="/logo.png"
+                            alt="logo"
+                            width={200}
+                            height={200}
+                            priority={true}
+                        />
+                    </Link>
+                </motion.div>
+            )}
+            {/* Links */}
+            {showPopup && (
+                <div
+                    className="fixed inset-0 bg-gray-500/10 z-10"
+                    onClick={closePopup}
+                ></div>
+            )}
+            <motion.div
+                initial={{ opacity: 0 }}
+                transition={{ delay: 0.8, duration: 1 }}
+                animate={{ opacity: 1 }}
+                className="relative z-30 hidden items-center space-x-3 font-semibold text-xl text-gray-300 md:flex"
+            >
+                {renderNavLinks(false)}
             </motion.div>
 
-            {/* Sidebar with AnimatePresence */}
+            {/* Mobile menu */}
             <AnimatePresence>
                 {menu && (
-                    <motion.div
-                        initial={{ opacity: 0, x: "100%" }}
-                        animate={{ opacity: 1, x: "55%" }}
-                        exit={{ opacity: 0, x: "100%" }}
-                        transition={{ duration: 0.4 }}
-                        className="fixed bg-gradient-to-r from-gray-700 to-gray-900 h-screen right-[0px] top-0 md:hidden drop-shadow-2xl w-[100%]"
-                    ></motion.div>
+                    <>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="fixed inset-0 z-[55] bg-slate-900/40 backdrop-blur-sm md:hidden"
+                            onClick={toggleMenu}
+                        ></motion.div>
+                        <motion.aside
+                            initial={{ x: "100%" }}
+                            animate={{ x: 0 }}
+                            exit={{ x: "100%" }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 260,
+                                damping: 30,
+                            }}
+                            className="fixed right-0 top-0 z-[65] h-screen w-[86vw] max-w-[360px] md:hidden"
+                        >
+                            <div className="relative h-full overflow-hidden border-l border-white/10 bg-gradient-to-br from-slate-900 via-gray-800 to-slate-950 shadow-2xl">
+                                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(420px_circle_at_20%_0%,rgba(251,191,36,0.18),transparent_60%)]"></div>
+                                <div className="relative flex h-full flex-col px-6 pb-10 pt-20 text-gray-100">
+                                    <div className="mb-4 text-xs uppercase tracking-[0.35em] text-gray-400">
+                                        Menu
+                                    </div>
+                                    <div className="flex-1 overflow-y-auto overscroll-contain pr-1">
+                                        <div className="flex flex-col gap-2">
+                                            {renderNavLinks(true)}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.aside>
+                    </>
                 )}
             </AnimatePresence>
 
             {/* Burger icon */}
-            {menu && (
-                <div
-                    className="absolute top-0 left-0 w-full h-full -z-10"
-                    onClick={toggleMenu}
-                ></div>
-            )}
-            <div onClick={toggleMenu} className="z-10 md:hidden">
+            <div onClick={toggleMenu} className="z-[75] md:hidden">
                 <motion.div
                     animate={{ rotate: menu ? -45 : 0 }}
                     className={
