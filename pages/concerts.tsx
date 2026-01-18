@@ -47,6 +47,9 @@ export default function Concerts({
     archiveYears: string[];
 }) {
     const [concerts, setConcerts] = useState<ConcertType[]>([]);
+    const [isLoading, setIsLoading] = useState(
+        (initialConcerts ?? []).length === 0
+    );
     const [cheing, setChecing] = useState(false);
     const [smN, setSmn] = useState<any>();
 
@@ -54,6 +57,7 @@ export default function Concerts({
 
     useEffect(() => {
         setConcerts(initialConcerts);
+        setIsLoading(false);
     }, [initialConcerts]);
 
     let validConcerts = sortingConcerts(concerts);
@@ -127,9 +131,9 @@ export default function Concerts({
                 }`}
             />
             <div className="absolute left-6 md:static md:flex md:justify-center md:items-center pt-5">
-                <h1 className="font-bold text-xl text-gray-800">2025</h1>
+                <h1 className="font-bold text-xl text-gray-800">2026</h1>
             </div>
-            {concerts.length === 0 ? (
+            {isLoading ? (
                 <div className="flex items-center justify-center h-[60vh]">
                     <ColorRing
                         visible={true}
@@ -146,6 +150,13 @@ export default function Concerts({
                             "#849b87",
                         ]}
                     />
+                </div>
+            ) : concerts.length === 0 ? (
+                <div className="flex flex-col items-center justify-center h-[60vh] text-gray-600">
+                    <p className="text-lg font-semibold">No concerts found.</p>
+                    <p className="text-sm mt-1">
+                        Please check back soon for new dates.
+                    </p>
                 </div>
             ) : (
                 <motion.div
