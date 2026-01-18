@@ -1,0 +1,342 @@
+[
+    {
+        "_id": { "$oid": "677ed114225cde4cc4335932" },
+        "year": "2024",
+        "date": "FRI 10/01",
+        "viola": true,
+        "conductor": false,
+        "location": "Reduta Hall, Olomouc, Czechia",
+        "programme": ["Dobrinka Tabakova : Suite in Old Style "],
+        "withwhom": "Conductor - Stefan Veselka",
+        "link": "",
+        "pastconcert": true
+    },
+    {
+        "_id": { "$oid": "677ed1f6225cde4cc4335933" },
+        "year": "2024",
+        "date": "SAT 18/01",
+        "viola": true,
+        "conductor": false,
+        "location": "KKL Lucerne",
+        "programme": ["Shostakovich : Sonata for viola and piano Op.147 "],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.luzern.com/en/event/the-shostakovich-project-initiated-by-evgeny-kissin-part-ii"
+    },
+    {
+        "_id": { "$oid": "677ed24e225cde4cc4335934" },
+        "year": "2024",
+        "date": "WED 22/01",
+        "viola": true,
+        "conductor": false,
+        "location": "Eindhoven",
+        "programme": ["Shostakovich : Sonata for viola and piano Op.147 "],
+        "withwhom": "with Evgeny Kissin, piano",
+        "link": "https://mge.nl/en/agenda/evgeny-kissin-gidon-kremer-gautier-capucon-maxim-rysanov/"
+    },
+    {
+        "_id": { "$oid": "677ed2be48345a89b57e48a1" },
+        "year": "2024",
+        "date": "SAT 25/01",
+        "viola": true,
+        "conductor": false,
+        "location": "Herkulessaal, Munich",
+        "programme": ["Shostakovich : Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.bellarte-muenchen.de/Konzerte/i/Evgeny-Kissin/1158"
+    },
+    {
+        "_id": { "$oid": "677ed33448345a89b57e48a2" },
+        "year": "2024",
+        "date": "WED 29/01",
+        "viola": true,
+        "conductor": false,
+        "location": "Vienna Konzerthaus",
+        "programme": ["Shostakovich Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.vienna-concert.com/en/event/kremer-rysanov-kissin-gautier-capucon-22338?date=01-05-2027"
+    },
+    {
+        "_id": { "$oid": "677ed4e5225cde4cc4335935" },
+        "year": "2024",
+        "date": "SUN 02/02",
+        "viola": true,
+        "conductor": false,
+        "location": "Philharmonique de Luxembourg",
+        "programme": ["Shostakovich Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.philharmonie.lu/en/programme/2024-25/all-star-shostakovich-000000e90018af78"
+    },
+    {
+        "_id": { "$oid": "677ed507225cde4cc4335936" },
+        "year": "2024",
+        "date": "WED 05/02",
+        "viola": true,
+        "conductor": false,
+        "location": "Théâtre des Champs-Elysées, Paris",
+        "programme": ["Shostakovich Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.theatrechampselysees.fr/saison-2024-2025/recital-musique-de-chambre/evgeny-kissin-gidon-kremer-maxim-rysanov-gautier-capucon"
+    },
+    {
+        "_id": { "$oid": "677ed545225cde4cc4335937" },
+        "year": "2024",
+        "date": "MON 10/02",
+        "viola": true,
+        "conductor": false,
+        "location": "Halle aux Grains, Toulouse",
+        "programme": ["Shostakovich Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": ""
+    },
+    {
+        "_id": { "$oid": "677ed587225cde4cc4335938" },
+        "year": "2024",
+        "date": "WED 12/02",
+        "viola": true,
+        "conductor": false,
+        "location": "Sopron, Hungary",
+        "programme": [
+            "Mozart Sinfonia Concertante for violin and viola in E-flat major,K.364 "
+        ],
+        "withwhom": "Alexander Sitkovetsky violin;Anima Musicae",
+        "link": ""
+    },
+    {
+        "_id": { "$oid": "677ed59b225cde4cc4335939" },
+        "year": "2024",
+        "date": "THU 13/02",
+        "viola": true,
+        "conductor": false,
+        "location": "Budapest",
+        "programme": [
+            "Mozart Sinfonia Concertante for violin and viola in E-flat major,K.364 "
+        ],
+        "withwhom": "Alexander Sitkovetsky violin;Anima Musicae",
+        "link": "https://www.animamusicae.hu/concerts/grandioso-2-2025"
+    },
+    {
+        "_id": { "$oid": "677ed5fc225cde4cc433593a" },
+        "year": "2024",
+        "date": "MON 17/02",
+        "viola": true,
+        "conductor": false,
+        "location": "Barbican Centre, London",
+        "programme": ["Shostakovich Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.barbican.org.uk/whats-on/2025/event/commemorating-shostakovich-evgeny-kissin-and-friends"
+    },
+    {
+        "_id": { "$oid": "677ed63f225cde4cc433593b" },
+        "year": "2024",
+        "date": "FRI 07/03",
+        "viola": false,
+        "conductor": true,
+        "location": "Liszt Academy, Budapest",
+        "programme": [
+            "Ravel Mother Goose Suite,\nRavel Concerto for Piano in G Major,Mussorgsky  Pictures at an Exhibition "
+        ],
+        "withwhom": "Budapest MAV Symphony Orchestra;Dezső Ránki piano ",
+        "link": "https://mavzenekar.hu/en/event/a-zenekar-virtuoza/"
+    },
+    {
+        "_id": { "$oid": "677ed709225cde4cc433593c" },
+        "year": "2024",
+        "date": "WED 12/04",
+        "viola": true,
+        "conductor": false,
+        "location": "Liepaja, Latvia",
+        "programme": ["Giya Kancheli,Styx for solo viola,chorus & orchestra"],
+        "withwhom": "Māris Sirmais conductor;Liepaja Symphony Orchestra;Latvian National Chorus",
+        "link": ""
+    },
+    {
+        "_id": { "$oid": "677ed7b3225cde4cc433593d" },
+        "year": "2024",
+        "date": "THU 15/05",
+        "viola": true,
+        "conductor": false,
+        "location": "Vevey Spring Classic",
+        "programme": [
+            "Hindemith Trauermusik",
+            "Brahms String Quintet No 2 in G major Op 111 "
+        ],
+        "withwhom": "Orchestra del Accademia del Teatro alla Scala;Conductor Wilson Hermanto",
+        "link": "https://veveyspringclassic.ch/en/concert/shostakovich-2025/"
+    },
+    {
+        "_id": { "$oid": "677ed81a225cde4cc433593e" },
+        "year": "2024",
+        "date": "FRI 16/05",
+        "viola": true,
+        "conductor": false,
+        "location": "Vevey Spring Classic",
+        "programme": ["Schumann Piano Quintet in E flat major "],
+        "withwhom": "",
+        "link": "https://veveyspringclassic.ch/en/concert/hommage-a-kokoschka-i/"
+    },
+    {
+        "_id": { "$oid": "677ed86f225cde4cc433593f" },
+        "year": "2024",
+        "date": "SUN 18/05",
+        "viola": true,
+        "conductor": false,
+        "location": "Vevey Spring Classic",
+        "programme": [
+            "Dohnanyi Serenade for string trio in c major",
+            "Schubert Piano Quintet in A major D.667 'Trout' "
+        ],
+        "withwhom": "",
+        "link": "https://veveyspringclassic.ch/en/concert/the-trout/"
+    },
+    {
+        "_id": { "$oid": "677ed8ab225cde4cc4335940" },
+        "year": "2024",
+        "date": "WED 28/05",
+        "viola": true,
+        "conductor": false,
+        "location": "Carnegie Hall, New York ",
+        "programme": ["Shostakovich", "Sonata for viola and piano Op.147"],
+        "withwhom": "Evgeny Kissin, piano",
+        "link": "https://www.carnegiehall.org/Calendar/2025/05/28/Evgeny-Kissin-and-Friends-The-Shostakovich-Sonatas-0800PM"
+    },
+    {
+        "_id": { "$oid": "677ed8e8225cde4cc4335941" },
+        "year": "2024",
+        "date": "WED 25/06",
+        "viola": true,
+        "conductor": false,
+        "location": "Rolandseck Festival Germany",
+        "programme": [""],
+        "withwhom": "Mihaela Martin, Torleif Thedéen, Frans Helmerson, Dora Kokas",
+        "link": "https://www.wasmuthgesellschaft.de/event/auftaktkonzert-des-20-rolandseck-festival/"
+    },
+    {
+        "_id": { "$oid": "683b051b0d47ec75f865b7ae" },
+        "year": "2025",
+        "date": "Sat 25/10 20:00",
+        "viola": null,
+        "conductor": null,
+        "location": "Musis Arnhem",
+        "programme": [
+            "Gabriel Prokofiev: Concerto for Viola and Orchestra",
+            "\nProkofiev: Divertissement, Op.43",
+            "\nHaydn: Symphony No. 45 in F♯ Minor \"Farewell Symphony\"\n"
+        ],
+        "withwhom": "Phion Orchestra",
+        "link": "https://www.phion.nl/rysanov-speelt-prokofjev"
+    },
+    {
+        "_id": { "$oid": "68555c530a176fe22ec62c3c" },
+        "year": "2025",
+        "date": "Mon 07/07 20:00",
+        "viola": true,
+        "conductor": null,
+        "location": "Anneliese Brost Musikforum Ruhr, Bochum, Germany",
+        "programme": ["Shostakovich: Sonata for viola and piano, Op.147"],
+        "withwhom": "Evgeny Kissin",
+        "link": null
+    },
+    {
+        "_id": { "$oid": "68555d4b167de19959da1d32" },
+        "year": "2025",
+        "date": "Fri 11/07 19:00",
+        "viola": true,
+        "conductor": null,
+        "location": "Bordeaux",
+        "programme": ["Shostakovich: Sonata for viola and piano, Op.147"],
+        "withwhom": "Evgeny Kissin",
+        "link": null
+    },
+    {
+        "_id": { "$oid": "68555e69167de19959da1d33" },
+        "year": "2025",
+        "date": "18-28/07",
+        "viola": true,
+        "conductor": false,
+        "location": "Festival Academy Budapest",
+        "programme": [""],
+        "withwhom": "Nakariakov, Vengerov, Kelemen, Kokas",
+        "link": "https://fesztivalakademia.hu/en/"
+    },
+    {
+        "_id": { "$oid": "68555f02167de19959da1d34" },
+        "year": "2025",
+        "date": "SUN 20/07",
+        "viola": true,
+        "conductor": true,
+        "location": "Festival Academy Budapest",
+        "programme": [
+            "Shostakovich: Jazz Suite no. 1",
+            "\nShostakovich: Piano Concerto No. 1",
+            "\nShostakovich: Viola Sonata, op. 147"
+        ],
+        "withwhom": "Nakariakov, Kelemen, Pei Lin Oisin Pu, Maria Meerovich",
+        "link": ""
+    },
+    {
+        "_id": { "$oid": "68555fe9512f8fe4c3f730f6" },
+        "year": "2025",
+        "date": "Sat 09/08 19:00",
+        "viola": true,
+        "conductor": null,
+        "location": "Haus für Mozart",
+        "programme": ["Shostakovich: Sonata for viola and piano, Op.147"],
+        "withwhom": "Evgeny Kissin",
+        "link": "https://bachtrack.com/concert-event/chamber-concert-roslavets-kremer-rysanov-dirvanauskaite-kissin-haus-fur-mozart-9-august-2025/415360"
+    },
+    {
+        "_id": { "$oid": "685560af512f8fe4c3f730f7" },
+        "year": "2025",
+        "date": "Thu 09/10 19:00",
+        "viola": null,
+        "conductor": null,
+        "location": "Sweden",
+        "programme": [
+            "Bohuslav Martinu: Rhapsody-Concerto for Viola and Orchestra, H.337"
+        ],
+        "withwhom": null,
+        "link": null
+    },
+    {
+        "_id": { "$oid": "6855619f167de19959da1d35" },
+        "year": "2025",
+        "date": "Fri 24/10 20:00",
+        "viola": true,
+        "conductor": true,
+        "location": "Muziekcentrum Enschede",
+        "programme": [
+            "Gabriel Prokofiev: Concerto for Viola and Orchestra,\nProkofiev: Divertissement, Op.43,\nHaydn: Symphony No. 45 in F♯ Minor \"Farewell Symphony\""
+        ],
+        "withwhom": "Phion Orchestra",
+        "link": "https://www.wilminktheater.nl/en/agenda/4806/phion-orkest-van-gelderland-overijssel/maxim-rysanov-speelt-prokofjev"
+    },
+    {
+        "_id": { "$oid": "68556234512f8fe4c3f730f8" },
+        "year": "2025",
+        "date": "Fri 17/10 19:00",
+        "viola": true,
+        "conductor": true,
+        "location": "Central Military Club, Sofia, Bulgaria",
+        "programme": [
+            "Beethoven: Coriolan Overture Op 62",
+            "\nDobrinka Tabakova: Suite in Old Style",
+            "\nBeethoven: Symphony No. 6 in F major, Op. 68"
+        ],
+        "withwhom": "Bulgarian National Radio Symphony Orchestra",
+        "link": null
+    },
+    {
+        "_id": { "$oid": "6855634a512f8fe4c3f730f9" },
+        "year": "2025",
+        "date": "FRI 13/06",
+        "viola": false,
+        "conductor": true,
+        "location": "Lakócsa, Hungary",
+        "programme": [
+            "Beethoven: Symphony No. 2",
+            "\nFrigyes Hidas: Concerto for Bassoon and Strings\n\n"
+        ],
+        "withwhom": "MÁV Szimfonikus Zenekar, György Lakatos",
+        "link": ""
+    }
+]
