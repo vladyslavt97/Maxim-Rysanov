@@ -10,6 +10,7 @@ import {
 } from "@/date";
 import { ConcertType } from "@/interfaces";
 import { getArchiveYears } from "@/lib/pastConcerts";
+import clientPromise from "@/lib/mongodb";
 
 export async function getStaticProps() {
     let concerts = [];
@@ -22,10 +23,16 @@ export async function getStaticProps() {
     }
 
     try {
-        const response = await fetch(
-            `${process.env.NEXT_PUBLIC_API_URL}/api/get-concerts`
-        );
-        concerts = await response.json();
+        const client = await clientPromise;
+        const db = client.db("Maxim_Rysanov");
+        const concertsFromDb = await db
+            .collection("concerts-2026")
+            .find({})
+            .sort({ date: 1 })
+            .toArray();
+
+        // Ensure the data is serializable for Next.js
+        concerts = JSON.parse(JSON.stringify(concertsFromDb));
     } catch (error) {
         console.error("Error fetching concerts:", error);
     }
