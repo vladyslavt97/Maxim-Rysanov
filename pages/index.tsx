@@ -50,12 +50,7 @@ export default function Home() {
 
             <div className="relative z-10 mx-auto flex h-full flex-col justify-center gap-10">
                 <div className="mt-[450px] flex flex-col items-start justify-between gap-8 md:gap-96 md:mt-6 md:flex-row lg:mt-0">
-                    <motion.div
-                        // initial={{ opacity: 0, y: 16 }}
-                        // animate={{ opacity: 1, y: 0 }}
-                        // transition={{ duration: 1.2, delay: 0.2 }}
-                        className="space-y-7 md:w-[55%]"
-                    >
+                    <div className="space-y-7 md:w-[55%]">
                         <div className="relative overflow-hidden rounded-3xl shadow-xl backdrop-blur-xl p-2 m-2">
                             <div className="absolute inset-0" />
                             <div className="relative space-y-2">
@@ -107,14 +102,9 @@ export default function Home() {
                                 </span>
                             </Link>
                         </div>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 22 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1.2, delay: 0.35 }}
-                        className="flex flex-col gap-4 md:w-[45%]"
-                    >
+                    <div className="flex flex-col gap-4 md:w-[45%]">
                         <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-xl">
                             <div className="absolute inset-0 opacity-0 transition duration-600 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
@@ -179,7 +169,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </motion.div>

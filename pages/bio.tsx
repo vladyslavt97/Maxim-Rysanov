@@ -12,7 +12,7 @@ export default function Bio({}: Props) {
     const language = useStore((state: languagesState) => state.language);
 
     return (
-        <div className="relative flex flex-col justify-center items-center mx-2 p-5 pb-40 md:pb-40 text-black md:p-10 lg:px-20 bg-white">
+        <div className="relative flex flex-col justify-center items-center p-5 pb-40 md:pb-40 text-black md:p-10 lg:px-20 bg-white">
             {/* <LanguagesSwitch/> */}
             <a
                 href="/Rysanov_Biography_24-25.pdf"
