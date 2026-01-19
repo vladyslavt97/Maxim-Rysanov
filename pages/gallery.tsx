@@ -47,6 +47,16 @@ export default function Gallery({}: Props) {
         setIsLoading(true);
     }, [currentIndex]);
 
+    useEffect(() => {
+        const nextIndex = (currentIndex + 1) % images.length;
+        const prevIndex = (currentIndex - 1 + images.length) % images.length;
+
+        [images[nextIndex].src, images[prevIndex].src].forEach((src) => {
+            const img = new window.Image();
+            img.src = src;
+        });
+    }, [currentIndex, images]);
+
     return (
         <div className="relative flex flex-col items-center justify-start text-black w-full px-4 py-5">
             <Link
@@ -74,18 +84,28 @@ export default function Gallery({}: Props) {
                         className="relative w-full h-[70vh] min-h-[320px] max-h-[820px] cursor-pointer"
                         onClick={goNext}
                     >
-                        <Image
+                        <motion.div
                             key={images[currentIndex].src}
-                            src={images[currentIndex].src}
-                            alt={images[currentIndex].alt}
-                            fill
-                            priority
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1000px"
-                            className="object-contain"
-                            onLoadingComplete={() => setIsLoading(false)}
-                            onLoad={() => setIsLoading(false)}
-                            onError={() => setIsLoading(false)}
-                        />
+                            className="absolute inset-0"
+                            animate={{ scale: [1, 1.03, 1] }}
+                            transition={{
+                                duration: 6,
+                                ease: "easeInOut",
+                                repeat: Infinity,
+                            }}
+                        >
+                            <Image
+                                src={images[currentIndex].src}
+                                alt={images[currentIndex].alt}
+                                fill
+                                priority={true}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1000px"
+                                className="object-contain"
+                                onLoadingComplete={() => setIsLoading(false)}
+                                onLoad={() => setIsLoading(false)}
+                                onError={() => setIsLoading(false)}
+                            />
+                        </motion.div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
                         {isLoading && (
                             <div className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm">

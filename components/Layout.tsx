@@ -33,9 +33,7 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
 
                 {/* Scrollable main content, with padding to account for fixed header/footer */}
-                <main className="overflow-auto border-8 border-white bg-[#F2F2F2]">
-                    {children}
-                </main>
+                <main className="overflow-auto">{children}</main>
 
                 {/* Fixed footer */}
                 <div className="z-20">
