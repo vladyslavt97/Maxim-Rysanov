@@ -106,13 +106,13 @@ export default function Gallery({}: Props) {
                         <HiChevronRight className="h-6 w-6" />
                     </button>
 
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 rounded-full bg-black/40 px-3 py-2 backdrop-blur">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-wrap items-center justify-center gap-1.5 rounded-full bg-black/40 px-3 py-2 backdrop-blur max-w-[90%]">
                         {images.map((_, idx) => (
                             <button
                                 key={idx}
                                 aria-label={`Go to image ${idx + 1}`}
                                 onClick={() => setCurrentIndex(idx)}
-                                className={`h-2.5 w-2.5 rounded-full transition ${
+                                className={`h-1.5 w-1.5 rounded-full transition ${
                                     currentIndex === idx
                                         ? "bg-white"
                                         : "bg-white/50 hover:bg-white/80"
