@@ -48,8 +48,8 @@ export default function Home() {
                 />
             </div>
 
-            <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10">
-                <div className="mt-[550px] flex flex-col items-start justify-around gap-8 md:gap-80 md:mt-6 md:flex-row lg:mt-0">
+            <div className="relative z-10 mx-auto flex h-full flex-col justify-center gap-10">
+                <div className="mt-[450px] flex flex-col items-start justify-between gap-8 md:gap-96 md:mt-6 md:flex-row lg:mt-0">
                     <motion.div
                         // initial={{ opacity: 0, y: 16 }}
                         // animate={{ opacity: 1, y: 0 }}
