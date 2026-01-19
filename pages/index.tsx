@@ -49,7 +49,7 @@ export default function Home() {
                             : "backdrop-blur-none"
                     }`}
                 />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(0,0,0,0.08),transparent_32%),radial-gradient(circle_at_82%_15%,rgba(255,193,127,0.28),transparent_30%)]" />
+                {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(0,0,0,0.08),transparent_32%),radial-gradient(circle_at_82%_15%,rgba(255,193,127,0.28),transparent_30%)]" /> */}
             </div>
 
             <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import recordings from "../recordings.json";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,6 +23,45 @@ type Recording = {
 };
 
 export default function RecordingsList({}: Props) {
+  const [coversReady, setCoversReady] = useState(false);
+
+  const coverSources = useMemo(
+    () => Array.from(new Set(recordings.map((r: Recording) => r.imageSrc))),
+    []
+  );
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const preloadImages = async () => {
+      const preloadPromises = coverSources.map(
+        (src) =>
+          new Promise<void>((resolve) => {
+            const img = new window.Image();
+            img.onload = () => resolve();
+            img.onerror = () => resolve();
+            img.src = src;
+          })
+      );
+
+      await Promise.all(preloadPromises);
+      if (isMounted) {
+        setCoversReady(true);
+      }
+    };
+
+    preloadImages();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [coverSources]);
+
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
   const figureOut = (val: string) => {
     if (val.includes("/bis.se")) {
       return `/BIS.png`;
@@ -49,10 +88,10 @@ export default function RecordingsList({}: Props) {
           className="hover:scale-110 transition-transform duration-2000"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            variants={cardVariants}
+            initial="hidden"
+            animate={coversReady ? "visible" : "hidden"}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-300 relative"
           >
             {r.newrelease && (
