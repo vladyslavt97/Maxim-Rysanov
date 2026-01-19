@@ -5,48 +5,51 @@ import Footer from "./Footer";
 import RouteLoadingBar from "./RouteLoadingBar";
 
 interface LayoutProps {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }
 
 export default function Layout({ children }: LayoutProps) {
-  const router = useRouter();
-  const isHome = router.pathname === "/";
+    const router = useRouter();
+    const isHome = router.pathname === "/";
 
-  return (
-    <>
-      <Head>
-        <title>Maxim Rysanov</title>
-        <meta
-          name="description"
-          content="Grammy nominated Ukrainian-British violist and conductor Maxim Rysanov has established himself as one of the worldʼs most vibrant and charismatic musicians. As a violist, he is principally known as a frequent guest of the crème of the international music scene, such as BBC Last Night of the Proms and the festivals of Edinburgh, Salzburg and Verbier."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <>
+            <Head>
+                <title>Maxim Rysanov</title>
+                <meta
+                    name="description"
+                    content="Grammy nominated Ukrainian-British violist and conductor Maxim Rysanov has established himself as one of the worldʼs most vibrant and charismatic musicians. As a violist, he is principally known as a frequent guest of the crème of the international music scene, such as BBC Last Night of the Proms and the festivals of Edinburgh, Salzburg and Verbier."
+                />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-      <RouteLoadingBar />
+            <RouteLoadingBar />
 
-      {/* Main grid wrapper */}
-      <div className="grid grid-rows-[72px_1fr_51px] h-screen ">
-        {/* Fixed header */}
-        <div className="z-50">
-          <Header />
-        </div>
+            {/* Main grid wrapper */}
+            <div className="grid grid-rows-[72px_1fr_51px] h-screen ">
+                {/* Fixed header */}
+                <div className="z-50">
+                    <Header />
+                </div>
 
-        {/* Scrollable main content, with padding to account for fixed header/footer */}
-        <main
-          className={`overflow-auto border-8 border-gray-300 ${
-            isHome ? "bg-transparent" : "bg-[#F2F2F2]"
-          }`}
-        >
-          {children}
-        </main>
+                {/* Scrollable main content, with padding to account for fixed header/footer */}
+                <main
+                    className={`overflow-auto border-8 border-white ${
+                        isHome ? "bg-transparent" : "bg-[#F2F2F2]"
+                    }`}
+                >
+                    {children}
+                </main>
 
-        {/* Fixed footer */}
-        <div className="z-20">
-          <Footer />
-        </div>
-      </div>
-    </>
-  );
+                {/* Fixed footer */}
+                <div className="z-20">
+                    <Footer />
+                </div>
+            </div>
+        </>
+    );
 }
