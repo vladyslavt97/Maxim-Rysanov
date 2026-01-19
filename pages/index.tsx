@@ -89,7 +89,7 @@ export default function Home() {
                                 <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.16em]">
                                     <span className="h-px w-8 bg-amber-700" />
                                     <span>Bartok Radio Concert Review</span>
-                                    <span className="text-black/80">
+                                    <span className="italic">
                                         Kristóf Csengery
                                     </span>
                                 </div>
