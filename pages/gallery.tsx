@@ -1,91 +1,127 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 type Props = {};
 
-export default function Contacts({}: Props) {
-    const images = Array.from({ length: 21 }, (_, index) => index);
+type GalleryImage = {
+    src: string;
+    alt: string;
+};
 
-    const [imagePreview, setImagePreview] = useState("");
+export default function Gallery({}: Props) {
+    const images: GalleryImage[] = useMemo(
+        () =>
+            Array.from({ length: 21 }, (_, index) => ({
+                src: `/gallery/mr${index}.jpg`,
+                alt: `Maxim Rysanov gallery ${index + 1}`,
+            })),
+        [],
+    );
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isHovering, setIsHovering] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const goNext = useCallback(
+        () => setCurrentIndex((prev) => (prev + 1) % images.length),
+        [images.length],
+    );
+    const goPrev = useCallback(
+        () =>
+            setCurrentIndex(
+                (prev) => (prev - 1 + images.length) % images.length,
+            ),
+        [images.length],
+    );
+
+    useEffect(() => {
+        if (isHovering) return;
+        const id = setInterval(goNext, 4000);
+        return () => clearInterval(id);
+    }, [goNext, isHovering]);
+
+    useEffect(() => {
+        setIsLoading(true);
+    }, [currentIndex]);
 
     return (
-        <div className="flex justify-start flex-col text-black w-full relative">
+        <div className="relative flex flex-col items-center justify-start text-black w-full px-4 py-5">
             <Link
                 href="https://www.dropbox.com/scl/fo/lx6kgxla9x5bliagw06yt/ADDS1iSwk0Y0a8B2A6vcD-8?rlkey=l1smoa75bnwub75tim363gvrz&st=x1o6rhpx&dl=0"
                 target="_blank"
-                className="absolute right-0 top-0"
+                className="absolute right-4 top-4"
             >
-                <button className="border-2 w-[70px] rounded-2xl p-1 border-yellow-400 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs m-1 hover:from-yellow-200 hover:via-yellow-300 hover:to-yellow-400 hover:border-yellow-600">
-                    Download Photos
+                <button className="italic border-2 rounded-2xl px-4 py-2 border-yellow-400 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs font-semibold shadow-md hover:from-yellow-200 hover:via-yellow-300 hover:to-yellow-400 hover:border-yellow-600 transition">
+                    Download
                 </button>
             </Link>
-            <div className="flex justify-center items-center pt-5 mb-20">
-                <h1 className="font-bold text-md text-gray-800">Gallery</h1>
-            </div>
 
-            <div
-                className="flex overflow-x-scroll object-contain gap-3 justify-start pl-1 overflow-y-hidden scrollbar scrollbar-track-gray-700 scrollbar-thumb-[#303030] mx-10 my-auto h-full"
-                style={{ overflowY: "hidden" }}
-            >
-                {images.map((im: number) => (
+            <div className="flex flex-col items-center gap-6 w-full max-w-6xl">
+                <h1 className="font-bold text-lg text-gray-800">Gallery</h1>
+
+                <div
+                    className="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-2xl"
+                    onMouseEnter={() => setIsHovering(true)}
+                    onMouseLeave={() => setIsHovering(false)}
+                >
                     <div
-                        key={im}
-                        className="flex-shrink-0 cursor-pointer"
-                        onClick={() =>
-                            setImagePreview(`/gallery/mr${im.toString()}.jpg`)
-                        }
+                        className="relative w-full h-[70vh] min-h-[320px] max-h-[820px] cursor-pointer"
+                        onClick={goNext}
                     >
                         <Image
-                            src={`/gallery/mr${im.toString()}.jpg`}
-                            alt="images"
-                            width={300}
-                            height={300}
-                            priority={true}
-                            loading="eager"
-                            className="rounded shadow-black shadow-lg h-[60vh] max-h-[300px] w-[200px] object-cover object-top"
+                            key={images[currentIndex].src}
+                            src={images[currentIndex].src}
+                            alt={images[currentIndex].alt}
+                            fill
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1000px"
+                            className="object-contain"
+                            onLoadingComplete={() => setIsLoading(false)}
+                            onLoad={() => setIsLoading(false)}
+                            onError={() => setIsLoading(false)}
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
+                        {isLoading && (
+                            <div className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm">
+                                <div className="h-14 w-14 rounded-full border-4 border-white/50 border-t-amber-300 animate-spin" />
+                                <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-white/10 to-white/5 animate-pulse" />
+                            </div>
+                        )}
                     </div>
-                ))}
-            </div>
 
-            {/* Image Preview */}
-            {imagePreview !== "" && (
-                <div
-                    className="fixed top-0 z-50 flex justify-center items-center h-screen w-screen left-0"
-                    onClick={() => setImagePreview("")}
-                >
-                    <>
-                        {/* Close Button in Top-Right Corner */}
-                        <button
-                            className="absolute top-20 right-4 bg-black/60 text-white rounded-full p-2 hover:bg-black/80"
-                            onClick={(e) => {
-                                e.stopPropagation(); // Prevent closing when clicking the button
-                                setImagePreview("");
-                            }}
-                        >
-                            <span className="text-xl font-bold">X</span>
-                        </button>
+                    <button
+                        aria-label="Previous image"
+                        onClick={goPrev}
+                        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-3 text-slate-900 shadow-lg backdrop-blur transition hover:bg-white"
+                    >
+                        <HiChevronLeft className="h-6 w-6" />
+                    </button>
+                    <button
+                        aria-label="Next image"
+                        onClick={goNext}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-3 text-slate-900 shadow-lg backdrop-blur transition hover:bg-white"
+                    >
+                        <HiChevronRight className="h-6 w-6" />
+                    </button>
 
-                        <Image
-                            src={imagePreview}
-                            alt="imagesPreview"
-                            width={500}
-                            height={800}
-                            priority={true}
-                            loading="eager"
-                            className="h-[600px] object-contain p-10"
-                        />
-                    </>
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 rounded-full bg-black/40 px-3 py-2 backdrop-blur">
+                        {images.map((_, idx) => (
+                            <button
+                                key={idx}
+                                aria-label={`Go to image ${idx + 1}`}
+                                onClick={() => setCurrentIndex(idx)}
+                                className={`h-2.5 w-2.5 rounded-full transition ${
+                                    currentIndex === idx
+                                        ? "bg-white"
+                                        : "bg-white/50 hover:bg-white/80"
+                                }`}
+                            />
+                        ))}
+                    </div>
                 </div>
-            )}
-            {/* Overlay */}
-            {imagePreview !== "" && (
-                <div
-                    className="fixed top-0 left-0 w-full h-full bg-black/80 z-40 pointer-events-auto"
-                    onClick={() => setImagePreview("")}
-                />
-            )}
+            </div>
         </div>
     );
 }

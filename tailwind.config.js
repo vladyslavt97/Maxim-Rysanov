@@ -10,9 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'homebg': "url('../public/homebg.png')",
-      }
     },
   },
   plugins: [
