@@ -42,7 +42,7 @@ export default function Home() {
                 <div
                     className={`absolute inset-0 transition duration-600 ${
                         hasScrolled
-                            ? "backdrop-blur-[20px] md:backdrop-blur-0"
+                            ? "backdrop-blur-[10px] md:backdrop-blur-0"
                             : "backdrop-blur-none"
                     }`}
                 />
@@ -68,7 +68,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="relative overflow-hidden rounded-3xl p-2 m-2 shadow-2xl backdrop-blur-xl md:p-8">
+                        <div className="relative overflow-hidden rounded-3xl p-2 m-2 shadow-2xl backdrop-blur-3xl md:p-8">
                             <div className="absolute inset-0" />
                             <div className="relative flex flex-col gap-5">
                                 <p
@@ -94,7 +94,7 @@ export default function Home() {
                         <div className="flex flex-wrap gap-3 text-sm font-semibold">
                             <Link
                                 href="/concerts"
-                                className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg backdrop-blur-xl transition duration-200 hover:bg-white/95"
+                                className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg backdrop-blur-3xl transition duration-200 hover:bg-white/95"
                             >
                                 <span>Upcoming concerts</span>
                                 <span className="text-amber-700 transition duration-200 group-hover:translate-x-0.5">
@@ -105,7 +105,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col gap-4 md:w-[45%]">
-                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-xl">
+                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-3xl">
                             <div className="absolute inset-0 opacity-0 transition duration-600 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
                                 <Link
@@ -139,7 +139,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-xl mb-10">
+                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-3xl mb-10">
                             <div className="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
                                 <Link
