@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -51,17 +52,20 @@ export default function Gallery({}: Props) {
             <Link
                 href="https://www.dropbox.com/scl/fo/lx6kgxla9x5bliagw06yt/ADDS1iSwk0Y0a8B2A6vcD-8?rlkey=l1smoa75bnwub75tim363gvrz&st=x1o6rhpx&dl=0"
                 target="_blank"
-                className="absolute right-4 top-4"
+                className="absolute right-2 top-2"
             >
                 <button className="italic border-2 rounded-2xl px-4 py-2 border-yellow-400 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 text-xs font-semibold shadow-md hover:from-yellow-200 hover:via-yellow-300 hover:to-yellow-400 hover:border-yellow-600 transition">
                     Download
                 </button>
             </Link>
 
-            <div className="flex flex-col items-center gap-6 w-full max-w-6xl">
+            <div className="flex flex-col items-center gap-2 w-full max-w-6xl">
                 <h1 className="font-bold text-lg text-gray-800">Gallery</h1>
 
-                <div
+                <motion.div
+                    initial={{ opacity: 0, y: 24, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 3, ease: [0.16, 1, 0.3, 1] }}
                     className="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-2xl"
                     onMouseEnter={() => setIsHovering(true)}
                     onMouseLeave={() => setIsHovering(false)}
@@ -120,7 +124,7 @@ export default function Gallery({}: Props) {
                             />
                         ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     );
