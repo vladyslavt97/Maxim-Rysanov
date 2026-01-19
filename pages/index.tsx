@@ -1,123 +1,207 @@
-import { Inter } from "@next/font/google";
+import { Inter, Playfair_Display } from "@next/font/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    weight: ["400", "600", "700"],
+    display: "swap",
+});
 
 export default function Home() {
-  //bg-[#F2F2F2]
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="w-full h-full rounded text-black flex overflow-hidden"
-    >
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2, delay: 1.5 }}
-        className="relative direction-rtl [direction:rtl] [&>*]:[direction:ltr] z-20 py-2 flex flex-col justify-start items-start text-gray-800 text-sm md:text-md md:text-2xl xl:text-3xl xl:font-normal lg:leading-relaxed w-1/2 md:w-1/3 overflow-y-auto h-full px-1 md:px-3"
-      >
-        <div className="italic px-5 pb-1 font-normal md:leading-loose">
-          <p className="text-small">
-            He conducted so fantastically that I realized we were dealing with
-            an exceptionally great conductor, someone truly worthy of our
-            admiration — and that’s remarkable considering he’s also one of the
-            greatest living violists.
-            <br />
-          </p>
-        </div>
-        <motion.p
-          initial={{ opacity: 0, x: 15 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, delay: 2.5 }}
-          className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
-        >
-          <span className="text-smaller">Bartok Radio Concert Review</span>
-          <br />
-          <span className="text-smaller">Kristóf Csengery</span>
-        </motion.p>
-        <br />
+    const [hasScrolled, setHasScrolled] = useState(false);
 
-        <div className="italic px-5 py-1 font-normal md:leading-loose">
-          <p className="text-small">
-            It’s wonderful to find a recording like this; one that, as soon as
-            it finishes, you want to start it all over again.
-          </p>
-        </div>
-        <div className="flex justify-start w-full">
-          <Link href="/recordings" className="relative inline-block mx-5">
-            <Image
-              src="/recordings/schumann.png"
-              width={70}
-              height={90}
-              alt="schumann"
-              className="shadow-2xl rounded-sm"
-            />
-          </Link>
-        </div>
-        <motion.p
-          initial={{ opacity: 0, x: 15 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, delay: 2.5 }}
-          className="text-gray-500 w-full px-5 text-xs md:text-lg text-smaller"
-        >
-          <span className="text-smaller">
-            BBC Music Magazine Chamber Choice
-          </span>
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, x: 25 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, delay: 3 }}
-          className="text-gray-500 w-full px-5 pb-5 text-[10px] md:text-lg text-smaller"
-        >
-          <span className="text-smaller">Christmas Issue, December 2024</span>
-        </motion.p>
-        <br />
+    useEffect(() => {
+        const container = document.querySelector("main");
+        if (!container) return;
 
-        <div className="italic px-5 pb-1 font-normal md:leading-loose">
-          <p className="text-small">
-            The colours and contrasts that Rysanov manages to extract from the
-            orchestra are truly fabulous!
-            <br />
-          </p>
-        </div>
-        <div className="flex justify-start w-full">
-          <Link href="/recordings" className="relative inline-block mx-5">
-            <Image
-              src="/recordings/1_vasks.jpeg"
-              width={70}
-              height={90}
-              alt="schumann"
-              className="shadow-2xl rounded-sm"
-            />
-          </Link>
-        </div>
-        <motion.p
-          initial={{ opacity: 0, x: 15 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, delay: 2.5 }}
-          className="text-gray-500 w-full px-5 pb-1 text-xs md:text-lg"
+        const handleScroll = () => {
+            setHasScrolled(container.scrollTop > 8);
+        };
+
+        handleScroll();
+        container.addEventListener("scroll", handleScroll, { passive: true });
+        return () => container.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={`${inter.className} relative min-h-[calc(100vh-123px)] overflow-hidden text-black`}
         >
-          <span className="text-smaller">Crescendo Magazine</span>
-        </motion.p>
-        <br />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2, delay: 0.7 }}
-        className="relative w-1/2 md:w-2/3 h-full"
-      >
-        <Image
-          src="/homemr.png"
-          alt="image"
-          fill
-          className="object-contain"
-          priority
-        />
-      </motion.div>
-    </motion.div>
-  );
+            <div className="pointer-events-none fixed inset-0 -z-10">
+                <Image
+                    src="/homemr.png"
+                    alt="Maxim Rysanov conducting"
+                    fill
+                    priority
+                    className="object-contain object-center scale-[0.72] md:scale-[0.82]"
+                />
+                <div
+                    className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-amber-50/55 transition duration-600 ${
+                        hasScrolled
+                            ? "backdrop-blur-[5px] bg-gradient-to-br from-white/75 via-white/60 to-amber-50/55"
+                            : "backdrop-blur-none"
+                    }`}
+                />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(0,0,0,0.08),transparent_32%),radial-gradient(circle_at_82%_15%,rgba(255,193,127,0.28),transparent_30%)]" />
+            </div>
+
+            <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center gap-10 px-4 py-10 md:px-10 lg:px-14">
+                {/* <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.28em]">
+                    <div className="inline-flex items-center gap-3 rounded-full bg-white/80 px-4 py-2 shadow-lg backdrop-blur-md">
+                        <span className="text-amber-700">Grammy-nominated</span>
+                        <span className="h-1 w-1 rounded-full bg-amber-600/80" />
+                        <span className="tracking-[0.22em] text-black">
+                            Violist & conductor
+                        </span>
+                    </div>
+                </div> */}
+
+                <div className="grid mt-64 items-start gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 16 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1.2, delay: 0.2 }}
+                        className="space-y-7"
+                    >
+                        <div className="relative overflow-hidden rounded-3xl bg-white/50 p-6 shadow-xl backdrop-blur-md">
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35" />
+                            <div className="relative space-y-3 text-black">
+                                <h1
+                                    className={`${playfair.className} text-3xl leading-tight drop-shadow-[0_20px_70px_rgba(255,255,255,0.6)] md:text-5xl`}
+                                >
+                                    Maxim Rysanov
+                                </h1>
+                                <p className="max-w-2xl text-base leading-relaxed md:text-lg">
+                                    Grammy-nominated Ukrainian-British violist
+                                    and conductor whose vivid colors and
+                                    charismatic energy light up concert halls
+                                    and the studio alike.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="relative overflow-hidden rounded-3xl bg-white/50 p-6 shadow-2xl backdrop-blur-xl md:p-8">
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35" />
+                            <div className="relative flex flex-col gap-5">
+                                <p
+                                    className={`${playfair.className} text-lg leading-relaxed text-black md:text-2xl`}
+                                >
+                                    He conducted so fantastically that I
+                                    realized we were dealing with an
+                                    exceptionally great conductor, someone truly
+                                    worthy of our admiration — and that’s
+                                    remarkable considering he’s also one of the
+                                    greatest living violists.
+                                </p>
+                                <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.16em] text-black">
+                                    <span className="h-px w-8 bg-amber-700" />
+                                    <span>Bartok Radio Concert Review</span>
+                                    <span className="text-black/80">
+                                        Kristóf Csengery
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-wrap gap-3 text-sm font-semibold text-black">
+                            <Link
+                                href="/concerts"
+                                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35 px-5 py-3 tracking-wide shadow-lg backdrop-blur-md transition duration-200 hover:bg-white/95"
+                            >
+                                <span>Upcoming concerts</span>
+                                <span className="text-amber-700 transition duration-200 group-hover:translate-x-0.5">
+                                    →
+                                </span>
+                            </Link>
+                            {/* <Link
+                href="/recordings"
+                className="inline-flex items-center gap-3 rounded-full bg-amber-200/90 px-5 py-3 tracking-wide text-sm text-black shadow-lg transition duration-200 hover:bg-amber-100"
+              >
+                Hear the recordings
+              </Link> */}
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 22 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1.2, delay: 0.35 }}
+                        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2"
+                    >
+                        <div className="group relative overflow-hidden rounded-2xl bg-white/50 p-5 shadow-xl backdrop-blur-lg">
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 opacity-0 transition duration-600 group-hover:opacity-100" />
+                            <div className="relative flex flex-col items-start gap-4">
+                                <Link
+                                    href="/recordings"
+                                    className="relative h-20 w-20 overflow-hidden rounded-xl shadow-md transition duration-200 group-hover:scale-105"
+                                >
+                                    <Image
+                                        src="/recordings/schumann.png"
+                                        alt="Schumann album cover"
+                                        width={80}
+                                        height={80}
+                                        className="h-full w-full object-cover"
+                                        priority
+                                    />
+                                </Link>
+                                <div className="flex flex-col gap-2">
+                                    <p
+                                        className={`${playfair.className} text-base leading-relaxed text-black`}
+                                    >
+                                        It’s wonderful to find a recording like
+                                        this; one that, as soon as it finishes,
+                                        you want to start it all over again.
+                                    </p>
+                                    <div className="text-xs uppercase tracking-[0.18em] text-black">
+                                        BBC Music Magazine Chamber Choice
+                                    </div>
+                                    <div className="text-[11px] text-black/80">
+                                        Christmas Issue, December 2024
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="group relative overflow-hidden rounded-2xl bg-white/50 p-5 shadow-xl backdrop-blur-lg">
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 opacity-0 transition duration-300 group-hover:opacity-100" />
+                            <div className="relative flex flex-col items-start gap-4">
+                                <Link
+                                    href="/recordings"
+                                    className="relative h-20 w-20 overflow-hidden rounded-xl shadow-md transition duration-200 group-hover:scale-105"
+                                >
+                                    <Image
+                                        src="/recordings/1_vasks.jpeg"
+                                        alt="Vasks album cover"
+                                        width={80}
+                                        height={80}
+                                        className="h-full w-full object-cover"
+                                        priority
+                                    />
+                                </Link>
+                                <div className="flex flex-col gap-2">
+                                    <p
+                                        className={`${playfair.className} text-base leading-relaxed text-black`}
+                                    >
+                                        The colours and contrasts that Rysanov
+                                        manages to extract from the orchestra
+                                        are truly fabulous!
+                                    </p>
+                                    <div className="text-xs uppercase tracking-[0.18em] text-black">
+                                        Crescendo Magazine
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+        </motion.div>
+    );
 }
