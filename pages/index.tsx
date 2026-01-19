@@ -45,14 +45,14 @@ export default function Home() {
                 <div
                     className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-amber-50/55 transition duration-600 ${
                         hasScrolled
-                            ? "backdrop-blur-[5px] bg-gradient-to-br from-white/75 via-white/60 to-amber-50/55"
+                            ? "backdrop-blur-[5px] md:backdrop-blur-0"
                             : "backdrop-blur-none"
                     }`}
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(0,0,0,0.08),transparent_32%),radial-gradient(circle_at_82%_15%,rgba(255,193,127,0.28),transparent_30%)]" />
             </div>
 
-            <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center gap-10 px-4 py-10 md:px-10 lg:px-14">
+            <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10 px-4 pb-10 pt-12 md:px-10 md:pt-16 lg:px-14 lg:pt-20">
                 {/* <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.28em]">
                     <div className="inline-flex items-center gap-3 rounded-full bg-white/80 px-4 py-2 shadow-lg backdrop-blur-md">
                         <span className="text-amber-700">Grammy-nominated</span>
@@ -63,12 +63,12 @@ export default function Home() {
                     </div>
                 </div> */}
 
-                <div className="grid mt-64 items-start gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+                <div className="mt-64 flex flex-col items-start justify-around gap-8 md:gap-80 md:mt-6 md:flex-row lg:mt-0">
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.2 }}
-                        className="space-y-7"
+                        className="space-y-7 md:w-[55%]"
                     >
                         <div className="relative overflow-hidden rounded-3xl bg-white/50 p-6 shadow-xl backdrop-blur-md">
                             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35" />
@@ -91,7 +91,7 @@ export default function Home() {
                             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35" />
                             <div className="relative flex flex-col gap-5">
                                 <p
-                                    className={`${playfair.className} text-lg leading-relaxed text-black md:text-2xl`}
+                                    className={`${playfair.className} text-lg leading-relaxed text-black`}
                                 >
                                     He conducted so fantastically that I
                                     realized we were dealing with an
@@ -133,7 +133,7 @@ export default function Home() {
                         initial={{ opacity: 0, y: 22 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.35 }}
-                        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2"
+                        className="flex flex-col gap-4 md:w-[45%]"
                     >
                         <div className="group relative overflow-hidden rounded-2xl bg-white/50 p-5 shadow-xl backdrop-blur-lg">
                             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 opacity-0 transition duration-600 group-hover:opacity-100" />
