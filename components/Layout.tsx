@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import Header from "./Header";
 import Footer from "./Footer";
 import RouteLoadingBar from "./RouteLoadingBar";
@@ -9,9 +8,6 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
-    const router = useRouter();
-    const isHome = router.pathname === "/";
-
     return (
         <>
             <Head>
@@ -37,11 +33,7 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
 
                 {/* Scrollable main content, with padding to account for fixed header/footer */}
-                <main
-                    className={`overflow-auto border-8 border-white ${
-                        isHome ? "bg-transparent" : "bg-[#F2F2F2]"
-                    }`}
-                >
+                <main className="overflow-auto border-8 border-white bg-[#F2F2F2]">
                     {children}
                 </main>
 

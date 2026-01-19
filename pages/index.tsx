@@ -34,7 +34,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className={`${inter.className} relative top-0 min-h-[calc(100vh-123px)] overflow-hidden text-black md:text-white`}
         >
-            <div className="pointer-events-none fixed inset-0 -z-10">
+            <div className="pointer-events-none fixed inset-0 z-0">
                 <div
                     aria-hidden="true"
                     className="absolute inset-0 bg-[url('/homemr.png')] md:bg-[url('/homemrlg.png')] bg-cover bg-center bg-no-repeat shadow-md shadow-[#4b6279]"
@@ -51,20 +51,20 @@ export default function Home() {
             <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10">
                 <div className="mt-[350px] flex flex-col items-start justify-around gap-8 md:gap-80 md:mt-6 md:flex-row lg:mt-0">
                     <motion.div
-                        initial={{ opacity: 0, y: 16 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1.2, delay: 0.2 }}
+                        // initial={{ opacity: 0, y: 16 }}
+                        // animate={{ opacity: 1, y: 0 }}
+                        // transition={{ duration: 1.2, delay: 0.2 }}
                         className="space-y-7 md:w-[55%]"
                     >
                         <div className="relative overflow-hidden rounded-3xl shadow-xl backdrop-blur-xl p-2 m-2">
                             <div className="absolute inset-0" />
-                            <div className="relative space-y-3">
+                            <div className="relative space-y-2">
                                 <h1
-                                    className={`${playfair.className} text-3xl leading-tight drop-shadow-[0_20px_70px_rgba(255,255,255,0.6)] md:text-5xl`}
+                                    className={`${playfair.className} text-2xl leading-tight drop-shadow-[0_20px_70px_rgba(255,255,255,0.6)] md:text-5xl`}
                                 >
                                     Maxim Rysanov
                                 </h1>
-                                <p className="max-w-2xl text-base leading-relaxed md:text-lg">
+                                <p className="max-w-2xl text-base leading-relaxed md:text-md">
                                     Grammy-nominated Ukrainian-British violist
                                     and conductor whose vivid colors and
                                     charismatic energy light up concert halls
