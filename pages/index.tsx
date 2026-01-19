@@ -32,7 +32,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className={`${inter.className} relative min-h-[calc(100vh-123px)] overflow-hidden text-black`}
+            className={`${inter.className} relative top-0 min-h-[calc(100vh-123px)] overflow-hidden text-black`}
         >
             <div className="pointer-events-none fixed inset-0 -z-10">
                 <Image
@@ -40,19 +40,19 @@ export default function Home() {
                     alt="Maxim Rysanov conducting"
                     fill
                     priority
-                    className="object-contain object-center scale-[0.72] md:scale-[0.82]"
+                    className="object-cover object-center shadow-md shadow-[#4b6279]"
                 />
                 <div
-                    className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-amber-50/55 transition duration-600 ${
+                    className={`absolute inset-0 transition duration-600 ${
                         hasScrolled
-                            ? "backdrop-blur-[5px] md:backdrop-blur-0"
+                            ? "backdrop-blur-[20px] md:backdrop-blur-0"
                             : "backdrop-blur-none"
                     }`}
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(0,0,0,0.08),transparent_32%),radial-gradient(circle_at_82%_15%,rgba(255,193,127,0.28),transparent_30%)]" />
             </div>
 
-            <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10 px-4 pb-10 pt-12 md:px-10 md:pt-16 lg:px-14 lg:pt-20">
+            <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10">
                 {/* <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.28em]">
                     <div className="inline-flex items-center gap-3 rounded-full bg-white/80 px-4 py-2 shadow-lg backdrop-blur-md">
                         <span className="text-amber-700">Grammy-nominated</span>
@@ -63,15 +63,15 @@ export default function Home() {
                     </div>
                 </div> */}
 
-                <div className="mt-64 flex flex-col items-start justify-around gap-8 md:gap-80 md:mt-6 md:flex-row lg:mt-0">
+                <div className="mt-[350px] flex flex-col items-start justify-around gap-8 md:gap-80 md:mt-6 md:flex-row lg:mt-0">
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2, delay: 0.2 }}
                         className="space-y-7 md:w-[55%]"
                     >
-                        <div className="relative overflow-hidden rounded-3xl bg-white/50 p-6 shadow-xl backdrop-blur-md">
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35" />
+                        <div className="relative overflow-hidden rounded-3xl shadow-xl backdrop-blur-xl p-2 m-2">
+                            <div className="absolute inset-0" />
                             <div className="relative space-y-3 text-black">
                                 <h1
                                     className={`${playfair.className} text-3xl leading-tight drop-shadow-[0_20px_70px_rgba(255,255,255,0.6)] md:text-5xl`}
@@ -87,8 +87,8 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="relative overflow-hidden rounded-3xl bg-white/50 p-6 shadow-2xl backdrop-blur-xl md:p-8">
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35" />
+                        <div className="relative overflow-hidden rounded-3xl p-2 m-2 shadow-2xl backdrop-blur-xl md:p-8">
+                            <div className="absolute inset-0" />
                             <div className="relative flex flex-col gap-5">
                                 <p
                                     className={`${playfair.className} text-lg leading-relaxed text-black`}
@@ -113,7 +113,7 @@ export default function Home() {
                         <div className="flex flex-wrap gap-3 text-sm font-semibold text-black">
                             <Link
                                 href="/concerts"
-                                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 to-amber-100/35 px-5 py-3 tracking-wide shadow-lg backdrop-blur-md transition duration-200 hover:bg-white/95"
+                                className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg backdrop-blur-xl transition duration-200 hover:bg-white/95"
                             >
                                 <span>Upcoming concerts</span>
                                 <span className="text-amber-700 transition duration-200 group-hover:translate-x-0.5">
@@ -135,8 +135,8 @@ export default function Home() {
                         transition={{ duration: 1.2, delay: 0.35 }}
                         className="flex flex-col gap-4 md:w-[45%]"
                     >
-                        <div className="group relative overflow-hidden rounded-2xl bg-white/50 p-5 shadow-xl backdrop-blur-lg">
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 opacity-0 transition duration-600 group-hover:opacity-100" />
+                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-xl">
+                            <div className="absolute inset-0 opacity-0 transition duration-600 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
                                 <Link
                                     href="/recordings"
@@ -169,8 +169,8 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="group relative overflow-hidden rounded-2xl bg-white/50 p-5 shadow-xl backdrop-blur-lg">
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-amber-200/20 opacity-0 transition duration-300 group-hover:opacity-100" />
+                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-xl mb-10">
+                            <div className="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
                                 <Link
                                     href="/recordings"

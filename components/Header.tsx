@@ -273,7 +273,7 @@ export default function Header({}: Props) {
         );
     };
     return (
-        <header className="relative p-1 pr-5 flex flex-row justify-between bg-gradient-to-tr from-gray-900 to-gray-700 items-center z-50 shadow-2xl h-full overflow-visible">
+        <header className="relative p-1 pr-5 flex flex-row justify-between bg-gradient-to-tr from-[#4b6279] to-[#667d95] items-center z-50 shadow-2xl h-full overflow-visible">
             {logo && (
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -331,8 +331,8 @@ export default function Header({}: Props) {
                             }}
                             className="fixed right-0 top-0 z-[65] h-screen w-[86vw] max-w-[360px] md:hidden"
                         >
-                            <div className="relative h-full overflow-hidden border-l border-white/10 bg-gradient-to-br from-slate-900 via-gray-800 to-slate-950 shadow-2xl">
-                                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(420px_circle_at_20%_0%,rgba(251,191,36,0.18),transparent_60%)]"></div>
+                            <div className="relative h-full overflow-hidden bg-gradient-to-br from-[#1f2e41] via-[#4b6279] to-[#667d95] shadow-2xl">
+                                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(420px_circle_at_20%_0%,#4b6279,#667d95]"></div>
                                 <div className="relative flex h-full flex-col px-6 pb-10 pt-20 text-gray-100">
                                     <div className="mb-4 text-xs uppercase tracking-[0.35em] text-gray-400">
                                         Menu
