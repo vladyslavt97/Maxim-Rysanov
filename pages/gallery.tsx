@@ -58,7 +58,7 @@ export default function Gallery({}: Props) {
     }, [currentIndex, images]);
 
     return (
-        <div className="relative flex flex-col items-center justify-start text-black w-full px-4 py-5">
+        <div className="relative flex flex-col items-center justify-start text-black w-full px-4 py-5 bg-white">
             <Link
                 href="https://www.dropbox.com/scl/fo/lx6kgxla9x5bliagw06yt/ADDS1iSwk0Y0a8B2A6vcD-8?rlkey=l1smoa75bnwub75tim363gvrz&st=x1o6rhpx&dl=0"
                 target="_blank"

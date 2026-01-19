@@ -26,7 +26,7 @@ export default function Layout({ children }: LayoutProps) {
             <RouteLoadingBar />
 
             {/* Main grid wrapper */}
-            <div className="grid grid-rows-[72px_1fr_51px] h-screen ">
+            <div className="grid grid-rows-[72px_1fr_32px] h-screen">
                 {/* Fixed header */}
                 <div className="z-50">
                     <Header />

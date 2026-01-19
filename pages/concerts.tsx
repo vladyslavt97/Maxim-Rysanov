@@ -55,7 +55,7 @@ export default function Concerts({
 }) {
     const [concerts, setConcerts] = useState<ConcertType[]>([]);
     const [isLoading, setIsLoading] = useState(
-        (initialConcerts ?? []).length === 0
+        (initialConcerts ?? []).length === 0,
     );
     const [cheing, setChecing] = useState(false);
     const [smN, setSmn] = useState<any>();
@@ -77,7 +77,7 @@ export default function Concerts({
         let closestDate = findClosestEventInTheFuture(
             concerts,
             validConcerts,
-            today
+            today,
         );
         setSmn(closestDate);
 
@@ -126,7 +126,7 @@ export default function Concerts({
     return (
         <div
             ref={scrollContainerRef}
-            className="relative text-black flex flex-col items-center overflow-y-auto h-full "
+            className="relative text-black flex flex-col items-center overflow-y-auto h-full bg-white"
         >
             <PastConcerts
                 archiveYears={archiveYears}
@@ -269,7 +269,7 @@ export default function Concerts({
                                         </Link>
                                     )}
                                 </div>
-                            )
+                            ),
                     )}
                 </motion.div>
             )}
