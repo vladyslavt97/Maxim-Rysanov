@@ -109,12 +109,12 @@ export default function Contacts({}: Props) {
                     <p>
                         Nordic Artists Management A/S
                         <br />
-                        <span className="italic">Neel Teilmann </span>
+                        <span className="italic">Amelia Jacobsson </span>
                         <span className="text-xs">(viola engagements)</span>
                         <br />
                         <div className="flex flex-row text-center justify-center items-center gap-2">
                             <FiMail />
-                            net@nordicartistsmanagement.com
+                            amj@nordicartistsmanagement.com
                             <br />
                             <CopyToClipboard text="net@nordicartistsmanagement.com">
                                 <button>
