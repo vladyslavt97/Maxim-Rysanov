@@ -123,19 +123,14 @@ export default function Header({}: Props) {
                     <AnimatePresence>
                         {!isMobile && showPopup && (
                             <motion.div
-                                initial={{ opacity: 0, y: 22, scale: 0.9 }}
-                                animate={{
-                                    opacity: 1,
-                                    y: [22, -10, 6, 0],
-                                    scale: [0.9, 1.06, 0.98, 1],
-                                }}
-                                exit={{ opacity: 0, y: -10, scale: 0.96 }}
+                                initial={{ opacity: 0, y: 12, scale: 0.98 }}
+                                animate={{ opacity: 1, y: 0, scale: 1 }}
+                                exit={{ opacity: 0, y: 8, scale: 0.98 }}
                                 transition={{
-                                    duration: 0.48,
+                                    duration: 0.24,
                                     ease: [0.16, 1, 0.3, 1],
-                                    times: [0, 0.55, 0.75, 1],
                                 }}
-                                className="absolute top-12 z-[100] w-60 -left-6 -translate-x-1/2 rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 px-5 py-4 text-gray-100 shadow-2xl backdrop-blur-xl will-change-transform will-change-opacity"
+                                className="absolute top-12 z-[100] w-60 -left-6 -translate-x-1/2 rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 px-5 py-4 text-gray-100 shadow-2xl backdrop-blur-lg will-change-transform will-change-opacity transform-gpu"
                             >
                                 {/* <span className="pointer-events-none absolute -top-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-t border-l border-white/10 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800"></span> */}
                                 <div className="flex flex-col gap-2">
@@ -293,17 +288,23 @@ export default function Header({}: Props) {
                 </motion.div>
             )}
             {/* Links */}
-            {showPopup && (
-                <div
-                    className="fixed inset-0 bg-gray-500/10 z-10"
-                    onClick={closePopup}
-                ></div>
-            )}
+            <AnimatePresence>
+                {showPopup && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="fixed inset-0 bg-gray-500/10 z-10"
+                        onClick={closePopup}
+                    />
+                )}
+            </AnimatePresence>
             <motion.div
                 initial={{ opacity: 0 }}
                 transition={{ delay: 0.8, duration: 1 }}
                 animate={{ opacity: 1 }}
-                className="relative z-30 hidden items-center space-x-3 font-semibold text-xl text-gray-300 md:flex"
+                className="relative z-30 hidden items-center space-x-3 font-semibold lg:text-xl text-gray-300 md:flex"
             >
                 {renderNavLinks(false)}
             </motion.div>

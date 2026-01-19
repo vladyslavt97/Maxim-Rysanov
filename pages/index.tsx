@@ -19,7 +19,7 @@ export default function Home() {
         if (!container) return;
 
         const handleScroll = () => {
-            setHasScrolled(container.scrollTop > 8);
+            setHasScrolled(container.scrollTop > 150);
         };
 
         handleScroll();
