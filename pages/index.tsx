@@ -32,15 +32,12 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className={`${inter.className} relative top-0 min-h-[calc(100vh-123px)] overflow-hidden text-black`}
+            className={`${inter.className} relative top-0 min-h-[calc(100vh-123px)] overflow-hidden text-black md:text-white`}
         >
             <div className="pointer-events-none fixed inset-0 -z-10">
-                <Image
-                    src="/homemr.png"
-                    alt="Maxim Rysanov conducting"
-                    fill
-                    priority
-                    className="object-cover object-center shadow-md shadow-[#4b6279]"
+                <div
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-[url('/homemr.png')] md:bg-[url('/homemrlg.png')] bg-cover bg-center bg-no-repeat shadow-md shadow-[#4b6279]"
                 />
                 <div
                     className={`absolute inset-0 transition duration-600 ${
@@ -61,7 +58,7 @@ export default function Home() {
                     >
                         <div className="relative overflow-hidden rounded-3xl shadow-xl backdrop-blur-xl p-2 m-2">
                             <div className="absolute inset-0" />
-                            <div className="relative space-y-3 text-black">
+                            <div className="relative space-y-3">
                                 <h1
                                     className={`${playfair.className} text-3xl leading-tight drop-shadow-[0_20px_70px_rgba(255,255,255,0.6)] md:text-5xl`}
                                 >
@@ -80,7 +77,7 @@ export default function Home() {
                             <div className="absolute inset-0" />
                             <div className="relative flex flex-col gap-5">
                                 <p
-                                    className={`${playfair.className} text-lg leading-relaxed text-black`}
+                                    className={`${playfair.className} text-lg leading-relaxed`}
                                 >
                                     He conducted so fantastically that I
                                     realized we were dealing with an
@@ -89,7 +86,7 @@ export default function Home() {
                                     remarkable considering he’s also one of the
                                     greatest living violists.
                                 </p>
-                                <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.16em] text-black">
+                                <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.16em]">
                                     <span className="h-px w-8 bg-amber-700" />
                                     <span>Bartok Radio Concert Review</span>
                                     <span className="text-black/80">
@@ -99,7 +96,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap gap-3 text-sm font-semibold text-black">
+                        <div className="flex flex-wrap gap-3 text-sm font-semibold">
                             <Link
                                 href="/concerts"
                                 className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg backdrop-blur-xl transition duration-200 hover:bg-white/95"
@@ -136,16 +133,16 @@ export default function Home() {
                                 </Link>
                                 <div className="flex flex-col gap-2">
                                     <p
-                                        className={`${playfair.className} text-base leading-relaxed text-black`}
+                                        className={`${playfair.className} text-base leading-relaxed`}
                                     >
                                         It’s wonderful to find a recording like
                                         this; one that, as soon as it finishes,
                                         you want to start it all over again.
                                     </p>
-                                    <div className="text-xs uppercase tracking-[0.18em] text-black">
+                                    <div className="text-xs uppercase tracking-[0.18em]">
                                         BBC Music Magazine Chamber Choice
                                     </div>
-                                    <div className="text-[11px] text-black/80">
+                                    <div className="text-[11px]">
                                         Christmas Issue, December 2024
                                     </div>
                                 </div>
@@ -170,13 +167,13 @@ export default function Home() {
                                 </Link>
                                 <div className="flex flex-col gap-2">
                                     <p
-                                        className={`${playfair.className} text-base leading-relaxed text-black`}
+                                        className={`${playfair.className} text-base leading-relaxed`}
                                     >
                                         The colours and contrasts that Rysanov
                                         manages to extract from the orchestra
                                         are truly fabulous!
                                     </p>
-                                    <div className="text-xs uppercase tracking-[0.18em] text-black">
+                                    <div className="text-xs uppercase tracking-[0.18em]">
                                         Crescendo Magazine
                                     </div>
                                 </div>
