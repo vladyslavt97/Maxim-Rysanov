@@ -12,7 +12,7 @@ export default function Footer({}: Props) {
     };
 
     return (
-        <div className="h-[51px] bg-[#4b6279] text-white flex justify-evenly items-center">
+        <div className="h-[51px] bg-[#0d2437] text-white flex justify-evenly items-center">
             <Link href="https://www.instagram.com/maximrysanov/">
                 <Image
                     src="/social/instagram.png"
