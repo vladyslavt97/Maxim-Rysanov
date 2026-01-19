@@ -170,7 +170,7 @@ export default function Concerts({
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2 }}
-                    className="flex flex-col mt-16 md:mt-5 ml-2 justify-center items-start mb-32 lg:text-xl"
+                    className="flex w-full flex-col items-center mt-16 md:mt-5 mb-32 lg:text-xl"
                 >
                     {validConcerts.map(
                         (concert: ConcertType, index: number) =>
@@ -178,95 +178,136 @@ export default function Concerts({
                                 <div
                                     key={index}
                                     ref={(el) => (divRefs.current[index] = el)}
-                                    className={`mx-3 mb-6 ${
-                                        smN === index &&
-                                        "bg-gray-500/30 py-1 pl-2 pr-5 rounded shadow-lg"
+                                    className={`relative mx-3 mb-6 w-full max-w-4xl px-4 py-4 md:px-5 ${
+                                        concert.canceled
+                                            ? "border-red-200/70 bg-red-50/30 text-gray-500"
+                                            : "border-gray-200/80 bg-white text-gray-900"
                                     } ${
-                                        concert.canceled &&
-                                        "text-gray-400 bg-red-100/10 py-3 pl-1 pr-5 rounded shadow-lg"
+                                        smN === index && !concert.canceled
+                                            ? "ring-1 ring-slate-300/70 shadow-sm"
+                                            : ""
                                     }`}
                                 >
-                                    {smN === index && (
-                                        <div
-                                            className={`${
-                                                concert.canceled
-                                                    ? "hidden"
-                                                    : "relative mb-2 -right-3 top-0"
-                                            }`}
-                                        >
-                                            <h1 className="text-gray-100 absolute -right-3 -top-2 text-xs bg-slate-700 transform -skew-x-12 px-1 py-[1px] rounded tracking-wider shadow-lg">
-                                                <span className="block transform skew-x-12">
-                                                    Next Event
-                                                </span>
-                                            </h1>
-                                        </div>
-                                    )}
                                     {concert.canceled && (
-                                        <h1 className="text-sm italic text-red-700">
+                                        <span className="absolute right-4 top-4 rounded-full border border-red-200 px-2 py-1 text-[10px] uppercase tracking-[0.3em] text-red-700">
                                             Canceled
-                                        </h1>
+                                        </span>
                                     )}
-                                    <div className="flex flex-row">
-                                        <h2 className=" font-semibold">
-                                            {concert.date}
-                                        </h2>
-                                        <div className="flex flex-row items-center text-gray-700 text-xs">
-                                            &nbsp;
-                                            {concert.viola && <h2>Viola</h2>}
-                                            &nbsp;
-                                            {concert.viola &&
-                                                concert.conductor &&
-                                                "&"}
-                                            &nbsp;
-                                            {concert.conductor && (
-                                                <h2>Conductor</h2>
-                                            )}
-                                        </div>
-                                    </div>
-                                    {concert.location && (
-                                        <h5 className="text-[17px]">
-                                            {concert.location}
-                                        </h5>
+                                    {smN === index && !concert.canceled && (
+                                        <span className="absolute right-4 top-4 px-2 py-1 text-[10px] uppercase tracking-[0.3em] text-slate-600">
+                                            Next event
+                                        </span>
                                     )}
-                                    {concert.programme.map((prog, ind) => (
-                                        <div key={ind} className=" text-[15px]">
-                                            <p>{prog}</p>
+
+                                    <div className="flex flex-wrap items-start justify-between gap-3">
+                                        <div className="space-y-1">
+                                            <div className="text-lg font-semibold">
+                                                {concert.date}
+                                            </div>
                                         </div>
-                                    ))}
-                                    {concert.withwhom && (
-                                        <h4
-                                            className={`${
-                                                concert.canceled
-                                                    ? "text-gray-400"
-                                                    : "text-gray-800"
-                                            }`}
-                                        >
-                                            with{" "}
-                                            {concert.withwhom
-                                                .split(";")
-                                                .map((person, index) => (
-                                                    <span key={index}>
-                                                        {person.trim()}
-                                                        <br />
+                                        {(concert.viola ||
+                                            concert.conductor) && (
+                                            <div className="flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-gray-500">
+                                                {concert.viola && (
+                                                    <span className="rounded-full border border-gray-200 px-2 py-1">
+                                                        Viola
                                                     </span>
-                                                ))}
-                                        </h4>
+                                                )}
+                                                {concert.conductor && (
+                                                    <span className="rounded-full border border-gray-200 px-2 py-1">
+                                                        Conductor
+                                                    </span>
+                                                )}
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    <div className="mt-3 h-px bg-gray-100" />
+
+                                    {concert.location && (
+                                        <div className="mt-3 grid gap-2 md:grid-cols-[120px_1fr]">
+                                            <div
+                                                className={`text-base ${
+                                                    concert.canceled
+                                                        ? "text-gray-500"
+                                                        : "text-gray-800"
+                                                }`}
+                                            >
+                                                {concert.location}
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {concert.withwhom && (
+                                        <div className="mt-3 grid gap-2 md:grid-cols-[120px_1fr]">
+                                            <div
+                                                className={`space-y-1 text-sm ${
+                                                    concert.canceled
+                                                        ? "text-gray-500"
+                                                        : "text-gray-700"
+                                                }`}
+                                            >
+                                                {concert.withwhom
+                                                    .split(";")
+                                                    .map(
+                                                        (
+                                                            person,
+                                                            personIndex,
+                                                        ) => (
+                                                            <div
+                                                                key={
+                                                                    personIndex
+                                                                }
+                                                            >
+                                                                {person.trim()}
+                                                            </div>
+                                                        ),
+                                                    )}
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {concert.programme.length > 0 && (
+                                        <div className="mt-3 grid gap-2 md:grid-cols-[120px_1fr]">
+                                            <ul
+                                                className={`space-y-1 text-sm ${
+                                                    concert.canceled
+                                                        ? "text-gray-500"
+                                                        : "text-gray-700"
+                                                }`}
+                                            >
+                                                {concert.programme.map(
+                                                    (prog, progIndex) => (
+                                                        <li
+                                                            key={progIndex}
+                                                            className="flex items-start gap-2"
+                                                        >
+                                                            <span className="mt-2 h-1 w-1 rounded-full bg-gray-400" />
+                                                            <span>{prog}</span>
+                                                        </li>
+                                                    ),
+                                                )}
+                                            </ul>
+                                        </div>
                                     )}
 
                                     {concert.link && (
-                                        <Link href={concert.link}>
-                                            <span
-                                                className={`italic underline z-10 font-serif ${
-                                                    concert.canceled &&
-                                                    "text-gray-400"
-                                                }`}
-                                                onClick={(e) =>
-                                                    e.stopPropagation()
-                                                }
-                                            >
-                                                more details
-                                            </span>
-                                        </Link>
+                                        <div className="mt-4 flex justify-end">
+                                            <Link href={concert.link}>
+                                                <span
+                                                    className={`text-xs uppercase tracking-[0.3em] underline ${
+                                                        concert.canceled
+                                                            ? "text-gray-400"
+                                                            : "text-gray-600 hover:text-gray-900"
+                                                    }`}
+                                                    onClick={(e) =>
+                                                        e.stopPropagation()
+                                                    }
+                                                >
+                                                    More details
+                                                </span>
+                                            </Link>
+                                        </div>
                                     )}
                                 </div>
                             ),
