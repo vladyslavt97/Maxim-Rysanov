@@ -49,20 +49,9 @@ export default function Home() {
                             : "backdrop-blur-none"
                     }`}
                 />
-                {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(0,0,0,0.08),transparent_32%),radial-gradient(circle_at_82%_15%,rgba(255,193,127,0.28),transparent_30%)]" /> */}
             </div>
 
             <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-start gap-10">
-                {/* <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.28em]">
-                    <div className="inline-flex items-center gap-3 rounded-full bg-white/80 px-4 py-2 shadow-lg backdrop-blur-md">
-                        <span className="text-amber-700">Grammy-nominated</span>
-                        <span className="h-1 w-1 rounded-full bg-amber-600/80" />
-                        <span className="tracking-[0.22em] text-black">
-                            Violist & conductor
-                        </span>
-                    </div>
-                </div> */}
-
                 <div className="mt-[350px] flex flex-col items-start justify-around gap-8 md:gap-80 md:mt-6 md:flex-row lg:mt-0">
                     <motion.div
                         initial={{ opacity: 0, y: 16 }}
@@ -120,12 +109,6 @@ export default function Home() {
                                     →
                                 </span>
                             </Link>
-                            {/* <Link
-                href="/recordings"
-                className="inline-flex items-center gap-3 rounded-full bg-amber-200/90 px-5 py-3 tracking-wide text-sm text-black shadow-lg transition duration-200 hover:bg-amber-100"
-              >
-                Hear the recordings
-              </Link> */}
                         </div>
                     </motion.div>
 
