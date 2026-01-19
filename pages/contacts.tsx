@@ -189,7 +189,7 @@ export default function Contacts({}: Props) {
                     </p>
                 </div>
                 <br />
-                <div>
+                {/* <div>
                     <h1 className="font-semibold">Spain</h1>
                     <p>
                         <span className="italic">Gonzalo Augusto</span>
@@ -219,7 +219,7 @@ export default function Contacts({}: Props) {
                             <br />
                         </Link>
                     </p>
-                </div>
+                </div> */}
                 <br />
                 <div>
                     <h1 className="font-semibold">
