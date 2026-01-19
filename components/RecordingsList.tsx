@@ -25,6 +25,17 @@ type Recording = {
 export default function RecordingsList({}: Props) {
   const [coversReady, setCoversReady] = useState(false);
 
+  const SkeletonCard = () => (
+    <div className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-200 relative overflow-hidden">
+      <div className="h-[300px] w-[300px] rounded-2xl bg-gradient-to-br from-gray-200 via-gray-300 to-gray-200 animate-pulse" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-white/10 via-white/5 to-transparent" />
+      <div className="flex flex-col gap-2 p-4">
+        <div className="h-4 w-24 rounded bg-gray-300 animate-pulse" />
+        <div className="h-4 w-16 rounded bg-gray-300 animate-pulse" />
+      </div>
+    </div>
+  );
+
   const coverSources = useMemo(
     () => Array.from(new Set(recordings.map((r: Recording) => r.imageSrc))),
     []
@@ -82,7 +93,19 @@ export default function RecordingsList({}: Props) {
       <h1 className="text-center font-bold text-xl text-gray-500">
         Recordings
       </h1>
-      {recordings.map((r: Recording) => (
+      {!coversReady && (
+        <div className="flex flex-row flex-wrap justify-center w-full">
+          {recordings.map((r: Recording) => (
+            <div
+              key={`skeleton-${r.imageSrc}`}
+              className="hover:scale-110 transition-transform duration-2000"
+            >
+              <SkeletonCard />
+            </div>
+          ))}
+        </div>
+      )}
+      {coversReady && recordings.map((r: Recording) => (
         <div
           key={r.imageSrc}
           className="hover:scale-110 transition-transform duration-2000"
@@ -90,7 +113,7 @@ export default function RecordingsList({}: Props) {
           <motion.div
             variants={cardVariants}
             initial="hidden"
-            animate={coversReady ? "visible" : "hidden"}
+            animate="visible"
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-10 mt-5 mx-10 shadow-xl rounded-2xl bg-gray-300 relative"
           >
