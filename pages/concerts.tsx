@@ -178,7 +178,7 @@ export default function Concerts({
                                 <div
                                     key={index}
                                     ref={(el) => (divRefs.current[index] = el)}
-                                    className={`relative mt-10 mx-3 mb-6 w-full max-w-4xl px-4 py-4 md:px-5 text-gray-900 ${
+                                    className={`relative md:mt-10 mx-3 mb-6 w-full max-w-4xl px-4 py-4 md:px-5 text-gray-900 ${
                                         smN === index
                                             ? "ring-1 ring-slate-300/70 shadow-sm"
                                             : ""

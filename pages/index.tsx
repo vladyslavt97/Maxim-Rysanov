@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 
 export default function Home() {
     const [blurAmount, setBlurAmount] = useState(0);
-    const maxBlur = 5;
-    const blurRange = 240;
+    const maxBlur = 0; //5
+    const blurRange = 0; //240
 
     useEffect(() => {
         const container = document.querySelector("main");
@@ -55,7 +55,7 @@ export default function Home() {
             <div className="relative z-10 mx-auto flex h-full flex-col justify-center gap-10">
                 <div className="mt-[450px] flex flex-col items-start justify-between gap-8 md:gap-96 md:mt-6 md:flex-row lg:mt-0">
                     <div className="space-y-7 md:w-[55%]">
-                        <div className="relative overflow-hidden rounded-3xl shadow-xl backdrop-blur-[100px] p-2 m-2">
+                        <div className="relative overflow-hidden rounded-3xl shadow-xl bg-white/70 backdrop-blur-[100px] p-2 m-2">
                             <div className="absolute inset-0" />
                             <div className="relative space-y-2">
                                 <h1
@@ -72,7 +72,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="relative overflow-hidden rounded-3xl p-2 m-2 shadow-2xl backdrop-blur-[100px] md:p-8">
+                        <div className="relative overflow-hidden rounded-3xl p-2 m-2 shadow-2xl bg-white/70 backdrop-blur-[100px] md:p-8">
                             <div className="absolute inset-0" />
                             <div className="relative flex flex-col gap-5">
                                 <p
@@ -98,7 +98,7 @@ export default function Home() {
                         <div className="flex flex-wrap gap-3 text-sm font-semibold">
                             <Link
                                 href="/concerts"
-                                className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg backdrop-blur-[100px] transition duration-200 hover:bg-white/95"
+                                className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg bg-white/70 backdrop-blur-[100px] transition duration-200 hover:bg-white/95"
                             >
                                 <span>Upcoming concerts</span>
                                 <span className="text-amber-700 transition duration-200 group-hover:translate-x-0.5">
@@ -109,7 +109,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col gap-4 md:w-[45%]">
-                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-[100px]">
+                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl bg-white/70 backdrop-blur-[100px]">
                             <div className="absolute inset-0 opacity-0 transition duration-600 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
                                 <Link
@@ -143,7 +143,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl backdrop-blur-[100px] mb-10">
+                        <div className="group relative overflow-hidden rounded-2xl m-2 p-2 shadow-xl bg-white/70 backdrop-blur-[100px] mb-10">
                             <div className="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100" />
                             <div className="relative flex flex-col items-start gap-4">
                                 <Link
