@@ -40,7 +40,7 @@ export default function PastConcerts({
     };
 
     return (
-        <div className="rounded--lg absolute right-2">
+        <div className="rounded--lg absolute right-2 z-50">
             <button
                 className="py-2 pl-3 pr-1 bg-slate-600 hover:bg-slate-500 m-1
                 active:bg-slate-400
