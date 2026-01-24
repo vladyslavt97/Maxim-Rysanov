@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
-
+import { MoonLoader } from "react-spinners";
 type Props = {};
 
 type GalleryImage = {
@@ -77,7 +77,7 @@ export default function Gallery({}: Props) {
     }, [allLoaded, goNext, isHovering]);
 
     return (
-        <div className="relative flex flex-col items-center justify-start text-black w-full px-4 py-5 bg-white">
+        <div className="relative flex flex-col items-center justify-start text-black w-full h-screen px-4 py-5 bg-white">
             <Link
                 href="https://www.dropbox.com/scl/fo/lx6kgxla9x5bliagw06yt/ADDS1iSwk0Y0a8B2A6vcD-8?rlkey=l1smoa75bnwub75tim363gvrz&st=x1o6rhpx&dl=0"
                 target="_blank"
@@ -114,16 +114,16 @@ export default function Gallery({}: Props) {
                                     repeat: Infinity,
                                 }}
                             >
-                            <Image
-                                src={images[currentIndex].src}
-                                alt={images[currentIndex].alt}
-                                fill
-                                priority={true}
-                                unoptimized
-                                loading="eager"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1000px"
-                                className="object-contain"
-                            />
+                                <Image
+                                    src={images[currentIndex].src}
+                                    alt={images[currentIndex].alt}
+                                    fill
+                                    priority={true}
+                                    unoptimized
+                                    loading="eager"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1000px"
+                                    className="object-contain"
+                                />
                             </motion.div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
                         </div>
@@ -160,7 +160,8 @@ export default function Gallery({}: Props) {
                     </motion.div>
                 ) : (
                     <div className="flex h-[60vh] min-h-[320px] w-full max-w-5xl items-center justify-center rounded-3xl bg-slate-900/5 text-xs uppercase tracking-[0.3em] text-gray-500">
-                        Loading gallery
+                        Loading gallery...
+                        <MoonLoader size={30} />
                     </div>
                 )}
             </div>

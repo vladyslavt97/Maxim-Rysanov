@@ -36,7 +36,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className={`${inter.className} relative top-0 min-h-[calc(100vh-123px)] overflow-hidden text-black md:text-white`}
+            className={`${inter.className} relative top-0 min-h-[calc(100vh-123px)] overflow-hidden text-black `}
         >
             <div className="pointer-events-none fixed inset-0 z-0">
                 <div
