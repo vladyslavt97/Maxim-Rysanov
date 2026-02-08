@@ -94,18 +94,6 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="flex flex-wrap gap-3 text-sm font-semibold">
-                            <Link
-                                href="/concerts"
-                                className="group inline-flex items-center gap-3 rounded-full px-5 py-3 m-2 tracking-wide shadow-lg bg-white/70 backdrop-blur-[100px] transition duration-200 hover:bg-white/95"
-                            >
-                                <span>Upcoming concerts</span>
-                                <span className="text-amber-700 transition duration-200 group-hover:translate-x-0.5">
-                                    →
-                                </span>
-                            </Link>
-                        </div>
                     </div>
 
                     <div className="flex flex-col gap-4 md:w-[45%]">
